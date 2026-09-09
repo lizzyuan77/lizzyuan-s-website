@@ -24,3 +24,68 @@ a {
 .bi {
   margin-right: 0.75rem;
 }
+
+.home-hero {
+  max-width: 920px;
+  margin: 3.5rem auto 0;
+}
+
+.home-hero .columns {
+  display: flex;
+  align-items: flex-start;
+  gap: 3.75rem;
+}
+
+.home-hero .column {
+  padding: 0;
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  margin-left: auto;
+  border-radius: 6px;
+}
+
+.home-intro {
+  max-width: 520px;
+}
+
+.penn-logo {
+  width: 260px;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+.home-intro h1 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.home-intro p {
+  margin-bottom: 1.1rem;
+}
+
+.home-intro h3 {
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .home-hero {
+    margin-top: 2rem;
+  }
+
+  .home-hero .columns {
+    display: block;
+  }
+
+  .profile-photo {
+    max-width: 320px;
+    margin: 0 auto 2rem;
+  }
+
+  .home-intro {
+    max-width: none;
+  }
+}

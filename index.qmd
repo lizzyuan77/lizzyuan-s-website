@@ -2,13 +2,15 @@
 title: ""
 ---
 
-::::: columns
-::: {.column width="35%"}
-![](images/profile.jpg){width="100%"}
+::::: {.home-hero}
+:::: columns
+::: {.column width="38%"}
+![](images/profile.jpg){.profile-photo}
 :::
 
-::: {.column width="65%"}
-![](images/UniversityofPennsylvania_FullLogo_RGB.png){width="250px"}
+::: {.column width="62%"}
+::: {.home-intro}
+![](images/UniversityofPennsylvania_FullLogo_RGB.png){.penn-logo}
 
 # Jiaqi Yuan
 
@@ -27,4 +29,6 @@ I am building skills in applied economics, data science, econometrics, and repro
   <a href="mailto:lizzyuan@sas.upenn.edu"><i class="bi bi-envelope-fill fs-3"></i></a>
 </div>
 :::
+:::
+::::
 :::::
