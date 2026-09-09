@@ -4,24 +4,26 @@ title: ""
 
 ::::: columns
 ::: {.column width="35%"}
-![](images/profile.png){width="100%"}
+![](images/profile.jpg){width="100%"}
 :::
 
 ::: {.column width="65%"}
 ![](images/UniversityofPennsylvania_FullLogo_RGB.png){width="250px"}
 
-# JIAQI YUAN
+# Jiaqi Yuan
+
+Master of Applied Economics and Data Science
 
 University of Pennsylvania
 
-Welcome to my personal website.
+I am building skills in applied economics, data science, econometrics, and reproducible research. This site collects my course projects, writing, and professional materials.
 
-### Quick Links
+### Connect
 
 <div>
   <a href="https://github.com/lizzyuan77"><i class="bi bi-github fs-3"></i></a>
   <a href="https://www.linkedin.com/in/liz-y-255182371/"><i class="bi bi-linkedin fs-3"></i></a>
-  <a href="resume.qmd"><i class="bi bi-file-earmark-person-fill fs-3"></i></a>
+  <a href="resume.html"><i class="bi bi-file-earmark-person-fill fs-3"></i></a>
   <a href="mailto:lizzyuan@sas.upenn.edu"><i class="bi bi-envelope-fill fs-3"></i></a>
 </div>
 :::

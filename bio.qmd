@@ -2,17 +2,27 @@
 title: "About Me"
 ---
 
-I am a Master of Applied Economics and Data Science student at the University of Pennsylvania. My interests include econometrics, machine learning, and data analysis.
+I am Jiaqi Yuan, a Master of Applied Economics and Data Science student at the University of Pennsylvania. I am interested in using quantitative methods to understand economic questions and communicate evidence clearly.
 
 ## Education
 
-Master of Applied Economics and Data Science, University of Pennsylvania, expected 2027
+Master of Applied Economics and Data Science  
+University of Pennsylvania, expected 2027
 
 ## Interests
 
 - Econometrics
 - Machine Learning
 - Data Analysis
+- Applied Economics
+- Reproducible Research
+
+## Skills
+
+- R and Quarto
+- LaTeX
+- Data Visualization
+- Statistical Analysis
 
 ## Contact
 

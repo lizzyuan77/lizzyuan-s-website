@@ -2,8 +2,6 @@
 title: "About"
 ---
 
-About this site
+This website was created for AEDS 6400: Computational Methods at the University of Pennsylvania.
 
-```{r}
-1 + 1
-```
+It is built with Quarto in RStudio and published with GitHub Pages from the `docs` folder of the main branch.

@@ -1,52 +1,87 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "JIAQI YUAN",
-    "section": "",
-    "text": "JIAQI YUAN\nUniversity of Pennsylvania\nWelcome to my personal website.\n\nQuick Links"
-  },
-  {
     "objectID": "resume.html",
     "href": "resume.html",
     "title": "Resume",
     "section": "",
-    "text": "Download my resume here:"
+    "text": "Master of Applied Economics and Data Science student at the University of Pennsylvania."
   },
   {
-    "objectID": "resume.html#resume-pdf",
-    "href": "resume.html#resume-pdf",
+    "objectID": "resume.html#jiaqi-yuan",
+    "href": "resume.html#jiaqi-yuan",
     "title": "Resume",
-    "section": "Resume PDF",
-    "text": "Resume PDF"
+    "section": "",
+    "text": "Master of Applied Economics and Data Science student at the University of Pennsylvania."
   },
   {
-    "objectID": "blog/posts/post1/Untitled.html",
-    "href": "blog/posts/post1/Untitled.html",
-    "title": "My First Blog Post",
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Resume",
+    "section": "Education",
+    "text": "Education\nUniversity of Pennsylvania\nMaster of Applied Economics and Data Science, expected 2027"
+  },
+  {
+    "objectID": "resume.html#interests",
+    "href": "resume.html#interests",
+    "title": "Resume",
+    "section": "Interests",
+    "text": "Interests\n\nEconometrics\nMachine Learning\nData Analysis\nApplied Economics"
+  },
+  {
+    "objectID": "resume.html#skills",
+    "href": "resume.html#skills",
+    "title": "Resume",
+    "section": "Skills",
+    "text": "Skills\n\nR and Quarto\nLaTeX\nData Visualization\nStatistical Analysis"
+  },
+  {
+    "objectID": "resume.html#links",
+    "href": "resume.html#links",
+    "title": "Resume",
+    "section": "Links",
+    "text": "Links\n\nGitHub\nLinkedIn\nEmail"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
     "section": "",
-    "text": "This is my first blog post. Example \\(\\LaTeX\\) equation: \\(\\frac{1}{2}\\sum_{i=1}^nx_i\\)"
+    "text": "My First Blog Post\n\n\n\n\n\n\n\n\nJun 16, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nMy Second Blog Post\n\n\n\n\n\n\n\n\nJun 16, 2026\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This website was created for AEDS 6400: Computational Methods at the University of Pennsylvania.\nIt is built with Quarto in RStudio and published with GitHub Pages from the docs folder of the main branch."
   },
   {
     "objectID": "bio.html",
     "href": "bio.html",
     "title": "About Me",
     "section": "",
-    "text": "I am a Master of Applied Economics and Data Science student at the University of Pennsylvania. My interests include econometrics, machine learning, and data analysis."
+    "text": "I am Jiaqi Yuan, a Master of Applied Economics and Data Science student at the University of Pennsylvania. I am interested in using quantitative methods to understand economic questions and communicate evidence clearly."
   },
   {
     "objectID": "bio.html#education",
     "href": "bio.html#education",
     "title": "About Me",
     "section": "Education",
-    "text": "Education\nMaster of Applied Economics and Data Science, University of Pennsylvania, expected 2027"
+    "text": "Education\nMaster of Applied Economics and Data Science\nUniversity of Pennsylvania, expected 2027"
   },
   {
     "objectID": "bio.html#interests",
     "href": "bio.html#interests",
     "title": "About Me",
     "section": "Interests",
-    "text": "Interests\n\nEconometrics\nMachine Learning\nData Analysis"
+    "text": "Interests\n\nEconometrics\nMachine Learning\nData Analysis\nApplied Economics\nReproducible Research"
+  },
+  {
+    "objectID": "bio.html#skills",
+    "href": "bio.html#skills",
+    "title": "About Me",
+    "section": "Skills",
+    "text": "Skills\n\nR and Quarto\nLaTeX\nData Visualization\nStatistical Analysis"
   },
   {
     "objectID": "bio.html#contact",
@@ -56,24 +91,17 @@
     "text": "Contact\nlizzyuan@sas.upenn.edu"
   },
   {
-    "objectID": "bio.html#lizzyuansas.upenn.edu",
-    "href": "bio.html#lizzyuansas.upenn.edu",
-    "title": "About Me",
-    "section": "lizzyuan@sas.upenn.edu",
-    "text": "lizzyuan@sas.upenn.edu"
+    "objectID": "blog/posts/post1/Untitled.html",
+    "href": "blog/posts/post1/Untitled.html",
+    "title": "My First Blog Post",
+    "section": "",
+    "text": "This is my first blog post. Example \\(\\LaTeX\\) equation: \\(\\frac{1}{2}\\sum_{i=1}^nx_i\\)"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jiaqi Yuan",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "My First Blog Post\n\n\n\n\n\n\n\n\nJun 16, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nMy Second Blog Post\n\n\n\n\n\n\n\n\nJun 16, 2026\n\n\n\n\n\nNo matching items"
+    "text": "Jiaqi Yuan\nMaster of Applied Economics and Data Science\nUniversity of Pennsylvania\nI am building skills in applied economics, data science, econometrics, and reproducible research. This site collects my course projects, writing, and professional materials.\n\nConnect"
   }
 ]

@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "JIAQI YUAN"
+  title: "Jiaqi Yuan"
 
   navbar:
     left:

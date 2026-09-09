@@ -2,6 +2,31 @@
 title: "Resume"
 ---
 
-Download my resume here:
+## Jiaqi Yuan
 
-##  [Resume PDF](files/Resume.pdf)
+Master of Applied Economics and Data Science student at the University of Pennsylvania.
+
+## Education
+
+**University of Pennsylvania**  
+Master of Applied Economics and Data Science, expected 2027
+
+## Interests
+
+- Econometrics
+- Machine Learning
+- Data Analysis
+- Applied Economics
+
+## Skills
+
+- R and Quarto
+- LaTeX
+- Data Visualization
+- Statistical Analysis
+
+## Links
+
+- [GitHub](https://github.com/lizzyuan77)
+- [LinkedIn](https://www.linkedin.com/in/liz-y-255182371/)
+- [Email](mailto:lizzyuan@sas.upenn.edu)
