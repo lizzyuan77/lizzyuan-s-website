@@ -4,31 +4,69 @@ title: "Resume"
 
 ## Jiaqi Yuan
 
-Master of Applied Economics and Data Science student at the University of Pennsylvania.
+New York, NY and Philadelphia, PA  
+[lizzyuan\@sas.upenn.edu](mailto:lizzyuan@sas.upenn.edu) | [LinkedIn](https://www.linkedin.com/in/jiaqi-yuan-255182371/) | [GitHub](https://github.com/lizzyuan77)
 
 [Download CV](files/Jiaqi_Yuan_cv.pdf)
 
 ## Education
 
 **University of Pennsylvania**  
-Master of Applied Economics and Data Science, expected 2027
+Master of Applied Economics and Data Science, expected June 2028  
+Selected coursework: Computational Methods; Machine Learning for Economists
 
-## Interests
+**Shanghai Jiao Tong University, Antai College of Economics and Management**  
+Bachelor of Finance; Minor in Big Data and Business Management, June 2026  
+Exchange: UBC Sauder School of Business; NUS Summer Program
 
-- Econometrics
-- Machine Learning
-- Data Analysis
-- Applied Economics
+## Professional Experience
+
+**Tencent, Corporate Development Group, FinTech**  
+Strategy and Business Analysis Intern
+
+- Analyzed B2B and B2C payment needs, use cases, competitors, and business models for FinTech strategy work.
+- Evaluated AI healthcare products across capabilities, positioning, user scenarios, and end-to-end experience.
+- Built a Dify workflow to automate weekly reporting and research synthesis.
+
+**Boston Consulting Group**  
+Part-Time Assistant
+
+- Reviewed reports for expansion strategy work and built a 20+ dimension benchmarking model.
+- Researched enterprise AI applications in workflow automation, marketing, and decision support.
+
+**WeBank, Risk Modeling Division**  
+Risk Modeling Intern
+
+- Supported credit scoring model development using Python, SQL, Spark, and Hive.
+- Compared LR, RF, XGBoost, and GBDT models by AUC, KS, and Gini.
+
+**Haitong Futures, Wealth Management Center**  
+Wealth Management Intern
+
+- Conducted due diligence on 50+ quantitative private-fund products using Wind, Capital IQ, and Python.
+- Built analyses for fund performance metrics, trend visualization, and investment evaluation.
+
+## Selected Research
+
+**Undergraduate Thesis: Text Analysis of Investor-Company Q&A**
+
+- Analyzed 5.36 million rows of 2015-2024 A-share investor Q&A records using BERTopic and LLM-assisted auditing.
+
+**Intelligent Course Advisory AI Agent**
+
+- Designed a Dify recommendation module with multi-path workflows and a 2,800+ entry course-and-review knowledge base.
 
 ## Skills
 
-- R and Quarto
+- Python, SQL, R, Stata
+- Quarto and RStudio
 - LaTeX
-- Data Visualization
-- Statistical Analysis
+- Dify
+- Wind and Capital IQ
+- Excel and PowerPoint
 
-## Links
+## Languages and Interests
 
-- [GitHub](https://github.com/lizzyuan77)
-- [LinkedIn](https://www.linkedin.com/in/liz-y-255182371/)
-- [Email](mailto:lizzyuan@sas.upenn.edu)
+- Mandarin Chinese, native
+- English, professional
+- Pilates, squash, volleyball, and hiking

@@ -4,42 +4,49 @@
     "href": "resume.html",
     "title": "Resume",
     "section": "",
-    "text": "Master of Applied Economics and Data Science student at the University of Pennsylvania.\nDownload CV"
+    "text": "New York, NY and Philadelphia, PA\nlizzyuan@sas.upenn.edu | LinkedIn | GitHub\nDownload CV"
   },
   {
     "objectID": "resume.html#jiaqi-yuan",
     "href": "resume.html#jiaqi-yuan",
     "title": "Resume",
     "section": "",
-    "text": "Master of Applied Economics and Data Science student at the University of Pennsylvania.\nDownload CV"
+    "text": "New York, NY and Philadelphia, PA\nlizzyuan@sas.upenn.edu | LinkedIn | GitHub\nDownload CV"
   },
   {
     "objectID": "resume.html#education",
     "href": "resume.html#education",
     "title": "Resume",
     "section": "Education",
-    "text": "Education\nUniversity of Pennsylvania\nMaster of Applied Economics and Data Science, expected 2027"
+    "text": "Education\nUniversity of Pennsylvania\nMaster of Applied Economics and Data Science, expected June 2028\nSelected coursework: Computational Methods; Machine Learning for Economists\nShanghai Jiao Tong University, Antai College of Economics and Management\nBachelor of Finance; Minor in Big Data and Business Management, June 2026\nExchange: UBC Sauder School of Business; NUS Summer Program"
   },
   {
-    "objectID": "resume.html#interests",
-    "href": "resume.html#interests",
+    "objectID": "resume.html#professional-experience",
+    "href": "resume.html#professional-experience",
     "title": "Resume",
-    "section": "Interests",
-    "text": "Interests\n\nEconometrics\nMachine Learning\nData Analysis\nApplied Economics"
+    "section": "Professional Experience",
+    "text": "Professional Experience\nTencent, Corporate Development Group, FinTech\nStrategy and Business Analysis Intern\n\nAnalyzed B2B and B2C payment needs, use cases, competitors, and business models for FinTech strategy work.\nEvaluated AI healthcare products across capabilities, positioning, user scenarios, and end-to-end experience.\nBuilt a Dify workflow to automate weekly reporting and research synthesis.\n\nBoston Consulting Group\nPart-Time Assistant\n\nReviewed reports for expansion strategy work and built a 20+ dimension benchmarking model.\nResearched enterprise AI applications in workflow automation, marketing, and decision support.\n\nWeBank, Risk Modeling Division\nRisk Modeling Intern\n\nSupported credit scoring model development using Python, SQL, Spark, and Hive.\nCompared LR, RF, XGBoost, and GBDT models by AUC, KS, and Gini.\n\nHaitong Futures, Wealth Management Center\nWealth Management Intern\n\nConducted due diligence on 50+ quantitative private-fund products using Wind, Capital IQ, and Python.\nBuilt analyses for fund performance metrics, trend visualization, and investment evaluation."
+  },
+  {
+    "objectID": "resume.html#selected-research",
+    "href": "resume.html#selected-research",
+    "title": "Resume",
+    "section": "Selected Research",
+    "text": "Selected Research\nUndergraduate Thesis: Text Analysis of Investor-Company Q&A\n\nAnalyzed 5.36 million rows of 2015-2024 A-share investor Q&A records using BERTopic and LLM-assisted auditing.\n\nIntelligent Course Advisory AI Agent\n\nDesigned a Dify recommendation module with multi-path workflows and a 2,800+ entry course-and-review knowledge base."
   },
   {
     "objectID": "resume.html#skills",
     "href": "resume.html#skills",
     "title": "Resume",
     "section": "Skills",
-    "text": "Skills\n\nR and Quarto\nLaTeX\nData Visualization\nStatistical Analysis"
+    "text": "Skills\n\nPython, SQL, R, Stata\nQuarto and RStudio\nLaTeX\nDify\nWind and Capital IQ\nExcel and PowerPoint"
   },
   {
-    "objectID": "resume.html#links",
-    "href": "resume.html#links",
+    "objectID": "resume.html#languages-and-interests",
+    "href": "resume.html#languages-and-interests",
     "title": "Resume",
-    "section": "Links",
-    "text": "Links\n\nGitHub\nLinkedIn\nEmail"
+    "section": "Languages and Interests",
+    "text": "Languages and Interests\n\nMandarin Chinese, native\nEnglish, professional\nPilates, squash, volleyball, and hiking"
   },
   {
     "objectID": "blog/index.html",
@@ -60,35 +67,56 @@
     "href": "bio.html",
     "title": "About Me",
     "section": "",
-    "text": "I am Jiaqi Yuan, a Master of Applied Economics and Data Science student at the University of Pennsylvania. I am interested in using quantitative methods to understand economic questions and communicate evidence clearly."
+    "text": "I am Jiaqi Yuan, also known as Liz. I am a student with interests in economics, data-driven analysis, and interdisciplinary research. Across academic projects, internships, and international learning experiences, I have been drawn to questions that sit between markets, behavior, and decision-making.\nThis site is a space to share the experiences, ideas, and curiosities that have shaped my path so far."
   },
   {
     "objectID": "bio.html#education",
     "href": "bio.html#education",
     "title": "About Me",
     "section": "Education",
-    "text": "Education\nMaster of Applied Economics and Data Science\nUniversity of Pennsylvania, expected 2027"
+    "text": "Education\n\n2026-2028 (expected)\n\nUniversity of Pennsylvania\nMaster of Applied Economics and Data Science\nA next step in strengthening my training in applied economics, quantitative methods, and data-driven research.\n\n\n\n2022-2026\n\nShanghai Jiao Tong University\nBachelor of Finance; Minor in Big Data and Business Management\nMy home base for building foundations in finance, analytics, and interdisciplinary academic exploration.\n\n\n\n2024-2025\n\nUniversity of British Columbia\nExchange in Finance\nAn experience that broadened both my academic perspective and my understanding of learning across cultures.\n\n\n\n2023\n\nNational University of Singapore\nSummer Program\nAn early international academic experience that sparked my interest in global perspectives and urban-economic questions."
   },
   {
-    "objectID": "bio.html#interests",
-    "href": "bio.html#interests",
+    "objectID": "bio.html#internship",
+    "href": "bio.html#internship",
     "title": "About Me",
-    "section": "Interests",
-    "text": "Interests\n\nEconometrics\nMachine Learning\nData Analysis\nApplied Economics\nReproducible Research"
+    "section": "Internship",
+    "text": "Internship\n\nTencent\nBusiness Analyst Intern, Corporate Development Group (CDG) - FinTech Strategy\nWorked on business analysis in the fintech space, with a focus on industry research, strategic thinking, and structured problem-solving.\n\n\nBoston Consulting Group (BCG)\nSummer Analyst\nGained exposure to strategy research, benchmarking, and data-supported decision-making in a consulting setting.\n\n\nWeBank\nRisk Modeling Intern\nWorked with financial data and risk modeling tools, deepening my interest in machine learning and quantitative analysis in finance.\n\n\nHaitong Futures\nQuantitative Analysis Intern\nExplored investment analysis, fund evaluation, and the communication of quantitative insights in a fast-paced financial environment."
+  },
+  {
+    "objectID": "bio.html#research",
+    "href": "bio.html#research",
+    "title": "About Me",
+    "section": "Research",
+    "text": "Research\n\nUndergraduate Thesis - NLP and Financial Text Analysis\nExplored investor questions and corporate responses through financial text analysis, with a focus on topic modeling and information demand across platforms.\n\nInsight: This project taught me that market behavior is often reflected not only in prices, but also in the language investors use to ask for information.\n\n\n\nIntelligent Course Advisory AI Agent\nDesigned a personalized Dify recommendation module using multi-path workflows and a course-review knowledge base.\n\nInsight: Building an advisory agent showed me how structured data, user intent, and final-answer design shape the usefulness of AI tools.\n\n\n\nCommercial Bank Analysis\nConducted comparative analysis of different types of Chinese banks through annual reports and financial indicators, focusing on capital, liquidity, and strategic positioning.\n\nInsight: Comparing banks showed me that regulation, business model, and balance-sheet structure shape strategy together rather than separately.\n\n\n\nCorporate Finance Research Assistant\nWorked as a research assistant on a corporate finance project, supporting data collection, cleaning, and preliminary empirical analysis.\n\nInsight: This experience helped me see that financing decisions often reflect strategic intent and institutional context, not just textbook theory.\n\n\n\nPredictive Modeling for Social Media Engagement\nBuilt regression-based models to study how post characteristics influence engagement outcomes on social platforms.\n\nInsight: I learned that real-world behavioral data is often non-linear, which makes model choice and interpretation just as important as prediction itself.\n\n\n\nChina’s Pharmaceutical Industry Chain Analysis\nMapped and analyzed the pharmaceutical industry chain using market and company-level data.\n\nInsight: This project showed me how sector research depends on connecting scattered firm-level information to broader structural trends."
+  },
+  {
+    "objectID": "bio.html#interest",
+    "href": "bio.html#interest",
+    "title": "About Me",
+    "section": "Interest",
+    "text": "Interest\nI am especially interested in applied economics, data science, finance, and empirical research, and I am equally drawn to poetry, movement, and the small curiosities that make life feel vivid.\n\nAcademic\n\nApplied Economics\nData Science\nFinance\nEmpirical Research\nText Analysis\nQuantitative Modeling\nDigital Economy\n\n\n\nPersonal\n\nSports and Movement\nPoetry and Writing\nMusic\nOutdoor Exploration\nCross-Cultural Conversation"
+  },
+  {
+    "objectID": "bio.html#fun-facts",
+    "href": "bio.html#fun-facts",
+    "title": "About Me",
+    "section": "Fun Facts",
+    "text": "Fun Facts\n\n\nA sports all-rounder\nFrom swimming and volleyball to jump rope, skiing, and frisbee, movement has always been one of the ways I understand energy, rhythm, and joy.\n\n\nPoetry has stayed with me\nI have loved poetry for years, both as a way of expression and as a way of noticing the world more carefully.\n\n\nI enjoy crossing disciplines\nAlthough my formal training is in finance and data, some of my curiosity has also led me toward biology and other unexpected fields.\n\n\nI love conversations across cultures\nSome of my favorite experiences have come from meeting people across countries, exchanging stories, and learning how differently people see the world.\n\n\nI like walking without rushing\nI love long walks, unfamiliar campuses, and the small discoveries that happen when I let myself wander.\n\n\nI try to live attentively\nI often feel that life becomes memorable when we pay close attention to it, almost like collecting scenes from a film."
   },
   {
     "objectID": "bio.html#skills",
     "href": "bio.html#skills",
     "title": "About Me",
     "section": "Skills",
-    "text": "Skills\n\nR and Quarto\nLaTeX\nData Visualization\nStatistical Analysis"
+    "text": "Skills\n\nPython, SQL, R, Stata\nQuarto and RStudio\nLaTeX\nData visualization and statistical analysis\nWind, Capital IQ, Excel, and PowerPoint"
   },
   {
-    "objectID": "bio.html#contact",
-    "href": "bio.html#contact",
+    "objectID": "bio.html#get-in-touch",
+    "href": "bio.html#get-in-touch",
     "title": "About Me",
-    "section": "Contact",
-    "text": "Contact\nlizzyuan@sas.upenn.edu"
+    "section": "Get in Touch",
+    "text": "Get in Touch\nI’m always happy to connect over research, ideas, and interdisciplinary conversations.\nlizzyuan@sas.upenn.edu\nLinkedIn\nGitHub"
   },
   {
     "objectID": "blog/posts/post1/Untitled.html",
@@ -100,8 +128,8 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Jiaqi Yuan",
+    "title": "Jiaqi (Liz) Yuan",
     "section": "",
-    "text": "Jiaqi Yuan\nMaster of Applied Economics and Data Science\nUniversity of Pennsylvania\nI am building skills in applied economics, data science, econometrics, and reproducible research. This site collects my course projects, writing, and professional materials.\n\nConnect"
+    "text": "Jiaqi (Liz) Yuan\nInterested in data, economics, and the questions that connect people, markets, and ideas.\nMaster of Applied Economics and Data Science\nUniversity of Pennsylvania\nI am a student with interests in economics, data-driven analysis, and interdisciplinary research. Across academic projects, internships, and international learning experiences, I have been drawn to questions that sit between markets, behavior, and decision-making.\n\nConnect"
   }
 ]

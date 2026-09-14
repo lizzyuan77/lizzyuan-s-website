@@ -63,6 +63,12 @@ a {
   margin-bottom: 1rem;
 }
 
+.home-intro h1 + p {
+  color: #24483f;
+  font-style: italic;
+  font-size: 1.18rem;
+}
+
 .home-intro p {
   margin-bottom: 1.1rem;
 }
@@ -87,5 +93,66 @@ a {
 
   .home-intro {
     max-width: none;
+  }
+}
+
+.profile-card,
+.fun-card {
+  border: 1px solid #ddd8cf;
+  border-radius: 6px;
+  padding: 1.5rem 1.75rem;
+  margin: 1.5rem 0;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(30, 30, 30, 0.05);
+}
+
+.profile-card strong {
+  color: #24483f;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.88rem;
+}
+
+.profile-card h3,
+.fun-card h3 {
+  margin-top: 0.7rem;
+}
+
+.insight {
+  border-left: 4px solid #4a9a8a;
+  color: #24483f;
+  font-style: italic;
+  margin: 1rem 0 2rem;
+  padding: 0.6rem 0 0.6rem 1.2rem;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1rem 0 2rem;
+}
+
+.tag-list p {
+  border: 1px solid #ddd8cf;
+  border-radius: 6px;
+  display: inline-block;
+  margin: 0;
+  padding: 0.55rem 0.95rem;
+}
+
+.fun-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.fun-grid .fun-card {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .fun-grid {
+    grid-template-columns: 1fr;
   }
 }

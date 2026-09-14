@@ -2,28 +2,206 @@
 title: "About Me"
 ---
 
-I am Jiaqi Yuan, a Master of Applied Economics and Data Science student at the University of Pennsylvania. I am interested in using quantitative methods to understand economic questions and communicate evidence clearly.
+I am Jiaqi Yuan, also known as Liz. I am a student with interests in economics, data-driven analysis, and interdisciplinary research. Across academic projects, internships, and international learning experiences, I have been drawn to questions that sit between markets, behavior, and decision-making.
+
+This site is a space to share the experiences, ideas, and curiosities that have shaped my path so far.
 
 ## Education
 
-Master of Applied Economics and Data Science  
-University of Pennsylvania, expected 2027
+::: {.profile-card}
+**2026-2028 (expected)**
 
-## Interests
+### University of Pennsylvania
 
-- Econometrics
-- Machine Learning
-- Data Analysis
-- Applied Economics
-- Reproducible Research
+*Master of Applied Economics and Data Science*
+
+A next step in strengthening my training in applied economics, quantitative methods, and data-driven research.
+:::
+
+::: {.profile-card}
+**2022-2026**
+
+### Shanghai Jiao Tong University
+
+*Bachelor of Finance; Minor in Big Data and Business Management*
+
+My home base for building foundations in finance, analytics, and interdisciplinary academic exploration.
+:::
+
+::: {.profile-card}
+**2024-2025**
+
+### University of British Columbia
+
+*Exchange in Finance*
+
+An experience that broadened both my academic perspective and my understanding of learning across cultures.
+:::
+
+::: {.profile-card}
+**2023**
+
+### National University of Singapore
+
+*Summer Program*
+
+An early international academic experience that sparked my interest in global perspectives and urban-economic questions.
+:::
+
+## Internship
+
+### Tencent
+
+*Business Analyst Intern, Corporate Development Group (CDG) - FinTech Strategy*
+
+Worked on business analysis in the fintech space, with a focus on industry research, strategic thinking, and structured problem-solving.
+
+### Boston Consulting Group (BCG)
+
+*Summer Analyst*
+
+Gained exposure to strategy research, benchmarking, and data-supported decision-making in a consulting setting.
+
+### WeBank
+
+*Risk Modeling Intern*
+
+Worked with financial data and risk modeling tools, deepening my interest in machine learning and quantitative analysis in finance.
+
+### Haitong Futures
+
+*Quantitative Analysis Intern*
+
+Explored investment analysis, fund evaluation, and the communication of quantitative insights in a fast-paced financial environment.
+
+## Research
+
+### Undergraduate Thesis - NLP and Financial Text Analysis
+
+Explored investor questions and corporate responses through financial text analysis, with a focus on topic modeling and information demand across platforms.
+
+::: {.insight}
+Insight: This project taught me that market behavior is often reflected not only in prices, but also in the language investors use to ask for information.
+:::
+
+### Intelligent Course Advisory AI Agent
+
+Designed a personalized Dify recommendation module using multi-path workflows and a course-review knowledge base.
+
+::: {.insight}
+Insight: Building an advisory agent showed me how structured data, user intent, and final-answer design shape the usefulness of AI tools.
+:::
+
+### Commercial Bank Analysis
+
+Conducted comparative analysis of different types of Chinese banks through annual reports and financial indicators, focusing on capital, liquidity, and strategic positioning.
+
+::: {.insight}
+Insight: Comparing banks showed me that regulation, business model, and balance-sheet structure shape strategy together rather than separately.
+:::
+
+### Corporate Finance Research Assistant
+
+Worked as a research assistant on a corporate finance project, supporting data collection, cleaning, and preliminary empirical analysis.
+
+::: {.insight}
+Insight: This experience helped me see that financing decisions often reflect strategic intent and institutional context, not just textbook theory.
+:::
+
+### Predictive Modeling for Social Media Engagement
+
+Built regression-based models to study how post characteristics influence engagement outcomes on social platforms.
+
+::: {.insight}
+Insight: I learned that real-world behavioral data is often non-linear, which makes model choice and interpretation just as important as prediction itself.
+:::
+
+### China's Pharmaceutical Industry Chain Analysis
+
+Mapped and analyzed the pharmaceutical industry chain using market and company-level data.
+
+::: {.insight}
+Insight: This project showed me how sector research depends on connecting scattered firm-level information to broader structural trends.
+:::
+
+## Interest
+
+I am especially interested in applied economics, data science, finance, and empirical research, and I am equally drawn to poetry, movement, and the small curiosities that make life feel vivid.
+
+### Academic
+
+::: {.tag-list}
+Applied Economics  
+Data Science  
+Finance  
+Empirical Research  
+Text Analysis  
+Quantitative Modeling  
+Digital Economy
+:::
+
+### Personal
+
+::: {.tag-list}
+Sports and Movement  
+Poetry and Writing  
+Music  
+Outdoor Exploration  
+Cross-Cultural Conversation
+:::
+
+## Fun Facts
+
+:::: {.fun-grid}
+::: {.fun-card}
+### A sports all-rounder
+
+From swimming and volleyball to jump rope, skiing, and frisbee, movement has always been one of the ways I understand energy, rhythm, and joy.
+:::
+
+::: {.fun-card}
+### Poetry has stayed with me
+
+I have loved poetry for years, both as a way of expression and as a way of noticing the world more carefully.
+:::
+
+::: {.fun-card}
+### I enjoy crossing disciplines
+
+Although my formal training is in finance and data, some of my curiosity has also led me toward biology and other unexpected fields.
+:::
+
+::: {.fun-card}
+### I love conversations across cultures
+
+Some of my favorite experiences have come from meeting people across countries, exchanging stories, and learning how differently people see the world.
+:::
+
+::: {.fun-card}
+### I like walking without rushing
+
+I love long walks, unfamiliar campuses, and the small discoveries that happen when I let myself wander.
+:::
+
+::: {.fun-card}
+### I try to live attentively
+
+I often feel that life becomes memorable when we pay close attention to it, almost like collecting scenes from a film.
+:::
+::::
 
 ## Skills
 
-- R and Quarto
+- Python, SQL, R, Stata
+- Quarto and RStudio
 - LaTeX
-- Data Visualization
-- Statistical Analysis
+- Data visualization and statistical analysis
+- Wind, Capital IQ, Excel, and PowerPoint
 
-## Contact
+## Get in Touch
 
-lizzyuan\@sas.upenn.edu
+I'm always happy to connect over research, ideas, and interdisciplinary conversations.
+
+lizzyuan\@sas.upenn.edu  
+[LinkedIn](https://www.linkedin.com/in/jiaqi-yuan-255182371/)  
+[GitHub](https://github.com/lizzyuan77)
