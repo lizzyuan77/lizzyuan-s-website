@@ -6,9 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-06-16">
+<meta name="author" content="Jiaqi Yuan">
+<meta name="dcterms.date" content="2026-09-14">
+<meta name="description" content="Lisa beats Bart at both distances. Bart wins overall. A carnival game reveals what averages hide.">
 
-<title>My First Blog Post – Jiaqi Yuan</title>
+<title>How Lisa Wins at Every Distance and Still Loses – Jiaqi Yuan</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,6 +25,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -43,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-6b423f165eeea3787de40cb4f8e821c3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-02c118425de8f9133c21d6473b97b3a4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -103,6 +140,7 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="blog1.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -155,22 +193,35 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">My First Blog Post</h1>
+<h1 class="title">How Lisa Wins at Every Distance and Still Loses</h1>
+<p class="subtitle lead">Simpson’s paradox, explained at the Springfield carnival</p>
   <div class="quarto-categories">
-    <div class="quarto-category">personal</div>
+    <div class="quarto-category">statistics</div>
+    <div class="quarto-category">intuition</div>
     <div class="quarto-category">data-science</div>
   </div>
   </div>
 
+<div>
+  <div class="description">
+    Lisa beats Bart at both distances. Bart wins overall. A carnival game reveals what averages hide.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jiaqi Yuan </p>
+          </div>
+  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 16, 2026</p>
+      <p class="date">September 14, 2026</p>
     </div>
   </div>
   
@@ -182,13 +233,171 @@ window.Quarto = {
 </header>
 
 
-<p><img src="figure1.png" class="img-fluid" width="500"></p>
-<p>This is my first blog post. Example <span class="math inline">\(\LaTeX\)</span> equation: <span class="math inline">\(\frac{1}{2}\sum_{i=1}^nx_i\)</span></p>
-<hr>
+<div class="blog1">
+<div class="opening-question">
+<p><strong>Lisa is more accurate than Bart at every distance. So how does Bart finish with the higher success rate?</strong></p>
+</div>
+<p>At the Springfield carnival, Homer declares Bart the ring-toss champion: he lands 77% of his shots, against Lisa’s 63%. Lisa objects. She did better from both the near line and the far line. Surely winning in every category means winning overall?</p>
+<p>That intuition feels compelling because we silently imagine the same mix of categories. Here, the mixes differ. This is <strong>Simpson’s paradox</strong>: an association points one way within every group but reverses when the groups are combined. The name refers to statistician Edward H. Simpson, whose <a href="https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1951.tb00088.x">1951 paper</a> examined the interpretation of grouped data. The cartoon family is our teaching cast.</p>
+<div id="fig-comic" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Four-panel comic with original characters: Bart wins overall, 77% to Lisa's 63%. Lisa leads at near shots, 90% to 80%, and far shots, 60% to 50%. She explains that she took mostly hard shots.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-comic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="assets/simpsons-paradox-comic.png" class="img-fluid figure-img" alt="Four-panel comic with original characters: Bart wins overall, 77% to Lisa's 63%. Lisa leads at near shots, 90% to 80%, and far shots, 60% to 50%. She explains that she took mostly hard shots.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-comic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Different mixes, different winners. This AI-generated teaching comic uses original characters to illustrate the fictional Lisa-and-Bart example; it does not depict the television cast.
+</figcaption>
+</figure>
+</div>
+<section id="the-scoreboard-is-correct" class="level2">
+<h2 class="anchored" data-anchor-id="the-scoreboard-is-correct">The scoreboard is correct</h2>
+<p>Suppose each sibling takes 100 shots. Lisa chooses mostly the harder, far-distance throws; Bart mostly the easier, near-distance ones. Here are the <strong>invented teaching data</strong>, with successes divided by attempts:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Distance</th>
+<th style="text-align: right;">Lisa: successes / attempts (rate)</th>
+<th style="text-align: right;">Bart: successes / attempts (rate)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Near/easier</td>
+<td style="text-align: right;">9 / 10 (90%)</td>
+<td style="text-align: right;">72 / 90 (80%)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Far/harder</td>
+<td style="text-align: right;">54 / 90 (60%)</td>
+<td style="text-align: right;">5 / 10 (50%)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Overall</td>
+<td style="text-align: right;">63 / 100 (63%)</td>
+<td style="text-align: right;">77 / 100 (77%)</td>
+</tr>
+</tbody>
+</table>
+<p><em>Fictional teaching data. Overall rates use total successes divided by total attempts, rather than an unweighted mean of the two rates.</em></p>
+<p>Using a shared 50:50 mix of near and far attempts: Lisa 75%, Bart 65%. These standardized rates hold the observed group rates fixed; they are not causal estimates or predictions.</p>
+<p>Lisa leads by <strong>10 percentage points at each distance</strong>, yet Bart leads by 14 points overall. No observations disappeared. The grouped and overall comparisons use exactly the same observations.</p>
+<p>The key is the denominator. Lisa’s impressive 90% near-shot rate describes only ten attempts. Her 60% far-shot rate describes ninety. Bart’s easier shots receive most of the weight in his overall rate; Lisa’s harder shots receive most of the weight in hers.</p>
+</section>
+<section id="an-average-has-a-recipe" class="level2">
+<h2 class="anchored" data-anchor-id="an-average-has-a-recipe">An average has a recipe</h2>
+<p>Think of the overall rate as a mixture. Each distance supplies a success rate; its share of attempts determines how much of that rate goes into the mixture:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\text{Lisa: }&amp; 0.10\times90\%+0.90\times60\%=63\%\\
+\text{Bart: }&amp; 0.90\times80\%+0.10\times50\%=77\%.
+\end{aligned}
+\]</span></p>
+<p>Each overall rate lies between that player’s two distance-specific rates. Lisa’s is pulled toward 60%; Bart’s toward 80%. Our intuition compares the rates but overlooks their different weights. Averaging the two percentages equally would describe a different mix of shots.</p>
+</section>
+<section id="change-the-mix-watch-the-winner-flip" class="level2">
+<h2 class="anchored" data-anchor-id="change-the-mix-watch-the-winner-flip">Change the mix, watch the winner flip</h2>
+<p>Move the sliders below. Each player’s accuracy at each distance stays fixed; only the near-versus-far share changes. Try <strong>Same mix: 50 / 50</strong>. Lisa’s standardized rate becomes 75% and Bart’s 65%.</p>
+<section class="mix-lab" aria-labelledby="mix-heading">
+  <div class="lab-kicker">TRY IT YOURSELF</div>
+  <h3 id="mix-heading" class="anchored">Same accuracy. Different scoreboard.</h3>
+  <p class="lab-help">Change the share of easier, near-distance shots. The remainder are harder, far-distance shots.</p>
+  <div class="mix-controls">
+    <div class="player-control lisa">
+      <label for="lisa-share">Lisa <span id="lisa-mix">10% near · 90% far</span></label>
+      <input id="lisa-share" type="range" min="0" max="100" step="1" value="10" aria-describedby="lisa-fixed" disabled="">
+      <p id="lisa-fixed">Accuracy stays: near 90% · far 60%</p>
+    </div>
+    <div class="player-control bart">
+      <label for="bart-share">Bart <span id="bart-mix">90% near · 10% far</span></label>
+      <input id="bart-share" type="range" min="0" max="100" step="1" value="90" aria-describedby="bart-fixed" disabled="">
+      <p id="bart-fixed">Accuracy stays: near 80% · far 50%</p>
+    </div>
+  </div>
+  <div class="lab-buttons">
+    <button type="button" id="equal-mix" disabled="">Same mix: 50 / 50</button>
+    <button type="button" id="original-mix" class="secondary" disabled="">Original carnival</button>
+  </div>
+  <div class="scoreboard" role="group" aria-label="Weighted overall success rates">
+    <div class="score-row"><span>Lisa</span><div class="score-track"><div id="lisa-bar" class="score-bar lisa-bar" style="width:63%"></div></div><output id="lisa-score" for="lisa-share">63%</output></div>
+    <div class="score-row"><span>Bart</span><div class="score-track"><div id="bart-bar" class="score-bar bart-bar" style="width:77%"></div></div><output id="bart-score" for="bart-share">77%</output></div>
+    <div class="score-axis" aria-hidden="true"><span>0%</span><span>Overall success rate</span><span>100%</span></div>
+  </div>
+  <p id="mix-verdict" class="mix-verdict" role="status" aria-live="polite">Bart leads overall by 14 percentage points, although Lisa leads at both distances.</p>
+  <p class="lab-note">Reweighting illustration: the original counts above stay unchanged. These mixtures hold observed within-distance rates fixed; they are not predictions of new throws.</p>
+  <noscript><p>Enable JavaScript to adjust the mix. At a shared 50% near / 50% far mix: Lisa 75%, Bart 65%.</p></noscript>
+</section>
+<p>With any shared mix, Lisa retains her ten-point advantage: each ingredient in her average is ten points higher. The reversal needs different weights. Standardization makes the composition comparable, holding the observed rates fixed; it does not guarantee how either sibling would perform in another game.</p>
+</section>
+<section id="which-answer-should-homer-use" class="level2">
+<h2 class="anchored" data-anchor-id="which-answer-should-homer-use">Which answer should Homer use?</h2>
+<p>For <strong>who landed a larger share of their actual throws</strong>, the overall scoreboard answers correctly: Bart. For <strong>who had the higher observed accuracy at the same distance</strong>, the grouped table answers: Lisa. Different questions justify different summaries.</p>
+<p>This matters beyond a carnival. Imagine evaluating job-training programs by employment rates. A program serving mostly job seekers who face greater barriers could have a lower overall placement rate even while its participants do better within each comparable group. Ranking programs from the headline percentage alone could punish the one serving the harder cases. This is a possible pattern, not evidence about any particular program.</p>
+<p>But splitting data into groups is no automatic cure. To ask whether a program <strong>causes</strong> better outcomes, we need to understand how people enter it and which variables should be adjusted for. Grouping on a consequence of participation can even remove part of the effect we want to measure. As <a href="https://ftp.cs.ucla.edu/pub/stat_ser/r414.pdf">Pearl (2014)</a> explains, causal interpretation requires knowledge of the process behind the data, beyond the table. Lisa’s table demonstrates an arithmetic reversal, not proof of innate skill or a causal effect.</p>
+<div class="takeaway">
+<p><strong>Before trusting an average, ask what went into it.</strong> Check the group rates, check the group sizes, and decide which comparison answers your question. Homer counted the successes correctly. He just needed to look at the recipe.</p>
+</div>
+<details class="reproduce-details">
+<summary>
+Data, sources, and reproduce it
+</summary>
+<p>All four counts are constructed for this explanation; they are not observations from a television episode or an empirical study. The comic was made with OpenAI’s built-in image generation tool and checked against the table. Its <a href="artwork-prompt.txt">generation prompt</a> is included.</p>
+<p>Download the <a href="data/ring_toss.csv">four-row dataset</a>, <a href="code/reproduce.py">Python reproduction script</a>, <a href="results/summary.json">calculated results</a>, or <a href="README.md">replication instructions</a>. Run the script with Python 3 from this post’s folder; it generates the table and results using the standard library. The interactive demonstration implements the same weighted averages in JavaScript. AI-generated artwork is supplied as an asset; rerunning the analysis does not regenerate it.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> code/reproduce.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Further reading:</p>
+<ul>
+<li>Simpson, E. H. (1951). <a href="https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1951.tb00088.x">The Interpretation of Interaction in Contingency Tables</a>. <em>Journal of the Royal Statistical Society: Series B</em>, 13(2), 238–241.</li>
+<li>Pearl, J. (2014). <a href="https://ftp.cs.ucla.edu/pub/stat_ser/r414.pdf">Comment: Understanding Simpson’s Paradox</a>. <em>The American Statistician</em>, 68(1), 8–13. Linked version: UCLA author manuscript.</li>
+</ul>
+</details>
+</section>
+</div>
 
 
 
 </main> <!-- /main -->
+<script>
+(function () {
+  'use strict';
+  const lisa = document.getElementById('lisa-share');
+  const bart = document.getElementById('bart-share');
+  if (!lisa || !bart) return;
+  const equal = document.getElementById('equal-mix');
+  const original = document.getElementById('original-mix');
+  const fmt = n => Number(n.toFixed(1)).toString();
+  function update() {
+    const ln = Number(lisa.value), bn = Number(bart.value);
+    // The inputs are near-shot shares. Within-distance observed rates stay fixed.
+    const lr = (ln * 90 + (100 - ln) * 60) / 100;
+    const br = (bn * 80 + (100 - bn) * 50) / 100;
+    document.getElementById('lisa-mix').textContent = `${ln}% near · ${100-ln}% far`;
+    document.getElementById('bart-mix').textContent = `${bn}% near · ${100-bn}% far`;
+    lisa.setAttribute('aria-valuetext', `${ln} percent near, ${100-ln} percent far`);
+    bart.setAttribute('aria-valuetext', `${bn} percent near, ${100-bn} percent far`);
+    document.getElementById('lisa-score').textContent = fmt(lr) + '%';
+    document.getElementById('bart-score').textContent = fmt(br) + '%';
+    document.getElementById('lisa-bar').style.width = lr + '%';
+    document.getElementById('bart-bar').style.width = br + '%';
+    const gap = Math.abs(lr-br);
+    let message;
+    if (gap < 1e-8) message = 'An overall tie, although Lisa still leads at both distances.';
+    else if (br > lr) message = `Bart leads overall by ${fmt(gap)} percentage ${Math.abs(gap-1)<1e-8?'point':'points'}, although Lisa leads at both distances.`;
+    else if (ln === bn) message = 'Same mix: Lisa leads by 10 percentage points. The reversal disappears.';
+    else message = `Lisa leads overall by ${fmt(gap)} percentage ${Math.abs(gap-1)<1e-8?'point':'points'}. Different mixes do not always produce a reversal.`;
+    document.getElementById('mix-verdict').textContent = message;
+  }
+  lisa.addEventListener('input', update);
+  bart.addEventListener('input', update);
+  equal.addEventListener('click', () => { lisa.value = 50; bart.value = 50; update(); });
+  original.addEventListener('click', () => { lisa.value = 10; bart.value = 90; update(); });
+  [lisa, bart, equal, original].forEach(el => { el.disabled = false; });
+  update();
+}());
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

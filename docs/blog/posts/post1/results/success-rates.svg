@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="600" viewBox="0 0 980 600" role="img" aria-labelledby="title desc">
+<title id="title">Lisa leads at both distances. Bart leads overall.</title>
+<desc id="desc">Fictional ring-toss success rates: near attempts, Lisa 90 percent and Bart 80 percent; far attempts, Lisa 60 percent and Bart 50 percent; overall, Lisa 63 percent and Bart 77 percent. The aggregate reverses because the players attempted different mixes of distances.</desc>
+<rect width="980" height="600" rx="18" fill="#FCFAF5"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#263B3C">
+<text x="38" y="47" font-size="28" font-weight="700">Two leads. One surprising total.</text>
+<text x="38" y="78" font-size="17" fill="#536566">Success rates by distance and across each player’s actual attempts</text>
+<rect x="39" y="102" width="15" height="15" rx="3" fill="#147D80"/>
+<text x="62" y="115" font-size="16">Lisa</text>
+<rect x="147" y="102" width="15" height="15" rx="3" fill="#C66149"/>
+<text x="170" y="115" font-size="16">Bart</text>
+<text x="36" y="147" font-size="13" fill="#536566">Success</text>
+<line x1="90" x2="936" y1="448.0" y2="448.0" stroke="#DCDDD4" stroke-width="1"/>
+<text x="78" y="453.0" text-anchor="end" font-size="14" fill="#637172">0%</text>
+<line x1="90" x2="936" y1="389.6" y2="389.6" stroke="#DCDDD4" stroke-width="1"/>
+<text x="78" y="394.6" text-anchor="end" font-size="14" fill="#637172">20%</text>
+<line x1="90" x2="936" y1="331.2" y2="331.2" stroke="#DCDDD4" stroke-width="1"/>
+<text x="78" y="336.2" text-anchor="end" font-size="14" fill="#637172">40%</text>
+<line x1="90" x2="936" y1="272.8" y2="272.8" stroke="#DCDDD4" stroke-width="1"/>
+<text x="78" y="277.8" text-anchor="end" font-size="14" fill="#637172">60%</text>
+<line x1="90" x2="936" y1="214.4" y2="214.4" stroke="#DCDDD4" stroke-width="1"/>
+<text x="78" y="219.4" text-anchor="end" font-size="14" fill="#637172">80%</text>
+<line x1="90" x2="936" y1="156.0" y2="156.0" stroke="#DCDDD4" stroke-width="1"/>
+<text x="78" y="161.0" text-anchor="end" font-size="14" fill="#637172">100%</text>
+<rect x="152" y="185.20" width="69" height="262.80" rx="4" fill="#147D80"/>
+<text x="186.5" y="174.20" text-anchor="middle" font-size="21" font-weight="700" fill="#147D80">90%</text>
+<text x="186.5" y="469" text-anchor="middle" font-size="13" fill="#536566">9/10</text>
+<rect x="235" y="214.40" width="69" height="233.60" rx="4" fill="#C66149"/>
+<text x="269.5" y="203.40" text-anchor="middle" font-size="21" font-weight="700" fill="#C66149">80%</text>
+<text x="269.5" y="469" text-anchor="middle" font-size="13" fill="#536566">72/90</text>
+<text x="228" y="499" text-anchor="middle" font-size="18" font-weight="700">Near / easier</text>
+<rect x="435" y="272.80" width="69" height="175.20" rx="4" fill="#147D80"/>
+<text x="469.5" y="261.80" text-anchor="middle" font-size="21" font-weight="700" fill="#147D80">60%</text>
+<text x="469.5" y="469" text-anchor="middle" font-size="13" fill="#536566">54/90</text>
+<rect x="518" y="302.00" width="69" height="146.00" rx="4" fill="#C66149"/>
+<text x="552.5" y="291.00" text-anchor="middle" font-size="21" font-weight="700" fill="#C66149">50%</text>
+<text x="552.5" y="469" text-anchor="middle" font-size="13" fill="#536566">5/10</text>
+<text x="511" y="499" text-anchor="middle" font-size="18" font-weight="700">Far / harder</text>
+<rect x="718" y="264.04" width="69" height="183.96" rx="4" fill="#147D80"/>
+<text x="752.5" y="253.04" text-anchor="middle" font-size="21" font-weight="700" fill="#147D80">63%</text>
+<text x="752.5" y="469" text-anchor="middle" font-size="13" fill="#536566">63/100</text>
+<rect x="801" y="223.16" width="69" height="224.84" rx="4" fill="#C66149"/>
+<text x="835.5" y="212.16" text-anchor="middle" font-size="21" font-weight="700" fill="#C66149">77%</text>
+<text x="835.5" y="469" text-anchor="middle" font-size="13" fill="#536566">77/100</text>
+<text x="794" y="499" text-anchor="middle" font-size="18" font-weight="700">Overall</text>
+<text x="38" y="550" font-size="16">Lisa takes 90% of her attempts from far away; Bart takes 90% from nearby.</text>
+<text x="38" y="578" font-size="13" fill="#637172">Fictional illustration. Labels below bars show successes / attempts. All axes start at zero.</text>
+</g></svg>

@@ -1,0 +1,53 @@
+{
+  "data_origin": "Fictional teaching example; counts supplied in ring_toss.csv.",
+  "rate_unit": "percent",
+  "by_distance": [
+    {
+      "distance": "Near/easier",
+      "Lisa": {
+        "successes": 9,
+        "attempts": 10,
+        "success_rate_percent": 90.0
+      },
+      "Bart": {
+        "successes": 72,
+        "attempts": 90,
+        "success_rate_percent": 80.0
+      }
+    },
+    {
+      "distance": "Far/harder",
+      "Lisa": {
+        "successes": 54,
+        "attempts": 90,
+        "success_rate_percent": 60.0
+      },
+      "Bart": {
+        "successes": 5,
+        "attempts": 10,
+        "success_rate_percent": 50.0
+      }
+    }
+  ],
+  "overall": {
+    "Lisa": {
+      "successes": 63,
+      "attempts": 100,
+      "success_rate_percent": 63.0
+    },
+    "Bart": {
+      "successes": 77,
+      "attempts": 100,
+      "success_rate_percent": 77.0
+    }
+  },
+  "equal_mix_standardized_percent": {
+    "Lisa": 75.0,
+    "Bart": 65.0
+  },
+  "standardization_weights": {
+    "Near/easier": 0.5,
+    "Far/harder": 0.5
+  },
+  "interpretation": "Equal-mix rates hold each observed distance-specific rate fixed and use the same 50:50 distance weights for both players. These are descriptive calculations, not causal effects or future predictions."
+}

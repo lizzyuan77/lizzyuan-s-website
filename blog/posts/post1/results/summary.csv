@@ -1,0 +1,4 @@
+distance,Lisa_successes,Lisa_attempts,Lisa_success_rate_percent,Bart_successes,Bart_attempts,Bart_success_rate_percent
+Near/easier,9,10,90.0,72,90,80.0
+Far/harder,54,90,60.0,5,10,50.0
+Overall,63,100,63.0,77,100,77.0

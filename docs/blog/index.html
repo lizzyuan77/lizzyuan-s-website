@@ -82,9 +82,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -208,24 +208,30 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="cGVyc29uYWwlMkNkYXRhLXNjaWVuY2U=" data-listing-date-sort="1781582400000" data-listing-file-modified-sort="1788202670042" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="10">
+<div class="quarto-post image-right" data-index="0" data-categories="c3RhdGlzdGljcyUyQ2ludHVpdGlvbiUyQ2RhdGEtc2NpZW5jZQ==" data-listing-date-sort="1789358400000" data-listing-file-modified-sort="1789416948326" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1057">
 <div class="thumbnail"><a href="../blog/posts/post1/Untitled.html" class="no-external">
 
-<p class="card-img-top"><img loading='lazy' src="posts\post1\figure1.png"  class="thumbnail-image card-img"/></p>
+<img loading="lazy" src="../blog/posts/post1/assets/simpsons-paradox-comic.png" class="thumbnail-image" alt="Original cartoon characters explain how different mixes of easy and hard shots reverse an overall ranking.">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/posts/post1/Untitled.html" class="no-external">My First Blog Post</a>
+<a href="../blog/posts/post1/Untitled.html" class="no-external">How Lisa Wins at Every Distance and Still Loses</a>
 </h3>
+<div class="listing-subtitle">
+<a href="../blog/posts/post1/Untitled.html" class="no-external">Simpson’s paradox, explained at the Springfield carnival</a>
+</div>
 <div class="delink listing-description"><a href="../blog/posts/post1/Untitled.html" class="no-external">
-This is my first blog post. Example <span class="math inline">\(\LaTeX\)</span> equation: <span class="math inline">\(\frac{1}{2}\sum_{i=1}^nx_i\)</span>
+<p>Lisa beats Bart at both distances. Bart wins overall. A carnival game reveals what averages hide.</p>
 </a></div>
 </div>
 <div class="metadata">
 <a href="../blog/posts/post1/Untitled.html" class="no-external">
 <div class="listing-date">
-Jun 16, 2026
+Sep 14, 2026
+</div>
+<div class="listing-author">
+Jiaqi Yuan
 </div>
 </a>
 </div>
@@ -240,6 +246,9 @@ Jun 16, 2026
 <h3 class="no-anchor listing-title">
 <a href="../blog/posts/post2/index.html" class="no-external">My Second Blog Post</a>
 </h3>
+<div class="listing-subtitle">
+<a href="../blog/posts/post2/index.html" class="no-external"></a>
+</div>
 <div class="delink listing-description"><a href="../blog/posts/post2/index.html" class="no-external">
 
 

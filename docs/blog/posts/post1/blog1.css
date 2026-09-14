@@ -1,0 +1,52 @@
+.blog1 { color: #20332e; }
+.blog1 .opening-question { margin: .5rem 0 1.8rem; font-size: 1.35rem; line-height: 1.5; color: #24483f; border-left: 5px solid #c59a38; padding: .7rem 1.2rem; background: #faf7ee; }
+.blog1 p { line-height: 1.75; }
+.blog1 h2 { margin-top: 2.3rem; color: #24483f; font-size: 1.65rem; font-weight: 700; }
+.blog1 figure { margin: 1.8rem 0; }
+.blog1 figure img { border-radius: 8px; width: 100%; }
+.blog1 figcaption { color: #58635e; font-size: .83rem; line-height: 1.55; text-align: left; }
+.blog1 table { width: 100%; font-variant-numeric: tabular-nums; margin: 1.4rem 0; }
+.blog1 thead { background: #edf4ef; }
+.blog1 th, .blog1 td { padding: .8rem .6rem; }
+.blog1 tbody tr:last-child { font-weight: 700; border-top: 2px solid #537866; background: #faf7ee; }
+.blog1 .mix-lab { background: #f6f8f4; border: 1px solid #d4ded3; border-radius: 14px; margin: 1.8rem 0; padding: 1.6rem; box-shadow: 0 6px 18px #20332e08; }
+.blog1 .lab-kicker { font-size: .7rem; font-weight: 800; letter-spacing: .15em; color: #476457; }
+.blog1 .mix-lab h3 { font-size: 1.45rem; margin: .45rem 0; color: #24483f; }
+.blog1 .lab-help { font-size: .92rem; color: #4a5c52; margin-bottom: 1.5rem; }
+.blog1 .mix-controls { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.6rem; }
+.blog1 .player-control label { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem .6rem; font-weight: 700; font-size: 1.05rem; }
+.blog1 .player-control label span { font-size: .8rem; font-weight: 500; align-self: center; }
+.blog1 .player-control input { width: 100%; height: 30px; cursor: pointer; margin: .65rem 0 .2rem; }
+.blog1 .lisa input { accent-color: #a34c37; }
+.blog1 .bart input { accent-color: #376b92; }
+.blog1 .player-control p { font-size: .73rem; color: #58655e; margin: 0; }
+.blog1 .lab-buttons { display: flex; gap: .6rem; flex-wrap: wrap; margin: 1.4rem 0 1.8rem; }
+.blog1 button { border: 1px solid #24483f; border-radius: 6px; padding: .6rem .85rem; background: #24483f; color: white; font: inherit; font-size: .85rem; font-weight: 600; cursor: pointer; }
+.blog1 button.secondary { background: transparent; color: #24483f; }
+.blog1 button:hover { filter: brightness(.91); }
+.blog1 button:focus-visible, .blog1 input:focus-visible, .blog1 summary:focus-visible { outline: 3px solid #b88620; outline-offset: 4px; }
+.blog1 button:disabled, .blog1 input:disabled { cursor: default; opacity: .6; }
+.blog1 .score-row { display: grid; grid-template-columns: 42px minmax(0,1fr) 55px; align-items: center; gap: .65rem; margin: .8rem 0; font-size: .92rem; }
+.blog1 .score-row > span { font-weight: 700; }
+.blog1 .score-track { background: #e2e8df; height: 26px; border-radius: 4px; overflow: hidden; }
+.blog1 .score-bar { height: 100%; transition: width .15s ease; }
+.blog1 .lisa-bar { background: #a34c37; }
+.blog1 .bart-bar { background: #376b92; }
+.blog1 output { font-weight: 800; font-variant-numeric: tabular-nums; text-align: right; }
+.blog1 .score-axis { display: flex; justify-content: space-between; margin: -.25rem calc(55px + .65rem) 1.4rem calc(42px + .65rem); font-size: .62rem; color: #59675e; }
+.blog1 .mix-verdict { padding-top: 1rem; border-top: 1px solid #d4ded3; font-weight: 700; font-size: .95rem; margin-bottom: .5rem; }
+.blog1 .lab-note { font-size: .72rem; color: #5c675f; margin-bottom: 0; }
+.blog1 .takeaway { background: #24483f; color: #fffdf6; padding: 1.4rem 1.6rem; border-radius: 8px; margin: 2rem 0; font-size: 1.08rem; }
+.blog1 .takeaway p { margin: 0; }
+.blog1 .reproduce-details { border-top: 1px solid #d5ded7; margin-top: 2rem; padding: 1rem 0; font-size: .86rem; color: #4d5e55; }
+.blog1 summary { cursor: pointer; color: #24483f; font-weight: 700; font-size: .95rem; margin-bottom: 1rem; }
+@media (max-width: 600px) {
+  .blog1 .opening-question { font-size: 1.13rem; }
+  .blog1 .mix-lab { padding: 1.1rem; }
+  .blog1 .mix-controls { grid-template-columns: 1fr; gap: 1.2rem; }
+  .blog1 .mix-lab h3 { font-size: 1.23rem; }
+  .blog1 table { font-size: .8rem; }
+  .blog1 th, .blog1 td { padding: .65rem .3rem; }
+  .blog1 .score-axis { font-size: .56rem; }
+}
+@media (prefers-reduced-motion: reduce) { .blog1 .score-bar { transition: none; } }

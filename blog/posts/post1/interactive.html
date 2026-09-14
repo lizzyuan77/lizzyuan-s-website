@@ -1,0 +1,38 @@
+<script>
+(function () {
+  'use strict';
+  const lisa = document.getElementById('lisa-share');
+  const bart = document.getElementById('bart-share');
+  if (!lisa || !bart) return;
+  const equal = document.getElementById('equal-mix');
+  const original = document.getElementById('original-mix');
+  const fmt = n => Number(n.toFixed(1)).toString();
+  function update() {
+    const ln = Number(lisa.value), bn = Number(bart.value);
+    // The inputs are near-shot shares. Within-distance observed rates stay fixed.
+    const lr = (ln * 90 + (100 - ln) * 60) / 100;
+    const br = (bn * 80 + (100 - bn) * 50) / 100;
+    document.getElementById('lisa-mix').textContent = `${ln}% near · ${100-ln}% far`;
+    document.getElementById('bart-mix').textContent = `${bn}% near · ${100-bn}% far`;
+    lisa.setAttribute('aria-valuetext', `${ln} percent near, ${100-ln} percent far`);
+    bart.setAttribute('aria-valuetext', `${bn} percent near, ${100-bn} percent far`);
+    document.getElementById('lisa-score').textContent = fmt(lr) + '%';
+    document.getElementById('bart-score').textContent = fmt(br) + '%';
+    document.getElementById('lisa-bar').style.width = lr + '%';
+    document.getElementById('bart-bar').style.width = br + '%';
+    const gap = Math.abs(lr-br);
+    let message;
+    if (gap < 1e-8) message = 'An overall tie, although Lisa still leads at both distances.';
+    else if (br > lr) message = `Bart leads overall by ${fmt(gap)} percentage ${Math.abs(gap-1)<1e-8?'point':'points'}, although Lisa leads at both distances.`;
+    else if (ln === bn) message = 'Same mix: Lisa leads by 10 percentage points. The reversal disappears.';
+    else message = `Lisa leads overall by ${fmt(gap)} percentage ${Math.abs(gap-1)<1e-8?'point':'points'}. Different mixes do not always produce a reversal.`;
+    document.getElementById('mix-verdict').textContent = message;
+  }
+  lisa.addEventListener('input', update);
+  bart.addEventListener('input', update);
+  equal.addEventListener('click', () => { lisa.value = 50; bart.value = 50; update(); });
+  original.addEventListener('click', () => { lisa.value = 10; bart.value = 90; update(); });
+  [lisa, bart, equal, original].forEach(el => { el.disabled = false; });
+  update();
+}());
+</script>
