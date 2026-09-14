@@ -53,7 +53,7 @@
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "How Lisa Wins at Every Distance and Still Loses\n\n\nSimpson’s paradox, explained at the Springfield carnival\n\n\nLisa beats Bart at both distances. Bart wins overall. A carnival game reveals what averages hide.\n\n\n\n\n\nSep 14, 2026\n\n\nJiaqi Yuan\n\n\n\n\n\n\n\n\n\n\n\n\nMy Second Blog Post\n\n\n\n\n\n\n\n\n\n\n\nJun 16, 2026\n\n\n\n\n\nNo matching items"
+    "text": "JIAQI YUAN · NOTES & METHODS\n\n\n\nA growing collection of clear, curious essays about statistics, economics, and the small details that make data worth looking at twice.\n\n\nBLOG 1 STATISTICS ECONOMICS DATA STORIES\n\n\nBLOG 1 · START HERE How Lisa Wins at Every Distance and Still Loses A friendly introduction to Simpson’s paradox."
   },
   {
     "objectID": "about.html",
@@ -159,5 +159,12 @@
     "title": "How Lisa Wins at Every Distance and Still Loses",
     "section": "",
     "text": "For who landed a larger share of their actual throws, the overall scoreboard answers correctly: Bart. For who had the higher observed accuracy at the same distance, the grouped table answers: Lisa. Different questions justify different summaries.\nThis matters beyond a carnival. Imagine evaluating job-training programs by employment rates. A program serving mostly job seekers who face greater barriers could have a lower overall placement rate even while its participants do better within each comparable group. Ranking programs from the headline percentage alone could punish the one serving the harder cases. This is a possible pattern, not evidence about any particular program.\nBut splitting data into groups is no automatic cure. To ask whether a program causes better outcomes, we need to understand how people enter it and which variables should be adjusted for. Grouping on a consequence of participation can even remove part of the effect we want to measure. As Pearl (2014) explains, causal interpretation requires knowledge of the process behind the data, beyond the table. Lisa’s table demonstrates an arithmetic reversal, not proof of innate skill or a causal effect.\n\nBefore trusting an average, ask what went into it. Check the group rates, check the group sizes, and decide which comparison answers your question. Homer counted the successes correctly. He just needed to look at the recipe.\n\n\n\nData, sources, and reproduce it\n\nAll four counts are constructed for this explanation; they are not observations from a television episode or an empirical study. The comic was made with OpenAI’s built-in image generation tool and checked against the table. Its generation prompt is included.\nDownload the four-row dataset, Python reproduction script, calculated results, or replication instructions. Run the script with Python 3 from this post’s folder; it generates the table and results using the standard library. The interactive demonstration implements the same weighted averages in JavaScript. AI-generated artwork is supplied as an asset; rerunning the analysis does not regenerate it.\npython code/reproduce.py\nFurther reading:\n\nSimpson, E. H. (1951). The Interpretation of Interaction in Contingency Tables. Journal of the Royal Statistical Society: Series B, 13(2), 238–241.\nPearl, J. (2014). Comment: Understanding Simpson’s Paradox. The American Statistician, 68(1), 8–13. Linked version: UCLA author manuscript."
+  },
+  {
+    "objectID": "blog/index.html#latest-notes",
+    "href": "blog/index.html#latest-notes",
+    "title": "Blog",
+    "section": "Latest notes",
+    "text": "Latest notes"
   }
 ]
