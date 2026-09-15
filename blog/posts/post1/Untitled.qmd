@@ -5,8 +5,8 @@ description: "Lisa beats Bart at both distances. Bart wins overall. A carnival g
 author: "Jiaqi Yuan"
 date: 2026-09-14
 categories: [statistics, intuition, data-science]
-image: assets/simpsons-paradox-comic.png
-image-alt: "Original cartoon characters explain how different mixes of easy and hard shots reverse an overall ranking."
+image: assets/simpsons-paradox-comic-v2.png
+image-alt: "Lisa, Bart, and Homer Simpson explain how different mixes of easy and hard shots reverse an overall ranking."
 lang: en
 format:
   html:
@@ -35,7 +35,7 @@ At the Springfield carnival, Homer declares Bart the ring-toss champion: he land
 
 That intuition feels compelling because we silently imagine the same mix of categories. Here, the mixes differ. This is **Simpson's paradox**: an association points one way within every group but reverses when the groups are combined. The name refers to statistician Edward H. Simpson, whose [1951 paper](https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1951.tb00088.x) examined the interpretation of grouped data. The cartoon family is our teaching cast.
 
-![Different mixes, different winners. This AI-generated teaching comic uses original characters to illustrate the fictional Lisa-and-Bart example; it does not depict the television cast.](assets/simpsons-paradox-comic.png){#fig-comic fig-alt="Four-panel comic with original characters: Bart wins overall, 77% to Lisa's 63%. Lisa leads at near shots, 90% to 80%, and far shots, 60% to 50%. She explains that she took mostly hard shots."}
+![Different mixes, different winners. This AI-generated teaching comic depicts Lisa, Bart, and Homer Simpson in a fictional classroom example; it is not a scene from the television series.](assets/simpsons-paradox-comic-v2.png){#fig-comic fig-alt="Four-panel comic with Lisa, Bart, and Homer Simpson: Bart wins overall, 77% to Lisa's 63%. Lisa leads at near shots, 90% to 80%, and far shots, 60% to 50%. She explains that she took mostly hard shots."}
 
 ## The scoreboard is correct
 
