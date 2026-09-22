@@ -53,7 +53,7 @@
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "JIAQI YUAN · NOTES & METHODS\n\n\n\nA growing collection of clear, curious essays about statistics, economics, and the small details that make data worth looking at twice.\n\n\nBLOG 1 STATISTICS ECONOMICS DATA STORIES\n\n\nBLOG 1 · START HERE How Lisa Wins at Every Distance and Still Loses A friendly introduction to Simpson’s paradox."
+    "text": "JIAQI YUAN · NOTES & METHODS\n\n\n\nA growing collection of clear, curious essays about statistics, economics, and the small details that make data worth looking at twice.\n\n\nBLOG 1 BLOG 2 STATISTICS ECONOMICS DATA STORIES\n\n\nBLOG 2 · LATEST What Is Your Student ID Worth? 18 museums, 8 cities, and the real value of a student ticket.\n\n\nBLOG 1 · START HERE How Lisa Wins at Every Distance and Still Loses A friendly introduction to Simpson’s paradox."
   },
   {
     "objectID": "about.html",
@@ -166,5 +166,61 @@
     "title": "Blog",
     "section": "Latest notes",
     "text": "Latest notes"
+  },
+  {
+    "objectID": "blog/posts/post2/index.html",
+    "href": "blog/posts/post2/index.html",
+    "title": "What Is Your Student ID Worth?",
+    "section": "",
+    "text": "BLOG 2 · DATA IN EVERYDAY LIFE\nA student ID can cut a museum bill. But sometimes the best ticket is free for everyone.\n18 museums · 8 cities · 4 Census regions · September 21, 2026 snapshot"
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#one-card-two-questions",
+    "href": "blog/posts/post2/index.html#one-card-two-questions",
+    "title": "What Is Your Student ID Worth?",
+    "section": "One card, two questions",
+    "text": "One card, two questions\nPlanning a museum weekend raises a familiar student-budget question: how far can an ID card stretch? Starting in Philadelphia, I expanded the search to New York, Boston, Chicago, Washington, San Francisco, Los Angeles, and Houston. I wanted to distinguish where student status saves the most from where admission costs the least. Those questions sound interchangeable. They are not."
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#building-a-comparable-ticket",
+    "href": "blog/posts/post2/index.html#building-a-comparable-ticket",
+    "title": "What Is Your Student ID Worth?",
+    "section": "Building a comparable ticket",
+    "text": "Building a comparable ticket\nI screened 30 institutions and retained 18 with extractable, comparable prices across 8 cities. This is a convenience sample, mostly art museums, not a representative survey. One institution contributes one observation; multiple buildings and repeated daily price tables do not become extra museums.\nThe baseline compares a 30-year-old, nonresident, full-time college student with valid ID against an otherwise equivalent nonstudent. Age 30 separates student status from youth eligibility; a second view uses age 22. Penn-specific partnerships, resident discounts, memberships, transportation, parking, booking fees, and separately ticketed exhibitions are excluded. Results describe posted general-admission prices, not a complete travel budget.\nStudent-ID saving = comparable adult price − student price.\nUsing R’s rvest, I parsed cached official HTML with read_html(), html_elements(), and html_text2(). Site-specific category patterns distinguish student tickets from parking charges and nonresident rates from local offers. Missing categories stop the analysis; missing prices never become zero. Short evidence extracts, source URLs, collection logs, and scripts accompany the cleaned data.\nRequests were spaced and cached. Access refusals, rate limits, robot exclusions, and challenge pages were not bypassed. Barnes and The Broad were dropped after reviewing restrictive terms. This matters statistically: websites that are easier to read can become overrepresented."
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#where-the-card-saves-more",
+    "href": "blog/posts/post2/index.html#where-the-card-saves-more",
+    "title": "What Is Your Student ID Worth?",
+    "section": "Where the card saves more",
+    "text": "Where the card saves more\n\n\n\nPhiladelphia has the largest average posted student discount in this selected sample; each city label shows its sample size.\n\n\nPhiladelphia leads this sample at $12.75 per museum, compared with $9.50 in New York. Visiting all four sampled Philadelphia institutions once would cost $42.00 using student rates, versus $93.00 at adult rates. This is a basket calculation, not a one-day itinerary.\nRegionally, I average city means so cities with more observations do not automatically receive more weight. The Northeast has the highest observed mean, $9.08. However, the Midwest contains only Chicago; Houston and San Francisco each have one museum. These numbers cannot establish which entire U.S. region offers students the best value.\n\n\n\nDescriptive regional comparison; equal weight per sampled city.\n\n\nRegion\nCities\nMuseums\nMean saving per city\n\n\n\n\nMidwest\n1\n3\n$4.67\n\n\nNortheast\n3\n9\n$9.08\n\n\nSouth\n2\n3\n$2.50\n\n\nWest\n2\n3\n$3.50"
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#a-larger-discount-can-still-mean-a-larger-bill",
+    "href": "blog/posts/post2/index.html#a-larger-discount-can-still-mean-a-larger-bill",
+    "title": "What Is Your Student ID Worth?",
+    "section": "A larger discount can still mean a larger bill",
+    "text": "A larger discount can still mean a larger bill\n\n\n\nAdult and student admission prices at all eighteen museums. Six museums charge neither group for general admission.\n\n\nThe Getty Center and Hammer charge neither group for general admission. Their student-ID saving is zero, yet they are inexpensive choices. The Getty requires a timed reservation; Hammer does not require one for individual visits. Free admission does not remove parking costs or guarantee unrestricted access.\nEligibility changes the story too. At the Whitney, visitors 25 and under enter free regardless of enrollment. Switching both comparison groups to age 22 reduces New York’s mean student-ID saving from $9.50 to $6.50. Crediting the entire adult ticket to student status would exaggerate the card’s value.\nThe MCA Chicago has posted online prices and in-person pay-what-you-can admission. Its listed discount is not a guaranteed reduction in what someone must pay. Excluding MCA gives Chicago a mean saving of $3.00. Restricting the comparison to museums with positive adult prices also changes Boston’s mean from $5.00 to $7.50. The denominator matters."
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#plan-around-eligibility-then-the-calendar",
+    "href": "blog/posts/post2/index.html#plan-around-eligibility-then-the-calendar",
+    "title": "What Is Your Student ID Worth?",
+    "section": "Plan around eligibility, then the calendar",
+    "text": "Plan around eligibility, then the calendar\nMy practical rule: choose the museums first, check age and student eligibility second, then compare free hours. Woodmere offers free Sundays, while ICA Boston’s free Thursday evenings require advance tickets. These are calendar savings available beyond students. Keep pay-what-you-wish separate from guaranteed free admission, and confirm hours at the official links before traveling."
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#explore-the-admission-snapshot",
+    "href": "blog/posts/post2/index.html#explore-the-admission-snapshot",
+    "title": "What Is Your Student ID Worth?",
+    "section": "Explore the admission snapshot",
+    "text": "Explore the admission snapshot\nChoose a city and an age scenario. Prices exclude fees; conditions remain visible. “Saving” refers only to student status. These are September 2026 observations, not live ticket quotes.\nCityAll eight citiesBostonChicagoHoustonLos AngelesNew YorkPhiladelphiaSan FranciscoWashington DCSame age in both groupsAge 30 · baselineAge 22 · youth eligibility\n\n\n\nMuseum / official source\nAdult\nStudent\nSaving\nConditions & planning notes\n\n\n\n\nPhiladelphia Museum of ArtPhiladelphia · fixed\n$30.00\n$14.00\n$16.00\nBring valid student ID; main-building admission.Mon/Thu/Sat/Sun 10–5; Fri 10–8:45; Tue/Wed closed\n\n\nPAFAPhiladelphia · fixed\n$25.00\n$10.00\n$15.00\nDaytime rates. Friday 5–8 pm adult admission is discounted; student price unchanged.Thu–Mon 10–5; Fri until 8\n\n\nWoodmerePhiladelphia · fixed\n$15.00\n$0.00\n$15.00\nStudent discount at front desk with ID. All visitors free Sundays, excluding events.See official visit page for both halls\n\n\nIndependence Seaport MuseumPhiladelphia · fixed\n$23.00\n$18.00\n$5.00\nGeneral Admission Package; submarine package excluded.See official hours before travel\n\n\nWhitney Museum of American ArtNew York · fixed\n$30.00\n$24.00\n$6.00\nAge 25 and under free for everyone. Advance tickets available; reserve free entry too.Free Fridays 5–10 pm; second Sundays\n\n\nIsabella Stewart Gardner MuseumBoston · fixed\n$25.00\n$15.00\n$10.00\nCurrent college ID; reserve ahead. School-partner promo codes excluded.Check timed-entry availability\n\n\nHarvard Art MuseumsBoston · free\n$0.00\n$0.00\n$0.00\nFree for all; check in at Visitor Services.Check current hours; Cambridge/Boston metro\n\n\nMuseum of Contemporary Art ChicagoChicago · suggested\n$22.00\n$14.00\n$8.00\nNonresident posted online prices; in-person admission is pay-what-you-can. Not a required minimum.Tue 10–9; Wed–Sun 10–5; Mon closed\n\n\nArt Institute of ChicagoChicago · fixed\n$32.00\n$26.00\n$6.00\nFirst General Admission category, nonresident. Advance tickets encouraged; ticketed special exhibitions extra.Consult current hours before travel\n\n\nSmart Museum of ArtChicago · free\n$0.00\n$0.00\n$0.00\nFree to all visitors.Check exhibition schedule before travel\n\n\nThe Phillips CollectionWashington DC · fixed\n$20.00\n$10.00\n$10.00\nID required. Third Thursdays 5–8 pm free for all; check ticket availability.Tue–Sun 10–5; Sun public entry from 11\n\n\nSmithsonian American Art MuseumWashington DC · free\n$0.00\n$0.00\n$0.00\nNo admission tickets required. Renwick closure noted on site; only SAAM main building represented.Daily 11:30–7\n\n\nSFMOMASan Francisco · fixed\n$30.00\n$23.00\n$7.00\nFull-time student with ID. Ages 18 and younger free.Mon/Tue/Fri–Sun 10–5; Thu noon–8; Wed closed\n\n\nGetty CenterLos Angeles · free\n$0.00\n$0.00\n$0.00\nFree admission requires timed-entry reservation. Parking costs excluded.Check reserved arrival time\n\n\nHammer MuseumLos Angeles · free\n$0.00\n$0.00\n$0.00\nNo advance reservation needed for individuals; groups of 10+ register.See official gallery hours\n\n\nContemporary Arts Museum HoustonHouston · free\n$0.00\n$0.00\n$0.00\nFree to all; only one Houston museum in the final sample.Check exhibition hours before travel\n\n\nThe Frick CollectionNew York · fixed\n$30.00\n$17.00\n$13.00\nTimed tickets recommended; student ID. Wednesday online minimum $5; different amounts onsite subject to availability.Wed pay-what-you-wish 1:30–5:30 pm\n\n\nInstitute of Contemporary Art BostonBoston · fixed\n$20.00\n$15.00\n$5.00\nFree Thursday advance tickets required; age 18 and under free.Thursday free entry 5–9 pm\n\n\n\nFixed = posted regular price. Suggested = MCA online price, with pay-what-you-can onsite. Free = both comparison groups enter free."
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#reproduce-the-analysis",
+    "href": "blog/posts/post2/index.html#reproduce-the-analysis",
+    "title": "What Is Your Student ID Worth?",
+    "section": "Reproduce the analysis",
+    "text": "Reproduce the analysis\nDownload the data Download the research bundle View the source on GitHub\nThe bundle includes an offline R replay, extraction rules, short factual evidence, acquisition code, exclusions, and package versions. Full museum pages and artwork are not republished. Hours and reservation notes are manually reviewed annotations, not outputs of the price parser. The linked README explains the limitations and refresh procedure.\n\n\n\n\n\n\nNoteA small, auditable rvest example\n\n\n\n\n\n\n\nShow the R code\nrvest::read_html('data/evidence/pma.html') |&gt;\n  rvest::html_elements('p') |&gt;\n  rvest::html_text2()\n\n\n[1] \"Adults$30\"                 \"Students with valid ID$14\"\n\n\nThis reads the short factual extracts retained from the original page. analyze.R can also parse the original private HTML cache with --raw, using the same category patterns. The public extracts are not presented as full archival copies of the websites.\n\n\n\nAI assistance was used for coding, drafting, and checking extraction rules. Prices are grounded in the linked official pages; the limitations above remain part of the result."
   }
 ]

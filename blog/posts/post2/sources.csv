@@ -1,0 +1,32 @@
+id,city,region,museum,url
+pma,Philadelphia,Northeast,Philadelphia Museum of Art,https://www.philamuseum.org/main-building
+pafa,Philadelphia,Northeast,PAFA,https://www.pafa.org/museum/visit
+woodmere,Philadelphia,Northeast,Woodmere,https://woodmeremuseum.org/visit
+seaport,Philadelphia,Northeast,Independence Seaport Museum,https://www.phillyseaport.org/admissons-hours-of-operation/
+met,New York,Northeast,The Metropolitan Museum of Art,https://www.metmuseum.org/plan-your-visit
+moma,New York,Northeast,MoMA,https://www.moma.org/visit/
+whitney,New York,Northeast,Whitney Museum of American Art,https://whitney.org/visit
+guggenheim,New York,Northeast,Solomon R. Guggenheim Museum,https://www.guggenheim.org/plan-your-visit
+mfa,Boston,Northeast,Museum of Fine Arts Boston,https://www.mfa.org/visit
+gardner,Boston,Northeast,Isabella Stewart Gardner Museum,https://www.gardnermuseum.org/visit/admissions
+harvard,Boston,Northeast,Harvard Art Museums,https://harvardartmuseums.org/visit
+mca,Chicago,Midwest,Museum of Contemporary Art Chicago,https://mcachicago.org/visit/
+artic,Chicago,Midwest,Art Institute of Chicago,https://www.artic.edu/visit
+smart,Chicago,Midwest,Smart Museum of Art,https://smartmuseum.uchicago.edu/visit/
+nga,Washington DC,South,National Gallery of Art,https://www.nga.gov/visit.html
+phillips,Washington DC,South,The Phillips Collection,https://www.phillipscollection.org/visit
+saam,Washington DC,South,Smithsonian American Art Museum,https://americanart.si.edu/visit
+sfmoma,San Francisco,West,SFMOMA,https://www.sfmoma.org/visit/
+deyoung,San Francisco,West,de Young,https://www.famsf.org/visit/de-young
+asian,San Francisco,West,Asian Art Museum,https://asianart.org/visit/
+getty,Los Angeles,West,Getty Center,https://www.getty.edu/visit/center/
+hammer,Los Angeles,West,Hammer Museum,https://hammer.ucla.edu/visit
+lacma,Los Angeles,West,LACMA,https://www.lacma.org/visit
+mfah,Houston,South,Museum of Fine Arts Houston,https://www.mfah.org/visit
+menil,Houston,South,The Menil Collection,https://www.menil.org/visit
+camh,Houston,South,Contemporary Arts Museum Houston,https://camh.org/visit/
+morgan,New York,Northeast,The Morgan Library and Museum,https://www.themorgan.org/visit
+frick,New York,Northeast,The Frick Collection,https://www.frick.org/visit
+broad,Los Angeles,West,The Broad,https://www.thebroad.org/visit
+icaboston,Boston,Northeast,Institute of Contemporary Art Boston,https://www.icaboston.org/visit/
+saamdetail,Washington DC,South,Smithsonian American Art Museum,https://americanart.si.edu/visit/saam

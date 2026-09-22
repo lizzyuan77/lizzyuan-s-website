@@ -19,11 +19,17 @@ listing:
 <p class="blog-landing-lead">A growing collection of clear, curious essays about statistics, economics, and the small details that make data worth looking at twice.</p>
 <div class="blog-topic-row" aria-label="Blog topics">
   <span>BLOG 1</span>
+  <span>BLOG 2</span>
   <span>STATISTICS</span>
   <span>ECONOMICS</span>
   <span>DATA STORIES</span>
 </div>
 <div class="blog-start">
+  <span class="blog-start-label">BLOG 2 · LATEST</span>
+  <a href="posts/post2/index.html">What Is Your Student ID Worth?</a>
+  <span class="blog-start-note">18 museums, 8 cities, and the real value of a student ticket.</span>
+</div>
+<div class="blog-start" style="margin-top: 0.8rem">
   <span class="blog-start-label">BLOG 1 · START HERE</span>
   <a href="posts/post1/Untitled.html">How Lisa Wins at Every Distance and Still Loses</a>
   <span class="blog-start-note">A friendly introduction to Simpson's paradox.</span>

@@ -1,0 +1,33 @@
+id,museum,url,decision,reason
+pma,Philadelphia Museum of Art,https://www.philamuseum.org/main-building,included,Comparable price categories found
+pafa,PAFA,https://www.pafa.org/museum/visit,included,Comparable price categories found
+woodmere,Woodmere,https://woodmeremuseum.org/visit,included,Comparable price categories found
+seaport,Independence Seaport Museum,https://www.phillyseaport.org/admissons-hours-of-operation/,included,Comparable price categories found
+met,The Metropolitan Museum of Art,https://www.metmuseum.org/plan-your-visit,excluded_or_superseded,HTTP 429; no retries
+moma,MoMA,https://www.moma.org/visit/,excluded_or_superseded,HTTP 403
+whitney,Whitney Museum of American Art,https://whitney.org/visit,included,Comparable price categories found
+guggenheim,Solomon R. Guggenheim Museum,https://www.guggenheim.org/plan-your-visit,excluded_or_superseded,Challenge response; not actual admissions content
+mfa,Museum of Fine Arts Boston,https://www.mfa.org/visit,excluded_or_superseded,General college student price not established on scraped page
+gardner,Isabella Stewart Gardner Museum,https://www.gardnermuseum.org/visit/admissions,included,Comparable price categories found
+harvard,Harvard Art Museums,https://harvardartmuseums.org/visit,included,Comparable price categories found
+mca,Museum of Contemporary Art Chicago,https://mcachicago.org/visit/,included,Comparable price categories found
+artic,Art Institute of Chicago,https://www.artic.edu/visit,included,Comparable price categories found
+smart,Smart Museum of Art,https://smartmuseum.uchicago.edu/visit/,included,Comparable price categories found
+nga,National Gallery of Art,https://www.nga.gov/visit.html,excluded_or_superseded,HTTP 403
+phillips,The Phillips Collection,https://www.phillipscollection.org/visit,included,Comparable price categories found
+saam,Smithsonian American Art Museum,https://americanart.si.edu/visit,excluded_or_superseded,Parent page superseded by museum-specific page; same institution
+sfmoma,SFMOMA,https://www.sfmoma.org/visit/,included,Comparable price categories found
+deyoung,de Young,https://www.famsf.org/visit/de-young,excluded_or_superseded,Robots exclusion
+asian,Asian Art Museum,https://asianart.org/visit/,excluded_or_superseded,Visit URL returned 404
+getty,Getty Center,https://www.getty.edu/visit/center/,included,Comparable price categories found
+hammer,Hammer Museum,https://hammer.ucla.edu/visit,included,Comparable price categories found
+lacma,LACMA,https://www.lacma.org/visit,excluded_or_superseded,Admission amounts absent from scraped landing page
+mfah,Museum of Fine Arts Houston,https://www.mfah.org/visit,excluded_or_superseded,Robots request forbidden
+menil,The Menil Collection,https://www.menil.org/visit,excluded_or_superseded,Robots exclusion
+camh,Contemporary Arts Museum Houston,https://camh.org/visit/,included,Comparable price categories found
+morgan,The Morgan Library and Museum,https://www.themorgan.org/visit,excluded_or_superseded,Robots request forbidden
+frick,The Frick Collection,https://www.frick.org/visit,included,Comparable price categories found
+broad,The Broad,https://www.thebroad.org/visit,excluded_or_superseded,Excluded after terms review: automated access/personal-site reuse restrictions
+icaboston,Institute of Contemporary Art Boston,https://www.icaboston.org/visit/,included,Comparable price categories found
+saamdetail,Smithsonian American Art Museum,https://americanart.si.edu/visit/saam,included,Comparable price categories found
+barnes,Barnes Foundation,https://www.barnesfoundation.org/terms,pilot_exclusion,Not in 30-institution candidate screen; excluded after terms review prohibiting systematic database extraction
