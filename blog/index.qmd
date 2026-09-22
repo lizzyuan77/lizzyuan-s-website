@@ -24,10 +24,10 @@ listing:
   <span>ECONOMICS</span>
   <span>DATA STORIES</span>
 </div>
-<div class="blog-start">
+<div class="blog-start blog-featured">
   <span class="blog-start-label">BLOG 2 · LATEST</span>
   <a href="posts/post2/index.html">What Is Your Student ID Worth?</a>
-  <span class="blog-start-note">18 museums, 8 cities, and the real value of a student ticket.</span>
+  <span class="blog-start-note">Where does a student ID save the most—and where can you visit for less? Using R to collect official admission prices, this post compares 18 museums across eight U.S. cities. Philadelphia offers the largest average student discount in this sample, but museums that are free for everyone tell a different story about affordability. Explore the charts and filter the ticket table by city and age to plan your next visit.</span>
 </div>
 <div class="blog-start" style="margin-top: 0.8rem">
   <span class="blog-start-label">BLOG 1 · START HERE</span>
