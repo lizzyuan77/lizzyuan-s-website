@@ -53,7 +53,7 @@
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "JIAQI YUAN · NOTES & METHODS\n\n\n\nA growing collection of clear, curious essays about statistics, economics, and the small details that make data worth looking at twice.\n\n\nBLOG 1 BLOG 2 STATISTICS ECONOMICS DATA STORIES\n\n\nBLOG 2 · LATEST What Is Your Student ID Worth? Where does a student ID save the most—and where can you visit for less? Using R to collect official admission prices, this post compares 18 museums across eight U.S. cities. Philadelphia offers the largest average student discount in this sample, but museums that are free for everyone tell a different story about affordability. Explore the charts and filter the ticket table by city and age to plan your next visit.\n\n\nBLOG 1 · START HERE How Lisa Wins at Every Distance and Still Loses A friendly introduction to Simpson’s paradox."
+    "text": "JIAQI YUAN · NOTES & METHODS\n\n\n\nA growing collection of clear, curious essays about statistics, economics, and the small details that make data worth looking at twice.\n\n\nBLOG 1 BLOG 2 BLOG 3 STATISTICS ECONOMICS DATA STORIES\n\n\nBLOG 3 · LATEST Did Americans Stop Working—or Just Get Older? A falling national average can hide a changing population. Using more than two million weighted CPS person-month observations, this post separates the 2019–2024 decline in labor-force participation into age composition and changes within age groups. Three charts show how an aging population outweighed participation gains—and why the headline rate cannot tell the whole story.\n\n\nBLOG 2 What Is Your Student ID Worth? Where does a student ID save the most—and where can you visit for less? Using R to collect official admission prices, this post compares 18 museums across eight U.S. cities. Philadelphia offers the largest average student discount in this sample, but museums that are free for everyone tell a different story about affordability. Explore the charts and filter the ticket table by city and age to plan your next visit.\n\n\nBLOG 1 · START HERE How Lisa Wins at Every Distance and Still Loses A friendly introduction to Simpson’s paradox."
   },
   {
     "objectID": "about.html",
@@ -222,5 +222,61 @@
     "title": "What Is Your Student ID Worth?",
     "section": "Reproduce the analysis",
     "text": "Reproduce the analysis\nDownload the data Download the research bundle View the source on GitHub\nThe bundle includes an offline R replay, extraction rules, short factual evidence, acquisition code, exclusions, and package versions. Full museum pages and artwork are not republished. Hours and reservation notes are manually reviewed annotations, not outputs of the price parser. The linked README explains the limitations and refresh procedure.\n\n\n\n\n\n\nNoteA small, auditable rvest example\n\n\n\n\n\n\n\nShow the R code\nrvest::read_html('data/evidence/pma.html') |&gt;\n  rvest::html_elements('p') |&gt;\n  rvest::html_text2()\n\n\n[1] \"Adults$30\"                 \"Students with valid ID$14\"\n\n\nThis reads the short factual extracts retained from the original page. analyze.R can also parse the original private HTML cache with --raw, using the same category patterns. The public extracts are not presented as full archival copies of the websites.\n\n\n\nAI assistance was used for coding, drafting, and checking extraction rules. Prices are grounded in the linked official pages; the limitations above remain part of the result."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html",
+    "href": "blog/posts/post3/index.html",
+    "title": "Did Americans Stop Working—or Just Get Older?",
+    "section": "",
+    "text": "Note\n\n\n\nBLOG 3 · THE PEOPLE BEHIND THE AVERAGE\nParticipation fell 0.54 percentage points. A shift toward older ages pulled it down; changes within age groups partly offset that decline."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#a-national-average-is-not-a-national-attitude",
+    "href": "blog/posts/post3/index.html#a-national-average-is-not-a-national-attitude",
+    "title": "Did Americans Stop Working—or Just Get Older?",
+    "section": "A national average is not a national attitude",
+    "text": "A national average is not a national attitude\n“People don’t want to work anymore” is an easy explanation for a falling labor-force participation rate. I wanted to test a less dramatic possibility: perhaps the population itself changed. Comparing a country with more retirees to its younger past is hardly a fair test of changing attitudes toward work.\nUsing IPUMS CPS microdata, I compare 2019, before the pandemic, with 2024. The weighted annual participation rate fell from 63.40% to 62.86%. But that average combines two things: how likely people of each age are to participate, and how common each age group is."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#first-count-the-populationnot-just-the-rows",
+    "href": "blog/posts/post3/index.html#first-count-the-populationnot-just-the-rows",
+    "title": "Did Americans Stop Working—or Just Get Older?",
+    "section": "First, count the population—not just the rows",
+    "text": "First, count the population—not just the rows\nI use all twelve Basic Monthly CPS samples in each year: 2,611,419 person-month records, of which 2,115,648 meet the analysis criteria. The population is civilians age 16 or older with a valid labor-force status and positive weight. These are observations, not distinct people; the CPS interviews respondents in multiple months.\nEvery population statistic uses WTFINL, the final person weight. I calculate each month’s weighted participation rate, then average the twelve rates equally. Age shares and within-age rates use the same monthly-normalized weights, keeping the decomposition consistent. The code imports the matching DDI metadata so that the weight’s implied decimals are handled correctly.\nParticipation includes employed people and unemployed people in the labor force. It is not an employment rate. Someone outside the labor force is not automatically unemployed."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#compare-people-of-similar-ages",
+    "href": "blog/posts/post3/index.html#compare-people-of-similar-ages",
+    "title": "Did Americans Stop Working—or Just Get Older?",
+    "section": "Compare people of similar ages",
+    "text": "Compare people of similar ages\nFigure 1 shows a strong life-cycle pattern: participation is much higher among adults aged 25–54 than among those 65 and older. The national decline also conceals increases in every displayed group below age 65. For ages 35–44, participation rose from 83.33% to 84.77%; among ages 65–74, it fell from 28.47% to 27.67%. One headline cannot describe both experiences.\n\n\n\nWeighted participation rose in the five age groups below 65 and fell in the two older groups."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#change-the-mix-change-the-average",
+    "href": "blog/posts/post3/index.html#change-the-mix-change-the-average",
+    "title": "Did Americans Stop Working—or Just Get Older?",
+    "section": "Change the mix, change the average",
+    "text": "Change the mix, change the average\nImagine two rooms: one mostly contains working-age adults, the other mostly retirees. Moving more people into the second room can lower the combined participation rate even if neither room’s rate changes.\nFigure 2 shows this compositional shift. Adults 65 and older increased from 20.40% to 22.23% of the weighted population. Because their participation rates are relatively low, that shift puts downward pressure on the national average. These are population shares estimated with weights, not percentages of downloaded rows.\n\n\n\nThe population shares of both older age groups increased between 2019 and 2024."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#separate-the-two-changes",
+    "href": "blog/posts/post3/index.html#separate-the-two-changes",
+    "title": "Did Americans Stop Working—or Just Get Older?",
+    "section": "Separate the two changes",
+    "text": "Separate the two changes\nA symmetric Kitagawa decomposition splits the observed change into an age-composition component and a within-age participation component. It averages the two possible orders of changing shares and rates, so neither year gets special treatment.\nFigure 3 gives the result: -0.98 percentage points from composition, offset by +0.44 points from within-age changes, producing the observed -0.54 points. The composition component is larger than the net decline because the two components move in opposite directions. A percentage point is a difference between rates, not a percent change.\n\n\n\nAge composition contributes −0.98 percentage points, within-age participation +0.44, and the total is −0.54.\n\n\nUsing narrower, mostly five-year age groups gives −1.09 points for composition and +0.55 for within-age changes. The magnitudes change, but the interpretation survives."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#what-i-would-take-away",
+    "href": "blog/posts/post3/index.html#what-i-would-take-away",
+    "title": "Did Americans Stop Working—or Just Get Older?",
+    "section": "What I would take away",
+    "text": "What I would take away\nThe national decline is consistent with an aging population even as participation improved in many age groups. Before reading an aggregate rate as a change in motivation, ask who is being averaged.\nThis is descriptive accounting, not a causal estimate of aging or the pandemic. Within-age changes also reflect health, education, family circumstances, and other composition; even the oldest age bin contains aging. Estimates are not seasonally adjusted, population-control revisions can affect comparisons, and repeated respondents rule out treating all rows as independent. I make no significance claims or claims about individual retirement decisions."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#data-and-reproducibility",
+    "href": "blog/posts/post3/index.html#data-and-reproducibility",
+    "title": "Did Americans Stop Working—or Just Get Older?",
+    "section": "Data and reproducibility",
+    "text": "Data and reproducibility\nSource: IPUMS CPS, Version 13.0, University of Minnesota, doi:10.18128/D030.V13.0, based on Census Bureau and Bureau of Labor Statistics CPS data. Extract generated September 28, 2026; Basic Monthly samples for January–December 2019 and 2024. See WTFINL documentation and LABFORCE definitions.\nDownload the R code, replication instructions, and aggregate results. Raw microdata are excluded; obtain your own matching extract through IPUMS. The script checks month coverage, record uniqueness, codes, weights, and the decomposition identity."
   }
 ]

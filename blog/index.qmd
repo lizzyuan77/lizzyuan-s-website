@@ -20,12 +20,18 @@ listing:
 <div class="blog-topic-row" aria-label="Blog topics">
   <span>BLOG 1</span>
   <span>BLOG 2</span>
+  <span>BLOG 3</span>
   <span>STATISTICS</span>
   <span>ECONOMICS</span>
   <span>DATA STORIES</span>
 </div>
 <div class="blog-start blog-featured">
-  <span class="blog-start-label">BLOG 2 · LATEST</span>
+  <span class="blog-start-label">BLOG 3 · LATEST</span>
+  <a href="posts/post3/index.html">Did Americans Stop Working—or Just Get Older?</a>
+  <span class="blog-start-note">A falling national average can hide a changing population. Using more than two million weighted CPS person-month observations, this post separates the 2019–2024 decline in labor-force participation into age composition and changes within age groups. Three charts show how an aging population outweighed participation gains—and why the headline rate cannot tell the whole story.</span>
+</div>
+<div class="blog-start" style="margin-top: 0.8rem">
+  <span class="blog-start-label">BLOG 2</span>
   <a href="posts/post2/index.html">What Is Your Student ID Worth?</a>
   <span class="blog-start-note">Where does a student ID save the most—and where can you visit for less? Using R to collect official admission prices, this post compares 18 museums across eight U.S. cities. Philadelphia offers the largest average student discount in this sample, but museums that are free for everyone tell a different story about affordability. Explore the charts and filter the ticket table by city and age to plan your next visit.</span>
 </div>

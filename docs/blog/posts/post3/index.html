@@ -6,9 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Notes on statistics, economics, data, and the questions that connect them.">
+<meta name="author" content="Jiaqi Yuan">
+<meta name="dcterms.date" content="2026-09-28">
+<meta name="description" content="Blog 3 · More than two million CPS person-month observations reveal why a falling national participation rate can hide gains within age groups.">
 
-<title>Blog – Jiaqi Yuan</title>
+<title>Did Americans Stop Working—or Just Get Older? – Jiaqi Yuan</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -27,25 +29,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-6b423f165eeea3787de40cb4f8e821c3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-6b423f165eeea3787de40cb4f8e821c3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,78 +73,20 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../styles.css">
-<link rel="stylesheet" href="blog-index.css">
+<link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="draft.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Jiaqi Yuan</span>
     </a>
   </div>
@@ -155,19 +97,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../bio.html"> 
+    <a class="nav-link" href="../../../bio.html"> 
 <span class="menu-text">About Me</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resume.html"> 
+    <a class="nav-link" href="../../../resume.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../blog/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -181,25 +123,57 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">In this story</h2>
+   
+  <ul>
+  <li><a href="#a-national-average-is-not-a-national-attitude" id="toc-a-national-average-is-not-a-national-attitude" class="nav-link active" data-scroll-target="#a-national-average-is-not-a-national-attitude">A national average is not a national attitude</a></li>
+  <li><a href="#first-count-the-populationnot-just-the-rows" id="toc-first-count-the-populationnot-just-the-rows" class="nav-link" data-scroll-target="#first-count-the-populationnot-just-the-rows">First, count the population—not just the rows</a></li>
+  <li><a href="#compare-people-of-similar-ages" id="toc-compare-people-of-similar-ages" class="nav-link" data-scroll-target="#compare-people-of-similar-ages">Compare people of similar ages</a></li>
+  <li><a href="#change-the-mix-change-the-average" id="toc-change-the-mix-change-the-average" class="nav-link" data-scroll-target="#change-the-mix-change-the-average">Change the mix, change the average</a></li>
+  <li><a href="#separate-the-two-changes" id="toc-separate-the-two-changes" class="nav-link" data-scroll-target="#separate-the-two-changes">Separate the two changes</a></li>
+  <li><a href="#what-i-would-take-away" id="toc-what-i-would-take-away" class="nav-link" data-scroll-target="#what-i-would-take-away">What I would take away</a></li>
+  <li><a href="#data-and-reproducibility" id="toc-data-and-reproducibility" class="nav-link" data-scroll-target="#data-and-reproducibility">Data and reproducibility</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
-</div>
+<h1 class="title">Did Americans Stop Working—or Just Get Older?</h1>
+<p class="subtitle lead">Separating age composition from labor-force participation, 2019–2024</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">economics</div>
+    <div class="quarto-category">IPUMS CPS</div>
+    <div class="quarto-category">data analysis</div>
+  </div>
+  </div>
 
 <div>
   <div class="description">
-    Notes on statistics, economics, data, and the questions that connect them.
+    Blog 3 · More than two million CPS person-month observations reveal why a falling national participation rate can hide gains within age groups.
   </div>
 </div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jiaqi Yuan </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 28, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -209,125 +183,78 @@ window.Quarto = {
 </header>
 
 
-<div class="blog-landing">
-<div class="blog-landing-kicker">
-JIAQI YUAN · NOTES &amp; METHODS
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<h2 class="anchored">
-Ideas, evidence, and the questions between them.
-</h2>
-<p class="blog-landing-lead">
-A growing collection of clear, curious essays about statistics, economics, and the small details that make data worth looking at twice.
-</p>
-<div class="blog-topic-row" aria-label="Blog topics">
-<p><span>BLOG 1</span> <span>BLOG 2</span> <span>BLOG 3</span> <span>STATISTICS</span> <span>ECONOMICS</span> <span>DATA STORIES</span></p>
-</div>
-<div class="blog-start blog-featured">
-<p><span class="blog-start-label">BLOG 3 · LATEST</span> <a href="posts/post3/index.html">Did Americans Stop Working—or Just Get Older?</a> <span class="blog-start-note">A falling national average can hide a changing population. Using more than two million weighted CPS person-month observations, this post separates the 2019–2024 decline in labor-force participation into age composition and changes within age groups. Three charts show how an aging population outweighed participation gains—and why the headline rate cannot tell the whole story.</span></p>
-</div>
-<div class="blog-start" style="margin-top: 0.8rem">
-<p><span class="blog-start-label">BLOG 2</span> <a href="posts/post2/index.html">What Is Your Student ID Worth?</a> <span class="blog-start-note">Where does a student ID save the most—and where can you visit for less? Using R to collect official admission prices, this post compares 18 museums across eight U.S. cities. Philadelphia offers the largest average student discount in this sample, but museums that are free for everyone tell a different story about affordability. Explore the charts and filter the ticket table by city and age to plan your next visit.</span></p>
-</div>
-<div class="blog-start" style="margin-top: 0.8rem">
-<p><span class="blog-start-label">BLOG 1 · START HERE</span> <a href="posts/post1/Untitled.html">How Lisa Wins at Every Distance and Still Loses</a> <span class="blog-start-note">A friendly introduction to Simpson’s paradox.</span></p>
+<div class="callout-title-container flex-fill">
+Note
 </div>
 </div>
-<section id="latest-notes" class="level2">
-<h2 class="anchored" data-anchor-id="latest-notes">Latest notes</h2>
-
+<div class="callout-body-container callout-body">
+<p><strong>BLOG 3 · THE PEOPLE BEHIND THE AVERAGE</strong></p>
+<p>Participation fell <strong>0.54 percentage points</strong>. A shift toward older ages pulled it down; changes within age groups partly offset that decline.</p>
+</div>
+</div>
+<section id="a-national-average-is-not-a-national-attitude" class="level2">
+<h2 class="anchored" data-anchor-id="a-national-average-is-not-a-national-attitude">A national average is not a national attitude</h2>
+<p>“People don’t want to work anymore” is an easy explanation for a falling labor-force participation rate. I wanted to test a less dramatic possibility: perhaps the population itself changed. Comparing a country with more retirees to its younger past is hardly a fair test of changing attitudes toward work.</p>
+<p>Using IPUMS CPS microdata, I compare 2019, before the pandemic, with 2024. The weighted annual participation rate fell from <strong>63.40% to 62.86%</strong>. But that average combines two things: how likely people of each age are to participate, and how common each age group is.</p>
+</section>
+<section id="first-count-the-populationnot-just-the-rows" class="level2">
+<h2 class="anchored" data-anchor-id="first-count-the-populationnot-just-the-rows">First, count the population—not just the rows</h2>
+<p>I use all twelve Basic Monthly CPS samples in each year: <strong>2,611,419 person-month records</strong>, of which <strong>2,115,648</strong> meet the analysis criteria. The population is civilians age 16 or older with a valid labor-force status and positive weight. These are observations, not distinct people; the CPS interviews respondents in multiple months.</p>
+<p>Every population statistic uses <strong>WTFINL</strong>, the final person weight. I calculate each month’s weighted participation rate, then average the twelve rates equally. Age shares and within-age rates use the same monthly-normalized weights, keeping the decomposition consistent. The code imports the matching DDI metadata so that the weight’s implied decimals are handled correctly.</p>
+<p>Participation includes employed people <strong>and unemployed people in the labor force</strong>. It is not an employment rate. Someone outside the labor force is not automatically unemployed.</p>
+</section>
+<section id="compare-people-of-similar-ages" class="level2">
+<h2 class="anchored" data-anchor-id="compare-people-of-similar-ages">Compare people of similar ages</h2>
+<p>Figure 1 shows a strong life-cycle pattern: participation is much higher among adults aged 25–54 than among those 65 and older. The national decline also conceals increases in every displayed group below age 65. For ages 35–44, participation rose from <strong>83.33% to 84.77%</strong>; among ages 65–74, it fell from <strong>28.47% to 27.67%</strong>. One headline cannot describe both experiences.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="results/figure1.png" class="img-fluid figure-img" alt="2019 and 2024 participation by age. Rates rise below age 65 and decline for ages 65–74 and 75+."></p>
+<figcaption>Weighted participation rose in the five age groups below 65 and fell in the two older groups.</figcaption>
+</figure>
+</div>
+</section>
+<section id="change-the-mix-change-the-average" class="level2">
+<h2 class="anchored" data-anchor-id="change-the-mix-change-the-average">Change the mix, change the average</h2>
+<p>Imagine two rooms: one mostly contains working-age adults, the other mostly retirees. Moving more people into the second room can lower the combined participation rate even if neither room’s rate changes.</p>
+<p>Figure 2 shows this compositional shift. Adults 65 and older increased from <strong>20.40% to 22.23%</strong> of the weighted population. Because their participation rates are relatively low, that shift puts downward pressure on the national average. These are population shares estimated with weights, not percentages of downloaded rows.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="results/figure2.png" class="img-fluid figure-img" alt="Weighted population shares by age: ages 65–74 increase from 12.08% to 13.05%, and ages 75+ from 8.32% to 9.18%."></p>
+<figcaption>The population shares of both older age groups increased between 2019 and 2024.</figcaption>
+</figure>
+</div>
+</section>
+<section id="separate-the-two-changes" class="level2">
+<h2 class="anchored" data-anchor-id="separate-the-two-changes">Separate the two changes</h2>
+<p>A symmetric Kitagawa decomposition splits the observed change into an <strong>age-composition component</strong> and a <strong>within-age participation component</strong>. It averages the two possible orders of changing shares and rates, so neither year gets special treatment.</p>
+<p>Figure 3 gives the result: <strong>-0.98 percentage points</strong> from composition, offset by <strong>+0.44 points</strong> from within-age changes, producing the observed <strong>-0.54 points</strong>. The composition component is larger than the net decline because the two components move in opposite directions. A percentage point is a difference between rates, not a percent change.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="results/figure3.png" class="img-fluid figure-img" alt="Decomposition bars: age composition −0.98, within-age participation +0.44, observed total −0.54 percentage points."></p>
+<figcaption>Age composition contributes −0.98 percentage points, within-age participation +0.44, and the total is −0.54.</figcaption>
+</figure>
+</div>
+<p>Using narrower, mostly five-year age groups gives <strong>−1.09 points</strong> for composition and <strong>+0.55</strong> for within-age changes. The magnitudes change, but the interpretation survives.</p>
+</section>
+<section id="what-i-would-take-away" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-would-take-away">What I would take away</h2>
+<p>The national decline is consistent with an aging population even as participation improved in many age groups. Before reading an aggregate rate as a change in motivation, ask who is being averaged.</p>
+<p>This is descriptive accounting, not a causal estimate of aging or the pandemic. Within-age changes also reflect health, education, family circumstances, and other composition; even the oldest age bin contains aging. Estimates are not seasonally adjusted, population-control revisions can affect comparisons, and repeated respondents rule out treating all rows as independent. I make no significance claims or claims about individual retirement decisions.</p>
+</section>
+<section id="data-and-reproducibility" class="level2">
+<h2 class="anchored" data-anchor-id="data-and-reproducibility">Data and reproducibility</h2>
+<p>Source: IPUMS CPS, <strong>Version 13.0</strong>, University of Minnesota, <a href="https://doi.org/10.18128/D030.V13.0">doi:10.18128/D030.V13.0</a>, based on Census Bureau and Bureau of Labor Statistics CPS data. Extract generated September 28, 2026; Basic Monthly samples for January–December 2019 and 2024. See <a href="https://cps.ipums.org/cps-action/variables/WTFINL">WTFINL documentation</a> and <a href="https://cps.ipums.org/cps-action/variables/LABFORCE">LABFORCE definitions</a>.</p>
+<p><a href="research.zip">Download the R code, replication instructions, and aggregate results</a>. Raw microdata are excluded; obtain your own matching extract through IPUMS. The script checks month coverage, record uniqueness, codes, weights, and the decomposition identity.</p>
 
 
 </section>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="ZWNvbm9taWNzJTJDSVBVTVMlMjBDUFMlMkNkYXRhJTIwYW5hbHlzaXM=" data-listing-date-sort="1790568000000" data-listing-file-modified-sort="1790640629058" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="776">
-<div class="thumbnail"><a href="../blog/posts/post3/index.html" class="no-external">
-
-<img loading="lazy" src="../blog/posts/post3/results/figure3.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/posts/post3/index.html" class="no-external">Did Americans Stop Working—or Just Get Older?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../blog/posts/post3/index.html" class="no-external">Separating age composition from labor-force participation, 2019–2024</a>
-</div>
-<div class="delink listing-description"><a href="../blog/posts/post3/index.html" class="no-external">
-<p>Blog 3 · More than two million CPS person-month observations reveal why a falling national participation rate can hide gains within age groups.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../blog/posts/post3/index.html" class="no-external">
-<div class="listing-date">
-Sep 28, 2026
-</div>
-<div class="listing-author">
-Jiaqi Yuan
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="d2ViJTIwc2NyYXBpbmclMkNzdHVkZW50JTIwbGlmZSUyQ2RhdGElMjBhbmFseXNpcw==" data-listing-date-sort="1789963200000" data-listing-file-modified-sort="1790040701927" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="846">
-<div class="thumbnail"><a href="../blog/posts/post2/index.html" class="no-external">
-
-<img loading="lazy" src="../blog/posts/post2/results/city-savings.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/posts/post2/index.html" class="no-external">What Is Your Student ID Worth?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../blog/posts/post2/index.html" class="no-external">A museum price check across eight U.S. cities</a>
-</div>
-<div class="delink listing-description"><a href="../blog/posts/post2/index.html" class="no-external">
-<p>Blog 2 · Eighteen museums, eight cities, and one surprising distinction: the biggest student discount is not always the cheapest visit.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../blog/posts/post2/index.html" class="no-external">
-<div class="listing-date">
-Sep 21, 2026
-</div>
-<div class="listing-author">
-Jiaqi Yuan
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="c3RhdGlzdGljcyUyQ2ludHVpdGlvbiUyQ2RhdGEtc2NpZW5jZQ==" data-listing-date-sort="1789358400000" data-listing-file-modified-sort="1789430493389" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1064">
-<div class="thumbnail"><a href="../blog/posts/post1/Untitled.html" class="no-external">
-
-<img loading="lazy" src="../blog/posts/post1/assets/simpsons-paradox-comic-v2.png" class="thumbnail-image" alt="Lisa, Bart, and Homer Simpson explain how different mixes of easy and hard shots reverse an overall ranking.">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/posts/post1/Untitled.html" class="no-external">How Lisa Wins at Every Distance and Still Loses</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../blog/posts/post1/Untitled.html" class="no-external">Simpson’s paradox, explained at the Springfield carnival</a>
-</div>
-<div class="delink listing-description"><a href="../blog/posts/post1/Untitled.html" class="no-external">
-<p>Lisa beats Bart at both distances. Bart wins overall. A carnival game reveals what averages hide.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../blog/posts/post1/Untitled.html" class="no-external">
-<div class="listing-date">
-Sep 14, 2026
-</div>
-<div class="listing-author">
-Jiaqi Yuan
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -732,7 +659,7 @@ Jiaqi Yuan
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><img src="..\images/UniversityofPennsylvania_FullLogo_RGB.png" class="img-fluid" width="100"></p>
+<p><img src="../../..\images/UniversityofPennsylvania_FullLogo_RGB.png" class="img-fluid" width="100"></p>
 </div>   
     <div class="nav-footer-center">
 <p>© 2026 Jiaqi Yuan</p>

@@ -1,0 +1,4 @@
+DDI basename: cps_00001.xml
+DDI MD5: 382d6bc31c2e596ea2884ba820351542
+Analysis run: 2026-09-28
+Read corresponding IPUMS citation/version from the supplied DDI.
