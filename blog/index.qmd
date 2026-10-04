@@ -29,7 +29,7 @@ listing:
 <div class="blog-start blog-featured">
   <span class="blog-start-label">BLOG 4 · LATEST</span>
   <a href="posts/post4/index.html">More Tech, Better Jobs?</a>
-  <span class="blog-start-note">Does a growing technology workforce mean a stronger job market? Census data across 50 states and six years reveal that rising tech employment shares did not consistently accompany lower unemployment or higher employment rates. Four charts compare states, track changes over time, and take a closer look at two Bay Area core counties.</span>
+  <span class="blog-start-note">Does a growing technology workforce mean a stronger job market? Census data across 50 states and six years reveal that rising tech employment shares did not consistently accompany lower unemployment or higher employment rates. Four charts and two U.S. maps compare states, track changes over time, and take a closer look at two Bay Area core counties.</span>
 </div>
 <div class="blog-start" style="margin-top: 0.8rem">
   <span class="blog-start-label">BLOG 3</span>
@@ -49,4 +49,5 @@ listing:
 :::
 
 ## Latest notes
+
 

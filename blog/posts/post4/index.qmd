@@ -80,6 +80,16 @@ Santa Clara County's tech share rose from **11.90% to 15.94%**, while its ACS un
 
 ![From 2018 to 2024, tech employment share and unemployment both rose in the two counties.](results/figure4.png){fig-alt="Connected endpoint dots label 2018 and 2024 values for Santa Clara and San Francisco counties, showing increases in both technology occupation share and unemployment."}
 
+## Put the changes on the map
+
+The maps add a geographic view of the same 50-state comparison. Washington and Texas show relatively large tech-share gains, but their unemployment outcomes differ. California also gains tech share while its unemployment rate rises. The two patterns do not line up into a simple geography of technology-led improvement.
+
+![Changes in technology occupation share across all 50 states, 2018–2024.](results/map-tech.png){fig-alt="United States state map of tech employment share changes. Green denotes increases, orange decreases; Alaska and Hawaii appear as labeled insets."}
+
+![Unemployment improvement across all 50 states over the same period.](results/map-unemployment.png){fig-alt="United States map of unemployment improvement, calculated as the 2018 rate minus the 2024 rate. Green means lower unemployment and orange means higher unemployment, with Alaska and Hawaii insets."}
+
+Read each legend separately: the color scales differ because the measures have different ranges. Large states occupy more space, not more statistical weight. Boundaries come from the [Census 2024 cartographic boundary files](https://www2.census.gov/geo/tiger/GENZ2024/shp/); state FIPS codes link geography to the analysis.
+
 ## What this changes about my starting question
 
 Growing tech employment is not a reliable shorthand for a stronger overall labor market. It describes which jobs residents hold, while unemployment describes a broader population.

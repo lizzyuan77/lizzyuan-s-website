@@ -43,3 +43,6 @@ Final submission requires the published article URL and GitHub repository link.
 ## Redesigned figures
 Figure 1 selects the ten largest tech-share increases programmatically. Figure 2 reverses unemployment change so positive means improvement for both outcomes. Figure 3 selects 13 highest and 13 lowest tech-share increases in each period (state FIPS breaks exact ties); the middle 24 states are excluded only from this grouped display. Membership and equal-weight mean changes are saved in results/. These are not fixed cohorts, matched controls or causal estimates. Figure 4 shows fixed-county endpoints with explicit labels. Original all-state correlation checks remain in the results.
 
+## Two additional U.S. maps
+After the R analysis, run `python code/maps.py` before rendering. Python dependencies: matplotlib, pyshp, pyproj, numpy. The script uses cached Census 2024 1:20m state boundaries from https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_state_20m.zip and downloads them if absent. All 50 state FIPS codes must match. Lower 48 projection: EPSG:5070; Alaska: EPSG:3338; Hawaii: EPSG:26904. AK and HI are resized/relocated insets. Both diverging scales center at zero, with separately labeled ranges. Unemployment improvement reverses the sign of the unemployment-rate change.
+
