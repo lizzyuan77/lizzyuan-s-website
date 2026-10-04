@@ -312,21 +312,21 @@
     "href": "blog/posts/post4/index.html#follow-the-changes",
     "title": "More Tech, Better Jobs?",
     "section": "Follow the changes",
-    "text": "Follow the changes\nFigure 2 subtracts each state’s 2018 value from its 2024 value. A one-point increase means, for example, moving from 3% to 4% tech employment—not a 1% increase in the number of tech workers.\nThe relationship between tech-share growth and unemployment change is modestly positive (r = 0.29). Faster tech-share growth therefore accompanies smaller unemployment declines or larger increases, rather than consistently stronger improvement. For employment/population, the relationship is nearly flat (r = 0.04).\nThis is not simply California driving the pattern: excluding it gives correlations of +0.27 and +0.05, respectively. Rank correlations also preserve the broad interpretation. I checked the denominator, too: every state with a rising tech share also had an increase in its estimated number of tech workers. Their shares did not rise solely because other employment contracted.\n\n\n\nWithin-state changes reveal little connection with employment/population improvement."
+    "text": "Follow the changes\nFigure 2 subtracts each state’s 2018 value from its 2024 value. A one-point increase means, for example, moving from 3% to 4% tech employment—not a 1% increase in the number of tech workers.\nBoth panels make up mean improvement: falling unemployment in the first, rising employment/population in the second. Green marks improvement; peach marks deterioration. If more tech consistently meant better outcomes, the dots would slope upward. They do not: the correlation with unemployment improvement is −0.29, while employment/population improvement is nearly unrelated (+0.04).\nThis is not simply California driving the pattern: excluding it gives correlations of −0.27 and +0.05, respectively. Rank correlations also preserve the broad interpretation. I checked the denominator, too: every state with a rising tech share also had an increase in its estimated number of tech workers. Their shares did not rise solely because other employment contracted.\n\n\n\nWithin-state changes reveal little connection with employment/population improvement."
   },
   {
     "objectID": "blog/posts/post4/index.html#timing-changes-the-story",
     "href": "blog/posts/post4/index.html#timing-changes-the-story",
     "title": "More Tech, Better Jobs?",
     "section": "Timing changes the story",
-    "text": "Timing changes the story\nFigure 3 repeats the comparison for shorter periods. The correlation with unemployment change is −0.07 in 2018–2019, +0.31 in 2019–2021, and +0.26 in 2021–2024. For employment/population it changes from +0.29 to −0.29, then approximately zero. There is no stable association linking rising tech concentration to better outcomes across these periods. The 2019–2021 interval spans the pandemic; it cannot isolate the initial shock.\n\n\n\nPeriod-specific correlations change across the pre-pandemic and later intervals."
+    "text": "Timing changes the story\nFigure 3 compares the 13 fastest-growing and 13 slowest-growing states, ranked by tech-share change separately in each period. The bars show average employment improvements, not abstract correlation coefficients.\nIn 2018–2019, the faster-tech group improved more on both measures. In 2019–2021 it deteriorated more. During 2021–2024, unemployment fell 1.24 points in the faster-tech group versus 1.70 in the slower group, while employment/population gains were similar (1.80 versus 1.72 points). Faster tech growth did not bring a consistent advantage.\nGroups change across periods; these are equal-weight descriptive averages, not matched comparisons. Periods also differ in length. The 2019–2021 interval spans the pandemic and cannot isolate its initial shock.\n\n\n\nFaster and slower tech-growth groups do not show a consistent employment advantage across periods."
   },
   {
     "objectID": "blog/posts/post4/index.html#the-bay-area-is-a-case-not-the-national-answer",
     "href": "blog/posts/post4/index.html#the-bay-area-is-a-case-not-the-national-answer",
     "title": "More Tech, Better Jobs?",
     "section": "The Bay Area is a case, not the national answer",
-    "text": "The Bay Area is a case, not the national answer\nSanta Clara County’s tech share rose from 11.90% to 15.94%, while its ACS unemployment rate rose from 3.9% to 5.2%. San Francisco County also recorded increases in both. These fixed county boundaries offer a local comparison without treating California as the Bay Area; the two counties do not represent the full nine-county region.\n\n\n\nTwo Bay Area core counties compared with California; the missing 2020 observation is not interpolated."
+    "text": "The Bay Area is a case, not the national answer\nSanta Clara County’s tech share rose from 11.90% to 15.94%, while its ACS unemployment rate rose from 3.9% to 5.2%. San Francisco County also recorded increases in both. These fixed county boundaries offer a local comparison without treating California as the Bay Area; the two counties do not represent the full nine-county region.\n\n\n\nFrom 2018 to 2024, tech employment share and unemployment both rose in the two counties."
   },
   {
     "objectID": "blog/posts/post4/index.html#what-this-changes-about-my-starting-question",
@@ -341,5 +341,12 @@
     "title": "More Tech, Better Jobs?",
     "section": "Sources and replication",
     "text": "Sources and replication\nCensus ACS API: S2401 occupation counts and S2301 employment indicators; 2018 comparability guidance; 2020 release limitation. Data retrieved October 4, 2026. ACS rates are not interchangeable with the monthly BLS headline unemployment series.\nDownload the reproducibility package: source responses, analysis scripts, figures and README. No API key is included."
+  },
+  {
+    "objectID": "blog/posts/post4/index.html#where-did-tech-employment-expand",
+    "href": "blog/posts/post4/index.html#where-did-tech-employment-expand",
+    "title": "More Tech, Better Jobs?",
+    "section": "Where did tech employment expand?",
+    "text": "Where did tech employment expand?\nFigure 1 ranks the ten states with the largest increases in tech employment share. Washington, Delaware and Texas lead this comparison. The broader shift was widespread: 48 of 50 states recorded an increase. This establishes where the occupational mix changed, but says nothing yet about whether employment conditions improved.\n\n\n\nThe ten largest increases in tech employment share, 2018–2024."
   }
 ]

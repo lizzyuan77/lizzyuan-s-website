@@ -40,3 +40,6 @@ Meaningful transformations: occupational shares, percentage-point changes, and c
 Interpretation: associations vary by outcome and period; no causal claim.
 Final submission requires the published article URL and GitHub repository link.
 
+## Redesigned figures
+Figure 1 selects the ten largest tech-share increases programmatically. Figure 2 reverses unemployment change so positive means improvement for both outcomes. Figure 3 selects 13 highest and 13 lowest tech-share increases in each period (state FIPS breaks exact ties); the middle 24 states are excluded only from this grouped display. Membership and equal-weight mean changes are saved in results/. These are not fixed cohorts, matched controls or causal estimates. Figure 4 shows fixed-county endpoints with explicit labels. Original all-state correlation checks remain in the results.
+

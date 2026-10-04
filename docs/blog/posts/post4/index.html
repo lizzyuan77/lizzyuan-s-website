@@ -130,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#a-promising-industry-a-harder-question" id="toc-a-promising-industry-a-harder-question" class="nav-link active" data-scroll-target="#a-promising-industry-a-harder-question">A promising industry, a harder question</a></li>
   <li><a href="#measure-what-the-data-actually-observe" id="toc-measure-what-the-data-actually-observe" class="nav-link" data-scroll-target="#measure-what-the-data-actually-observe">Measure what the data actually observe</a></li>
-  <li><a href="#a-snapshot-does-not-establish-a-pattern" id="toc-a-snapshot-does-not-establish-a-pattern" class="nav-link" data-scroll-target="#a-snapshot-does-not-establish-a-pattern">A snapshot does not establish a pattern</a></li>
+  <li><a href="#where-did-tech-employment-expand" id="toc-where-did-tech-employment-expand" class="nav-link" data-scroll-target="#where-did-tech-employment-expand">Where did tech employment expand?</a></li>
   <li><a href="#follow-the-changes" id="toc-follow-the-changes" class="nav-link" data-scroll-target="#follow-the-changes">Follow the changes</a></li>
   <li><a href="#timing-changes-the-story" id="toc-timing-changes-the-story" class="nav-link" data-scroll-target="#timing-changes-the-story">Timing changes the story</a></li>
   <li><a href="#the-bay-area-is-a-case-not-the-national-answer" id="toc-the-bay-area-is-a-case-not-the-national-answer" class="nav-link" data-scroll-target="#the-bay-area-is-a-case-not-the-national-answer">The Bay Area is a case, not the national answer</a></li>
@@ -209,35 +209,37 @@ Note
 <p>Two outcomes describe the wider labor market: unemployment and the employment/population ratio. Lower unemployment is encouraging, but it can also reflect people leaving the labor force; a higher employment/population ratio provides a complementary perspective.</p>
 <p>The panel covers 2018, 2019, and 2021–2024: <strong>300 state-year observations</strong>, plus 12 county-year observations. DC is retained in the download but excluded from the 50-state comparisons. I start after the 2018 occupation-classification revision and omit 2020 because Census did not release standard 1-year estimates. Each state receives equal weight; published ACS estimates already use survey weights.</p>
 </section>
-<section id="a-snapshot-does-not-establish-a-pattern" class="level2">
-<h2 class="anchored" data-anchor-id="a-snapshot-does-not-establish-a-pattern">A snapshot does not establish a pattern</h2>
-<p>Figure 1 compares tech concentration and unemployment in 2018 and 2024. The cross-state correlation shifts from <strong>−0.17 to +0.12</strong>. Neither snapshot supplies a convincing rule that more tech means lower unemployment. More importantly, a comparison between states cannot tell us what happens when an individual state changes.</p>
+<section id="where-did-tech-employment-expand" class="level2">
+<h2 class="anchored" data-anchor-id="where-did-tech-employment-expand">Where did tech employment expand?</h2>
+<p>Figure 1 ranks the ten states with the largest increases in tech employment share. Washington, Delaware and Texas lead this comparison. The broader shift was widespread: 48 of 50 states recorded an increase. This establishes where the occupational mix changed, but says nothing yet about whether employment conditions improved.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="results/figure1.png" class="img-fluid figure-img" alt="Two state scatterplots show a weak negative relationship between tech share and unemployment in 2018 and a weak positive relationship in 2024."></p>
-<figcaption>Cross-state relationships in 2018 and 2024.</figcaption>
+<p><img src="results/figure1.png" class="img-fluid figure-img" alt="Horizontal bars rank the top ten states by technology occupation share growth. Washington, Delaware and Texas have the largest increases."></p>
+<figcaption>The ten largest increases in tech employment share, 2018–2024.</figcaption>
 </figure>
 </div>
 </section>
 <section id="follow-the-changes" class="level2">
 <h2 class="anchored" data-anchor-id="follow-the-changes">Follow the changes</h2>
 <p>Figure 2 subtracts each state’s 2018 value from its 2024 value. A one-point increase means, for example, moving from 3% to 4% tech employment—not a 1% increase in the number of tech workers.</p>
-<p>The relationship between tech-share growth and unemployment change is modestly positive (<strong>r = 0.29</strong>). Faster tech-share growth therefore accompanies smaller unemployment declines or larger increases, rather than consistently stronger improvement. For employment/population, the relationship is nearly flat (<strong>r = 0.04</strong>).</p>
-<p>This is not simply California driving the pattern: excluding it gives correlations of <strong>+0.27</strong> and <strong>+0.05</strong>, respectively. Rank correlations also preserve the broad interpretation. I checked the denominator, too: every state with a rising tech share also had an increase in its estimated number of tech workers. Their shares did not rise solely because other employment contracted.</p>
+<p>Both panels make <strong>up mean improvement</strong>: falling unemployment in the first, rising employment/population in the second. Green marks improvement; peach marks deterioration. If more tech consistently meant better outcomes, the dots would slope upward. They do not: the correlation with unemployment improvement is <strong>−0.29</strong>, while employment/population improvement is nearly unrelated (<strong>+0.04</strong>).</p>
+<p>This is not simply California driving the pattern: excluding it gives correlations of <strong>−0.27</strong> and <strong>+0.05</strong>, respectively. Rank correlations also preserve the broad interpretation. I checked the denominator, too: every state with a rising tech share also had an increase in its estimated number of tech workers. Their shares did not rise solely because other employment contracted.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="results/figure2.png" class="img-fluid figure-img" alt="Changes in tech share versus changes in employment/population and unemployment, 2018–2024. The first relationship is nearly flat; the second slopes upward."></p>
+<p><img src="results/figure2.png" class="img-fluid figure-img" alt="Tech share growth versus improvements in unemployment and employment/population. Green means improvement, peach means deterioration; up means better in both panels."></p>
 <figcaption>Within-state changes reveal little connection with employment/population improvement.</figcaption>
 </figure>
 </div>
 </section>
 <section id="timing-changes-the-story" class="level2">
 <h2 class="anchored" data-anchor-id="timing-changes-the-story">Timing changes the story</h2>
-<p>Figure 3 repeats the comparison for shorter periods. The correlation with unemployment change is <strong>−0.07</strong> in 2018–2019, <strong>+0.31</strong> in 2019–2021, and <strong>+0.26</strong> in 2021–2024. For employment/population it changes from <strong>+0.29</strong> to <strong>−0.29</strong>, then approximately <strong>zero</strong>. There is no stable association linking rising tech concentration to better outcomes across these periods. The 2019–2021 interval spans the pandemic; it cannot isolate the initial shock.</p>
+<p>Figure 3 compares the <strong>13 fastest-growing and 13 slowest-growing states</strong>, ranked by tech-share change separately in each period. The bars show average employment improvements, not abstract correlation coefficients.</p>
+<p>In 2018–2019, the faster-tech group improved more on both measures. In 2019–2021 it deteriorated more. During 2021–2024, unemployment fell <strong>1.24 points</strong> in the faster-tech group versus <strong>1.70</strong> in the slower group, while employment/population gains were similar (<strong>1.80 versus 1.72 points</strong>). Faster tech growth did not bring a consistent advantage.</p>
+<p>Groups change across periods; these are equal-weight descriptive averages, not matched comparisons. Periods also differ in length. The 2019–2021 interval spans the pandemic and cannot isolate its initial shock.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="results/figure3.png" class="img-fluid figure-img" alt="Correlation dots for three periods show no consistently favorable association between tech-share growth and the two employment outcomes."></p>
-<figcaption>Period-specific correlations change across the pre-pandemic and later intervals.</figcaption>
+<p><img src="results/figure3.png" class="img-fluid figure-img" alt="Grouped bars show mean improvements for the 13 fastest and 13 slowest tech-share growth states in each period. Faster growth performs better before the pandemic, worse in 2019–2021, and has mixed results in 2021–2024."></p>
+<figcaption>Faster and slower tech-growth groups do not show a consistent employment advantage across periods.</figcaption>
 </figure>
 </div>
 </section>
@@ -246,8 +248,8 @@ Note
 <p>Santa Clara County’s tech share rose from <strong>11.90% to 15.94%</strong>, while its ACS unemployment rate rose from <strong>3.9% to 5.2%</strong>. San Francisco County also recorded increases in both. These fixed county boundaries offer a local comparison without treating California as the Bay Area; the two counties do not represent the full nine-county region.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="results/figure4.png" class="img-fluid figure-img" alt="Tech share and unemployment trends for San Francisco County, Santa Clara County and California, with a break for missing 2020 estimates."></p>
-<figcaption>Two Bay Area core counties compared with California; the missing 2020 observation is not interpolated.</figcaption>
+<p><img src="results/figure4.png" class="img-fluid figure-img" alt="Connected endpoint dots label 2018 and 2024 values for Santa Clara and San Francisco counties, showing increases in both technology occupation share and unemployment."></p>
+<figcaption>From 2018 to 2024, tech employment share and unemployment both rose in the two counties.</figcaption>
 </figure>
 </div>
 </section>
