@@ -6,9 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Notes on statistics, economics, data, and the questions that connect them.">
+<meta name="author" content="Jiaqi Yuan">
+<meta name="dcterms.date" content="2026-10-04">
+<meta name="description" content="Blog 4 · Technology-related employment expanded in most states, but broader employment outcomes did not improve in lockstep.">
 
-<title>Blog – Jiaqi Yuan</title>
+<title>More Tech, Better Jobs? – Jiaqi Yuan</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -27,25 +29,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-6b423f165eeea3787de40cb4f8e821c3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-6b423f165eeea3787de40cb4f8e821c3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,78 +73,20 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../styles.css">
-<link rel="stylesheet" href="blog-index.css">
+<link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="post.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Jiaqi Yuan</span>
     </a>
   </div>
@@ -155,19 +97,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../bio.html"> 
+    <a class="nav-link" href="../../../bio.html"> 
 <span class="menu-text">About Me</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resume.html"> 
+    <a class="nav-link" href="../../../resume.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../blog/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -181,25 +123,58 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#a-promising-industry-a-harder-question" id="toc-a-promising-industry-a-harder-question" class="nav-link active" data-scroll-target="#a-promising-industry-a-harder-question">A promising industry, a harder question</a></li>
+  <li><a href="#measure-what-the-data-actually-observe" id="toc-measure-what-the-data-actually-observe" class="nav-link" data-scroll-target="#measure-what-the-data-actually-observe">Measure what the data actually observe</a></li>
+  <li><a href="#a-snapshot-does-not-establish-a-pattern" id="toc-a-snapshot-does-not-establish-a-pattern" class="nav-link" data-scroll-target="#a-snapshot-does-not-establish-a-pattern">A snapshot does not establish a pattern</a></li>
+  <li><a href="#follow-the-changes" id="toc-follow-the-changes" class="nav-link" data-scroll-target="#follow-the-changes">Follow the changes</a></li>
+  <li><a href="#timing-changes-the-story" id="toc-timing-changes-the-story" class="nav-link" data-scroll-target="#timing-changes-the-story">Timing changes the story</a></li>
+  <li><a href="#the-bay-area-is-a-case-not-the-national-answer" id="toc-the-bay-area-is-a-case-not-the-national-answer" class="nav-link" data-scroll-target="#the-bay-area-is-a-case-not-the-national-answer">The Bay Area is a case, not the national answer</a></li>
+  <li><a href="#what-this-changes-about-my-starting-question" id="toc-what-this-changes-about-my-starting-question" class="nav-link" data-scroll-target="#what-this-changes-about-my-starting-question">What this changes about my starting question</a></li>
+  <li><a href="#sources-and-replication" id="toc-sources-and-replication" class="nav-link" data-scroll-target="#sources-and-replication">Sources and replication</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
-</div>
+<h1 class="title">More Tech, Better Jobs?</h1>
+<p class="subtitle lead">What changes across U.S. states reveal—and what two Bay Area counties add</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">economics</div>
+    <div class="quarto-category">technology</div>
+    <div class="quarto-category">data analysis</div>
+  </div>
+  </div>
 
 <div>
   <div class="description">
-    Notes on statistics, economics, data, and the questions that connect them.
+    Blog 4 · Technology-related employment expanded in most states, but broader employment outcomes did not improve in lockstep.
   </div>
 </div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jiaqi Yuan </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 4, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -209,156 +184,87 @@ window.Quarto = {
 </header>
 
 
-<div class="blog-landing">
-<div class="blog-landing-kicker">
-JIAQI YUAN · NOTES &amp; METHODS
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<h2 class="anchored">
-Ideas, evidence, and the questions between them.
-</h2>
-<p class="blog-landing-lead">
-A growing collection of clear, curious essays about statistics, economics, and the small details that make data worth looking at twice.
-</p>
-<div class="blog-topic-row" aria-label="Blog topics">
-<p><span>BLOG 1</span> <span>BLOG 2</span> <span>BLOG 3</span> <span>BLOG 4</span> <span>STATISTICS</span> <span>ECONOMICS</span> <span>DATA STORIES</span></p>
-</div>
-<div class="blog-start blog-featured">
-<p><span class="blog-start-label">BLOG 4 · LATEST</span> <a href="posts/post4/index.html">More Tech, Better Jobs?</a> <span class="blog-start-note">Does a growing technology workforce mean a stronger job market? Census data across 50 states and six years reveal that rising tech employment shares did not consistently accompany lower unemployment or higher employment rates. Four charts compare states, track changes over time, and take a closer look at two Bay Area core counties.</span></p>
-</div>
-<div class="blog-start" style="margin-top: 0.8rem">
-<p><span class="blog-start-label">BLOG 3</span> <a href="posts/post3/index.html">Did Americans Stop Working—or Just Get Older?</a> <span class="blog-start-note">A falling national average can hide a changing population. Using more than two million weighted CPS person-month observations, this post separates the 2019–2024 decline in labor-force participation into age composition and changes within age groups. Three charts show how an aging population outweighed participation gains—and why the headline rate cannot tell the whole story.</span></p>
-</div>
-<div class="blog-start" style="margin-top: 0.8rem">
-<p><span class="blog-start-label">BLOG 2</span> <a href="posts/post2/index.html">What Is Your Student ID Worth?</a> <span class="blog-start-note">Where does a student ID save the most—and where can you visit for less? Using R to collect official admission prices, this post compares 18 museums across eight U.S. cities. Philadelphia offers the largest average student discount in this sample, but museums that are free for everyone tell a different story about affordability. Explore the charts and filter the ticket table by city and age to plan your next visit.</span></p>
-</div>
-<div class="blog-start" style="margin-top: 0.8rem">
-<p><span class="blog-start-label">BLOG 1 · START HERE</span> <a href="posts/post1/Untitled.html">How Lisa Wins at Every Distance and Still Loses</a> <span class="blog-start-note">A friendly introduction to Simpson’s paradox.</span></p>
+<div class="callout-title-container flex-fill">
+Note
 </div>
 </div>
-<section id="latest-notes" class="level2">
-<h2 class="anchored" data-anchor-id="latest-notes">Latest notes</h2>
-
+<div class="callout-body-container callout-body">
+<p><strong>BLOG 4 · TECHNOLOGY AND LOCAL LABOR MARKETS</strong></p>
+<p>Tech employment share rose in <strong>48 of 50 states</strong> between 2018 and 2024. That expansion did not come with a consistent improvement in broader employment outcomes.</p>
+</div>
+</div>
+<section id="a-promising-industry-a-harder-question" class="level2">
+<h2 class="anchored" data-anchor-id="a-promising-industry-a-harder-question">A promising industry, a harder question</h2>
+<p>If a state becomes more technology-oriented, should it become an easier place to find work? That was my starting question. The Bay Area makes the question especially interesting: a place can be associated with technological opportunity without every resident sharing the same employment prospects.</p>
+<p>I compare all 50 states across six available years, then zoom in on San Francisco and Santa Clara counties. The question is about <strong>changes within places</strong>, not simply which places have the most tech workers. I do not assume that technology either creates or destroys jobs.</p>
+</section>
+<section id="measure-what-the-data-actually-observe" class="level2">
+<h2 class="anchored" data-anchor-id="measure-what-the-data-actually-observe">Measure what the data actually observe</h2>
+<p>The source is the Census Bureau’s American Community Survey (ACS) <strong>1-year estimates</strong>, tables S2401 and S2301. I define tech concentration as the share of employed residents age 16 and older in <strong>computer and mathematical occupations</strong>. This transparent proxy captures an occupational mix—not technological sophistication, patents, all STEM work, or AI adoption.</p>
+<p>Two outcomes describe the wider labor market: unemployment and the employment/population ratio. Lower unemployment is encouraging, but it can also reflect people leaving the labor force; a higher employment/population ratio provides a complementary perspective.</p>
+<p>The panel covers 2018, 2019, and 2021–2024: <strong>300 state-year observations</strong>, plus 12 county-year observations. DC is retained in the download but excluded from the 50-state comparisons. I start after the 2018 occupation-classification revision and omit 2020 because Census did not release standard 1-year estimates. Each state receives equal weight; published ACS estimates already use survey weights.</p>
+</section>
+<section id="a-snapshot-does-not-establish-a-pattern" class="level2">
+<h2 class="anchored" data-anchor-id="a-snapshot-does-not-establish-a-pattern">A snapshot does not establish a pattern</h2>
+<p>Figure 1 compares tech concentration and unemployment in 2018 and 2024. The cross-state correlation shifts from <strong>−0.17 to +0.12</strong>. Neither snapshot supplies a convincing rule that more tech means lower unemployment. More importantly, a comparison between states cannot tell us what happens when an individual state changes.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="results/figure1.png" class="img-fluid figure-img" alt="Two state scatterplots show a weak negative relationship between tech share and unemployment in 2018 and a weak positive relationship in 2024."></p>
+<figcaption>Cross-state relationships in 2018 and 2024.</figcaption>
+</figure>
+</div>
+</section>
+<section id="follow-the-changes" class="level2">
+<h2 class="anchored" data-anchor-id="follow-the-changes">Follow the changes</h2>
+<p>Figure 2 subtracts each state’s 2018 value from its 2024 value. A one-point increase means, for example, moving from 3% to 4% tech employment—not a 1% increase in the number of tech workers.</p>
+<p>The relationship between tech-share growth and unemployment change is modestly positive (<strong>r = 0.29</strong>). Faster tech-share growth therefore accompanies smaller unemployment declines or larger increases, rather than consistently stronger improvement. For employment/population, the relationship is nearly flat (<strong>r = 0.04</strong>).</p>
+<p>This is not simply California driving the pattern: excluding it gives correlations of <strong>+0.27</strong> and <strong>+0.05</strong>, respectively. Rank correlations also preserve the broad interpretation. I checked the denominator, too: every state with a rising tech share also had an increase in its estimated number of tech workers. Their shares did not rise solely because other employment contracted.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="results/figure2.png" class="img-fluid figure-img" alt="Changes in tech share versus changes in employment/population and unemployment, 2018–2024. The first relationship is nearly flat; the second slopes upward."></p>
+<figcaption>Within-state changes reveal little connection with employment/population improvement.</figcaption>
+</figure>
+</div>
+</section>
+<section id="timing-changes-the-story" class="level2">
+<h2 class="anchored" data-anchor-id="timing-changes-the-story">Timing changes the story</h2>
+<p>Figure 3 repeats the comparison for shorter periods. The correlation with unemployment change is <strong>−0.07</strong> in 2018–2019, <strong>+0.31</strong> in 2019–2021, and <strong>+0.26</strong> in 2021–2024. For employment/population it changes from <strong>+0.29</strong> to <strong>−0.29</strong>, then approximately <strong>zero</strong>. There is no stable association linking rising tech concentration to better outcomes across these periods. The 2019–2021 interval spans the pandemic; it cannot isolate the initial shock.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="results/figure3.png" class="img-fluid figure-img" alt="Correlation dots for three periods show no consistently favorable association between tech-share growth and the two employment outcomes."></p>
+<figcaption>Period-specific correlations change across the pre-pandemic and later intervals.</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-bay-area-is-a-case-not-the-national-answer" class="level2">
+<h2 class="anchored" data-anchor-id="the-bay-area-is-a-case-not-the-national-answer">The Bay Area is a case, not the national answer</h2>
+<p>Santa Clara County’s tech share rose from <strong>11.90% to 15.94%</strong>, while its ACS unemployment rate rose from <strong>3.9% to 5.2%</strong>. San Francisco County also recorded increases in both. These fixed county boundaries offer a local comparison without treating California as the Bay Area; the two counties do not represent the full nine-county region.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="results/figure4.png" class="img-fluid figure-img" alt="Tech share and unemployment trends for San Francisco County, Santa Clara County and California, with a break for missing 2020 estimates."></p>
+<figcaption>Two Bay Area core counties compared with California; the missing 2020 observation is not interpolated.</figcaption>
+</figure>
+</div>
+</section>
+<section id="what-this-changes-about-my-starting-question" class="level2">
+<h2 class="anchored" data-anchor-id="what-this-changes-about-my-starting-question">What this changes about my starting question</h2>
+<p>Growing tech employment is not a reliable shorthand for a stronger overall labor market. It describes which jobs residents hold, while unemployment describes a broader population.</p>
+<p>These are descriptive associations, not causal effects. Migration, age structure, education, other industries and common shocks may influence both variables. ACS sampling error also matters, especially for counties and small changes; the download retains published margins of error, but the charts show point estimates and make no significance claims. Residence-based estimates—including remote workers—do not measure jobs located in local offices.</p>
+</section>
+<section id="sources-and-replication" class="level2">
+<h2 class="anchored" data-anchor-id="sources-and-replication">Sources and replication</h2>
+<p><a href="https://www.census.gov/programs-surveys/acs/data/data-via-api.html">Census ACS API</a>: S2401 occupation counts and S2301 employment indicators; <a href="https://www.census.gov/programs-surveys/acs/guidance/comparing-acs-data/2018.html">2018 comparability guidance</a>; <a href="https://www.census.gov/data/developers/data-sets/acs-1year/2020.html">2020 release limitation</a>. Data retrieved October 4, 2026. ACS rates are not interchangeable with the monthly BLS headline unemployment series.</p>
+<p><a href="research.zip">Download the reproducibility package</a>: source responses, analysis scripts, figures and README. No API key is included.</p>
 
 
 </section>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="ZWNvbm9taWNzJTJDdGVjaG5vbG9neSUyQ2RhdGElMjBhbmFseXNpcw==" data-listing-date-sort="1791086400000" data-listing-file-modified-sort="1791142002463" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="833">
-<div class="thumbnail"><a href="../blog/posts/post4/index.html" class="no-external">
-
-<img loading="lazy" src="../blog/posts/post4/results/figure2.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/posts/post4/index.html" class="no-external">More Tech, Better Jobs?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../blog/posts/post4/index.html" class="no-external">What changes across U.S. states reveal—and what two Bay Area counties add</a>
-</div>
-<div class="delink listing-description"><a href="../blog/posts/post4/index.html" class="no-external">
-<p>Blog 4 · Technology-related employment expanded in most states, but broader employment outcomes did not improve in lockstep.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../blog/posts/post4/index.html" class="no-external">
-<div class="listing-date">
-Oct 4, 2026
-</div>
-<div class="listing-author">
-Jiaqi Yuan
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="ZWNvbm9taWNzJTJDSVBVTVMlMjBDUFMlMkNkYXRhJTIwYW5hbHlzaXM=" data-listing-date-sort="1790568000000" data-listing-file-modified-sort="1790640629058" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="776">
-<div class="thumbnail"><a href="../blog/posts/post3/index.html" class="no-external">
-
-<img loading="lazy" src="../blog/posts/post3/results/figure3.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/posts/post3/index.html" class="no-external">Did Americans Stop Working—or Just Get Older?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../blog/posts/post3/index.html" class="no-external">Separating age composition from labor-force participation, 2019–2024</a>
-</div>
-<div class="delink listing-description"><a href="../blog/posts/post3/index.html" class="no-external">
-<p>Blog 3 · More than two million CPS person-month observations reveal why a falling national participation rate can hide gains within age groups.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../blog/posts/post3/index.html" class="no-external">
-<div class="listing-date">
-Sep 28, 2026
-</div>
-<div class="listing-author">
-Jiaqi Yuan
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="d2ViJTIwc2NyYXBpbmclMkNzdHVkZW50JTIwbGlmZSUyQ2RhdGElMjBhbmFseXNpcw==" data-listing-date-sort="1789963200000" data-listing-file-modified-sort="1790040701927" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="846">
-<div class="thumbnail"><a href="../blog/posts/post2/index.html" class="no-external">
-
-<img loading="lazy" src="../blog/posts/post2/results/city-savings.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/posts/post2/index.html" class="no-external">What Is Your Student ID Worth?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../blog/posts/post2/index.html" class="no-external">A museum price check across eight U.S. cities</a>
-</div>
-<div class="delink listing-description"><a href="../blog/posts/post2/index.html" class="no-external">
-<p>Blog 2 · Eighteen museums, eight cities, and one surprising distinction: the biggest student discount is not always the cheapest visit.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../blog/posts/post2/index.html" class="no-external">
-<div class="listing-date">
-Sep 21, 2026
-</div>
-<div class="listing-author">
-Jiaqi Yuan
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="c3RhdGlzdGljcyUyQ2ludHVpdGlvbiUyQ2RhdGEtc2NpZW5jZQ==" data-listing-date-sort="1789358400000" data-listing-file-modified-sort="1789430493389" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1064">
-<div class="thumbnail"><a href="../blog/posts/post1/Untitled.html" class="no-external">
-
-<img loading="lazy" src="../blog/posts/post1/assets/simpsons-paradox-comic-v2.png" class="thumbnail-image" alt="Lisa, Bart, and Homer Simpson explain how different mixes of easy and hard shots reverse an overall ranking.">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/posts/post1/Untitled.html" class="no-external">How Lisa Wins at Every Distance and Still Loses</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../blog/posts/post1/Untitled.html" class="no-external">Simpson’s paradox, explained at the Springfield carnival</a>
-</div>
-<div class="delink listing-description"><a href="../blog/posts/post1/Untitled.html" class="no-external">
-<p>Lisa beats Bart at both distances. Bart wins overall. A carnival game reveals what averages hide.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../blog/posts/post1/Untitled.html" class="no-external">
-<div class="listing-date">
-Sep 14, 2026
-</div>
-<div class="listing-author">
-Jiaqi Yuan
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -763,7 +669,7 @@ Jiaqi Yuan
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><img src="..\images/UniversityofPennsylvania_FullLogo_RGB.png" class="img-fluid" width="100"></p>
+<p><img src="../../..\images/UniversityofPennsylvania_FullLogo_RGB.png" class="img-fluid" width="100"></p>
 </div>   
     <div class="nav-footer-center">
 <p>© 2026 Jiaqi Yuan</p>

@@ -21,12 +21,18 @@ listing:
   <span>BLOG 1</span>
   <span>BLOG 2</span>
   <span>BLOG 3</span>
+  <span>BLOG 4</span>
   <span>STATISTICS</span>
   <span>ECONOMICS</span>
   <span>DATA STORIES</span>
 </div>
 <div class="blog-start blog-featured">
-  <span class="blog-start-label">BLOG 3 · LATEST</span>
+  <span class="blog-start-label">BLOG 4 · LATEST</span>
+  <a href="posts/post4/index.html">More Tech, Better Jobs?</a>
+  <span class="blog-start-note">Does a growing technology workforce mean a stronger job market? Census data across 50 states and six years reveal that rising tech employment shares did not consistently accompany lower unemployment or higher employment rates. Four charts compare states, track changes over time, and take a closer look at two Bay Area core counties.</span>
+</div>
+<div class="blog-start" style="margin-top: 0.8rem">
+  <span class="blog-start-label">BLOG 3</span>
   <a href="posts/post3/index.html">Did Americans Stop Working—or Just Get Older?</a>
   <span class="blog-start-note">A falling national average can hide a changing population. Using more than two million weighted CPS person-month observations, this post separates the 2019–2024 decline in labor-force participation into age composition and changes within age groups. Three charts show how an aging population outweighed participation gains—and why the headline rate cannot tell the whole story.</span>
 </div>
@@ -43,3 +49,4 @@ listing:
 :::
 
 ## Latest notes
+

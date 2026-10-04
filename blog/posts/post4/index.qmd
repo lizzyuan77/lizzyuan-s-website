@@ -1,0 +1,90 @@
+---
+title: "More Tech, Better Jobs?"
+subtitle: "What changes across U.S. states reveal—and what two Bay Area counties add"
+author: "Jiaqi Yuan"
+date: 2026-10-04
+description: "Blog 4 · Technology-related employment expanded in most states, but broader employment outcomes did not improve in lockstep."
+categories: [economics, technology, data analysis]
+image: results/figure2.png
+resources:
+  - research.zip
+format:
+  html:
+    theme: flatly
+    css: post.css
+    toc: true
+    embed-resources: false
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+z<-read.csv('results/state-changes.csv')
+p<-read.csv('results/period-correlations.csv')
+b<-read.csv('results/bay-changes.csv')
+fmt<-function(x) sprintf('%.2f',x)
+full<-subset(p,period=='2018-2024')
+```
+
+::: {.callout-note}
+**BLOG 4 · TECHNOLOGY AND LOCAL LABOR MARKETS**
+
+Tech employment share rose in **`r sum(z$tech_change>0)` of 50 states** between 2018 and 2024. That expansion did not come with a consistent improvement in broader employment outcomes.
+:::
+
+## A promising industry, a harder question
+
+If a state becomes more technology-oriented, should it become an easier place to find work? That was my starting question. The Bay Area makes the question especially interesting: a place can be associated with technological opportunity without every resident sharing the same employment prospects.
+
+I compare all 50 states across six available years, then zoom in on San Francisco and Santa Clara counties. The question is about **changes within places**, not simply which places have the most tech workers. I do not assume that technology either creates or destroys jobs.
+
+## Measure what the data actually observe
+
+The source is the Census Bureau's American Community Survey (ACS) **1-year estimates**, tables S2401 and S2301. I define tech concentration as the share of employed residents age 16 and older in **computer and mathematical occupations**. This transparent proxy captures an occupational mix—not technological sophistication, patents, all STEM work, or AI adoption.
+
+Two outcomes describe the wider labor market: unemployment and the employment/population ratio. Lower unemployment is encouraging, but it can also reflect people leaving the labor force; a higher employment/population ratio provides a complementary perspective.
+
+The panel covers 2018, 2019, and 2021–2024: **300 state-year observations**, plus 12 county-year observations. DC is retained in the download but excluded from the 50-state comparisons. I start after the 2018 occupation-classification revision and omit 2020 because Census did not release standard 1-year estimates. Each state receives equal weight; published ACS estimates already use survey weights.
+
+## A snapshot does not establish a pattern
+
+Figure 1 compares tech concentration and unemployment in 2018 and 2024. The cross-state correlation shifts from **−0.17 to +0.12**. Neither snapshot supplies a convincing rule that more tech means lower unemployment. More importantly, a comparison between states cannot tell us what happens when an individual state changes.
+
+![Cross-state relationships in 2018 and 2024.](results/figure1.png){fig-alt="Two state scatterplots show a weak negative relationship between tech share and unemployment in 2018 and a weak positive relationship in 2024."}
+
+## Follow the changes
+
+Figure 2 subtracts each state's 2018 value from its 2024 value. A one-point increase means, for example, moving from 3% to 4% tech employment—not a 1% increase in the number of tech workers.
+
+The relationship between tech-share growth and unemployment change is modestly positive (**r = `r fmt(full$unemployment_r)`**). Faster tech-share growth therefore accompanies smaller unemployment declines or larger increases, rather than consistently stronger improvement. For employment/population, the relationship is nearly flat (**r = `r fmt(full$epr_r)`**).
+
+This is not simply California driving the pattern: excluding it gives correlations of **+0.27** and **+0.05**, respectively. Rank correlations also preserve the broad interpretation. I checked the denominator, too: every state with a rising tech share also had an increase in its estimated number of tech workers. Their shares did not rise solely because other employment contracted.
+
+![Within-state changes reveal little connection with employment/population improvement.](results/figure2.png){fig-alt="Changes in tech share versus changes in employment/population and unemployment, 2018–2024. The first relationship is nearly flat; the second slopes upward."}
+
+## Timing changes the story
+
+Figure 3 repeats the comparison for shorter periods. The correlation with unemployment change is **−0.07** in 2018–2019, **+0.31** in 2019–2021, and **+0.26** in 2021–2024. For employment/population it changes from **+0.29** to **−0.29**, then approximately **zero**. There is no stable association linking rising tech concentration to better outcomes across these periods. The 2019–2021 interval spans the pandemic; it cannot isolate the initial shock.
+
+![Period-specific correlations change across the pre-pandemic and later intervals.](results/figure3.png){fig-alt="Correlation dots for three periods show no consistently favorable association between tech-share growth and the two employment outcomes."}
+
+## The Bay Area is a case, not the national answer
+
+Santa Clara County's tech share rose from **11.90% to 15.94%**, while its ACS unemployment rate rose from **3.9% to 5.2%**. San Francisco County also recorded increases in both. These fixed county boundaries offer a local comparison without treating California as the Bay Area; the two counties do not represent the full nine-county region.
+
+![Two Bay Area core counties compared with California; the missing 2020 observation is not interpolated.](results/figure4.png){fig-alt="Tech share and unemployment trends for San Francisco County, Santa Clara County and California, with a break for missing 2020 estimates."}
+
+## What this changes about my starting question
+
+Growing tech employment is not a reliable shorthand for a stronger overall labor market. It describes which jobs residents hold, while unemployment describes a broader population.
+
+These are descriptive associations, not causal effects. Migration, age structure, education, other industries and common shocks may influence both variables. ACS sampling error also matters, especially for counties and small changes; the download retains published margins of error, but the charts show point estimates and make no significance claims. Residence-based estimates—including remote workers—do not measure jobs located in local offices.
+
+## Sources and replication
+
+[Census ACS API](https://www.census.gov/programs-surveys/acs/data/data-via-api.html): S2401 occupation counts and S2301 employment indicators; [2018 comparability guidance](https://www.census.gov/programs-surveys/acs/guidance/comparing-acs-data/2018.html); [2020 release limitation](https://www.census.gov/data/developers/data-sets/acs-1year/2020.html). Data retrieved October 4, 2026. ACS rates are not interchangeable with the monthly BLS headline unemployment series.
+
+[Download the reproducibility package](research.zip): source responses, analysis scripts, figures and README. No API key is included.
+
