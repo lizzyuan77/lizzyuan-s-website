@@ -33,7 +33,7 @@ listing:
 </div>
 <div class="blog-start" style="margin-top: 0.8rem">
   <span class="blog-start-label">BLOG 3</span>
-  <a href="posts/post3/index.html">Did Americans Stop Working—or Just Get Older?</a>
+  <a href="posts/post3/index.html">How Much of the Participation Decline Reflects an Aging Population?</a>
   <span class="blog-start-note">A falling national average can hide a changing population. Using more than two million weighted CPS person-month observations, this post separates the 2019–2024 decline in labor-force participation into age composition and changes within age groups. Three charts show how an aging population outweighed participation gains—and why the headline rate cannot tell the whole story.</span>
 </div>
 <div class="blog-start" style="margin-top: 0.8rem">

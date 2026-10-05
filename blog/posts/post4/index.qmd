@@ -34,11 +34,11 @@ full<-subset(p,period=='2018-2024')
 Tech employment share rose in **`r sum(z$tech_change>0)` of 50 states** between 2018 and 2024. That expansion did not come with a consistent improvement in broader employment outcomes.
 :::
 
-## A promising industry, a harder question
+## Tech employment and the wider labor market
 
-If a state becomes more technology-oriented, should it become an easier place to find work? That was my starting question. The Bay Area makes the question especially interesting: a place can be associated with technological opportunity without every resident sharing the same employment prospects.
+Does a growing share of workers in computer and mathematical occupations go together with better employment outcomes for a state's residents? Growth in these occupations could accompany stronger labor demand, but unemployment also depends on how labor supply and the rest of the economy change. A larger tech workforce alone does not settle the question.
 
-I compare all 50 states across six available years, then zoom in on San Francisco and Santa Clara counties. The question is about **changes within places**, not simply which places have the most tech workers. I do not assume that technology either creates or destroys jobs.
+I compare changes in occupational shares, unemployment, and employment/population ratios across all 50 states from 2018 to 2024, using six available years of ACS data. I then examine San Francisco and Santa Clara counties to see how these two parts of the Bay Area fit the national pattern.
 
 ## Measure what the data actually observe
 
@@ -58,7 +58,7 @@ Figure 1 ranks the ten states with the largest increases in tech employment shar
 
 Figure 2 subtracts each state's 2018 value from its 2024 value. A one-point increase means, for example, moving from 3% to 4% tech employment—not a 1% increase in the number of tech workers.
 
-Both panels make **up mean improvement**: falling unemployment in the first, rising employment/population in the second. Green marks improvement; peach marks deterioration. If more tech consistently meant better outcomes, the dots would slope upward. They do not: the correlation with unemployment improvement is **−0.29**, while employment/population improvement is nearly unrelated (**+0.04**).
+In both panels, higher values on the vertical axis indicate improvement: lower unemployment in the first and a higher employment/population ratio in the second. Across states, larger increases in tech employment share are associated with less improvement in unemployment (**r = −0.29**). The correlation with employment/population improvement is close to zero (**r = +0.04**). The two measures provide little evidence of a consistent positive association over this period.
 
 This is not simply California driving the pattern: excluding it gives correlations of **−0.27** and **+0.05**, respectively. Rank correlations also preserve the broad interpretation. I checked the denominator, too: every state with a rising tech share also had an increase in its estimated number of tech workers. Their shares did not rise solely because other employment contracted.
 
@@ -66,7 +66,7 @@ This is not simply California driving the pattern: excluding it gives correlatio
 
 ## Timing changes the story
 
-Figure 3 compares the **13 fastest-growing and 13 slowest-growing states**, ranked by tech-share change separately in each period. The bars show average employment improvements, not abstract correlation coefficients.
+For each period, Figure 3 ranks states by the change in tech employment share and compares the 13 states at each end of the ranking. Each bar is an equally weighted mean change in the relevant employment outcome. The middle 24 states are excluded from this particular comparison.
 
 In 2018–2019, the faster-tech group improved more on both measures. In 2019–2021 it deteriorated more. During 2021–2024, unemployment fell **1.24 points** in the faster-tech group versus **1.70** in the slower group, while employment/population gains were similar (**1.80 versus 1.72 points**). Faster tech growth did not bring a consistent advantage.
 
@@ -74,7 +74,7 @@ Groups change across periods; these are equal-weight descriptive averages, not m
 
 ![Faster and slower tech-growth groups do not show a consistent employment advantage across periods.](results/figure3.png){fig-alt="Grouped bars show mean improvements for the 13 fastest and 13 slowest tech-share growth states in each period. Faster growth performs better before the pandemic, worse in 2019–2021, and has mixed results in 2021–2024."}
 
-## The Bay Area is a case, not the national answer
+## San Francisco and Santa Clara counties
 
 Santa Clara County's tech share rose from **11.90% to 15.94%**, while its ACS unemployment rate rose from **3.9% to 5.2%**. San Francisco County also recorded increases in both. These fixed county boundaries offer a local comparison without treating California as the Bay Area; the two counties do not represent the full nine-county region.
 
@@ -90,9 +90,9 @@ The maps add a geographic view of the same 50-state comparison. Washington and T
 
 Read each legend separately: the color scales differ because the measures have different ranges. Large states occupy more space, not more statistical weight. Boundaries come from the [Census 2024 cartographic boundary files](https://www2.census.gov/geo/tiger/GENZ2024/shp/); state FIPS codes link geography to the analysis.
 
-## What this changes about my starting question
+## What the state comparisons show
 
-Growing tech employment is not a reliable shorthand for a stronger overall labor market. It describes which jobs residents hold, while unemployment describes a broader population.
+Across these 50 states from 2018 to 2024, a larger increase in the share of residents working in computer and mathematical occupations was not consistently associated with better employment outcomes. The period comparisons also give mixed results. I would therefore treat growth in this occupational share as evidence of a changing employment mix; assessing the wider labor market still requires looking at unemployment and employment/population together.
 
 These are descriptive associations, not causal effects. Migration, age structure, education, other industries and common shocks may influence both variables. ACS sampling error also matters, especially for counties and small changes; the download retains published margins of error, but the charts show point estimates and make no significance claims. Residence-based estimates—including remote workers—do not measure jobs located in local offices.
 
@@ -102,3 +102,5 @@ These are descriptive associations, not causal effects. Migration, age structure
 
 [Download the reproducibility package](research.zip): source responses, analysis scripts, figures and README. No API key is included.
 
+
+[View the code and replication instructions on GitHub](https://github.com/lizzyuan77/lizzyuan-s-website/tree/main/blog/posts/post4).

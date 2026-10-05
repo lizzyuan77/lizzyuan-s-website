@@ -49,18 +49,116 @@
     "text": "Languages and Interests\n\nMandarin Chinese, native\nEnglish, professional\nPilates, squash, volleyball, and hiking"
   },
   {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
+    "objectID": "blog/posts/post3/index.html",
+    "href": "blog/posts/post3/index.html",
+    "title": "How Much of the Participation Decline Reflects an Aging Population?",
     "section": "",
-    "text": "JIAQI YUAN · NOTES & METHODS\n\n\n\nA growing collection of clear, curious essays about statistics, economics, and the small details that make data worth looking at twice.\n\n\nBLOG 1 BLOG 2 BLOG 3 BLOG 4 STATISTICS ECONOMICS DATA STORIES\n\n\nBLOG 4 · LATEST More Tech, Better Jobs? Does a growing technology workforce mean a stronger job market? Census data across 50 states and six years reveal that rising tech employment shares did not consistently accompany lower unemployment or higher employment rates. Four charts and two U.S. maps compare states, track changes over time, and take a closer look at two Bay Area core counties.\n\n\nBLOG 3 Did Americans Stop Working—or Just Get Older? A falling national average can hide a changing population. Using more than two million weighted CPS person-month observations, this post separates the 2019–2024 decline in labor-force participation into age composition and changes within age groups. Three charts show how an aging population outweighed participation gains—and why the headline rate cannot tell the whole story.\n\n\nBLOG 2 What Is Your Student ID Worth? Where does a student ID save the most—and where can you visit for less? Using R to collect official admission prices, this post compares 18 museums across eight U.S. cities. Philadelphia offers the largest average student discount in this sample, but museums that are free for everyone tell a different story about affordability. Explore the charts and filter the ticket table by city and age to plan your next visit.\n\n\nBLOG 1 · START HERE How Lisa Wins at Every Distance and Still Loses A friendly introduction to Simpson’s paradox."
+    "text": "Note\n\n\n\nBLOG 3 · THE PEOPLE BEHIND THE AVERAGE\nParticipation fell 0.54 percentage points. A shift toward older ages pulled it down; changes within age groups partly offset that decline."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "blog/posts/post3/index.html#participation-and-population-aging",
+    "href": "blog/posts/post3/index.html#participation-and-population-aging",
+    "title": "How Much of the Participation Decline Reflects an Aging Population?",
+    "section": "Participation and population aging",
+    "text": "Participation and population aging\nA decline in labor-force participation can reflect changes in participation within age groups, changes in the population’s age distribution, or both. The distinction matters when interpreting the post-pandemic labor market: an older population can have a lower participation rate even if participation rises among younger adults. I use CPS data to measure how much each component contributes to the change between 2019 and 2024.\nUsing IPUMS CPS microdata, I compare 2019, before the pandemic, with 2024. The weighted annual participation rate fell from 63.40% to 62.86%. But that average combines two things: how likely people of each age are to participate, and how common each age group is."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#sample-and-weights",
+    "href": "blog/posts/post3/index.html#sample-and-weights",
+    "title": "How Much of the Participation Decline Reflects an Aging Population?",
+    "section": "Sample and weights",
+    "text": "Sample and weights\nI use all twelve Basic Monthly CPS samples in each year: 2,611,419 person-month records, of which 2,115,648 meet the analysis criteria. The population is civilians age 16 or older with a valid labor-force status and positive weight. These are observations, not distinct people; the CPS interviews respondents in multiple months.\nEvery population statistic uses WTFINL, the final person weight. I calculate each month’s weighted participation rate, then average the twelve rates equally. Age shares and within-age rates use the same monthly-normalized weights, keeping the decomposition consistent. The code imports the matching DDI metadata so that the weight’s implied decimals are handled correctly.\nParticipation includes employed people and unemployed people in the labor force. It is not an employment rate. Someone outside the labor force is not automatically unemployed."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#compare-people-of-similar-ages",
+    "href": "blog/posts/post3/index.html#compare-people-of-similar-ages",
+    "title": "How Much of the Participation Decline Reflects an Aging Population?",
+    "section": "Compare people of similar ages",
+    "text": "Compare people of similar ages\nFigure 1 compares participation across age groups in each year. Adults aged 25–54 have substantially higher participation rates than those 65 and older. Between 2019 and 2024, participation rose in all five displayed groups below age 65: for ages 35–44, it increased from 83.33% to 84.77%. Among ages 65–74, it fell from 28.47% to 27.67%. These are comparisons of age groups in two years; they do not track the same people as they age.\n\n\n\nWeighted participation rose in the five age groups below 65 and fell in the two older groups."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#the-changing-age-distribution",
+    "href": "blog/posts/post3/index.html#the-changing-age-distribution",
+    "title": "How Much of the Participation Decline Reflects an Aging Population?",
+    "section": "The changing age distribution",
+    "text": "The changing age distribution\nThe national participation rate weights each age group’s participation rate by its population share. If groups with lower participation account for more of the population, the national rate can fall even with unchanged participation within every age group.\nFigure 2 shows this compositional shift. Adults 65 and older increased from 20.40% to 22.23% of the weighted population. Because their participation rates are relatively low, that shift puts downward pressure on the national average. These are population shares estimated with weights, not percentages of downloaded rows.\n\n\n\nThe population shares of both older age groups increased between 2019 and 2024."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#separate-the-two-changes",
+    "href": "blog/posts/post3/index.html#separate-the-two-changes",
+    "title": "How Much of the Participation Decline Reflects an Aging Population?",
+    "section": "Separate the two changes",
+    "text": "Separate the two changes\nA symmetric Kitagawa decomposition splits the observed change into an age-composition component and a within-age participation component. It averages the two possible orders of changing shares and rates, so neither year gets special treatment.\nFigure 3 gives the result: -0.98 percentage points from composition, offset by +0.44 points from within-age changes, producing the observed -0.54 points. The composition component is larger than the net decline because the two components move in opposite directions. A percentage point is a difference between rates, not a percent change.\n\n\n\nAge composition contributes −0.98 percentage points, within-age participation +0.44, and the total is −0.54.\n\n\nUsing narrower, mostly five-year age groups gives −1.09 points for composition and +0.55 for within-age changes. The magnitudes change, but the interpretation survives."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#what-explains-the-aggregate-decline",
+    "href": "blog/posts/post3/index.html#what-explains-the-aggregate-decline",
+    "title": "How Much of the Participation Decline Reflects an Aging Population?",
+    "section": "What explains the aggregate decline?",
+    "text": "What explains the aggregate decline?\nIn this decomposition, the shift in age composition contributes -0.98 percentage points, exceeding the observed 0.54-point decline. Within-age participation changes offset 0.44 points of that decline. The aggregate therefore understates the improvement within many age groups. These results help explain the national rate, but they do not tell us why participation changed within those groups.\nThis is descriptive accounting, not a causal estimate of aging or the pandemic. Within-age changes also reflect health, education, family circumstances, and other composition; even the oldest age bin contains aging. Estimates are not seasonally adjusted, population-control revisions can affect comparisons, and repeated respondents rule out treating all rows as independent. I make no significance claims or claims about individual retirement decisions."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#data-and-reproducibility",
+    "href": "blog/posts/post3/index.html#data-and-reproducibility",
+    "title": "How Much of the Participation Decline Reflects an Aging Population?",
+    "section": "Data and reproducibility",
+    "text": "Data and reproducibility\nSource: IPUMS CPS, Version 13.0, University of Minnesota, doi:10.18128/D030.V13.0, based on Census Bureau and Bureau of Labor Statistics CPS data. Extract generated September 28, 2026; Basic Monthly samples for January–December 2019 and 2024. See WTFINL documentation and LABFORCE definitions.\nDownload the R code, replication instructions, and aggregate results. Raw microdata are excluded; obtain your own matching extract through IPUMS. The script checks month coverage, record uniqueness, codes, weights, and the decomposition identity.\nView the code and replication instructions on GitHub."
+  },
+  {
+    "objectID": "blog/posts/post2/index.html",
+    "href": "blog/posts/post2/index.html",
+    "title": "What Is Your Student ID Worth?",
     "section": "",
-    "text": "This website was created for AEDS 6400: Computational Methods at the University of Pennsylvania.\nIt is built with Quarto in RStudio and published with GitHub Pages from the docs folder of the main branch."
+    "text": "BLOG 2 · DATA IN EVERYDAY LIFE\nA student ID can cut a museum bill. But sometimes the best ticket is free for everyone.\n18 museums · 8 cities · 4 Census regions · September 21, 2026 snapshot"
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#what-does-student-status-save",
+    "href": "blog/posts/post2/index.html#what-does-student-status-save",
+    "title": "What Is Your Student ID Worth?",
+    "section": "What does student status save?",
+    "text": "What does student status save?\nHow much does being a student reduce the cost of visiting a museum? I collected posted admission prices for 18 museums in eight U.S. cities, comparing what a student and a nonstudent of the same age would pay. This separates the discount attached to student status from the price of the visit itself: a large discount may still leave an expensive ticket, while a museum that is free to everyone offers no additional saving for students."
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#building-a-comparable-ticket",
+    "href": "blog/posts/post2/index.html#building-a-comparable-ticket",
+    "title": "What Is Your Student ID Worth?",
+    "section": "Building a comparable ticket",
+    "text": "Building a comparable ticket\nI screened 30 institutions and retained 18 with extractable, comparable prices across 8 cities. This is a convenience sample, mostly art museums, not a representative survey. One institution contributes one observation; multiple buildings and repeated daily price tables do not become extra museums.\nThe baseline compares a 30-year-old, nonresident, full-time college student with valid ID against an otherwise equivalent nonstudent. Age 30 separates student status from youth eligibility; a second view uses age 22. Penn-specific partnerships, resident discounts, memberships, transportation, parking, booking fees, and separately ticketed exhibitions are excluded. Results describe posted general-admission prices, not a complete travel budget.\nStudent-ID saving = comparable adult price − student price.\nUsing R’s rvest, I parsed cached official HTML with read_html(), html_elements(), and html_text2(). Site-specific category patterns distinguish student tickets from parking charges and nonresident rates from local offers. Missing categories stop the analysis; missing prices never become zero. Short evidence extracts, source URLs, collection logs, and scripts accompany the cleaned data.\nRequests were spaced and cached. Access refusals, rate limits, robot exclusions, and challenge pages were not bypassed. Barnes and The Broad were dropped after reviewing restrictive terms. This matters statistically: websites that are easier to read can become overrepresented."
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#where-the-card-saves-more",
+    "href": "blog/posts/post2/index.html#where-the-card-saves-more",
+    "title": "What Is Your Student ID Worth?",
+    "section": "Where the card saves more",
+    "text": "Where the card saves more\n\n\n\nPhiladelphia has the largest average posted student discount in this selected sample; each city label shows its sample size.\n\n\nPhiladelphia leads this sample at $12.75 per museum, compared with $9.50 in New York. Visiting all four sampled Philadelphia institutions once would cost $42.00 using student rates, versus $93.00 at adult rates. This is a basket calculation, not a one-day itinerary.\nTo summarize the regional pattern, I give each sampled city equal weight. The Northeast has the largest average student discount in this sample, $9.08. The ranking is sensitive to which museums were included: Chicago is the only Midwestern city, and Houston and San Francisco each contribute just one museum. I therefore interpret it as a comparison of the collected prices, rather than an estimate of the discount a typical student would find across each region.\n\n\n\nDescriptive regional comparison; equal weight per sampled city.\n\n\nRegion\nCities\nMuseums\nMean saving per city\n\n\n\n\nMidwest\n1\n3\n$4.67\n\n\nNortheast\n3\n9\n$9.08\n\n\nSouth\n2\n3\n$2.50\n\n\nWest\n2\n3\n$3.50"
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#a-larger-discount-can-still-mean-a-larger-bill",
+    "href": "blog/posts/post2/index.html#a-larger-discount-can-still-mean-a-larger-bill",
+    "title": "What Is Your Student ID Worth?",
+    "section": "A larger discount can still mean a larger bill",
+    "text": "A larger discount can still mean a larger bill\n\n\n\nAdult and student admission prices at all eighteen museums. Six museums charge neither group for general admission.\n\n\nThe Getty Center and Hammer charge neither group for general admission. Their student-ID saving is zero, yet they are inexpensive choices. The Getty requires a timed reservation; Hammer does not require one for individual visits. Free admission does not remove parking costs or guarantee unrestricted access.\nEligibility changes the story too. At the Whitney, visitors 25 and under enter free regardless of enrollment. Switching both comparison groups to age 22 reduces New York’s mean student-ID saving from $9.50 to $6.50. Crediting the entire adult ticket to student status would exaggerate the card’s value.\nThe MCA Chicago has posted online prices and in-person pay-what-you-can admission. Its listed discount is not a guaranteed reduction in what someone must pay. Excluding MCA gives Chicago a mean saving of $3.00. Restricting the comparison to museums with positive adult prices also changes Boston’s mean from $5.00 to $7.50. The paid-only average answers how much students save at museums that charge admission; including free museums describes the saving across the full sampled set. The choice depends on which visits the reader is considering."
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#plan-around-eligibility-then-the-calendar",
+    "href": "blog/posts/post2/index.html#plan-around-eligibility-then-the-calendar",
+    "title": "What Is Your Student ID Worth?",
+    "section": "Plan around eligibility, then the calendar",
+    "text": "Plan around eligibility, then the calendar\nMy practical rule: choose the museums first, check age and student eligibility second, then compare free hours. Woodmere offers free Sundays, while ICA Boston’s free Thursday evenings require advance tickets. These are calendar savings available beyond students. Keep pay-what-you-wish separate from guaranteed free admission, and confirm hours at the official links before traveling."
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#explore-the-admission-snapshot",
+    "href": "blog/posts/post2/index.html#explore-the-admission-snapshot",
+    "title": "What Is Your Student ID Worth?",
+    "section": "Explore the admission snapshot",
+    "text": "Explore the admission snapshot\nChoose a city and an age scenario. Prices exclude fees; conditions remain visible. “Saving” refers only to student status. These are September 2026 observations, not live ticket quotes.\nCityAll eight citiesBostonChicagoHoustonLos AngelesNew YorkPhiladelphiaSan FranciscoWashington DCSame age in both groupsAge 30 · baselineAge 22 · youth eligibility\n\n\n\nMuseum / official source\nAdult\nStudent\nSaving\nConditions & planning notes\n\n\n\n\nPhiladelphia Museum of ArtPhiladelphia · fixed\n$30.00\n$14.00\n$16.00\nBring valid student ID; main-building admission.Mon/Thu/Sat/Sun 10–5; Fri 10–8:45; Tue/Wed closed\n\n\nPAFAPhiladelphia · fixed\n$25.00\n$10.00\n$15.00\nDaytime rates. Friday 5–8 pm adult admission is discounted; student price unchanged.Thu–Mon 10–5; Fri until 8\n\n\nWoodmerePhiladelphia · fixed\n$15.00\n$0.00\n$15.00\nStudent discount at front desk with ID. All visitors free Sundays, excluding events.See official visit page for both halls\n\n\nIndependence Seaport MuseumPhiladelphia · fixed\n$23.00\n$18.00\n$5.00\nGeneral Admission Package; submarine package excluded.See official hours before travel\n\n\nWhitney Museum of American ArtNew York · fixed\n$30.00\n$24.00\n$6.00\nAge 25 and under free for everyone. Advance tickets available; reserve free entry too.Free Fridays 5–10 pm; second Sundays\n\n\nIsabella Stewart Gardner MuseumBoston · fixed\n$25.00\n$15.00\n$10.00\nCurrent college ID; reserve ahead. School-partner promo codes excluded.Check timed-entry availability\n\n\nHarvard Art MuseumsBoston · free\n$0.00\n$0.00\n$0.00\nFree for all; check in at Visitor Services.Check current hours; Cambridge/Boston metro\n\n\nMuseum of Contemporary Art ChicagoChicago · suggested\n$22.00\n$14.00\n$8.00\nNonresident posted online prices; in-person admission is pay-what-you-can. Not a required minimum.Tue 10–9; Wed–Sun 10–5; Mon closed\n\n\nArt Institute of ChicagoChicago · fixed\n$32.00\n$26.00\n$6.00\nFirst General Admission category, nonresident. Advance tickets encouraged; ticketed special exhibitions extra.Consult current hours before travel\n\n\nSmart Museum of ArtChicago · free\n$0.00\n$0.00\n$0.00\nFree to all visitors.Check exhibition schedule before travel\n\n\nThe Phillips CollectionWashington DC · fixed\n$20.00\n$10.00\n$10.00\nID required. Third Thursdays 5–8 pm free for all; check ticket availability.Tue–Sun 10–5; Sun public entry from 11\n\n\nSmithsonian American Art MuseumWashington DC · free\n$0.00\n$0.00\n$0.00\nNo admission tickets required. Renwick closure noted on site; only SAAM main building represented.Daily 11:30–7\n\n\nSFMOMASan Francisco · fixed\n$30.00\n$23.00\n$7.00\nFull-time student with ID. Ages 18 and younger free.Mon/Tue/Fri–Sun 10–5; Thu noon–8; Wed closed\n\n\nGetty CenterLos Angeles · free\n$0.00\n$0.00\n$0.00\nFree admission requires timed-entry reservation. Parking costs excluded.Check reserved arrival time\n\n\nHammer MuseumLos Angeles · free\n$0.00\n$0.00\n$0.00\nNo advance reservation needed for individuals; groups of 10+ register.See official gallery hours\n\n\nContemporary Arts Museum HoustonHouston · free\n$0.00\n$0.00\n$0.00\nFree to all; only one Houston museum in the final sample.Check exhibition hours before travel\n\n\nThe Frick CollectionNew York · fixed\n$30.00\n$17.00\n$13.00\nTimed tickets recommended; student ID. Wednesday online minimum $5; different amounts onsite subject to availability.Wed pay-what-you-wish 1:30–5:30 pm\n\n\nInstitute of Contemporary Art BostonBoston · fixed\n$20.00\n$15.00\n$5.00\nFree Thursday advance tickets required; age 18 and under free.Thursday free entry 5–9 pm\n\n\n\nFixed = posted regular price. Suggested = MCA online price, with pay-what-you-can onsite. Free = both comparison groups enter free."
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#reproduce-the-analysis",
+    "href": "blog/posts/post2/index.html#reproduce-the-analysis",
+    "title": "What Is Your Student ID Worth?",
+    "section": "Reproduce the analysis",
+    "text": "Reproduce the analysis\nDownload the data Download the research bundle View the source on GitHub\nThe bundle includes an offline R replay, extraction rules, short factual evidence, acquisition code, exclusions, and package versions. Full museum pages and artwork are not republished. Hours and reservation notes are manually reviewed annotations, not outputs of the price parser. The linked README explains the limitations and refresh procedure.\n\n\n\n\n\n\nNoteA small, auditable rvest example\n\n\n\n\n\n\n\nShow the R code\nrvest::read_html('data/evidence/pma.html') |&gt;\n  rvest::html_elements('p') |&gt;\n  rvest::html_text2()\n\n\n[1] \"Adults$30\"                 \"Students with valid ID$14\"\n\n\nThis reads the short factual extracts retained from the original page. analyze.R can also parse the original private HTML cache with --raw, using the same category patterns. The public extracts are not presented as full archival copies of the websites.\n\n\n\nAI assistance was used for coding, drafting, and checking extraction rules. Prices are grounded in the linked official pages; the limitations above remain part of the result."
   },
   {
     "objectID": "bio.html",
@@ -119,18 +217,32 @@
     "text": "Get in Touch\nI’m always happy to connect over research, ideas, and interdisciplinary conversations.\nlizzyuan@sas.upenn.edu\nLinkedIn\nGitHub"
   },
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This website was created for AEDS 6400: Computational Methods at the University of Pennsylvania.\nIt is built with Quarto in RStudio and published with GitHub Pages from the docs folder of the main branch."
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "JIAQI YUAN · NOTES & METHODS\n\n\n\nA growing collection of clear, curious essays about statistics, economics, and the small details that make data worth looking at twice.\n\n\nBLOG 1 BLOG 2 BLOG 3 BLOG 4 STATISTICS ECONOMICS DATA STORIES\n\n\nBLOG 4 · LATEST More Tech, Better Jobs? Does a growing technology workforce mean a stronger job market? Census data across 50 states and six years reveal that rising tech employment shares did not consistently accompany lower unemployment or higher employment rates. Four charts and two U.S. maps compare states, track changes over time, and take a closer look at two Bay Area core counties.\n\n\nBLOG 3 How Much of the Participation Decline Reflects an Aging Population? A falling national average can hide a changing population. Using more than two million weighted CPS person-month observations, this post separates the 2019–2024 decline in labor-force participation into age composition and changes within age groups. Three charts show how an aging population outweighed participation gains—and why the headline rate cannot tell the whole story.\n\n\nBLOG 2 What Is Your Student ID Worth? Where does a student ID save the most—and where can you visit for less? Using R to collect official admission prices, this post compares 18 museums across eight U.S. cities. Philadelphia offers the largest average student discount in this sample, but museums that are free for everyone tell a different story about affordability. Explore the charts and filter the ticket table by city and age to plan your next visit.\n\n\nBLOG 1 · START HERE How Lisa Wins at Every Distance and Still Loses A friendly introduction to Simpson’s paradox."
+  },
+  {
+    "objectID": "blog/index.html#latest-notes",
+    "href": "blog/index.html#latest-notes",
+    "title": "Blog",
+    "section": "Latest notes",
+    "text": "Latest notes"
+  },
+  {
     "objectID": "blog/posts/post1/Untitled.html",
     "href": "blog/posts/post1/Untitled.html",
     "title": "How Lisa Wins at Every Distance and Still Loses",
     "section": "",
-    "text": "Lisa is more accurate than Bart at every distance. So how does Bart finish with the higher success rate?\n\nAt the Springfield carnival, Homer declares Bart the ring-toss champion: he lands 77% of his shots, against Lisa’s 63%. Lisa objects. She did better from both the near line and the far line. Surely winning in every category means winning overall?\nThat intuition feels compelling because we silently imagine the same mix of categories. Here, the mixes differ. This is Simpson’s paradox: an association points one way within every group but reverses when the groups are combined. The name refers to statistician Edward H. Simpson, whose 1951 paper examined the interpretation of grouped data. The cartoon family is our teaching cast.\n\n\n\n\n\n\nFigure 1: Different mixes, different winners. This AI-generated teaching comic depicts Lisa, Bart, and Homer Simpson in a fictional classroom example; it is not a scene from the television series.\n\n\n\n\n\nSuppose each sibling takes 100 shots. Lisa chooses mostly the harder, far-distance throws; Bart mostly the easier, near-distance ones. Here are the invented teaching data, with successes divided by attempts:\n\n\n\n\n\n\n\n\nDistance\nLisa: successes / attempts (rate)\nBart: successes / attempts (rate)\n\n\n\n\nNear/easier\n9 / 10 (90%)\n72 / 90 (80%)\n\n\nFar/harder\n54 / 90 (60%)\n5 / 10 (50%)\n\n\nOverall\n63 / 100 (63%)\n77 / 100 (77%)\n\n\n\nFictional teaching data. Overall rates use total successes divided by total attempts, rather than an unweighted mean of the two rates.\nUsing a shared 50:50 mix of near and far attempts: Lisa 75%, Bart 65%. These standardized rates hold the observed group rates fixed; they are not causal estimates or predictions.\nLisa leads by 10 percentage points at each distance, yet Bart leads by 14 points overall. No observations disappeared. The grouped and overall comparisons use exactly the same observations.\nThe key is the denominator. Lisa’s impressive 90% near-shot rate describes only ten attempts. Her 60% far-shot rate describes ninety. Bart’s easier shots receive most of the weight in his overall rate; Lisa’s harder shots receive most of the weight in hers.\n\n\n\nThink of the overall rate as a mixture. Each distance supplies a success rate; its share of attempts determines how much of that rate goes into the mixture:\n\\[\n\\begin{aligned}\n\\text{Lisa: }& 0.10\\times90\\%+0.90\\times60\\%=63\\%\\\\\n\\text{Bart: }& 0.90\\times80\\%+0.10\\times50\\%=77\\%.\n\\end{aligned}\n\\]\nEach overall rate lies between that player’s two distance-specific rates. Lisa’s is pulled toward 60%; Bart’s toward 80%. Our intuition compares the rates but overlooks their different weights. Averaging the two percentages equally would describe a different mix of shots.\n\n\n\nMove the sliders below. Each player’s accuracy at each distance stays fixed; only the near-versus-far share changes. Try Same mix: 50 / 50. Lisa’s standardized rate becomes 75% and Bart’s 65%.\n\n  TRY IT YOURSELF\n  \n  Change the share of easier, near-distance shots. The remainder are harder, far-distance shots.\n  \n    \n      Lisa 10% near · 90% far\n      \n      Accuracy stays: near 90% · far 60%\n    \n    \n      Bart 90% near · 10% far\n      \n      Accuracy stays: near 80% · far 50%\n    \n  \n  \n    Same mix: 50 / 50\n    Original carnival\n  \n  \n    Lisa63%\n    Bart77%\n    0%Overall success rate100%\n  \n  Bart leads overall by 14 percentage points, although Lisa leads at both distances.\n  Reweighting illustration: the original counts above stay unchanged. These mixtures hold observed within-distance rates fixed; they are not predictions of new throws.\n  Enable JavaScript to adjust the mix. At a shared 50% near / 50% far mix: Lisa 75%, Bart 65%.\n\nWith any shared mix, Lisa retains her ten-point advantage: each ingredient in her average is ten points higher. The reversal needs different weights. Standardization makes the composition comparable, holding the observed rates fixed; it does not guarantee how either sibling would perform in another game.\n\n\n\nFor who landed a larger share of their actual throws, the overall scoreboard answers correctly: Bart. For who had the higher observed accuracy at the same distance, the grouped table answers: Lisa. Different questions justify different summaries.\nThis matters beyond a carnival. Imagine evaluating job-training programs by employment rates. A program serving mostly job seekers who face greater barriers could have a lower overall placement rate even while its participants do better within each comparable group. Ranking programs from the headline percentage alone could punish the one serving the harder cases. This is a possible pattern, not evidence about any particular program.\nBut splitting data into groups is no automatic cure. To ask whether a program causes better outcomes, we need to understand how people enter it and which variables should be adjusted for. Grouping on a consequence of participation can even remove part of the effect we want to measure. As Pearl (2014) explains, causal interpretation requires knowledge of the process behind the data, beyond the table. Lisa’s table demonstrates an arithmetic reversal, not proof of innate skill or a causal effect.\n\nBefore trusting an average, ask what went into it. Check the group rates, check the group sizes, and decide which comparison answers your question. Homer counted the successes correctly. He just needed to look at the recipe.\n\n\n\nData, sources, and reproduce it\n\nAll four counts are constructed for this explanation; they are not observations from a television episode or an empirical study. The comic was made with OpenAI’s built-in image generation tool and checked against the table. Its generation prompt is included.\nDownload the four-row dataset, Python reproduction script, calculated results, or replication instructions. Run the script with Python 3 from this post’s folder; it generates the table and results using the standard library. The interactive demonstration implements the same weighted averages in JavaScript. AI-generated artwork is supplied as an asset; rerunning the analysis does not regenerate it.\npython code/reproduce.py\nFurther reading:\n\nSimpson, E. H. (1951). The Interpretation of Interaction in Contingency Tables. Journal of the Royal Statistical Society: Series B, 13(2), 238–241.\nPearl, J. (2014). Comment: Understanding Simpson’s Paradox. The American Statistician, 68(1), 8–13. Linked version: UCLA author manuscript."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Jiaqi (Liz) Yuan",
-    "section": "",
-    "text": "Jiaqi (Liz) Yuan\nInterested in data, economics, and the questions that connect people, markets, and ideas.\nMaster of Applied Economics and Data Science\nUniversity of Pennsylvania\nI am a student with interests in economics, data-driven analysis, and interdisciplinary research. Across academic projects, internships, and international learning experiences, I have been drawn to questions that sit between markets, behavior, and decision-making.\n\nConnect"
+    "text": "Lisa is more accurate than Bart at every distance. So how does Bart finish with the higher success rate?\n\nAt the Springfield carnival, Homer declares Bart the ring-toss champion: he lands 77% of his shots, against Lisa’s 63%. Lisa objects. She did better from both the near line and the far line. Surely winning in every category means winning overall?\nLisa’s argument leaves out how often each player throws from each distance. Comparing their overall success rates also compares the difficulty of the shots they took. In this example, that difference is large enough to reverse the ranking—a pattern known as Simpson’s paradox. The name refers to statistician Edward H. Simpson, whose 1951 paper examined the interpretation of grouped data. The cartoon family is our teaching cast.\n\n\n\n\n\n\nFigure 1: Different mixes, different winners. This AI-generated teaching comic depicts Lisa, Bart, and Homer Simpson in a fictional classroom example; it is not a scene from the television series.\n\n\n\n\n\nSuppose each sibling takes 100 shots. Lisa chooses mostly the harder, far-distance throws; Bart mostly the easier, near-distance ones. Here are the invented teaching data, with successes divided by attempts:\n\n\n\n\n\n\n\n\nDistance\nLisa: successes / attempts (rate)\nBart: successes / attempts (rate)\n\n\n\n\nNear/easier\n9 / 10 (90%)\n72 / 90 (80%)\n\n\nFar/harder\n54 / 90 (60%)\n5 / 10 (50%)\n\n\nOverall\n63 / 100 (63%)\n77 / 100 (77%)\n\n\n\nFictional teaching data. Overall rates use total successes divided by total attempts, rather than an unweighted mean of the two rates.\nUsing a shared 50:50 mix of near and far attempts: Lisa 75%, Bart 65%. These standardized rates hold the observed group rates fixed; they are not causal estimates or predictions.\nLisa leads by 10 percentage points at each distance, yet Bart leads by 14 points overall. No observations disappeared. The grouped and overall comparisons use exactly the same observations.\nThe key is the denominator. Lisa’s impressive 90% near-shot rate describes only ten attempts. Her 60% far-shot rate describes ninety. Bart’s easier shots receive most of the weight in his overall rate; Lisa’s harder shots receive most of the weight in hers.\n\n\n\nThink of the overall rate as a mixture. Each distance supplies a success rate; its share of attempts determines how much of that rate goes into the mixture:\n\\[\n\\begin{aligned}\n\\text{Lisa: }& 0.10\\times90\\%+0.90\\times60\\%=63\\%\\\\\n\\text{Bart: }& 0.90\\times80\\%+0.10\\times50\\%=77\\%.\n\\end{aligned}\n\\]\nEach overall rate lies between that player’s two distance-specific rates. Lisa’s is pulled toward 60%; Bart’s toward 80%. Our intuition compares the rates but overlooks their different weights. Averaging the two percentages equally would describe a different mix of shots.\n\n\n\nMove the sliders below. Each player’s accuracy at each distance stays fixed; only the near-versus-far share changes. Try Same mix: 50 / 50. Lisa’s standardized rate becomes 75% and Bart’s 65%.\n\n  TRY IT YOURSELF\n  \n  Change the share of easier, near-distance shots. The remainder are harder, far-distance shots.\n  \n    \n      Lisa 10% near · 90% far\n      \n      Accuracy stays: near 90% · far 60%\n    \n    \n      Bart 90% near · 10% far\n      \n      Accuracy stays: near 80% · far 50%\n    \n  \n  \n    Same mix: 50 / 50\n    Original carnival\n  \n  \n    Lisa63%\n    Bart77%\n    0%Overall success rate100%\n  \n  Bart leads overall by 14 percentage points, although Lisa leads at both distances.\n  Reweighting illustration: the original counts above stay unchanged. These mixtures hold observed within-distance rates fixed; they are not predictions of new throws.\n  Enable JavaScript to adjust the mix. At a shared 50% near / 50% far mix: Lisa 75%, Bart 65%.\n\nWith any shared mix, Lisa retains her ten-point advantage: each ingredient in her average is ten points higher. The reversal needs different weights. Standardization makes the composition comparable, holding the observed rates fixed; it does not guarantee how either sibling would perform in another game.\n\n\n\nFor who landed a larger share of their actual throws, the overall scoreboard answers correctly: Bart. For who had the higher observed accuracy at the same distance, the grouped table answers: Lisa. Different questions justify different summaries.\nThe same problem can arise when comparing job-training programs. Suppose one program enrolls more people with little prior work experience. Its overall placement rate could be lower even if placement rates are higher within each experience group. The overall rate describes outcomes for the people actually enrolled; a comparison using a common experience mix answers a different question. Neither comparison, by itself, tells us how much the training helped participants.\nBut splitting data into groups is no automatic cure. To ask whether a program causes better outcomes, we need to understand how people enter it and which variables should be adjusted for. Grouping on a consequence of participation can even remove part of the effect we want to measure. As Pearl (2014) explains, causal interpretation requires knowledge of the process behind the data, beyond the table. Lisa’s table demonstrates an arithmetic reversal, not proof of innate skill or a causal effect.\n\nBart landed a larger share of the shots he actually took. Lisa had a higher success rate at each distance. Both statements are true because the players took different mixes of shots. If Homer wants to compare their observed accuracy on equal terms, he needs to use the same distance mix for both.\n\n\n\nData, sources, and reproduce it\n\nAll four counts are constructed for this explanation; they are not observations from a television episode or an empirical study. The comic was made with OpenAI’s built-in image generation tool and checked against the table. Its generation prompt is included.\nDownload the four-row dataset, Python reproduction script, calculated results, or replication instructions. Run the script with Python 3 from this post’s folder; it generates the table and results using the standard library. The interactive demonstration implements the same weighted averages in JavaScript. AI-generated artwork is supplied as an asset; rerunning the analysis does not regenerate it.\npython code/reproduce.py\nFurther reading:\n\nSimpson, E. H. (1951). The Interpretation of Interaction in Contingency Tables. Journal of the Royal Statistical Society: Series B, 13(2), 238–241.\nPearl, J. (2014). Comment: Understanding Simpson’s Paradox. The American Statistician, 68(1), 8–13. Linked version: UCLA author manuscript."
   },
   {
     "objectID": "blog/posts/post1/Untitled.html#the-scoreboard-is-correct",
@@ -158,126 +270,7 @@
     "href": "blog/posts/post1/Untitled.html#which-answer-should-homer-use",
     "title": "How Lisa Wins at Every Distance and Still Loses",
     "section": "",
-    "text": "For who landed a larger share of their actual throws, the overall scoreboard answers correctly: Bart. For who had the higher observed accuracy at the same distance, the grouped table answers: Lisa. Different questions justify different summaries.\nThis matters beyond a carnival. Imagine evaluating job-training programs by employment rates. A program serving mostly job seekers who face greater barriers could have a lower overall placement rate even while its participants do better within each comparable group. Ranking programs from the headline percentage alone could punish the one serving the harder cases. This is a possible pattern, not evidence about any particular program.\nBut splitting data into groups is no automatic cure. To ask whether a program causes better outcomes, we need to understand how people enter it and which variables should be adjusted for. Grouping on a consequence of participation can even remove part of the effect we want to measure. As Pearl (2014) explains, causal interpretation requires knowledge of the process behind the data, beyond the table. Lisa’s table demonstrates an arithmetic reversal, not proof of innate skill or a causal effect.\n\nBefore trusting an average, ask what went into it. Check the group rates, check the group sizes, and decide which comparison answers your question. Homer counted the successes correctly. He just needed to look at the recipe.\n\n\n\nData, sources, and reproduce it\n\nAll four counts are constructed for this explanation; they are not observations from a television episode or an empirical study. The comic was made with OpenAI’s built-in image generation tool and checked against the table. Its generation prompt is included.\nDownload the four-row dataset, Python reproduction script, calculated results, or replication instructions. Run the script with Python 3 from this post’s folder; it generates the table and results using the standard library. The interactive demonstration implements the same weighted averages in JavaScript. AI-generated artwork is supplied as an asset; rerunning the analysis does not regenerate it.\npython code/reproduce.py\nFurther reading:\n\nSimpson, E. H. (1951). The Interpretation of Interaction in Contingency Tables. Journal of the Royal Statistical Society: Series B, 13(2), 238–241.\nPearl, J. (2014). Comment: Understanding Simpson’s Paradox. The American Statistician, 68(1), 8–13. Linked version: UCLA author manuscript."
-  },
-  {
-    "objectID": "blog/index.html#latest-notes",
-    "href": "blog/index.html#latest-notes",
-    "title": "Blog",
-    "section": "Latest notes",
-    "text": "Latest notes"
-  },
-  {
-    "objectID": "blog/posts/post2/index.html",
-    "href": "blog/posts/post2/index.html",
-    "title": "What Is Your Student ID Worth?",
-    "section": "",
-    "text": "BLOG 2 · DATA IN EVERYDAY LIFE\nA student ID can cut a museum bill. But sometimes the best ticket is free for everyone.\n18 museums · 8 cities · 4 Census regions · September 21, 2026 snapshot"
-  },
-  {
-    "objectID": "blog/posts/post2/index.html#one-card-two-questions",
-    "href": "blog/posts/post2/index.html#one-card-two-questions",
-    "title": "What Is Your Student ID Worth?",
-    "section": "One card, two questions",
-    "text": "One card, two questions\nPlanning a museum weekend raises a familiar student-budget question: how far can an ID card stretch? Starting in Philadelphia, I expanded the search to New York, Boston, Chicago, Washington, San Francisco, Los Angeles, and Houston. I wanted to distinguish where student status saves the most from where admission costs the least. Those questions sound interchangeable. They are not."
-  },
-  {
-    "objectID": "blog/posts/post2/index.html#building-a-comparable-ticket",
-    "href": "blog/posts/post2/index.html#building-a-comparable-ticket",
-    "title": "What Is Your Student ID Worth?",
-    "section": "Building a comparable ticket",
-    "text": "Building a comparable ticket\nI screened 30 institutions and retained 18 with extractable, comparable prices across 8 cities. This is a convenience sample, mostly art museums, not a representative survey. One institution contributes one observation; multiple buildings and repeated daily price tables do not become extra museums.\nThe baseline compares a 30-year-old, nonresident, full-time college student with valid ID against an otherwise equivalent nonstudent. Age 30 separates student status from youth eligibility; a second view uses age 22. Penn-specific partnerships, resident discounts, memberships, transportation, parking, booking fees, and separately ticketed exhibitions are excluded. Results describe posted general-admission prices, not a complete travel budget.\nStudent-ID saving = comparable adult price − student price.\nUsing R’s rvest, I parsed cached official HTML with read_html(), html_elements(), and html_text2(). Site-specific category patterns distinguish student tickets from parking charges and nonresident rates from local offers. Missing categories stop the analysis; missing prices never become zero. Short evidence extracts, source URLs, collection logs, and scripts accompany the cleaned data.\nRequests were spaced and cached. Access refusals, rate limits, robot exclusions, and challenge pages were not bypassed. Barnes and The Broad were dropped after reviewing restrictive terms. This matters statistically: websites that are easier to read can become overrepresented."
-  },
-  {
-    "objectID": "blog/posts/post2/index.html#where-the-card-saves-more",
-    "href": "blog/posts/post2/index.html#where-the-card-saves-more",
-    "title": "What Is Your Student ID Worth?",
-    "section": "Where the card saves more",
-    "text": "Where the card saves more\n\n\n\nPhiladelphia has the largest average posted student discount in this selected sample; each city label shows its sample size.\n\n\nPhiladelphia leads this sample at $12.75 per museum, compared with $9.50 in New York. Visiting all four sampled Philadelphia institutions once would cost $42.00 using student rates, versus $93.00 at adult rates. This is a basket calculation, not a one-day itinerary.\nRegionally, I average city means so cities with more observations do not automatically receive more weight. The Northeast has the highest observed mean, $9.08. However, the Midwest contains only Chicago; Houston and San Francisco each have one museum. These numbers cannot establish which entire U.S. region offers students the best value.\n\n\n\nDescriptive regional comparison; equal weight per sampled city.\n\n\nRegion\nCities\nMuseums\nMean saving per city\n\n\n\n\nMidwest\n1\n3\n$4.67\n\n\nNortheast\n3\n9\n$9.08\n\n\nSouth\n2\n3\n$2.50\n\n\nWest\n2\n3\n$3.50"
-  },
-  {
-    "objectID": "blog/posts/post2/index.html#a-larger-discount-can-still-mean-a-larger-bill",
-    "href": "blog/posts/post2/index.html#a-larger-discount-can-still-mean-a-larger-bill",
-    "title": "What Is Your Student ID Worth?",
-    "section": "A larger discount can still mean a larger bill",
-    "text": "A larger discount can still mean a larger bill\n\n\n\nAdult and student admission prices at all eighteen museums. Six museums charge neither group for general admission.\n\n\nThe Getty Center and Hammer charge neither group for general admission. Their student-ID saving is zero, yet they are inexpensive choices. The Getty requires a timed reservation; Hammer does not require one for individual visits. Free admission does not remove parking costs or guarantee unrestricted access.\nEligibility changes the story too. At the Whitney, visitors 25 and under enter free regardless of enrollment. Switching both comparison groups to age 22 reduces New York’s mean student-ID saving from $9.50 to $6.50. Crediting the entire adult ticket to student status would exaggerate the card’s value.\nThe MCA Chicago has posted online prices and in-person pay-what-you-can admission. Its listed discount is not a guaranteed reduction in what someone must pay. Excluding MCA gives Chicago a mean saving of $3.00. Restricting the comparison to museums with positive adult prices also changes Boston’s mean from $5.00 to $7.50. The denominator matters."
-  },
-  {
-    "objectID": "blog/posts/post2/index.html#plan-around-eligibility-then-the-calendar",
-    "href": "blog/posts/post2/index.html#plan-around-eligibility-then-the-calendar",
-    "title": "What Is Your Student ID Worth?",
-    "section": "Plan around eligibility, then the calendar",
-    "text": "Plan around eligibility, then the calendar\nMy practical rule: choose the museums first, check age and student eligibility second, then compare free hours. Woodmere offers free Sundays, while ICA Boston’s free Thursday evenings require advance tickets. These are calendar savings available beyond students. Keep pay-what-you-wish separate from guaranteed free admission, and confirm hours at the official links before traveling."
-  },
-  {
-    "objectID": "blog/posts/post2/index.html#explore-the-admission-snapshot",
-    "href": "blog/posts/post2/index.html#explore-the-admission-snapshot",
-    "title": "What Is Your Student ID Worth?",
-    "section": "Explore the admission snapshot",
-    "text": "Explore the admission snapshot\nChoose a city and an age scenario. Prices exclude fees; conditions remain visible. “Saving” refers only to student status. These are September 2026 observations, not live ticket quotes.\nCityAll eight citiesBostonChicagoHoustonLos AngelesNew YorkPhiladelphiaSan FranciscoWashington DCSame age in both groupsAge 30 · baselineAge 22 · youth eligibility\n\n\n\nMuseum / official source\nAdult\nStudent\nSaving\nConditions & planning notes\n\n\n\n\nPhiladelphia Museum of ArtPhiladelphia · fixed\n$30.00\n$14.00\n$16.00\nBring valid student ID; main-building admission.Mon/Thu/Sat/Sun 10–5; Fri 10–8:45; Tue/Wed closed\n\n\nPAFAPhiladelphia · fixed\n$25.00\n$10.00\n$15.00\nDaytime rates. Friday 5–8 pm adult admission is discounted; student price unchanged.Thu–Mon 10–5; Fri until 8\n\n\nWoodmerePhiladelphia · fixed\n$15.00\n$0.00\n$15.00\nStudent discount at front desk with ID. All visitors free Sundays, excluding events.See official visit page for both halls\n\n\nIndependence Seaport MuseumPhiladelphia · fixed\n$23.00\n$18.00\n$5.00\nGeneral Admission Package; submarine package excluded.See official hours before travel\n\n\nWhitney Museum of American ArtNew York · fixed\n$30.00\n$24.00\n$6.00\nAge 25 and under free for everyone. Advance tickets available; reserve free entry too.Free Fridays 5–10 pm; second Sundays\n\n\nIsabella Stewart Gardner MuseumBoston · fixed\n$25.00\n$15.00\n$10.00\nCurrent college ID; reserve ahead. School-partner promo codes excluded.Check timed-entry availability\n\n\nHarvard Art MuseumsBoston · free\n$0.00\n$0.00\n$0.00\nFree for all; check in at Visitor Services.Check current hours; Cambridge/Boston metro\n\n\nMuseum of Contemporary Art ChicagoChicago · suggested\n$22.00\n$14.00\n$8.00\nNonresident posted online prices; in-person admission is pay-what-you-can. Not a required minimum.Tue 10–9; Wed–Sun 10–5; Mon closed\n\n\nArt Institute of ChicagoChicago · fixed\n$32.00\n$26.00\n$6.00\nFirst General Admission category, nonresident. Advance tickets encouraged; ticketed special exhibitions extra.Consult current hours before travel\n\n\nSmart Museum of ArtChicago · free\n$0.00\n$0.00\n$0.00\nFree to all visitors.Check exhibition schedule before travel\n\n\nThe Phillips CollectionWashington DC · fixed\n$20.00\n$10.00\n$10.00\nID required. Third Thursdays 5–8 pm free for all; check ticket availability.Tue–Sun 10–5; Sun public entry from 11\n\n\nSmithsonian American Art MuseumWashington DC · free\n$0.00\n$0.00\n$0.00\nNo admission tickets required. Renwick closure noted on site; only SAAM main building represented.Daily 11:30–7\n\n\nSFMOMASan Francisco · fixed\n$30.00\n$23.00\n$7.00\nFull-time student with ID. Ages 18 and younger free.Mon/Tue/Fri–Sun 10–5; Thu noon–8; Wed closed\n\n\nGetty CenterLos Angeles · free\n$0.00\n$0.00\n$0.00\nFree admission requires timed-entry reservation. Parking costs excluded.Check reserved arrival time\n\n\nHammer MuseumLos Angeles · free\n$0.00\n$0.00\n$0.00\nNo advance reservation needed for individuals; groups of 10+ register.See official gallery hours\n\n\nContemporary Arts Museum HoustonHouston · free\n$0.00\n$0.00\n$0.00\nFree to all; only one Houston museum in the final sample.Check exhibition hours before travel\n\n\nThe Frick CollectionNew York · fixed\n$30.00\n$17.00\n$13.00\nTimed tickets recommended; student ID. Wednesday online minimum $5; different amounts onsite subject to availability.Wed pay-what-you-wish 1:30–5:30 pm\n\n\nInstitute of Contemporary Art BostonBoston · fixed\n$20.00\n$15.00\n$5.00\nFree Thursday advance tickets required; age 18 and under free.Thursday free entry 5–9 pm\n\n\n\nFixed = posted regular price. Suggested = MCA online price, with pay-what-you-can onsite. Free = both comparison groups enter free."
-  },
-  {
-    "objectID": "blog/posts/post2/index.html#reproduce-the-analysis",
-    "href": "blog/posts/post2/index.html#reproduce-the-analysis",
-    "title": "What Is Your Student ID Worth?",
-    "section": "Reproduce the analysis",
-    "text": "Reproduce the analysis\nDownload the data Download the research bundle View the source on GitHub\nThe bundle includes an offline R replay, extraction rules, short factual evidence, acquisition code, exclusions, and package versions. Full museum pages and artwork are not republished. Hours and reservation notes are manually reviewed annotations, not outputs of the price parser. The linked README explains the limitations and refresh procedure.\n\n\n\n\n\n\nNoteA small, auditable rvest example\n\n\n\n\n\n\n\nShow the R code\nrvest::read_html('data/evidence/pma.html') |&gt;\n  rvest::html_elements('p') |&gt;\n  rvest::html_text2()\n\n\n[1] \"Adults$30\"                 \"Students with valid ID$14\"\n\n\nThis reads the short factual extracts retained from the original page. analyze.R can also parse the original private HTML cache with --raw, using the same category patterns. The public extracts are not presented as full archival copies of the websites.\n\n\n\nAI assistance was used for coding, drafting, and checking extraction rules. Prices are grounded in the linked official pages; the limitations above remain part of the result."
-  },
-  {
-    "objectID": "blog/posts/post3/index.html",
-    "href": "blog/posts/post3/index.html",
-    "title": "Did Americans Stop Working—or Just Get Older?",
-    "section": "",
-    "text": "Note\n\n\n\nBLOG 3 · THE PEOPLE BEHIND THE AVERAGE\nParticipation fell 0.54 percentage points. A shift toward older ages pulled it down; changes within age groups partly offset that decline."
-  },
-  {
-    "objectID": "blog/posts/post3/index.html#a-national-average-is-not-a-national-attitude",
-    "href": "blog/posts/post3/index.html#a-national-average-is-not-a-national-attitude",
-    "title": "Did Americans Stop Working—or Just Get Older?",
-    "section": "A national average is not a national attitude",
-    "text": "A national average is not a national attitude\n“People don’t want to work anymore” is an easy explanation for a falling labor-force participation rate. I wanted to test a less dramatic possibility: perhaps the population itself changed. Comparing a country with more retirees to its younger past is hardly a fair test of changing attitudes toward work.\nUsing IPUMS CPS microdata, I compare 2019, before the pandemic, with 2024. The weighted annual participation rate fell from 63.40% to 62.86%. But that average combines two things: how likely people of each age are to participate, and how common each age group is."
-  },
-  {
-    "objectID": "blog/posts/post3/index.html#first-count-the-populationnot-just-the-rows",
-    "href": "blog/posts/post3/index.html#first-count-the-populationnot-just-the-rows",
-    "title": "Did Americans Stop Working—or Just Get Older?",
-    "section": "First, count the population—not just the rows",
-    "text": "First, count the population—not just the rows\nI use all twelve Basic Monthly CPS samples in each year: 2,611,419 person-month records, of which 2,115,648 meet the analysis criteria. The population is civilians age 16 or older with a valid labor-force status and positive weight. These are observations, not distinct people; the CPS interviews respondents in multiple months.\nEvery population statistic uses WTFINL, the final person weight. I calculate each month’s weighted participation rate, then average the twelve rates equally. Age shares and within-age rates use the same monthly-normalized weights, keeping the decomposition consistent. The code imports the matching DDI metadata so that the weight’s implied decimals are handled correctly.\nParticipation includes employed people and unemployed people in the labor force. It is not an employment rate. Someone outside the labor force is not automatically unemployed."
-  },
-  {
-    "objectID": "blog/posts/post3/index.html#compare-people-of-similar-ages",
-    "href": "blog/posts/post3/index.html#compare-people-of-similar-ages",
-    "title": "Did Americans Stop Working—or Just Get Older?",
-    "section": "Compare people of similar ages",
-    "text": "Compare people of similar ages\nFigure 1 shows a strong life-cycle pattern: participation is much higher among adults aged 25–54 than among those 65 and older. The national decline also conceals increases in every displayed group below age 65. For ages 35–44, participation rose from 83.33% to 84.77%; among ages 65–74, it fell from 28.47% to 27.67%. One headline cannot describe both experiences.\n\n\n\nWeighted participation rose in the five age groups below 65 and fell in the two older groups."
-  },
-  {
-    "objectID": "blog/posts/post3/index.html#change-the-mix-change-the-average",
-    "href": "blog/posts/post3/index.html#change-the-mix-change-the-average",
-    "title": "Did Americans Stop Working—or Just Get Older?",
-    "section": "Change the mix, change the average",
-    "text": "Change the mix, change the average\nImagine two rooms: one mostly contains working-age adults, the other mostly retirees. Moving more people into the second room can lower the combined participation rate even if neither room’s rate changes.\nFigure 2 shows this compositional shift. Adults 65 and older increased from 20.40% to 22.23% of the weighted population. Because their participation rates are relatively low, that shift puts downward pressure on the national average. These are population shares estimated with weights, not percentages of downloaded rows.\n\n\n\nThe population shares of both older age groups increased between 2019 and 2024."
-  },
-  {
-    "objectID": "blog/posts/post3/index.html#separate-the-two-changes",
-    "href": "blog/posts/post3/index.html#separate-the-two-changes",
-    "title": "Did Americans Stop Working—or Just Get Older?",
-    "section": "Separate the two changes",
-    "text": "Separate the two changes\nA symmetric Kitagawa decomposition splits the observed change into an age-composition component and a within-age participation component. It averages the two possible orders of changing shares and rates, so neither year gets special treatment.\nFigure 3 gives the result: -0.98 percentage points from composition, offset by +0.44 points from within-age changes, producing the observed -0.54 points. The composition component is larger than the net decline because the two components move in opposite directions. A percentage point is a difference between rates, not a percent change.\n\n\n\nAge composition contributes −0.98 percentage points, within-age participation +0.44, and the total is −0.54.\n\n\nUsing narrower, mostly five-year age groups gives −1.09 points for composition and +0.55 for within-age changes. The magnitudes change, but the interpretation survives."
-  },
-  {
-    "objectID": "blog/posts/post3/index.html#what-i-would-take-away",
-    "href": "blog/posts/post3/index.html#what-i-would-take-away",
-    "title": "Did Americans Stop Working—or Just Get Older?",
-    "section": "What I would take away",
-    "text": "What I would take away\nThe national decline is consistent with an aging population even as participation improved in many age groups. Before reading an aggregate rate as a change in motivation, ask who is being averaged.\nThis is descriptive accounting, not a causal estimate of aging or the pandemic. Within-age changes also reflect health, education, family circumstances, and other composition; even the oldest age bin contains aging. Estimates are not seasonally adjusted, population-control revisions can affect comparisons, and repeated respondents rule out treating all rows as independent. I make no significance claims or claims about individual retirement decisions."
-  },
-  {
-    "objectID": "blog/posts/post3/index.html#data-and-reproducibility",
-    "href": "blog/posts/post3/index.html#data-and-reproducibility",
-    "title": "Did Americans Stop Working—or Just Get Older?",
-    "section": "Data and reproducibility",
-    "text": "Data and reproducibility\nSource: IPUMS CPS, Version 13.0, University of Minnesota, doi:10.18128/D030.V13.0, based on Census Bureau and Bureau of Labor Statistics CPS data. Extract generated September 28, 2026; Basic Monthly samples for January–December 2019 and 2024. See WTFINL documentation and LABFORCE definitions.\nDownload the R code, replication instructions, and aggregate results. Raw microdata are excluded; obtain your own matching extract through IPUMS. The script checks month coverage, record uniqueness, codes, weights, and the decomposition identity."
+    "text": "For who landed a larger share of their actual throws, the overall scoreboard answers correctly: Bart. For who had the higher observed accuracy at the same distance, the grouped table answers: Lisa. Different questions justify different summaries.\nThe same problem can arise when comparing job-training programs. Suppose one program enrolls more people with little prior work experience. Its overall placement rate could be lower even if placement rates are higher within each experience group. The overall rate describes outcomes for the people actually enrolled; a comparison using a common experience mix answers a different question. Neither comparison, by itself, tells us how much the training helped participants.\nBut splitting data into groups is no automatic cure. To ask whether a program causes better outcomes, we need to understand how people enter it and which variables should be adjusted for. Grouping on a consequence of participation can even remove part of the effect we want to measure. As Pearl (2014) explains, causal interpretation requires knowledge of the process behind the data, beyond the table. Lisa’s table demonstrates an arithmetic reversal, not proof of innate skill or a causal effect.\n\nBart landed a larger share of the shots he actually took. Lisa had a higher success rate at each distance. Both statements are true because the players took different mixes of shots. If Homer wants to compare their observed accuracy on equal terms, he needs to use the same distance mix for both.\n\n\n\nData, sources, and reproduce it\n\nAll four counts are constructed for this explanation; they are not observations from a television episode or an empirical study. The comic was made with OpenAI’s built-in image generation tool and checked against the table. Its generation prompt is included.\nDownload the four-row dataset, Python reproduction script, calculated results, or replication instructions. Run the script with Python 3 from this post’s folder; it generates the table and results using the standard library. The interactive demonstration implements the same weighted averages in JavaScript. AI-generated artwork is supplied as an asset; rerunning the analysis does not regenerate it.\npython code/reproduce.py\nFurther reading:\n\nSimpson, E. H. (1951). The Interpretation of Interaction in Contingency Tables. Journal of the Royal Statistical Society: Series B, 13(2), 238–241.\nPearl, J. (2014). Comment: Understanding Simpson’s Paradox. The American Statistician, 68(1), 8–13. Linked version: UCLA author manuscript."
   },
   {
     "objectID": "blog/posts/post4/index.html",
@@ -287,11 +280,11 @@
     "text": "Note\n\n\n\nBLOG 4 · TECHNOLOGY AND LOCAL LABOR MARKETS\nTech employment share rose in 48 of 50 states between 2018 and 2024. That expansion did not come with a consistent improvement in broader employment outcomes."
   },
   {
-    "objectID": "blog/posts/post4/index.html#a-promising-industry-a-harder-question",
-    "href": "blog/posts/post4/index.html#a-promising-industry-a-harder-question",
+    "objectID": "blog/posts/post4/index.html#tech-employment-and-the-wider-labor-market",
+    "href": "blog/posts/post4/index.html#tech-employment-and-the-wider-labor-market",
     "title": "More Tech, Better Jobs?",
-    "section": "A promising industry, a harder question",
-    "text": "A promising industry, a harder question\nIf a state becomes more technology-oriented, should it become an easier place to find work? That was my starting question. The Bay Area makes the question especially interesting: a place can be associated with technological opportunity without every resident sharing the same employment prospects.\nI compare all 50 states across six available years, then zoom in on San Francisco and Santa Clara counties. The question is about changes within places, not simply which places have the most tech workers. I do not assume that technology either creates or destroys jobs."
+    "section": "Tech employment and the wider labor market",
+    "text": "Tech employment and the wider labor market\nDoes a growing share of workers in computer and mathematical occupations go together with better employment outcomes for a state’s residents? Growth in these occupations could accompany stronger labor demand, but unemployment also depends on how labor supply and the rest of the economy change. A larger tech workforce alone does not settle the question.\nI compare changes in occupational shares, unemployment, and employment/population ratios across all 50 states from 2018 to 2024, using six available years of ACS data. I then examine San Francisco and Santa Clara counties to see how these two parts of the Bay Area fit the national pattern."
   },
   {
     "objectID": "blog/posts/post4/index.html#measure-what-the-data-actually-observe",
@@ -301,48 +294,6 @@
     "text": "Measure what the data actually observe\nThe source is the Census Bureau’s American Community Survey (ACS) 1-year estimates, tables S2401 and S2301. I define tech concentration as the share of employed residents age 16 and older in computer and mathematical occupations. This transparent proxy captures an occupational mix—not technological sophistication, patents, all STEM work, or AI adoption.\nTwo outcomes describe the wider labor market: unemployment and the employment/population ratio. Lower unemployment is encouraging, but it can also reflect people leaving the labor force; a higher employment/population ratio provides a complementary perspective.\nThe panel covers 2018, 2019, and 2021–2024: 300 state-year observations, plus 12 county-year observations. DC is retained in the download but excluded from the 50-state comparisons. I start after the 2018 occupation-classification revision and omit 2020 because Census did not release standard 1-year estimates. Each state receives equal weight; published ACS estimates already use survey weights."
   },
   {
-    "objectID": "blog/posts/post4/index.html#a-snapshot-does-not-establish-a-pattern",
-    "href": "blog/posts/post4/index.html#a-snapshot-does-not-establish-a-pattern",
-    "title": "More Tech, Better Jobs?",
-    "section": "A snapshot does not establish a pattern",
-    "text": "A snapshot does not establish a pattern\nFigure 1 compares tech concentration and unemployment in 2018 and 2024. The cross-state correlation shifts from −0.17 to +0.12. Neither snapshot supplies a convincing rule that more tech means lower unemployment. More importantly, a comparison between states cannot tell us what happens when an individual state changes.\n\n\n\nCross-state relationships in 2018 and 2024."
-  },
-  {
-    "objectID": "blog/posts/post4/index.html#follow-the-changes",
-    "href": "blog/posts/post4/index.html#follow-the-changes",
-    "title": "More Tech, Better Jobs?",
-    "section": "Follow the changes",
-    "text": "Follow the changes\nFigure 2 subtracts each state’s 2018 value from its 2024 value. A one-point increase means, for example, moving from 3% to 4% tech employment—not a 1% increase in the number of tech workers.\nBoth panels make up mean improvement: falling unemployment in the first, rising employment/population in the second. Green marks improvement; peach marks deterioration. If more tech consistently meant better outcomes, the dots would slope upward. They do not: the correlation with unemployment improvement is −0.29, while employment/population improvement is nearly unrelated (+0.04).\nThis is not simply California driving the pattern: excluding it gives correlations of −0.27 and +0.05, respectively. Rank correlations also preserve the broad interpretation. I checked the denominator, too: every state with a rising tech share also had an increase in its estimated number of tech workers. Their shares did not rise solely because other employment contracted.\n\n\n\nWithin-state changes reveal little connection with employment/population improvement."
-  },
-  {
-    "objectID": "blog/posts/post4/index.html#timing-changes-the-story",
-    "href": "blog/posts/post4/index.html#timing-changes-the-story",
-    "title": "More Tech, Better Jobs?",
-    "section": "Timing changes the story",
-    "text": "Timing changes the story\nFigure 3 compares the 13 fastest-growing and 13 slowest-growing states, ranked by tech-share change separately in each period. The bars show average employment improvements, not abstract correlation coefficients.\nIn 2018–2019, the faster-tech group improved more on both measures. In 2019–2021 it deteriorated more. During 2021–2024, unemployment fell 1.24 points in the faster-tech group versus 1.70 in the slower group, while employment/population gains were similar (1.80 versus 1.72 points). Faster tech growth did not bring a consistent advantage.\nGroups change across periods; these are equal-weight descriptive averages, not matched comparisons. Periods also differ in length. The 2019–2021 interval spans the pandemic and cannot isolate its initial shock.\n\n\n\nFaster and slower tech-growth groups do not show a consistent employment advantage across periods."
-  },
-  {
-    "objectID": "blog/posts/post4/index.html#the-bay-area-is-a-case-not-the-national-answer",
-    "href": "blog/posts/post4/index.html#the-bay-area-is-a-case-not-the-national-answer",
-    "title": "More Tech, Better Jobs?",
-    "section": "The Bay Area is a case, not the national answer",
-    "text": "The Bay Area is a case, not the national answer\nSanta Clara County’s tech share rose from 11.90% to 15.94%, while its ACS unemployment rate rose from 3.9% to 5.2%. San Francisco County also recorded increases in both. These fixed county boundaries offer a local comparison without treating California as the Bay Area; the two counties do not represent the full nine-county region.\n\n\n\nFrom 2018 to 2024, tech employment share and unemployment both rose in the two counties."
-  },
-  {
-    "objectID": "blog/posts/post4/index.html#what-this-changes-about-my-starting-question",
-    "href": "blog/posts/post4/index.html#what-this-changes-about-my-starting-question",
-    "title": "More Tech, Better Jobs?",
-    "section": "What this changes about my starting question",
-    "text": "What this changes about my starting question\nGrowing tech employment is not a reliable shorthand for a stronger overall labor market. It describes which jobs residents hold, while unemployment describes a broader population.\nThese are descriptive associations, not causal effects. Migration, age structure, education, other industries and common shocks may influence both variables. ACS sampling error also matters, especially for counties and small changes; the download retains published margins of error, but the charts show point estimates and make no significance claims. Residence-based estimates—including remote workers—do not measure jobs located in local offices."
-  },
-  {
-    "objectID": "blog/posts/post4/index.html#sources-and-replication",
-    "href": "blog/posts/post4/index.html#sources-and-replication",
-    "title": "More Tech, Better Jobs?",
-    "section": "Sources and replication",
-    "text": "Sources and replication\nCensus ACS API: S2401 occupation counts and S2301 employment indicators; 2018 comparability guidance; 2020 release limitation. Data retrieved October 4, 2026. ACS rates are not interchangeable with the monthly BLS headline unemployment series.\nDownload the reproducibility package: source responses, analysis scripts, figures and README. No API key is included."
-  },
-  {
     "objectID": "blog/posts/post4/index.html#where-did-tech-employment-expand",
     "href": "blog/posts/post4/index.html#where-did-tech-employment-expand",
     "title": "More Tech, Better Jobs?",
@@ -350,10 +301,52 @@
     "text": "Where did tech employment expand?\nFigure 1 ranks the ten states with the largest increases in tech employment share. Washington, Delaware and Texas lead this comparison. The broader shift was widespread: 48 of 50 states recorded an increase. This establishes where the occupational mix changed, but says nothing yet about whether employment conditions improved.\n\n\n\nThe ten largest increases in tech employment share, 2018–2024."
   },
   {
+    "objectID": "blog/posts/post4/index.html#follow-the-changes",
+    "href": "blog/posts/post4/index.html#follow-the-changes",
+    "title": "More Tech, Better Jobs?",
+    "section": "Follow the changes",
+    "text": "Follow the changes\nFigure 2 subtracts each state’s 2018 value from its 2024 value. A one-point increase means, for example, moving from 3% to 4% tech employment—not a 1% increase in the number of tech workers.\nIn both panels, higher values on the vertical axis indicate improvement: lower unemployment in the first and a higher employment/population ratio in the second. Across states, larger increases in tech employment share are associated with less improvement in unemployment (r = −0.29). The correlation with employment/population improvement is close to zero (r = +0.04). The two measures provide little evidence of a consistent positive association over this period.\nThis is not simply California driving the pattern: excluding it gives correlations of −0.27 and +0.05, respectively. Rank correlations also preserve the broad interpretation. I checked the denominator, too: every state with a rising tech share also had an increase in its estimated number of tech workers. Their shares did not rise solely because other employment contracted.\n\n\n\nWithin-state changes reveal little connection with employment/population improvement."
+  },
+  {
+    "objectID": "blog/posts/post4/index.html#timing-changes-the-story",
+    "href": "blog/posts/post4/index.html#timing-changes-the-story",
+    "title": "More Tech, Better Jobs?",
+    "section": "Timing changes the story",
+    "text": "Timing changes the story\nFor each period, Figure 3 ranks states by the change in tech employment share and compares the 13 states at each end of the ranking. Each bar is an equally weighted mean change in the relevant employment outcome. The middle 24 states are excluded from this particular comparison.\nIn 2018–2019, the faster-tech group improved more on both measures. In 2019–2021 it deteriorated more. During 2021–2024, unemployment fell 1.24 points in the faster-tech group versus 1.70 in the slower group, while employment/population gains were similar (1.80 versus 1.72 points). Faster tech growth did not bring a consistent advantage.\nGroups change across periods; these are equal-weight descriptive averages, not matched comparisons. Periods also differ in length. The 2019–2021 interval spans the pandemic and cannot isolate its initial shock.\n\n\n\nFaster and slower tech-growth groups do not show a consistent employment advantage across periods."
+  },
+  {
+    "objectID": "blog/posts/post4/index.html#san-francisco-and-santa-clara-counties",
+    "href": "blog/posts/post4/index.html#san-francisco-and-santa-clara-counties",
+    "title": "More Tech, Better Jobs?",
+    "section": "San Francisco and Santa Clara counties",
+    "text": "San Francisco and Santa Clara counties\nSanta Clara County’s tech share rose from 11.90% to 15.94%, while its ACS unemployment rate rose from 3.9% to 5.2%. San Francisco County also recorded increases in both. These fixed county boundaries offer a local comparison without treating California as the Bay Area; the two counties do not represent the full nine-county region.\n\n\n\nFrom 2018 to 2024, tech employment share and unemployment both rose in the two counties."
+  },
+  {
     "objectID": "blog/posts/post4/index.html#put-the-changes-on-the-map",
     "href": "blog/posts/post4/index.html#put-the-changes-on-the-map",
     "title": "More Tech, Better Jobs?",
     "section": "Put the changes on the map",
     "text": "Put the changes on the map\nThe maps add a geographic view of the same 50-state comparison. Washington and Texas show relatively large tech-share gains, but their unemployment outcomes differ. California also gains tech share while its unemployment rate rises. The two patterns do not line up into a simple geography of technology-led improvement.\n\n\n\nChanges in technology occupation share across all 50 states, 2018–2024.\n\n\n\n\n\nUnemployment improvement across all 50 states over the same period.\n\n\nRead each legend separately: the color scales differ because the measures have different ranges. Large states occupy more space, not more statistical weight. Boundaries come from the Census 2024 cartographic boundary files; state FIPS codes link geography to the analysis."
+  },
+  {
+    "objectID": "blog/posts/post4/index.html#what-the-state-comparisons-show",
+    "href": "blog/posts/post4/index.html#what-the-state-comparisons-show",
+    "title": "More Tech, Better Jobs?",
+    "section": "What the state comparisons show",
+    "text": "What the state comparisons show\nAcross these 50 states from 2018 to 2024, a larger increase in the share of residents working in computer and mathematical occupations was not consistently associated with better employment outcomes. The period comparisons also give mixed results. I would therefore treat growth in this occupational share as evidence of a changing employment mix; assessing the wider labor market still requires looking at unemployment and employment/population together.\nThese are descriptive associations, not causal effects. Migration, age structure, education, other industries and common shocks may influence both variables. ACS sampling error also matters, especially for counties and small changes; the download retains published margins of error, but the charts show point estimates and make no significance claims. Residence-based estimates—including remote workers—do not measure jobs located in local offices."
+  },
+  {
+    "objectID": "blog/posts/post4/index.html#sources-and-replication",
+    "href": "blog/posts/post4/index.html#sources-and-replication",
+    "title": "More Tech, Better Jobs?",
+    "section": "Sources and replication",
+    "text": "Sources and replication\nCensus ACS API: S2401 occupation counts and S2301 employment indicators; 2018 comparability guidance; 2020 release limitation. Data retrieved October 4, 2026. ACS rates are not interchangeable with the monthly BLS headline unemployment series.\nDownload the reproducibility package: source responses, analysis scripts, figures and README. No API key is included.\nView the code and replication instructions on GitHub."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jiaqi (Liz) Yuan",
+    "section": "",
+    "text": "Jiaqi (Liz) Yuan\nInterested in data, economics, and the questions that connect people, markets, and ideas.\nMaster of Applied Economics and Data Science\nUniversity of Pennsylvania\nI am a student with interests in economics, data-driven analysis, and interdisciplinary research. Across academic projects, internships, and international learning experiences, I have been drawn to questions that sit between markets, behavior, and decision-making.\n\nConnect"
   }
 ]

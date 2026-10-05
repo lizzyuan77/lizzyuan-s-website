@@ -10,7 +10,7 @@
 <meta name="dcterms.date" content="2026-09-28">
 <meta name="description" content="Blog 3 · More than two million CPS person-month observations reveal why a falling national participation rate can hide gains within age groups.">
 
-<title>Did Americans Stop Working—or Just Get Older? – Jiaqi Yuan</title>
+<title>How Much of the Participation Decline Reflects an Aging Population? – Jiaqi Yuan</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -128,12 +128,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">In this story</h2>
    
   <ul>
-  <li><a href="#a-national-average-is-not-a-national-attitude" id="toc-a-national-average-is-not-a-national-attitude" class="nav-link active" data-scroll-target="#a-national-average-is-not-a-national-attitude">A national average is not a national attitude</a></li>
-  <li><a href="#first-count-the-populationnot-just-the-rows" id="toc-first-count-the-populationnot-just-the-rows" class="nav-link" data-scroll-target="#first-count-the-populationnot-just-the-rows">First, count the population—not just the rows</a></li>
+  <li><a href="#participation-and-population-aging" id="toc-participation-and-population-aging" class="nav-link active" data-scroll-target="#participation-and-population-aging">Participation and population aging</a></li>
+  <li><a href="#sample-and-weights" id="toc-sample-and-weights" class="nav-link" data-scroll-target="#sample-and-weights">Sample and weights</a></li>
   <li><a href="#compare-people-of-similar-ages" id="toc-compare-people-of-similar-ages" class="nav-link" data-scroll-target="#compare-people-of-similar-ages">Compare people of similar ages</a></li>
-  <li><a href="#change-the-mix-change-the-average" id="toc-change-the-mix-change-the-average" class="nav-link" data-scroll-target="#change-the-mix-change-the-average">Change the mix, change the average</a></li>
+  <li><a href="#the-changing-age-distribution" id="toc-the-changing-age-distribution" class="nav-link" data-scroll-target="#the-changing-age-distribution">The changing age distribution</a></li>
   <li><a href="#separate-the-two-changes" id="toc-separate-the-two-changes" class="nav-link" data-scroll-target="#separate-the-two-changes">Separate the two changes</a></li>
-  <li><a href="#what-i-would-take-away" id="toc-what-i-would-take-away" class="nav-link" data-scroll-target="#what-i-would-take-away">What I would take away</a></li>
+  <li><a href="#what-explains-the-aggregate-decline" id="toc-what-explains-the-aggregate-decline" class="nav-link" data-scroll-target="#what-explains-the-aggregate-decline">What explains the aggregate decline?</a></li>
   <li><a href="#data-and-reproducibility" id="toc-data-and-reproducibility" class="nav-link" data-scroll-target="#data-and-reproducibility">Data and reproducibility</a></li>
   </ul>
 </nav>
@@ -143,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Did Americans Stop Working—or Just Get Older?</h1>
+<h1 class="title">How Much of the Participation Decline Reflects an Aging Population?</h1>
 <p class="subtitle lead">Separating age composition from labor-force participation, 2019–2024</p>
   <div class="quarto-categories">
     <div class="quarto-category">economics</div>
@@ -197,20 +197,20 @@ Note
 <p>Participation fell <strong>0.54 percentage points</strong>. A shift toward older ages pulled it down; changes within age groups partly offset that decline.</p>
 </div>
 </div>
-<section id="a-national-average-is-not-a-national-attitude" class="level2">
-<h2 class="anchored" data-anchor-id="a-national-average-is-not-a-national-attitude">A national average is not a national attitude</h2>
-<p>“People don’t want to work anymore” is an easy explanation for a falling labor-force participation rate. I wanted to test a less dramatic possibility: perhaps the population itself changed. Comparing a country with more retirees to its younger past is hardly a fair test of changing attitudes toward work.</p>
+<section id="participation-and-population-aging" class="level2">
+<h2 class="anchored" data-anchor-id="participation-and-population-aging">Participation and population aging</h2>
+<p>A decline in labor-force participation can reflect changes in participation within age groups, changes in the population’s age distribution, or both. The distinction matters when interpreting the post-pandemic labor market: an older population can have a lower participation rate even if participation rises among younger adults. I use CPS data to measure how much each component contributes to the change between 2019 and 2024.</p>
 <p>Using IPUMS CPS microdata, I compare 2019, before the pandemic, with 2024. The weighted annual participation rate fell from <strong>63.40% to 62.86%</strong>. But that average combines two things: how likely people of each age are to participate, and how common each age group is.</p>
 </section>
-<section id="first-count-the-populationnot-just-the-rows" class="level2">
-<h2 class="anchored" data-anchor-id="first-count-the-populationnot-just-the-rows">First, count the population—not just the rows</h2>
+<section id="sample-and-weights" class="level2">
+<h2 class="anchored" data-anchor-id="sample-and-weights">Sample and weights</h2>
 <p>I use all twelve Basic Monthly CPS samples in each year: <strong>2,611,419 person-month records</strong>, of which <strong>2,115,648</strong> meet the analysis criteria. The population is civilians age 16 or older with a valid labor-force status and positive weight. These are observations, not distinct people; the CPS interviews respondents in multiple months.</p>
 <p>Every population statistic uses <strong>WTFINL</strong>, the final person weight. I calculate each month’s weighted participation rate, then average the twelve rates equally. Age shares and within-age rates use the same monthly-normalized weights, keeping the decomposition consistent. The code imports the matching DDI metadata so that the weight’s implied decimals are handled correctly.</p>
 <p>Participation includes employed people <strong>and unemployed people in the labor force</strong>. It is not an employment rate. Someone outside the labor force is not automatically unemployed.</p>
 </section>
 <section id="compare-people-of-similar-ages" class="level2">
 <h2 class="anchored" data-anchor-id="compare-people-of-similar-ages">Compare people of similar ages</h2>
-<p>Figure 1 shows a strong life-cycle pattern: participation is much higher among adults aged 25–54 than among those 65 and older. The national decline also conceals increases in every displayed group below age 65. For ages 35–44, participation rose from <strong>83.33% to 84.77%</strong>; among ages 65–74, it fell from <strong>28.47% to 27.67%</strong>. One headline cannot describe both experiences.</p>
+<p>Figure 1 compares participation across age groups in each year. Adults aged 25–54 have substantially higher participation rates than those 65 and older. Between 2019 and 2024, participation rose in all five displayed groups below age 65: for ages 35–44, it increased from <strong>83.33% to 84.77%</strong>. Among ages 65–74, it fell from <strong>28.47% to 27.67%</strong>. These are comparisons of age groups in two years; they do not track the same people as they age.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="results/figure1.png" class="img-fluid figure-img" alt="2019 and 2024 participation by age. Rates rise below age 65 and decline for ages 65–74 and 75+."></p>
@@ -218,9 +218,9 @@ Note
 </figure>
 </div>
 </section>
-<section id="change-the-mix-change-the-average" class="level2">
-<h2 class="anchored" data-anchor-id="change-the-mix-change-the-average">Change the mix, change the average</h2>
-<p>Imagine two rooms: one mostly contains working-age adults, the other mostly retirees. Moving more people into the second room can lower the combined participation rate even if neither room’s rate changes.</p>
+<section id="the-changing-age-distribution" class="level2">
+<h2 class="anchored" data-anchor-id="the-changing-age-distribution">The changing age distribution</h2>
+<p>The national participation rate weights each age group’s participation rate by its population share. If groups with lower participation account for more of the population, the national rate can fall even with unchanged participation within every age group.</p>
 <p>Figure 2 shows this compositional shift. Adults 65 and older increased from <strong>20.40% to 22.23%</strong> of the weighted population. Because their participation rates are relatively low, that shift puts downward pressure on the national average. These are population shares estimated with weights, not percentages of downloaded rows.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -241,15 +241,16 @@ Note
 </div>
 <p>Using narrower, mostly five-year age groups gives <strong>−1.09 points</strong> for composition and <strong>+0.55</strong> for within-age changes. The magnitudes change, but the interpretation survives.</p>
 </section>
-<section id="what-i-would-take-away" class="level2">
-<h2 class="anchored" data-anchor-id="what-i-would-take-away">What I would take away</h2>
-<p>The national decline is consistent with an aging population even as participation improved in many age groups. Before reading an aggregate rate as a change in motivation, ask who is being averaged.</p>
+<section id="what-explains-the-aggregate-decline" class="level2">
+<h2 class="anchored" data-anchor-id="what-explains-the-aggregate-decline">What explains the aggregate decline?</h2>
+<p>In this decomposition, the shift in age composition contributes <strong>-0.98 percentage points</strong>, exceeding the observed <strong>0.54-point decline</strong>. Within-age participation changes offset <strong>0.44 points</strong> of that decline. The aggregate therefore understates the improvement within many age groups. These results help explain the national rate, but they do not tell us why participation changed within those groups.</p>
 <p>This is descriptive accounting, not a causal estimate of aging or the pandemic. Within-age changes also reflect health, education, family circumstances, and other composition; even the oldest age bin contains aging. Estimates are not seasonally adjusted, population-control revisions can affect comparisons, and repeated respondents rule out treating all rows as independent. I make no significance claims or claims about individual retirement decisions.</p>
 </section>
 <section id="data-and-reproducibility" class="level2">
 <h2 class="anchored" data-anchor-id="data-and-reproducibility">Data and reproducibility</h2>
 <p>Source: IPUMS CPS, <strong>Version 13.0</strong>, University of Minnesota, <a href="https://doi.org/10.18128/D030.V13.0">doi:10.18128/D030.V13.0</a>, based on Census Bureau and Bureau of Labor Statistics CPS data. Extract generated September 28, 2026; Basic Monthly samples for January–December 2019 and 2024. See <a href="https://cps.ipums.org/cps-action/variables/WTFINL">WTFINL documentation</a> and <a href="https://cps.ipums.org/cps-action/variables/LABFORCE">LABFORCE definitions</a>.</p>
 <p><a href="research.zip">Download the R code, replication instructions, and aggregate results</a>. Raw microdata are excluded; obtain your own matching extract through IPUMS. The script checks month coverage, record uniqueness, codes, weights, and the decomposition identity.</p>
+<p><a href="https://github.com/lizzyuan77/lizzyuan-s-website/tree/main/blog/posts/post3">View the code and replication instructions on GitHub</a>.</p>
 
 
 </section>

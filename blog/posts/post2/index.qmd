@@ -38,9 +38,9 @@ ne <- subset(region,region=='Northeast')
 18 museums · 8 cities · 4 Census regions · September 21, 2026 snapshot
 :::
 
-## One card, two questions
+## What does student status save?
 
-Planning a museum weekend raises a familiar student-budget question: how far can an ID card stretch? Starting in Philadelphia, I expanded the search to New York, Boston, Chicago, Washington, San Francisco, Los Angeles, and Houston. I wanted to distinguish **where student status saves the most** from **where admission costs the least**. Those questions sound interchangeable. They are not.
+How much does being a student reduce the cost of visiting a museum? I collected posted admission prices for 18 museums in eight U.S. cities, comparing what a student and a nonstudent of the same age would pay. This separates the discount attached to student status from the price of the visit itself: a large discount may still leave an expensive ticket, while a museum that is free to everyone offers no additional saving for students.
 
 ## Building a comparable ticket
 
@@ -60,7 +60,7 @@ Requests were spaced and cached. Access refusals, rate limits, robot exclusions,
 
 Philadelphia leads this sample at **`r usd(ph$saving)` per museum**, compared with **`r usd(ny$saving)`** in New York. Visiting all four sampled Philadelphia institutions once would cost **`r usd(sum(d$student[d$city=='Philadelphia']))`** using student rates, versus **`r usd(sum(d$adult[d$city=='Philadelphia']))`** at adult rates. This is a basket calculation, not a one-day itinerary.
 
-Regionally, I average city means so cities with more observations do not automatically receive more weight. The Northeast has the highest observed mean, **`r usd(ne$saving)`**. However, the Midwest contains only Chicago; Houston and San Francisco each have one museum. These numbers cannot establish which entire U.S. region offers students the best value.
+To summarize the regional pattern, I give each sampled city equal weight. The Northeast has the largest average student discount in this sample, **`r usd(ne$saving)`**. The ranking is sensitive to which museums were included: Chicago is the only Midwestern city, and Houston and San Francisco each contribute just one museum. I therefore interpret it as a comparison of the collected prices, rather than an estimate of the discount a typical student would find across each region.
 
 ```{r}
 tab <- region[,c('region','cities','museums','saving')]
@@ -76,7 +76,7 @@ The Getty Center and Hammer charge neither group for general admission. Their st
 
 Eligibility changes the story too. At the [Whitney](https://whitney.org/visit), visitors 25 and under enter free regardless of enrollment. Switching both comparison groups to age 22 reduces New York's mean student-ID saving from **`r usd(ny$saving)` to `r usd(ny$saving22)`**. Crediting the entire adult ticket to student status would exaggerate the card's value.
 
-The [MCA Chicago](https://mcachicago.org/visit/) has posted online prices and in-person pay-what-you-can admission. Its listed discount is not a guaranteed reduction in what someone must pay. Excluding MCA gives Chicago a mean saving of **`r usd(mean(d$saving[d$city=='Chicago' & d$id!='mca']))`**. Restricting the comparison to museums with positive adult prices also changes Boston's mean from **`r usd(city$saving[city$city=='Boston'])` to `r usd(city$paid_only[city$city=='Boston'])`**. The denominator matters.
+The [MCA Chicago](https://mcachicago.org/visit/) has posted online prices and in-person pay-what-you-can admission. Its listed discount is not a guaranteed reduction in what someone must pay. Excluding MCA gives Chicago a mean saving of **`r usd(mean(d$saving[d$city=='Chicago' & d$id!='mca']))`**. Restricting the comparison to museums with positive adult prices also changes Boston's mean from **`r usd(city$saving[city$city=='Boston'])` to `r usd(city$paid_only[city$city=='Boston'])`**. The paid-only average answers how much students save at museums that charge admission; including free museums describes the saving across the full sampled set. The choice depends on which visits the reader is considering.
 
 ## Plan around eligibility, then the calendar
 

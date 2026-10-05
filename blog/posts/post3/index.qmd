@@ -1,5 +1,5 @@
 ---
-title: "Did Americans Stop Working—or Just Get Older?"
+title: "How Much of the Participation Decline Reflects an Aging Population?"
 subtitle: "Separating age composition from labor-force participation, 2019–2024"
 author: "Jiaqi Yuan"
 date: 2026-09-28
@@ -34,13 +34,13 @@ pp <- function(x) sprintf('%.2f',x)
 Participation fell **0.54 percentage points**. A shift toward older ages pulled it down; changes within age groups partly offset that decline.
 :::
 
-## A national average is not a national attitude
+## Participation and population aging
 
-“People don't want to work anymore” is an easy explanation for a falling labor-force participation rate. I wanted to test a less dramatic possibility: perhaps the population itself changed. Comparing a country with more retirees to its younger past is hardly a fair test of changing attitudes toward work.
+A decline in labor-force participation can reflect changes in participation within age groups, changes in the population's age distribution, or both. The distinction matters when interpreting the post-pandemic labor market: an older population can have a lower participation rate even if participation rises among younger adults. I use CPS data to measure how much each component contributes to the change between 2019 and 2024.
 
 Using IPUMS CPS microdata, I compare 2019, before the pandemic, with 2024. The weighted annual participation rate fell from **`r pct(r$annual$rate[1])` to `r pct(r$annual$rate[2])`**. But that average combines two things: how likely people of each age are to participate, and how common each age group is.
 
-## First, count the population—not just the rows
+## Sample and weights
 
 I use all twelve Basic Monthly CPS samples in each year: **2,611,419 person-month records**, of which **2,115,648** meet the analysis criteria. The population is civilians age 16 or older with a valid labor-force status and positive weight. These are observations, not distinct people; the CPS interviews respondents in multiple months.
 
@@ -50,13 +50,13 @@ Participation includes employed people **and unemployed people in the labor forc
 
 ## Compare people of similar ages
 
-Figure 1 shows a strong life-cycle pattern: participation is much higher among adults aged 25–54 than among those 65 and older. The national decline also conceals increases in every displayed group below age 65. For ages 35–44, participation rose from **83.33% to 84.77%**; among ages 65–74, it fell from **28.47% to 27.67%**. One headline cannot describe both experiences.
+Figure 1 compares participation across age groups in each year. Adults aged 25–54 have substantially higher participation rates than those 65 and older. Between 2019 and 2024, participation rose in all five displayed groups below age 65: for ages 35–44, it increased from **83.33% to 84.77%**. Among ages 65–74, it fell from **28.47% to 27.67%**. These are comparisons of age groups in two years; they do not track the same people as they age.
 
 ![Weighted participation rose in the five age groups below 65 and fell in the two older groups.](results/figure1.png){fig-alt="2019 and 2024 participation by age. Rates rise below age 65 and decline for ages 65–74 and 75+."}
 
-## Change the mix, change the average
+## The changing age distribution
 
-Imagine two rooms: one mostly contains working-age adults, the other mostly retirees. Moving more people into the second room can lower the combined participation rate even if neither room's rate changes.
+The national participation rate weights each age group's participation rate by its population share. If groups with lower participation account for more of the population, the national rate can fall even with unchanged participation within every age group.
 
 Figure 2 shows this compositional shift. Adults 65 and older increased from **20.40% to 22.23%** of the weighted population. Because their participation rates are relatively low, that shift puts downward pressure on the national average. These are population shares estimated with weights, not percentages of downloaded rows.
 
@@ -72,9 +72,9 @@ Figure 3 gives the result: **`r pp(r$composition)` percentage points** from comp
 
 Using narrower, mostly five-year age groups gives **−1.09 points** for composition and **+0.55** for within-age changes. The magnitudes change, but the interpretation survives.
 
-## What I would take away
+## What explains the aggregate decline?
 
-The national decline is consistent with an aging population even as participation improved in many age groups. Before reading an aggregate rate as a change in motivation, ask who is being averaged.
+In this decomposition, the shift in age composition contributes **`r pp(r$composition)` percentage points**, exceeding the observed **`r pp(abs(r$delta))`-point decline**. Within-age participation changes offset **`r pp(r$within)` points** of that decline. The aggregate therefore understates the improvement within many age groups. These results help explain the national rate, but they do not tell us why participation changed within those groups.
 
 This is descriptive accounting, not a causal estimate of aging or the pandemic. Within-age changes also reflect health, education, family circumstances, and other composition; even the oldest age bin contains aging. Estimates are not seasonally adjusted, population-control revisions can affect comparisons, and repeated respondents rule out treating all rows as independent. I make no significance claims or claims about individual retirement decisions.
 
@@ -83,3 +83,5 @@ This is descriptive accounting, not a causal estimate of aging or the pandemic. 
 Source: IPUMS CPS, **Version 13.0**, University of Minnesota, [doi:10.18128/D030.V13.0](https://doi.org/10.18128/D030.V13.0), based on Census Bureau and Bureau of Labor Statistics CPS data. Extract generated September 28, 2026; Basic Monthly samples for January–December 2019 and 2024. See [WTFINL documentation](https://cps.ipums.org/cps-action/variables/WTFINL) and [LABFORCE definitions](https://cps.ipums.org/cps-action/variables/LABFORCE).
 
 [Download the R code, replication instructions, and aggregate results](research.zip). Raw microdata are excluded; obtain your own matching extract through IPUMS. The script checks month coverage, record uniqueness, codes, weights, and the decomposition identity.
+
+[View the code and replication instructions on GitHub](https://github.com/lizzyuan77/lizzyuan-s-website/tree/main/blog/posts/post3).
