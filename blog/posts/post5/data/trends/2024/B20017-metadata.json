@@ -1,0 +1,41 @@
+{
+  "source_url": "https://api.census.gov/data/2024/acs/acs1/groups/B20017.json",
+  "variables": {
+    "B20017_003E": {
+      "label": "Estimate!!Median earnings in the past 12 months (in 2024 inflation-adjusted dollars) --!!Total (dollars):!!Male --!!Total (dollars)!!Worked full-time, year-round in the past 12 months (dollars)",
+      "concept": "Median Earnings in the Past 12 Months (in 2024 Inflation-Adjusted Dollars) by Sex by Work Experience in the Past 12 Months for the Population 16 Years and Over With Earnings in the Past 12 Months",
+      "predicateType": "int",
+      "group": "B20017",
+      "limit": 0,
+      "predicateOnly": true,
+      "universe": "Population 16 years and over with earnings"
+    },
+    "B20017_003M": {
+      "label": "Margin of Error!!Median earnings in the past 12 months (in 2024 inflation-adjusted dollars) --!!Total (dollars):!!Male --!!Total (dollars)!!Worked full-time, year-round in the past 12 months (dollars)",
+      "concept": "Median Earnings in the Past 12 Months (in 2024 Inflation-Adjusted Dollars) by Sex by Work Experience in the Past 12 Months for the Population 16 Years and Over With Earnings in the Past 12 Months",
+      "predicateType": "int",
+      "group": "B20017",
+      "limit": 0,
+      "predicateOnly": true,
+      "universe": "Population 16 years and over with earnings"
+    },
+    "B20017_006E": {
+      "label": "Estimate!!Median earnings in the past 12 months (in 2024 inflation-adjusted dollars) --!!Total (dollars):!!Female --!!Total (dollars)!!Worked full-time, year-round in the past 12 months (dollars)",
+      "concept": "Median Earnings in the Past 12 Months (in 2024 Inflation-Adjusted Dollars) by Sex by Work Experience in the Past 12 Months for the Population 16 Years and Over With Earnings in the Past 12 Months",
+      "predicateType": "int",
+      "group": "B20017",
+      "limit": 0,
+      "predicateOnly": true,
+      "universe": "Population 16 years and over with earnings"
+    },
+    "B20017_006M": {
+      "label": "Margin of Error!!Median earnings in the past 12 months (in 2024 inflation-adjusted dollars) --!!Total (dollars):!!Female --!!Total (dollars)!!Worked full-time, year-round in the past 12 months (dollars)",
+      "concept": "Median Earnings in the Past 12 Months (in 2024 Inflation-Adjusted Dollars) by Sex by Work Experience in the Past 12 Months for the Population 16 Years and Over With Earnings in the Past 12 Months",
+      "predicateType": "int",
+      "group": "B20017",
+      "limit": 0,
+      "predicateOnly": true,
+      "universe": "Population 16 years and over with earnings"
+    }
+  }
+}

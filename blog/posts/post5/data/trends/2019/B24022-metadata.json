@@ -1,0 +1,69 @@
+{
+  "source_url": "https://api.census.gov/data/2019/acs/acs1/groups/B24022.json",
+  "variables": {
+    "B24022_002E": {
+      "label": "Estimate!!Total:!!Male:",
+      "concept": "SEX BY OCCUPATION AND MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2019 INFLATION-ADJUSTED DOLLARS) FOR THE FULL-TIME, YEAR-ROUND CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER",
+      "predicateType": "int",
+      "group": "B24022",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "B24022_002M": {
+      "label": "Margin of Error!!Total:!!Male:",
+      "concept": "SEX BY OCCUPATION AND MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2019 INFLATION-ADJUSTED DOLLARS) FOR THE FULL-TIME, YEAR-ROUND CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER",
+      "predicateType": "int",
+      "group": "B24022",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "B24022_008E": {
+      "label": "Estimate!!Total:!!Male:!!Management, business, science, and arts occupations:!!Computer, engineering, and science occupations:!!Computer and mathematical occupations",
+      "concept": "SEX BY OCCUPATION AND MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2019 INFLATION-ADJUSTED DOLLARS) FOR THE FULL-TIME, YEAR-ROUND CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER",
+      "predicateType": "int",
+      "group": "B24022",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "B24022_008M": {
+      "label": "Margin of Error!!Total:!!Male:!!Management, business, science, and arts occupations:!!Computer, engineering, and science occupations:!!Computer and mathematical occupations",
+      "concept": "SEX BY OCCUPATION AND MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2019 INFLATION-ADJUSTED DOLLARS) FOR THE FULL-TIME, YEAR-ROUND CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER",
+      "predicateType": "int",
+      "group": "B24022",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "B24022_038E": {
+      "label": "Estimate!!Total:!!Female:",
+      "concept": "SEX BY OCCUPATION AND MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2019 INFLATION-ADJUSTED DOLLARS) FOR THE FULL-TIME, YEAR-ROUND CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER",
+      "predicateType": "int",
+      "group": "B24022",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "B24022_038M": {
+      "label": "Margin of Error!!Total:!!Female:",
+      "concept": "SEX BY OCCUPATION AND MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2019 INFLATION-ADJUSTED DOLLARS) FOR THE FULL-TIME, YEAR-ROUND CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER",
+      "predicateType": "int",
+      "group": "B24022",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "B24022_044E": {
+      "label": "Estimate!!Total:!!Female:!!Management, business, science, and arts occupations:!!Computer, engineering, and science occupations:!!Computer and mathematical occupations",
+      "concept": "SEX BY OCCUPATION AND MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2019 INFLATION-ADJUSTED DOLLARS) FOR THE FULL-TIME, YEAR-ROUND CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER",
+      "predicateType": "int",
+      "group": "B24022",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "B24022_044M": {
+      "label": "Margin of Error!!Total:!!Female:!!Management, business, science, and arts occupations:!!Computer, engineering, and science occupations:!!Computer and mathematical occupations",
+      "concept": "SEX BY OCCUPATION AND MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2019 INFLATION-ADJUSTED DOLLARS) FOR THE FULL-TIME, YEAR-ROUND CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER",
+      "predicateType": "int",
+      "group": "B24022",
+      "limit": 0,
+      "predicateOnly": true
+    }
+  }
+}

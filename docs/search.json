@@ -1,108 +1,80 @@
 [
   {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "Resume",
+    "objectID": "bio.html",
+    "href": "bio.html",
+    "title": "About Me",
     "section": "",
-    "text": "New York, NY and Philadelphia, PA\nlizzyuan@sas.upenn.edu | LinkedIn | GitHub\nDownload CV"
+    "text": "I am Jiaqi Yuan, also known as Liz. I am a student with interests in economics, data-driven analysis, and interdisciplinary research. Across academic projects, internships, and international learning experiences, I have been drawn to questions that sit between markets, behavior, and decision-making.\nThis site is a space to share the experiences, ideas, and curiosities that have shaped my path so far."
   },
   {
-    "objectID": "resume.html#jiaqi-yuan",
-    "href": "resume.html#jiaqi-yuan",
-    "title": "Resume",
-    "section": "",
-    "text": "New York, NY and Philadelphia, PA\nlizzyuan@sas.upenn.edu | LinkedIn | GitHub\nDownload CV"
-  },
-  {
-    "objectID": "resume.html#education",
-    "href": "resume.html#education",
-    "title": "Resume",
+    "objectID": "bio.html#education",
+    "href": "bio.html#education",
+    "title": "About Me",
     "section": "Education",
-    "text": "Education\nUniversity of Pennsylvania\nMaster of Applied Economics and Data Science, expected June 2028\nSelected coursework: Computational Methods; Machine Learning for Economists\nShanghai Jiao Tong University, Antai College of Economics and Management\nBachelor of Finance; Minor in Big Data and Business Management, June 2026\nExchange: UBC Sauder School of Business; NUS Summer Program"
+    "text": "Education\n\n2026-2028 (expected)\n\nUniversity of Pennsylvania\nMaster of Applied Economics and Data Science\nA next step in strengthening my training in applied economics, quantitative methods, and data-driven research.\n\n\n\n2022-2026\n\nShanghai Jiao Tong University\nBachelor of Finance; Minor in Big Data and Business Management\nMy home base for building foundations in finance, analytics, and interdisciplinary academic exploration.\n\n\n\n2024-2025\n\nUniversity of British Columbia\nExchange in Finance\nAn experience that broadened both my academic perspective and my understanding of learning across cultures.\n\n\n\n2023\n\nNational University of Singapore\nSummer Program\nAn early international academic experience that sparked my interest in global perspectives and urban-economic questions."
   },
   {
-    "objectID": "resume.html#professional-experience",
-    "href": "resume.html#professional-experience",
-    "title": "Resume",
-    "section": "Professional Experience",
-    "text": "Professional Experience\nTencent, Corporate Development Group, FinTech\nStrategy and Business Analysis Intern\n\nAnalyzed B2B and B2C payment needs, use cases, competitors, and business models for FinTech strategy work.\nEvaluated AI healthcare products across capabilities, positioning, user scenarios, and end-to-end experience.\nBuilt a Dify workflow to automate weekly reporting and research synthesis.\n\nBoston Consulting Group\nPart-Time Assistant\n\nReviewed reports for expansion strategy work and built a 20+ dimension benchmarking model.\nResearched enterprise AI applications in workflow automation, marketing, and decision support.\n\nWeBank, Risk Modeling Division\nRisk Modeling Intern\n\nSupported credit scoring model development using Python, SQL, Spark, and Hive.\nCompared LR, RF, XGBoost, and GBDT models by AUC, KS, and Gini.\n\nHaitong Futures, Wealth Management Center\nWealth Management Intern\n\nConducted due diligence on 50+ quantitative private-fund products using Wind, Capital IQ, and Python.\nBuilt analyses for fund performance metrics, trend visualization, and investment evaluation."
+    "objectID": "bio.html#internship",
+    "href": "bio.html#internship",
+    "title": "About Me",
+    "section": "Internship",
+    "text": "Internship\n\nTencent\nBusiness Analyst Intern, Corporate Development Group (CDG) - FinTech Strategy\nWorked on business analysis in the fintech space, with a focus on industry research, strategic thinking, and structured problem-solving.\n\n\nBoston Consulting Group (BCG)\nSummer Analyst\nGained exposure to strategy research, benchmarking, and data-supported decision-making in a consulting setting.\n\n\nWeBank\nRisk Modeling Intern\nWorked with financial data and risk modeling tools, deepening my interest in machine learning and quantitative analysis in finance.\n\n\nHaitong Futures\nQuantitative Analysis Intern\nExplored investment analysis, fund evaluation, and the communication of quantitative insights in a fast-paced financial environment."
   },
   {
-    "objectID": "resume.html#selected-research",
-    "href": "resume.html#selected-research",
-    "title": "Resume",
-    "section": "Selected Research",
-    "text": "Selected Research\nUndergraduate Thesis: Text Analysis of Investor-Company Q&A\n\nAnalyzed 5.36 million rows of 2015-2024 A-share investor Q&A records using BERTopic and LLM-assisted auditing.\n\nIntelligent Course Advisory AI Agent\n\nDesigned a Dify recommendation module with multi-path workflows and a 2,800+ entry course-and-review knowledge base."
+    "objectID": "bio.html#research",
+    "href": "bio.html#research",
+    "title": "About Me",
+    "section": "Research",
+    "text": "Research\n\nUndergraduate Thesis - NLP and Financial Text Analysis\nExplored investor questions and corporate responses through financial text analysis, with a focus on topic modeling and information demand across platforms.\n\nInsight: This project taught me that market behavior is often reflected not only in prices, but also in the language investors use to ask for information.\n\n\n\nIntelligent Course Advisory AI Agent\nDesigned a personalized Dify recommendation module using multi-path workflows and a course-review knowledge base.\n\nInsight: Building an advisory agent showed me how structured data, user intent, and final-answer design shape the usefulness of AI tools.\n\n\n\nCommercial Bank Analysis\nConducted comparative analysis of different types of Chinese banks through annual reports and financial indicators, focusing on capital, liquidity, and strategic positioning.\n\nInsight: Comparing banks showed me that regulation, business model, and balance-sheet structure shape strategy together rather than separately.\n\n\n\nCorporate Finance Research Assistant\nWorked as a research assistant on a corporate finance project, supporting data collection, cleaning, and preliminary empirical analysis.\n\nInsight: This experience helped me see that financing decisions often reflect strategic intent and institutional context, not just textbook theory.\n\n\n\nPredictive Modeling for Social Media Engagement\nBuilt regression-based models to study how post characteristics influence engagement outcomes on social platforms.\n\nInsight: I learned that real-world behavioral data is often non-linear, which makes model choice and interpretation just as important as prediction itself.\n\n\n\nChina’s Pharmaceutical Industry Chain Analysis\nMapped and analyzed the pharmaceutical industry chain using market and company-level data.\n\nInsight: This project showed me how sector research depends on connecting scattered firm-level information to broader structural trends."
   },
   {
-    "objectID": "resume.html#skills",
-    "href": "resume.html#skills",
-    "title": "Resume",
+    "objectID": "bio.html#interest",
+    "href": "bio.html#interest",
+    "title": "About Me",
+    "section": "Interest",
+    "text": "Interest\nI am especially interested in applied economics, data science, finance, and empirical research, and I am equally drawn to poetry, movement, and the small curiosities that make life feel vivid.\n\nAcademic\n\nApplied Economics\nData Science\nFinance\nEmpirical Research\nText Analysis\nQuantitative Modeling\nDigital Economy\n\n\n\nPersonal\n\nSports and Movement\nPoetry and Writing\nMusic\nOutdoor Exploration\nCross-Cultural Conversation"
+  },
+  {
+    "objectID": "bio.html#fun-facts",
+    "href": "bio.html#fun-facts",
+    "title": "About Me",
+    "section": "Fun Facts",
+    "text": "Fun Facts\n\n\nA sports all-rounder\nFrom swimming and volleyball to jump rope, skiing, and frisbee, movement has always been one of the ways I understand energy, rhythm, and joy.\n\n\nPoetry has stayed with me\nI have loved poetry for years, both as a way of expression and as a way of noticing the world more carefully.\n\n\nI enjoy crossing disciplines\nAlthough my formal training is in finance and data, some of my curiosity has also led me toward biology and other unexpected fields.\n\n\nI love conversations across cultures\nSome of my favorite experiences have come from meeting people across countries, exchanging stories, and learning how differently people see the world.\n\n\nI like walking without rushing\nI love long walks, unfamiliar campuses, and the small discoveries that happen when I let myself wander.\n\n\nI try to live attentively\nI often feel that life becomes memorable when we pay close attention to it, almost like collecting scenes from a film."
+  },
+  {
+    "objectID": "bio.html#skills",
+    "href": "bio.html#skills",
+    "title": "About Me",
     "section": "Skills",
-    "text": "Skills\n\nPython, SQL, R, Stata\nQuarto and RStudio\nLaTeX\nDify\nWind and Capital IQ\nExcel and PowerPoint"
+    "text": "Skills\n\nPython, SQL, R, Stata\nQuarto and RStudio\nLaTeX\nData visualization and statistical analysis\nWind, Capital IQ, Excel, and PowerPoint"
   },
   {
-    "objectID": "resume.html#languages-and-interests",
-    "href": "resume.html#languages-and-interests",
-    "title": "Resume",
-    "section": "Languages and Interests",
-    "text": "Languages and Interests\n\nMandarin Chinese, native\nEnglish, professional\nPilates, squash, volleyball, and hiking"
+    "objectID": "bio.html#get-in-touch",
+    "href": "bio.html#get-in-touch",
+    "title": "About Me",
+    "section": "Get in Touch",
+    "text": "Get in Touch\nI’m always happy to connect over research, ideas, and interdisciplinary conversations.\nlizzyuan@sas.upenn.edu\nLinkedIn\nGitHub"
   },
   {
-    "objectID": "blog/posts/post3/index.html",
-    "href": "blog/posts/post3/index.html",
-    "title": "How Much of the Participation Decline Reflects an Aging Population?",
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
     "section": "",
-    "text": "Note\n\n\n\nBLOG 3 · THE PEOPLE BEHIND THE AVERAGE\nParticipation fell 0.54 percentage points. A shift toward older ages pulled it down; changes within age groups partly offset that decline."
+    "text": "JIAQI YUAN · NOTES & METHODS\n\n\n\nA growing collection of clear, curious essays about statistics, economics, and the small details that make data worth looking at twice.\n\n\nBLOG 1 BLOG 2 BLOG 3 BLOG 4 BLOG 5 STATISTICS ECONOMICS DATA STORIES\n\n\nBLOG 5 · LATEST Why a Tech-Rich State Can Still Have a Wide Gender Pay Gap Claudia Goldin’s research frames a deeper look at gender earnings across 50 states: who holds the technology jobs, what women and men earn inside tech, and why prosperity alone does not close the gap. Census maps and trends from 2019 to 2024 connect access, pay, and the cost of flexibility.\n\n\nBLOG 4 More Tech, Better Jobs? Does a growing technology workforce mean a stronger job market? Census data across 50 states and six years reveal that rising tech employment shares did not consistently accompany lower unemployment or higher employment rates. Four charts and two U.S. maps compare states, track changes over time, and take a closer look at two Bay Area core counties.\n\n\nBLOG 3 How Much of the Participation Decline Reflects an Aging Population? A falling national average can hide a changing population. Using more than two million weighted CPS person-month observations, this post separates the 2019–2024 decline in labor-force participation into age composition and changes within age groups. Three charts show how an aging population outweighed participation gains—and why the headline rate cannot tell the whole story.\n\n\nBLOG 2 What Is Your Student ID Worth? Where does a student ID save the most—and where can you visit for less? Using R to collect official admission prices, this post compares 18 museums across eight U.S. cities. Philadelphia offers the largest average student discount in this sample, but museums that are free for everyone tell a different story about affordability. Explore the charts and filter the ticket table by city and age to plan your next visit.\n\n\nBLOG 1 · START HERE How Lisa Wins at Every Distance and Still Loses A friendly introduction to Simpson’s paradox."
   },
   {
-    "objectID": "blog/posts/post3/index.html#participation-and-population-aging",
-    "href": "blog/posts/post3/index.html#participation-and-population-aging",
-    "title": "How Much of the Participation Decline Reflects an Aging Population?",
-    "section": "Participation and population aging",
-    "text": "Participation and population aging\nA decline in labor-force participation can reflect changes in participation within age groups, changes in the population’s age distribution, or both. The distinction matters when interpreting the post-pandemic labor market: an older population can have a lower participation rate even if participation rises among younger adults. I use CPS data to measure how much each component contributes to the change between 2019 and 2024.\nUsing IPUMS CPS microdata, I compare 2019, before the pandemic, with 2024. The weighted annual participation rate fell from 63.40% to 62.86%. But that average combines two things: how likely people of each age are to participate, and how common each age group is."
+    "objectID": "blog/index.html#latest-notes",
+    "href": "blog/index.html#latest-notes",
+    "title": "Blog",
+    "section": "Latest notes",
+    "text": "Latest notes"
   },
   {
-    "objectID": "blog/posts/post3/index.html#sample-and-weights",
-    "href": "blog/posts/post3/index.html#sample-and-weights",
-    "title": "How Much of the Participation Decline Reflects an Aging Population?",
-    "section": "Sample and weights",
-    "text": "Sample and weights\nI use all twelve Basic Monthly CPS samples in each year: 2,611,419 person-month records, of which 2,115,648 meet the analysis criteria. The population is civilians age 16 or older with a valid labor-force status and positive weight. These are observations, not distinct people; the CPS interviews respondents in multiple months.\nEvery population statistic uses WTFINL, the final person weight. I calculate each month’s weighted participation rate, then average the twelve rates equally. Age shares and within-age rates use the same monthly-normalized weights, keeping the decomposition consistent. The code imports the matching DDI metadata so that the weight’s implied decimals are handled correctly.\nParticipation includes employed people and unemployed people in the labor force. It is not an employment rate. Someone outside the labor force is not automatically unemployed."
-  },
-  {
-    "objectID": "blog/posts/post3/index.html#compare-people-of-similar-ages",
-    "href": "blog/posts/post3/index.html#compare-people-of-similar-ages",
-    "title": "How Much of the Participation Decline Reflects an Aging Population?",
-    "section": "Compare people of similar ages",
-    "text": "Compare people of similar ages\nFigure 1 compares participation across age groups in each year. Adults aged 25–54 have substantially higher participation rates than those 65 and older. Between 2019 and 2024, participation rose in all five displayed groups below age 65: for ages 35–44, it increased from 83.33% to 84.77%. Among ages 65–74, it fell from 28.47% to 27.67%. These are comparisons of age groups in two years; they do not track the same people as they age.\n\n\n\nWeighted participation rose in the five age groups below 65 and fell in the two older groups."
-  },
-  {
-    "objectID": "blog/posts/post3/index.html#the-changing-age-distribution",
-    "href": "blog/posts/post3/index.html#the-changing-age-distribution",
-    "title": "How Much of the Participation Decline Reflects an Aging Population?",
-    "section": "The changing age distribution",
-    "text": "The changing age distribution\nThe national participation rate weights each age group’s participation rate by its population share. If groups with lower participation account for more of the population, the national rate can fall even with unchanged participation within every age group.\nFigure 2 shows this compositional shift. Adults 65 and older increased from 20.40% to 22.23% of the weighted population. Because their participation rates are relatively low, that shift puts downward pressure on the national average. These are population shares estimated with weights, not percentages of downloaded rows.\n\n\n\nThe population shares of both older age groups increased between 2019 and 2024."
-  },
-  {
-    "objectID": "blog/posts/post3/index.html#separate-the-two-changes",
-    "href": "blog/posts/post3/index.html#separate-the-two-changes",
-    "title": "How Much of the Participation Decline Reflects an Aging Population?",
-    "section": "Separate the two changes",
-    "text": "Separate the two changes\nA symmetric Kitagawa decomposition splits the observed change into an age-composition component and a within-age participation component. It averages the two possible orders of changing shares and rates, so neither year gets special treatment.\nFigure 3 gives the result: -0.98 percentage points from composition, offset by +0.44 points from within-age changes, producing the observed -0.54 points. The composition component is larger than the net decline because the two components move in opposite directions. A percentage point is a difference between rates, not a percent change.\n\n\n\nAge composition contributes −0.98 percentage points, within-age participation +0.44, and the total is −0.54.\n\n\nUsing narrower, mostly five-year age groups gives −1.09 points for composition and +0.55 for within-age changes. The magnitudes change, but the interpretation survives."
-  },
-  {
-    "objectID": "blog/posts/post3/index.html#what-explains-the-aggregate-decline",
-    "href": "blog/posts/post3/index.html#what-explains-the-aggregate-decline",
-    "title": "How Much of the Participation Decline Reflects an Aging Population?",
-    "section": "What explains the aggregate decline?",
-    "text": "What explains the aggregate decline?\nIn this decomposition, the shift in age composition contributes -0.98 percentage points, exceeding the observed 0.54-point decline. Within-age participation changes offset 0.44 points of that decline. The aggregate therefore understates the improvement within many age groups. These results help explain the national rate, but they do not tell us why participation changed within those groups.\nThis is descriptive accounting, not a causal estimate of aging or the pandemic. Within-age changes also reflect health, education, family circumstances, and other composition; even the oldest age bin contains aging. Estimates are not seasonally adjusted, population-control revisions can affect comparisons, and repeated respondents rule out treating all rows as independent. I make no significance claims or claims about individual retirement decisions."
-  },
-  {
-    "objectID": "blog/posts/post3/index.html#data-and-reproducibility",
-    "href": "blog/posts/post3/index.html#data-and-reproducibility",
-    "title": "How Much of the Participation Decline Reflects an Aging Population?",
-    "section": "Data and reproducibility",
-    "text": "Data and reproducibility\nSource: IPUMS CPS, Version 13.0, University of Minnesota, doi:10.18128/D030.V13.0, based on Census Bureau and Bureau of Labor Statistics CPS data. Extract generated September 28, 2026; Basic Monthly samples for January–December 2019 and 2024. See WTFINL documentation and LABFORCE definitions.\nDownload the R code, replication instructions, and aggregate results. Raw microdata are excluded; obtain your own matching extract through IPUMS. The script checks month coverage, record uniqueness, codes, weights, and the decomposition identity.\nView the code and replication instructions on GitHub."
+    "objectID": "blog/posts/post3/DATA_REQUEST.html",
+    "href": "blog/posts/post3/DATA_REQUEST.html",
+    "title": "Required IPUMS CPS extract",
+    "section": "",
+    "text": "Required IPUMS CPS extract\nThe assignment explicitly requires IPUMS CPS microdata. Extract 1 was submitted on 2026-09-28 and IPUMS reports Completed (38.7 MB compressed). The matching data and DDI were downloaded and analyzed.\n\nSign in at https://cps.ipums.org/cps/ using your own account. Do not send passwords or API keys in chat.\nSelect Basic Monthly samples: January–December 2019 and January–December 2024 (24 samples). Do not select ASEC.\nSelect YEAR, MONTH, SERIAL, PERNUM, AGE, LABFORCE, WTFINL. Keep all person records; no custom subpopulation filter is needed.\nChoose the normal rectangular data format, download the microdata .dat.gz and its matching DDI XML. Keep them together with original filenames.\nRun analysis.R with the DDI path as described in README.md. Keep default ASECFLAG to verify that no ASEC records entered the extract.\n\nOfficial references: - Access: https://cps.ipums.org/cps/data.shtml - Person weights: https://cps.ipums.org/cps-action/variables/WTFINL - Labor-force coding: https://cps.ipums.org/cps-action/variables/LABFORCE\n2019 provides a pre-pandemic baseline. 2024 provides a complete recent calendar year; October 2025 was not collected, so 2025 is deliberately not used for this full-year design."
   },
   {
     "objectID": "blog/posts/post2/index.html",
@@ -161,83 +133,6 @@
     "text": "Reproduce the analysis\nDownload the data Download the research bundle View the source on GitHub\nThe bundle includes an offline R replay, extraction rules, short factual evidence, acquisition code, exclusions, and package versions. Full museum pages and artwork are not republished. Hours and reservation notes are manually reviewed annotations, not outputs of the price parser. The linked README explains the limitations and refresh procedure.\n\n\n\n\n\n\nNoteA small, auditable rvest example\n\n\n\n\n\n\n\nShow the R code\nrvest::read_html('data/evidence/pma.html') |&gt;\n  rvest::html_elements('p') |&gt;\n  rvest::html_text2()\n\n\n[1] \"Adults$30\"                 \"Students with valid ID$14\"\n\n\nThis reads the short factual extracts retained from the original page. analyze.R can also parse the original private HTML cache with --raw, using the same category patterns. The public extracts are not presented as full archival copies of the websites.\n\n\n\nAI assistance was used for coding, drafting, and checking extraction rules. Prices are grounded in the linked official pages; the limitations above remain part of the result."
   },
   {
-    "objectID": "bio.html",
-    "href": "bio.html",
-    "title": "About Me",
-    "section": "",
-    "text": "I am Jiaqi Yuan, also known as Liz. I am a student with interests in economics, data-driven analysis, and interdisciplinary research. Across academic projects, internships, and international learning experiences, I have been drawn to questions that sit between markets, behavior, and decision-making.\nThis site is a space to share the experiences, ideas, and curiosities that have shaped my path so far."
-  },
-  {
-    "objectID": "bio.html#education",
-    "href": "bio.html#education",
-    "title": "About Me",
-    "section": "Education",
-    "text": "Education\n\n2026-2028 (expected)\n\nUniversity of Pennsylvania\nMaster of Applied Economics and Data Science\nA next step in strengthening my training in applied economics, quantitative methods, and data-driven research.\n\n\n\n2022-2026\n\nShanghai Jiao Tong University\nBachelor of Finance; Minor in Big Data and Business Management\nMy home base for building foundations in finance, analytics, and interdisciplinary academic exploration.\n\n\n\n2024-2025\n\nUniversity of British Columbia\nExchange in Finance\nAn experience that broadened both my academic perspective and my understanding of learning across cultures.\n\n\n\n2023\n\nNational University of Singapore\nSummer Program\nAn early international academic experience that sparked my interest in global perspectives and urban-economic questions."
-  },
-  {
-    "objectID": "bio.html#internship",
-    "href": "bio.html#internship",
-    "title": "About Me",
-    "section": "Internship",
-    "text": "Internship\n\nTencent\nBusiness Analyst Intern, Corporate Development Group (CDG) - FinTech Strategy\nWorked on business analysis in the fintech space, with a focus on industry research, strategic thinking, and structured problem-solving.\n\n\nBoston Consulting Group (BCG)\nSummer Analyst\nGained exposure to strategy research, benchmarking, and data-supported decision-making in a consulting setting.\n\n\nWeBank\nRisk Modeling Intern\nWorked with financial data and risk modeling tools, deepening my interest in machine learning and quantitative analysis in finance.\n\n\nHaitong Futures\nQuantitative Analysis Intern\nExplored investment analysis, fund evaluation, and the communication of quantitative insights in a fast-paced financial environment."
-  },
-  {
-    "objectID": "bio.html#research",
-    "href": "bio.html#research",
-    "title": "About Me",
-    "section": "Research",
-    "text": "Research\n\nUndergraduate Thesis - NLP and Financial Text Analysis\nExplored investor questions and corporate responses through financial text analysis, with a focus on topic modeling and information demand across platforms.\n\nInsight: This project taught me that market behavior is often reflected not only in prices, but also in the language investors use to ask for information.\n\n\n\nIntelligent Course Advisory AI Agent\nDesigned a personalized Dify recommendation module using multi-path workflows and a course-review knowledge base.\n\nInsight: Building an advisory agent showed me how structured data, user intent, and final-answer design shape the usefulness of AI tools.\n\n\n\nCommercial Bank Analysis\nConducted comparative analysis of different types of Chinese banks through annual reports and financial indicators, focusing on capital, liquidity, and strategic positioning.\n\nInsight: Comparing banks showed me that regulation, business model, and balance-sheet structure shape strategy together rather than separately.\n\n\n\nCorporate Finance Research Assistant\nWorked as a research assistant on a corporate finance project, supporting data collection, cleaning, and preliminary empirical analysis.\n\nInsight: This experience helped me see that financing decisions often reflect strategic intent and institutional context, not just textbook theory.\n\n\n\nPredictive Modeling for Social Media Engagement\nBuilt regression-based models to study how post characteristics influence engagement outcomes on social platforms.\n\nInsight: I learned that real-world behavioral data is often non-linear, which makes model choice and interpretation just as important as prediction itself.\n\n\n\nChina’s Pharmaceutical Industry Chain Analysis\nMapped and analyzed the pharmaceutical industry chain using market and company-level data.\n\nInsight: This project showed me how sector research depends on connecting scattered firm-level information to broader structural trends."
-  },
-  {
-    "objectID": "bio.html#interest",
-    "href": "bio.html#interest",
-    "title": "About Me",
-    "section": "Interest",
-    "text": "Interest\nI am especially interested in applied economics, data science, finance, and empirical research, and I am equally drawn to poetry, movement, and the small curiosities that make life feel vivid.\n\nAcademic\n\nApplied Economics\nData Science\nFinance\nEmpirical Research\nText Analysis\nQuantitative Modeling\nDigital Economy\n\n\n\nPersonal\n\nSports and Movement\nPoetry and Writing\nMusic\nOutdoor Exploration\nCross-Cultural Conversation"
-  },
-  {
-    "objectID": "bio.html#fun-facts",
-    "href": "bio.html#fun-facts",
-    "title": "About Me",
-    "section": "Fun Facts",
-    "text": "Fun Facts\n\n\nA sports all-rounder\nFrom swimming and volleyball to jump rope, skiing, and frisbee, movement has always been one of the ways I understand energy, rhythm, and joy.\n\n\nPoetry has stayed with me\nI have loved poetry for years, both as a way of expression and as a way of noticing the world more carefully.\n\n\nI enjoy crossing disciplines\nAlthough my formal training is in finance and data, some of my curiosity has also led me toward biology and other unexpected fields.\n\n\nI love conversations across cultures\nSome of my favorite experiences have come from meeting people across countries, exchanging stories, and learning how differently people see the world.\n\n\nI like walking without rushing\nI love long walks, unfamiliar campuses, and the small discoveries that happen when I let myself wander.\n\n\nI try to live attentively\nI often feel that life becomes memorable when we pay close attention to it, almost like collecting scenes from a film."
-  },
-  {
-    "objectID": "bio.html#skills",
-    "href": "bio.html#skills",
-    "title": "About Me",
-    "section": "Skills",
-    "text": "Skills\n\nPython, SQL, R, Stata\nQuarto and RStudio\nLaTeX\nData visualization and statistical analysis\nWind, Capital IQ, Excel, and PowerPoint"
-  },
-  {
-    "objectID": "bio.html#get-in-touch",
-    "href": "bio.html#get-in-touch",
-    "title": "About Me",
-    "section": "Get in Touch",
-    "text": "Get in Touch\nI’m always happy to connect over research, ideas, and interdisciplinary conversations.\nlizzyuan@sas.upenn.edu\nLinkedIn\nGitHub"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "This website was created for AEDS 6400: Computational Methods at the University of Pennsylvania.\nIt is built with Quarto in RStudio and published with GitHub Pages from the docs folder of the main branch."
-  },
-  {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "JIAQI YUAN · NOTES & METHODS\n\n\n\nA growing collection of clear, curious essays about statistics, economics, and the small details that make data worth looking at twice.\n\n\nBLOG 1 BLOG 2 BLOG 3 BLOG 4 STATISTICS ECONOMICS DATA STORIES\n\n\nBLOG 4 · LATEST More Tech, Better Jobs? Does a growing technology workforce mean a stronger job market? Census data across 50 states and six years reveal that rising tech employment shares did not consistently accompany lower unemployment or higher employment rates. Four charts and two U.S. maps compare states, track changes over time, and take a closer look at two Bay Area core counties.\n\n\nBLOG 3 How Much of the Participation Decline Reflects an Aging Population? A falling national average can hide a changing population. Using more than two million weighted CPS person-month observations, this post separates the 2019–2024 decline in labor-force participation into age composition and changes within age groups. Three charts show how an aging population outweighed participation gains—and why the headline rate cannot tell the whole story.\n\n\nBLOG 2 What Is Your Student ID Worth? Where does a student ID save the most—and where can you visit for less? Using R to collect official admission prices, this post compares 18 museums across eight U.S. cities. Philadelphia offers the largest average student discount in this sample, but museums that are free for everyone tell a different story about affordability. Explore the charts and filter the ticket table by city and age to plan your next visit.\n\n\nBLOG 1 · START HERE How Lisa Wins at Every Distance and Still Loses A friendly introduction to Simpson’s paradox."
-  },
-  {
-    "objectID": "blog/index.html#latest-notes",
-    "href": "blog/index.html#latest-notes",
-    "title": "Blog",
-    "section": "Latest notes",
-    "text": "Latest notes"
-  },
-  {
     "objectID": "blog/posts/post1/Untitled.html",
     "href": "blog/posts/post1/Untitled.html",
     "title": "How Lisa Wins at Every Distance and Still Loses",
@@ -271,6 +166,167 @@
     "title": "How Lisa Wins at Every Distance and Still Loses",
     "section": "",
     "text": "For who landed a larger share of their actual throws, the overall scoreboard answers correctly: Bart. For who had the higher observed accuracy at the same distance, the grouped table answers: Lisa. Different questions justify different summaries.\nThe same problem can arise when comparing job-training programs. Suppose one program enrolls more people with little prior work experience. Its overall placement rate could be lower even if placement rates are higher within each experience group. The overall rate describes outcomes for the people actually enrolled; a comparison using a common experience mix answers a different question. Neither comparison, by itself, tells us how much the training helped participants.\nBut splitting data into groups is no automatic cure. To ask whether a program causes better outcomes, we need to understand how people enter it and which variables should be adjusted for. Grouping on a consequence of participation can even remove part of the effect we want to measure. As Pearl (2014) explains, causal interpretation requires knowledge of the process behind the data, beyond the table. Lisa’s table demonstrates an arithmetic reversal, not proof of innate skill or a causal effect.\n\nBart landed a larger share of the shots he actually took. Lisa had a higher success rate at each distance. Both statements are true because the players took different mixes of shots. If Homer wants to compare their observed accuracy on equal terms, he needs to use the same distance mix for both.\n\n\n\nData, sources, and reproduce it\n\nAll four counts are constructed for this explanation; they are not observations from a television episode or an empirical study. The comic was made with OpenAI’s built-in image generation tool and checked against the table. Its generation prompt is included.\nDownload the four-row dataset, Python reproduction script, calculated results, or replication instructions. Run the script with Python 3 from this post’s folder; it generates the table and results using the standard library. The interactive demonstration implements the same weighted averages in JavaScript. AI-generated artwork is supplied as an asset; rerunning the analysis does not regenerate it.\npython code/reproduce.py\nFurther reading:\n\nSimpson, E. H. (1951). The Interpretation of Interaction in Contingency Tables. Journal of the Royal Statistical Society: Series B, 13(2), 238–241.\nPearl, J. (2014). Comment: Understanding Simpson’s Paradox. The American Statistician, 68(1), 8–13. Linked version: UCLA author manuscript."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jiaqi (Liz) Yuan",
+    "section": "",
+    "text": "Jiaqi (Liz) Yuan\nInterested in data, economics, and the questions that connect people, markets, and ideas.\nMaster of Applied Economics and Data Science\nUniversity of Pennsylvania\nI am a student with interests in economics, data-driven analysis, and interdisciplinary research. Across academic projects, internships, and international learning experiences, I have been drawn to questions that sit between markets, behavior, and decision-making.\n\nConnect"
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "New York, NY and Philadelphia, PA\nlizzyuan@sas.upenn.edu | LinkedIn | GitHub\nDownload CV"
+  },
+  {
+    "objectID": "resume.html#jiaqi-yuan",
+    "href": "resume.html#jiaqi-yuan",
+    "title": "Resume",
+    "section": "",
+    "text": "New York, NY and Philadelphia, PA\nlizzyuan@sas.upenn.edu | LinkedIn | GitHub\nDownload CV"
+  },
+  {
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Resume",
+    "section": "Education",
+    "text": "Education\nUniversity of Pennsylvania\nMaster of Applied Economics and Data Science, expected June 2028\nSelected coursework: Computational Methods; Machine Learning for Economists\nShanghai Jiao Tong University, Antai College of Economics and Management\nBachelor of Finance; Minor in Big Data and Business Management, June 2026\nExchange: UBC Sauder School of Business; NUS Summer Program"
+  },
+  {
+    "objectID": "resume.html#professional-experience",
+    "href": "resume.html#professional-experience",
+    "title": "Resume",
+    "section": "Professional Experience",
+    "text": "Professional Experience\nTencent, Corporate Development Group, FinTech\nStrategy and Business Analysis Intern\n\nAnalyzed B2B and B2C payment needs, use cases, competitors, and business models for FinTech strategy work.\nEvaluated AI healthcare products across capabilities, positioning, user scenarios, and end-to-end experience.\nBuilt a Dify workflow to automate weekly reporting and research synthesis.\n\nBoston Consulting Group\nPart-Time Assistant\n\nReviewed reports for expansion strategy work and built a 20+ dimension benchmarking model.\nResearched enterprise AI applications in workflow automation, marketing, and decision support.\n\nWeBank, Risk Modeling Division\nRisk Modeling Intern\n\nSupported credit scoring model development using Python, SQL, Spark, and Hive.\nCompared LR, RF, XGBoost, and GBDT models by AUC, KS, and Gini.\n\nHaitong Futures, Wealth Management Center\nWealth Management Intern\n\nConducted due diligence on 50+ quantitative private-fund products using Wind, Capital IQ, and Python.\nBuilt analyses for fund performance metrics, trend visualization, and investment evaluation."
+  },
+  {
+    "objectID": "resume.html#selected-research",
+    "href": "resume.html#selected-research",
+    "title": "Resume",
+    "section": "Selected Research",
+    "text": "Selected Research\nUndergraduate Thesis: Text Analysis of Investor-Company Q&A\n\nAnalyzed 5.36 million rows of 2015-2024 A-share investor Q&A records using BERTopic and LLM-assisted auditing.\n\nIntelligent Course Advisory AI Agent\n\nDesigned a Dify recommendation module with multi-path workflows and a 2,800+ entry course-and-review knowledge base."
+  },
+  {
+    "objectID": "resume.html#skills",
+    "href": "resume.html#skills",
+    "title": "Resume",
+    "section": "Skills",
+    "text": "Skills\n\nPython, SQL, R, Stata\nQuarto and RStudio\nLaTeX\nDify\nWind and Capital IQ\nExcel and PowerPoint"
+  },
+  {
+    "objectID": "resume.html#languages-and-interests",
+    "href": "resume.html#languages-and-interests",
+    "title": "Resume",
+    "section": "Languages and Interests",
+    "text": "Languages and Interests\n\nMandarin Chinese, native\nEnglish, professional\nPilates, squash, volleyball, and hiking"
+  },
+  {
+    "objectID": "blog/posts/post1/results/table.html",
+    "href": "blog/posts/post1/results/table.html",
+    "title": "Jiaqi Yuan",
+    "section": "",
+    "text": "Distance\nLisa: successes / attempts (rate)\nBart: successes / attempts (rate)\n\n\n\n\nNear/easier\n9 / 10 (90%)\n72 / 90 (80%)\n\n\nFar/harder\n54 / 90 (60%)\n5 / 10 (50%)\n\n\nOverall\n63 / 100 (63%)\n77 / 100 (77%)\n\n\n\nFictional teaching data. Overall rates use total successes divided by total attempts, rather than an unweighted mean of the two rates.\nUsing a shared 50:50 mix of near and far attempts: Lisa 75%, Bart 65%. These standardized rates hold the observed group rates fixed; they are not causal estimates or predictions."
+  },
+  {
+    "objectID": "blog/posts/post5/index.html",
+    "href": "blog/posts/post5/index.html",
+    "title": "Why a Tech-Rich State Can Still Have a Wide Gender Pay Gap",
+    "section": "",
+    "text": "A lucrative career can carry a cost that never appears on a pay stub: control over one’s time.\nThat trade-off sits at the center of economist Claudia Goldin’s explanation for why gender earnings gaps persist. Jobs can reward long, inflexible hours disproportionately. When someone must also be available for a child or an aging parent, a household faces a costly choice over whose career bends. The consequences can accumulate even when partners begin with similar qualifications. Goldin received the 2023 Nobel Memorial Prize in Economic Sciences for her research on women’s labor market outcomes.\nHer work suggests a question for the modern technology economy. Does creating more well-paid technical work make a place more equal—or does equality depend on who gets those jobs and how careers are organized?\nFive years of Census estimates—2019 and 2021–2024—give a complicated answer. Technology occupations offer high earnings for women and men. But tech’s expanding footprint has not brought a comparable increase in women’s representation. A state’s concentration of technical workers also says surprisingly little about either its current earnings gap or how much that gap narrowed."
+  },
+  {
+    "objectID": "blog/posts/post5/index.html#a-dollar-is-not-the-same-everywhere",
+    "href": "blog/posts/post5/index.html#a-dollar-is-not-the-same-everywhere",
+    "title": "Does a Richer, More Technical Economy Close the Gender Earnings Gap?",
+    "section": "A dollar is not the same everywhere",
+    "text": "A dollar is not the same everywhere\nThe first map asks how much women earn for every $100 men earn, comparing median annual earnings among full-time, year-round workers age 16 and older. A value of $85 means women’s median is 15% below men’s. This compares two groups’ medians; it does not compare colleagues doing identical jobs.\n\n\n\nGender earnings ratios across 50 states. Darker green indicates a ratio closer to parity; each state’s women’s median is divided by its men’s median.\n\n\nThe highest point estimate is $91.4 in New York, followed by Vermont at $91.0. Louisiana and Utah are near $73.1 and $73.6, respectively. Women’s median earnings fall below men’s in every state. These are estimated rankings, not statistically established differences between neighboring ranks.\nSmaller gaps appear in several Northeastern and Pacific states, while several Southern and Mountain states have larger gaps. The exceptions matter: a regional label cannot explain every state’s experience. Large land areas also dominate the map visually; they do not represent more workers or receive greater statistical weight."
+  },
+  {
+    "objectID": "blog/posts/post5/index.html#technology-hubs-do-not-share-one-earnings-pattern",
+    "href": "blog/posts/post5/index.html#technology-hubs-do-not-share-one-earnings-pattern",
+    "title": "Does a Richer, More Technical Economy Close the Gender Earnings Gap?",
+    "section": "Technology hubs do not share one earnings pattern",
+    "text": "Technology hubs do not share one earnings pattern\nThe second map measures technology concentration as computer and mathematical occupations divided by all civilian employed residents age 16+. It covers workers across industries, including remote workers, rather than counting technology companies or measuring AI adoption.\n\n\n\nTechnology occupation concentration provides a second geography to compare with earnings parity. Read its percentage scale separately from the first map’s dollar ratio.\n\n\nWashington and Maryland have almost identical technology shares, about 6.7% each. Yet women’s median earnings are 82.3% of men’s in Washington and 89.5% in Maryland. A similar concentration of technical work can coexist with quite different earnings gaps.\n\n\n\nEach state is one dot. A higher position means a smaller gender earnings gap. Selected states are labeled with postal abbreviations.\n\n\nAcross states, the correlation between technology share and the earnings ratio is 0.28. This modest positive association leaves substantial variation unexplained. Technology employment may expand opportunity, but its presence does not tell us whether women enter those occupations, reach senior roles, or share their earnings gains."
+  },
+  {
+    "objectID": "blog/posts/post5/index.html#richer-places-smaller-gapswith-exceptions",
+    "href": "blog/posts/post5/index.html#richer-places-smaller-gapswith-exceptions",
+    "title": "Does a Richer, More Technical Economy Close the Gender Earnings Gap?",
+    "section": "Richer places, smaller gaps—with exceptions",
+    "text": "Richer places, smaller gaps—with exceptions\nHousehold income has a stronger positive association with the earnings ratio: 0.45 across states. Rank correlations preserve that ordering. Here, “richer” means higher median household income, not greater household wealth. Income is a flow; wealth is accumulated assets minus debts.\n\n\n\nHigher household income is associated with a higher earnings ratio, but Utah illustrates why income alone is insufficient.\n\n\nUtah’s median household income is $96,658, yet its earnings ratio is only 73.6%. New York’s household income is lower, at $85,820, while its ratio is much closer to parity. Nor does a smaller gap necessarily mean higher earnings: Vermont has a higher ratio than Washington, but lower median earnings for both women and men."
+  },
+  {
+    "objectID": "blog/posts/post5/index.html#prosperity-is-only-part-of-the-story",
+    "href": "blog/posts/post5/index.html#prosperity-is-only-part-of-the-story",
+    "title": "Does a Richer, More Technical Economy Close the Gender Earnings Gap?",
+    "section": "Prosperity is only part of the story",
+    "text": "Prosperity is only part of the story\nThese comparisons describe residents, not causal effects or individual wage offers. Occupation, seniority, education, caregiving, and hours even within full-time work can affect the gap; this analysis does not separate their contributions or measure discrimination. Restricting the sample also leaves out part-time workers and people outside employment.\nAll correlations give each state equal weight. Census estimates already incorporate survey weights. Maps show point estimates; published margins of error are retained in the replication files, and small differences should not be overinterpreted. State averages conceal local and demographic differences.\nThe takeaway is that a prosperous, technical economy can still have a substantial gender earnings gap. Assessing economic opportunity requires looking at how earnings are distributed alongside how much income a place generates."
+  },
+  {
+    "objectID": "blog/posts/post5/index.html#sources-and-replication",
+    "href": "blog/posts/post5/index.html#sources-and-replication",
+    "title": "Does a Richer, More Technical Economy Close the Gender Earnings Gap?",
+    "section": "Sources and replication",
+    "text": "Sources and replication\nCensus ACS 2024 1-year data: B20017, male and female full-time, year-round median earnings; B19013, median household income; S2401, civilian employed residents and computer/mathematical occupations. Earnings and income are in 2024 dollars, without local cost-of-living adjustment. Census records sex as male/female in these tables; they do not describe all gender identities.\nCensus 2024 state boundaries are joined by state FIPS codes. DC and Puerto Rico are excluded. Earnings and income files retrieved October 19, 2026; the S2401 response is the repository’s October 4, 2026 download of the same 2024 release.\nDownload the state comparison data · Download the reproducibility package · Code and replication instructions"
+  },
+  {
+    "objectID": "blog/posts/post3/index.html",
+    "href": "blog/posts/post3/index.html",
+    "title": "How Much of the Participation Decline Reflects an Aging Population?",
+    "section": "",
+    "text": "Note\n\n\n\nBLOG 3 · THE PEOPLE BEHIND THE AVERAGE\nParticipation fell 0.54 percentage points. A shift toward older ages pulled it down; changes within age groups partly offset that decline."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#participation-and-population-aging",
+    "href": "blog/posts/post3/index.html#participation-and-population-aging",
+    "title": "How Much of the Participation Decline Reflects an Aging Population?",
+    "section": "Participation and population aging",
+    "text": "Participation and population aging\nA decline in labor-force participation can reflect changes in participation within age groups, changes in the population’s age distribution, or both. The distinction matters when interpreting the post-pandemic labor market: an older population can have a lower participation rate even if participation rises among younger adults. I use CPS data to measure how much each component contributes to the change between 2019 and 2024.\nUsing IPUMS CPS microdata, I compare 2019, before the pandemic, with 2024. The weighted annual participation rate fell from 63.40% to 62.86%. But that average combines two things: how likely people of each age are to participate, and how common each age group is."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#sample-and-weights",
+    "href": "blog/posts/post3/index.html#sample-and-weights",
+    "title": "How Much of the Participation Decline Reflects an Aging Population?",
+    "section": "Sample and weights",
+    "text": "Sample and weights\nI use all twelve Basic Monthly CPS samples in each year: 2,611,419 person-month records, of which 2,115,648 meet the analysis criteria. The population is civilians age 16 or older with a valid labor-force status and positive weight. These are observations, not distinct people; the CPS interviews respondents in multiple months.\nEvery population statistic uses WTFINL, the final person weight. I calculate each month’s weighted participation rate, then average the twelve rates equally. Age shares and within-age rates use the same monthly-normalized weights, keeping the decomposition consistent. The code imports the matching DDI metadata so that the weight’s implied decimals are handled correctly.\nParticipation includes employed people and unemployed people in the labor force. It is not an employment rate. Someone outside the labor force is not automatically unemployed."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#compare-people-of-similar-ages",
+    "href": "blog/posts/post3/index.html#compare-people-of-similar-ages",
+    "title": "How Much of the Participation Decline Reflects an Aging Population?",
+    "section": "Compare people of similar ages",
+    "text": "Compare people of similar ages\nFigure 1 compares participation across age groups in each year. Adults aged 25–54 have substantially higher participation rates than those 65 and older. Between 2019 and 2024, participation rose in all five displayed groups below age 65: for ages 35–44, it increased from 83.33% to 84.77%. Among ages 65–74, it fell from 28.47% to 27.67%. These are comparisons of age groups in two years; they do not track the same people as they age.\n\n\n\nWeighted participation rose in the five age groups below 65 and fell in the two older groups."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#the-changing-age-distribution",
+    "href": "blog/posts/post3/index.html#the-changing-age-distribution",
+    "title": "How Much of the Participation Decline Reflects an Aging Population?",
+    "section": "The changing age distribution",
+    "text": "The changing age distribution\nThe national participation rate weights each age group’s participation rate by its population share. If groups with lower participation account for more of the population, the national rate can fall even with unchanged participation within every age group.\nFigure 2 shows this compositional shift. Adults 65 and older increased from 20.40% to 22.23% of the weighted population. Because their participation rates are relatively low, that shift puts downward pressure on the national average. These are population shares estimated with weights, not percentages of downloaded rows.\n\n\n\nThe population shares of both older age groups increased between 2019 and 2024."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#separate-the-two-changes",
+    "href": "blog/posts/post3/index.html#separate-the-two-changes",
+    "title": "How Much of the Participation Decline Reflects an Aging Population?",
+    "section": "Separate the two changes",
+    "text": "Separate the two changes\nA symmetric Kitagawa decomposition splits the observed change into an age-composition component and a within-age participation component. It averages the two possible orders of changing shares and rates, so neither year gets special treatment.\nFigure 3 gives the result: -0.98 percentage points from composition, offset by +0.44 points from within-age changes, producing the observed -0.54 points. The composition component is larger than the net decline because the two components move in opposite directions. A percentage point is a difference between rates, not a percent change.\n\n\n\nAge composition contributes −0.98 percentage points, within-age participation +0.44, and the total is −0.54.\n\n\nUsing narrower, mostly five-year age groups gives −1.09 points for composition and +0.55 for within-age changes. The magnitudes change, but the interpretation survives."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#what-explains-the-aggregate-decline",
+    "href": "blog/posts/post3/index.html#what-explains-the-aggregate-decline",
+    "title": "How Much of the Participation Decline Reflects an Aging Population?",
+    "section": "What explains the aggregate decline?",
+    "text": "What explains the aggregate decline?\nIn this decomposition, the shift in age composition contributes -0.98 percentage points, exceeding the observed 0.54-point decline. Within-age participation changes offset 0.44 points of that decline. The aggregate therefore understates the improvement within many age groups. These results help explain the national rate, but they do not tell us why participation changed within those groups.\nThis is descriptive accounting, not a causal estimate of aging or the pandemic. Within-age changes also reflect health, education, family circumstances, and other composition; even the oldest age bin contains aging. Estimates are not seasonally adjusted, population-control revisions can affect comparisons, and repeated respondents rule out treating all rows as independent. I make no significance claims or claims about individual retirement decisions."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#data-and-reproducibility",
+    "href": "blog/posts/post3/index.html#data-and-reproducibility",
+    "title": "How Much of the Participation Decline Reflects an Aging Population?",
+    "section": "Data and reproducibility",
+    "text": "Data and reproducibility\nSource: IPUMS CPS, Version 13.0, University of Minnesota, doi:10.18128/D030.V13.0, based on Census Bureau and Bureau of Labor Statistics CPS data. Extract generated September 28, 2026; Basic Monthly samples for January–December 2019 and 2024. See WTFINL documentation and LABFORCE definitions.\nDownload the R code, replication instructions, and aggregate results. Raw microdata are excluded; obtain your own matching extract through IPUMS. The script checks month coverage, record uniqueness, codes, weights, and the decomposition identity.\nView the code and replication instructions on GitHub."
   },
   {
     "objectID": "blog/posts/post4/index.html",
@@ -343,10 +399,59 @@
     "text": "Sources and replication\nCensus ACS API: S2401 occupation counts and S2301 employment indicators; 2018 comparability guidance; 2020 release limitation. Data retrieved October 4, 2026. ACS rates are not interchangeable with the monthly BLS headline unemployment series.\nDownload the reproducibility package: source responses, analysis scripts, figures and README. No API key is included.\nView the code and replication instructions on GitHub."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Jiaqi (Liz) Yuan",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Jiaqi (Liz) Yuan\nInterested in data, economics, and the questions that connect people, markets, and ideas.\nMaster of Applied Economics and Data Science\nUniversity of Pennsylvania\nI am a student with interests in economics, data-driven analysis, and interdisciplinary research. Across academic projects, internships, and international learning experiences, I have been drawn to questions that sit between markets, behavior, and decision-making.\n\nConnect"
+    "text": "This website was created for AEDS 6400: Computational Methods at the University of Pennsylvania.\nIt is built with Quarto in RStudio and published with GitHub Pages from the docs folder of the main branch."
+  },
+  {
+    "objectID": "blog/posts/post5/index.html#first-look-at-where-the-gap-is-widest",
+    "href": "blog/posts/post5/index.html#first-look-at-where-the-gap-is-widest",
+    "title": "Why a Tech-Rich State Can Still Have a Wide Gender Pay Gap",
+    "section": "First, look at where the gap is widest",
+    "text": "First, look at where the gap is widest\nIn Washington, a center of the technology economy, women working full time, year round had median annual earnings equal to 82.3 cents per dollar earned by men. In Maryland, another state with a similar concentration of technical workers, the figure was 89.5 cents.\nThe difference is substantial enough to challenge a simple story in which more technology jobs automatically produce equal outcomes.\n\n\n\nHow close are women’s median earnings to men’s? Darker green means a smaller gap.\n\n\nAcross the 50 states, women’s median earnings were below men’s everywhere. New York and Vermont had the highest point estimates, around 91.4 and 91.0 cents per dollar. Louisiana and Utah were near 73.1 and 73.6 cents. Small differences in these estimated rankings should not be treated as statistically established.\nThese figures compare the medians of women and men age 16 or older who worked full time, year round. They are earnings gaps, not evidence that a woman and a man doing the same job receive those different paychecks. Occupations, seniority, hours within full-time work, and self-employment can all differ. People working part time or outside paid work are not included."
+  },
+  {
+    "objectID": "blog/posts/post5/index.html#is-prosperity-doing-more-of-the-work-than-technology",
+    "href": "blog/posts/post5/index.html#is-prosperity-doing-more-of-the-work-than-technology",
+    "title": "Why a Tech-Rich State Can Still Have a Wide Gender Pay Gap",
+    "section": "Is prosperity doing more of the work than technology?",
+    "text": "Is prosperity doing more of the work than technology?\nHigher-income states generally have smaller gaps. Across states, the correlation between median household income and women’s earnings relative to men’s is 0.45. The correlation with technology concentration is weaker, 0.28. Here, technology means computer and mathematical occupations as a share of employed residents—not all employees of technology companies.\n\n\n\nProsperous states generally have smaller earnings gaps, but Utah is an important exception. Each dot represents a state.\n\n\nThe two features overlap: states with more technical workers also tend to have higher household incomes. To separate those patterns descriptively, I remove each variable’s linear relationship with household income and compare what remains. The technology–earnings-ratio correlation falls to -0.03, essentially zero.\nThat is a useful check on the original comparison, not proof that income explains the gap. Household income itself reflects earnings, household composition and other income sources. It is not an outside force randomly assigned to states. Nor is it wealth, which measures accumulated assets minus debts.\nUtah illustrates the limits of prosperity as an explanation. Its median household income was $96,658, higher than New York’s $85,820, yet its earnings ratio was much lower. A high household income does not tell us whether two earners contribute equally to it.\nThe time comparison provides another test. Technology’s national employment share rose from 3.3% to 4.0%. Increases occurred in 48 of 50 states. Yet states with larger increases did not consistently see larger improvements in earnings parity: the correlation between those two changes is only 0.03. Rank correlation is also near zero.\n\n\n\nThe states gaining the most technology employment share were not consistently those with the largest narrowing of the earnings gap.\n\n\nThis separates a geographic pattern from a change over time. A tech-rich state can look different from a less technical state, yet expanding its technical workforce does not necessarily move its overall earnings ratio in the same direction. The comparison remains descriptive: migration and changes in other industries can affect both measures."
+  },
+  {
+    "objectID": "blog/posts/post5/index.html#who-gets-the-technology-jobs",
+    "href": "blog/posts/post5/index.html#who-gets-the-technology-jobs",
+    "title": "Why a Tech-Rich State Can Still Have a Wide Gender Pay Gap",
+    "section": "Who gets the technology jobs?",
+    "text": "Who gets the technology jobs?\nNationally, women held 47.8% of all employed jobs, but only 26.9% of computer and mathematical jobs. Put another way, 2.2% of employed women worked in those occupations, compared with 5.5% of employed men.\nThe relevant question is therefore not only how many technical jobs a state has. It is whether women share in them.\n\n\n\nWomen’s share of technology occupations falls below their share of all employment in every state. Darker plum indicates a larger representation shortfall.\n\n\nIn Washington, women held 24.5% of technology occupations, compared with 46.9% of all employed jobs. Maryland’s corresponding shares were 32.5% and 49.8%. Utah’s tech workforce was only 19.8% women.\nOver time, women’s national share of technical occupations was almost unchanged: 26.8% in 2019 and 26.9% in 2024, with lower estimates in between. The field grew, but its gender composition barely shifted between the endpoints. At the state level, women’s tech representation rose in 25 states and fell in the others.\n\n\n\nTechnology employment expanded, but women’s share of it ended almost where it began. The 2020 gap reflects the missing standard ACS release, as explained above.\n\n\nThat does not mean women gained no jobs. The estimated number of women in these occupations increased by 27.5%. Men also gained jobs, leaving the female share nearly flat. Expanding employment and changing who participates in it are different forms of progress.\nThis is consistent with an access problem: expanding a well-paid field may disproportionately benefit men when men fill most of its positions. But the data do not reveal whether the imbalance comes from education pathways, hiring, retention, caregiving constraints, workplace culture or other factors. It should not simply be labeled a difference in preferences.\nAnd representation does not solve the entire geographic puzzle. Across all states, the correlation between women’s share of tech jobs and the overall earnings ratio is just 0.09. Accounting for household income raises it to 0.25, still a limited descriptive relationship. New York has a much smaller overall earnings gap than Washington, even though women are a minority of technical workers in both places.\nThe underrepresentation also persists in all 50 point estimates when I restrict the occupation counts to full-time, year-round workers. Nationally, women are 26.3% of that technical workforce, versus 44.0% of all full-time, year-round employed workers. Part-time employment alone does not account for the pattern."
+  },
+  {
+    "objectID": "blog/posts/post5/index.html#does-entering-tech-eliminate-the-gap",
+    "href": "blog/posts/post5/index.html#does-entering-tech-eliminate-the-gap",
+    "title": "Why a Tech-Rich State Can Still Have a Wide Gender Pay Gap",
+    "section": "Does entering tech eliminate the gap?",
+    "text": "Does entering tech eliminate the gap?\nIt does not. But technology also should not be mistaken for a uniquely unequal field.\nNationally, full-time, year-round women in computer and mathematical occupations had median earnings of $95,158, compared with $111,053 for men. That is 85.7 cents per male dollar—a narrower gap than the 83.0 cents observed across all occupations using the same full-time, year-round civilian employed population.\n\n\n\nTechnology occupations pay more for both groups. They also retain a gender earnings gap. These are national medians for civilian employed residents, not averages of state medians.\n\n\nThe geographic contrast survives inside the broad category. In Washington, women’s median tech earnings were 84.2% of men’s; in Maryland, 90.3%. This still does not compare identical jobs. A software developer and a computer support specialist can share the same broad occupational label while earning very different amounts. Experience, management responsibilities and hours can differ too.\nThat distinction helps explain why both access and careers matter. More women entering a high-paying field could broaden opportunity. But entry alone need not equalize promotions, specialties, hours or pay. Conversely, a relatively small gap inside tech cannot determine a state’s overall gap: even in Washington, these occupations account for only 6.7% of employed residents. Most workers are elsewhere in the economy.\nNor can the overall median be decomposed into a weighted average of occupational medians. These comparisons identify patterns worth investigating; they do not calculate the fraction of the state gap caused by occupational sorting."
+  },
+  {
+    "objectID": "blog/posts/post5/index.html#what-might-actually-narrow-the-gap",
+    "href": "blog/posts/post5/index.html#what-might-actually-narrow-the-gap",
+    "title": "Why a Tech-Rich State Can Still Have a Wide Gender Pay Gap",
+    "section": "What might actually narrow the gap?",
+    "text": "What might actually narrow the gap?\nGoldin’s 2014 research points beyond the number of high-paying jobs to the price workers pay for flexibility. If earnings rise disproportionately with long or particular hours, reducing availability can carry a large career cost. Her analysis also found smaller adjusted gaps in technology and science than in business occupations. The lesson is about job design, not a claim that every technology job demands constant availability.\nA concrete example comes from Goldin and Lawrence Katz’s research on pharmacy. They connect its evolution toward family-friendly, well-paid employment to changes in how the profession is organized. When qualified colleagues can substitute for one another, a worker’s absence need not interrupt the entire service. That makes flexibility less costly. Technology can help such coordination; its usefulness depends on how employers use it.\nFor technology employers, that suggests questions about shared project knowledge, reliable handoffs, promotion criteria and whether constant availability is being rewarded over performance. For access, the questions concern training, recruitment and retention. And the Nobel committee’s account of Goldin’s research highlights how parenthood can redirect earnings trajectories. Childcare and a more balanced division of care are relevant constraints to examine alongside workplace practices.\nThese are research-informed directions, not interventions evaluated by this state comparison. Testing them would require evidence on workers’ jobs, hours, experience and family circumstances over time. The maps cannot establish that childcare costs explain Utah or that flexible work explains Maryland.\nAcross 2019–2024, technical work expanded without a comparable shift in women’s share of it. States with faster tech growth did not consistently narrow their earnings gaps more. A technical economy can pay women well while employing relatively few of them, and a richer state can still have a wide gap. A credible strategy for equality has to ask both who enters the well-paid jobs and what makes it possible to build a career once there."
+  },
+  {
+    "objectID": "blog/posts/post5/index.html#data-sources-and-replication",
+    "href": "blog/posts/post5/index.html#data-sources-and-replication",
+    "title": "Why a Tech-Rich State Can Still Have a Wide Gender Pay Gap",
+    "section": "Data, sources and replication",
+    "text": "Data, sources and replication\nEstimates use ACS 1-year data for 2019 and 2021–2024. The geographic levels, household-income comparisons and detailed earnings bars refer to 2024. B20017 measures the state map’s full-time, year-round earnings; B19013 measures household income; S2401 and B24010 measure technology concentration and representation among employed residents; B24020 checks full-time representation in 2024; B24022 supplies occupation earnings and the national earnings trend. Both lines in that trend use B24022’s civilian employed universe, which differs from B20017’s broader population with earnings. Full time means usually 35+ hours a week; year round means 50–52 weeks.\nOnly ratios, shares and counts are compared across years; annual dollar medians are not compared without inflation adjustment. The dollar bars and income scatterplot use 2024 dollars without geographic cost-of-living adjustment. The broad occupation definitions are verified against each year’s metadata. Changes in population controls, migration, employment selection and demographics still limit comparisons; no change is interpreted as an individual worker’s earnings gain.\nThe maps join Census state boundaries to estimates by FIPS code. State comparisons exclude DC and Puerto Rico and weight each state equally. The national results use the actual U.S. tabulation. Census estimates already use survey weights. Published margins of error are retained; charts show point estimates without significance claims. Sex is tabulated as male/female and does not describe all gender identities. Age, race, education and differences within states remain unadjusted.\nDownload all state comparisons · Download the reproducibility package · Code and replication instructions\nDownload the 250 state-year observations · Download the national trends\nPublic Census earnings, income and occupation summary files retrieved October 19, 2026. S2401 uses the repository’s October 4 download of the same release. Research references: Goldin (2014), American Economic Review, doi:10.1257/aer.104.4.1091; Goldin and Katz (2016), Journal of Labor Economics, doi:10.1086/685505, with an open working paper."
+  },
+  {
+    "objectID": "blog/posts/post5/index.html#did-the-gap-at-least-narrow-over-time",
+    "href": "blog/posts/post5/index.html#did-the-gap-at-least-narrow-over-time",
+    "title": "Why a Tech-Rich State Can Still Have a Wide Gender Pay Gap",
+    "section": "Did the gap at least narrow over time?",
+    "text": "Did the gap at least narrow over time?\nNationally, yes—but unevenly. Among full-time, year-round civilian employed residents, women’s median earnings across all occupations rose from 81.0 cents per male dollar in 2019 to 83.0 cents in 2024. In technology occupations, the ratio moved from 84.7 to 85.7 cents. Neither series shows steady progress at every observation.\n\n\n\n\n\n\nNoteWhy is 2020 missing?\n\n\n\nCOVID-19 disrupted American Community Survey data collection, creating response problems and nonresponse bias. The resulting estimates did not meet Census’s quality standards, so it did not release the standard 2020 ACS one-year estimates. Census instead released experimental estimates using a different weighting approach. To keep this comparison consistent, the charts leave 2020 blank rather than mix those products or invent a value. Read the Census explanation.\n\n\n\n\n\nNational earnings ratios improved between the endpoints, but the intervening years show fluctuations. Both series use the same full-time, year-round civilian employed population definition.\n\n\nAcross states, 43 of 50 had a higher overall earnings-ratio point estimate in 2024 than in 2019. That is evidence of a broad descriptive improvement, not a finding that every measured change is statistically significant. These are repeated snapshots of residents, not the same workers followed through their careers.\nThe comparison spans the pandemic and changes in who was employed; it cannot isolate a technology effect from those changes."
   }
 ]

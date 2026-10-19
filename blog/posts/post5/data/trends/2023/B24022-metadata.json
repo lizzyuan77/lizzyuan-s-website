@@ -1,0 +1,77 @@
+{
+  "source_url": "https://api.census.gov/data/2023/acs/acs1/groups/B24022.json",
+  "variables": {
+    "B24022_002E": {
+      "label": "Estimate!!Total:!!Male:",
+      "concept": "Sex by Occupation and Median Earnings in the Past 12 Months (in 2023 Inflation-Adjusted Dollars) for the Full-Time, Year-Round Civilian Employed Population 16 Years and Over",
+      "predicateType": "int",
+      "group": "B24022",
+      "limit": 0,
+      "predicateOnly": true,
+      "universe": "Full-time, year-round civilian employed population 16 years and over with earnings"
+    },
+    "B24022_002M": {
+      "label": "Margin of Error!!Total:!!Male:",
+      "concept": "Sex by Occupation and Median Earnings in the Past 12 Months (in 2023 Inflation-Adjusted Dollars) for the Full-Time, Year-Round Civilian Employed Population 16 Years and Over",
+      "predicateType": "int",
+      "group": "B24022",
+      "limit": 0,
+      "predicateOnly": true,
+      "universe": "Full-time, year-round civilian employed population 16 years and over with earnings"
+    },
+    "B24022_008E": {
+      "label": "Estimate!!Total:!!Male:!!Management, business, science, and arts occupations:!!Computer, engineering, and science occupations:!!Computer and mathematical occupations",
+      "concept": "Sex by Occupation and Median Earnings in the Past 12 Months (in 2023 Inflation-Adjusted Dollars) for the Full-Time, Year-Round Civilian Employed Population 16 Years and Over",
+      "predicateType": "int",
+      "group": "B24022",
+      "limit": 0,
+      "predicateOnly": true,
+      "universe": "Full-time, year-round civilian employed population 16 years and over with earnings"
+    },
+    "B24022_008M": {
+      "label": "Margin of Error!!Total:!!Male:!!Management, business, science, and arts occupations:!!Computer, engineering, and science occupations:!!Computer and mathematical occupations",
+      "concept": "Sex by Occupation and Median Earnings in the Past 12 Months (in 2023 Inflation-Adjusted Dollars) for the Full-Time, Year-Round Civilian Employed Population 16 Years and Over",
+      "predicateType": "int",
+      "group": "B24022",
+      "limit": 0,
+      "predicateOnly": true,
+      "universe": "Full-time, year-round civilian employed population 16 years and over with earnings"
+    },
+    "B24022_038E": {
+      "label": "Estimate!!Total:!!Female:",
+      "concept": "Sex by Occupation and Median Earnings in the Past 12 Months (in 2023 Inflation-Adjusted Dollars) for the Full-Time, Year-Round Civilian Employed Population 16 Years and Over",
+      "predicateType": "int",
+      "group": "B24022",
+      "limit": 0,
+      "predicateOnly": true,
+      "universe": "Full-time, year-round civilian employed population 16 years and over with earnings"
+    },
+    "B24022_038M": {
+      "label": "Margin of Error!!Total:!!Female:",
+      "concept": "Sex by Occupation and Median Earnings in the Past 12 Months (in 2023 Inflation-Adjusted Dollars) for the Full-Time, Year-Round Civilian Employed Population 16 Years and Over",
+      "predicateType": "int",
+      "group": "B24022",
+      "limit": 0,
+      "predicateOnly": true,
+      "universe": "Full-time, year-round civilian employed population 16 years and over with earnings"
+    },
+    "B24022_044E": {
+      "label": "Estimate!!Total:!!Female:!!Management, business, science, and arts occupations:!!Computer, engineering, and science occupations:!!Computer and mathematical occupations",
+      "concept": "Sex by Occupation and Median Earnings in the Past 12 Months (in 2023 Inflation-Adjusted Dollars) for the Full-Time, Year-Round Civilian Employed Population 16 Years and Over",
+      "predicateType": "int",
+      "group": "B24022",
+      "limit": 0,
+      "predicateOnly": true,
+      "universe": "Full-time, year-round civilian employed population 16 years and over with earnings"
+    },
+    "B24022_044M": {
+      "label": "Margin of Error!!Total:!!Female:!!Management, business, science, and arts occupations:!!Computer, engineering, and science occupations:!!Computer and mathematical occupations",
+      "concept": "Sex by Occupation and Median Earnings in the Past 12 Months (in 2023 Inflation-Adjusted Dollars) for the Full-Time, Year-Round Civilian Employed Population 16 Years and Over",
+      "predicateType": "int",
+      "group": "B24022",
+      "limit": 0,
+      "predicateOnly": true,
+      "universe": "Full-time, year-round civilian employed population 16 years and over with earnings"
+    }
+  }
+}

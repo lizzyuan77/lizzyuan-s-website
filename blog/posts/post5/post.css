@@ -1,0 +1,11 @@
+body{background:#fbf9f3;color:#293e3a}h1,h2{font-family:Georgia,serif;color:#173f3b}h1{font-size:clamp(2.1rem,5vw,3.4rem)}p{line-height:1.8}h2{margin-top:2.3rem}a{color:#21665c}.subtitle{color:#67746b}.callout-important{background:#fff5df}pre{font-size:.85rem;white-space:pre-wrap}
+/* Editorial reading layout, with the existing website navigation retained. */
+main p,main li{font-family:Georgia,'Times New Roman',serif;font-size:1.12rem;line-height:1.78}
+.quarto-title h1.title{font-size:clamp(2.3rem,5.5vw,3.65rem);line-height:1.08;letter-spacing:-.025em}
+.quarto-title .subtitle{font-family:Georgia,serif;font-size:1.3rem;line-height:1.5;max-width:48rem}
+#title-block-header .description{display:none}
+main h2{font-size:1.8rem;line-height:1.25;margin-top:2.8rem}
+main>p:first-of-type{font-size:1.28rem}
+figcaption,.quarto-title-meta,.quarto-categories{font-family:Arial,sans-serif}
+.quarto-figure{margin:2.2rem 0}
+figcaption{font-size:.87rem;line-height:1.5;color:#52665f}

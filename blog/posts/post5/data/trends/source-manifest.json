@@ -1,0 +1,277 @@
+[
+  {
+    "year": 2019,
+    "table": "B20017",
+    "data_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2019/prototype/1YRData/acsdt1y2019-b20017.dat",
+    "metadata_url": "https://api.census.gov/data/2019/acs/acs1/groups/B20017.json",
+    "retained_rows": 53,
+    "retained_columns": [
+      "GEO_ID",
+      "B20017_E003",
+      "B20017_M003",
+      "B20017_E006",
+      "B20017_M006"
+    ],
+    "retrieved": "2026-10-19"
+  },
+  {
+    "year": 2019,
+    "table": "B24010",
+    "data_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2019/prototype/1YRData/acsdt1y2019-b24010.dat",
+    "metadata_url": "https://api.census.gov/data/2019/acs/acs1/groups/B24010.json",
+    "retained_rows": 53,
+    "retained_columns": [
+      "GEO_ID",
+      "B24010_E001",
+      "B24010_M001",
+      "B24010_E002",
+      "B24010_M002",
+      "B24010_E020",
+      "B24010_M020",
+      "B24010_E153",
+      "B24010_M153",
+      "B24010_E171",
+      "B24010_M171"
+    ],
+    "retrieved": "2026-10-19"
+  },
+  {
+    "year": 2019,
+    "table": "B24022",
+    "data_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2019/prototype/1YRData/acsdt1y2019-b24022.dat",
+    "metadata_url": "https://api.census.gov/data/2019/acs/acs1/groups/B24022.json",
+    "retained_rows": 53,
+    "retained_columns": [
+      "GEO_ID",
+      "B24022_E002",
+      "B24022_M002",
+      "B24022_E008",
+      "B24022_M008",
+      "B24022_E038",
+      "B24022_M038",
+      "B24022_E044",
+      "B24022_M044"
+    ],
+    "retrieved": "2026-10-19"
+  },
+  {
+    "year": 2021,
+    "table": "B20017",
+    "data_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2021/table-based-SF/data/1YRData/acsdt1y2021-b20017.dat",
+    "metadata_url": "https://api.census.gov/data/2021/acs/acs1/groups/B20017.json",
+    "retained_rows": 53,
+    "retained_columns": [
+      "GEO_ID",
+      "B20017_E003",
+      "B20017_M003",
+      "B20017_E006",
+      "B20017_M006"
+    ],
+    "retrieved": "2026-10-19"
+  },
+  {
+    "year": 2021,
+    "table": "B24010",
+    "data_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2021/table-based-SF/data/1YRData/acsdt1y2021-b24010.dat",
+    "metadata_url": "https://api.census.gov/data/2021/acs/acs1/groups/B24010.json",
+    "retained_rows": 53,
+    "retained_columns": [
+      "GEO_ID",
+      "B24010_E001",
+      "B24010_M001",
+      "B24010_E002",
+      "B24010_M002",
+      "B24010_E020",
+      "B24010_M020",
+      "B24010_E153",
+      "B24010_M153",
+      "B24010_E171",
+      "B24010_M171"
+    ],
+    "retrieved": "2026-10-19"
+  },
+  {
+    "year": 2021,
+    "table": "B24022",
+    "data_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2021/table-based-SF/data/1YRData/acsdt1y2021-b24022.dat",
+    "metadata_url": "https://api.census.gov/data/2021/acs/acs1/groups/B24022.json",
+    "retained_rows": 53,
+    "retained_columns": [
+      "GEO_ID",
+      "B24022_E002",
+      "B24022_M002",
+      "B24022_E008",
+      "B24022_M008",
+      "B24022_E038",
+      "B24022_M038",
+      "B24022_E044",
+      "B24022_M044"
+    ],
+    "retrieved": "2026-10-19"
+  },
+  {
+    "year": 2022,
+    "table": "B20017",
+    "data_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/1YRData/acsdt1y2022-b20017.dat",
+    "metadata_url": "https://api.census.gov/data/2022/acs/acs1/groups/B20017.json",
+    "retained_rows": 53,
+    "retained_columns": [
+      "GEO_ID",
+      "B20017_E003",
+      "B20017_M003",
+      "B20017_E006",
+      "B20017_M006"
+    ],
+    "retrieved": "2026-10-19"
+  },
+  {
+    "year": 2022,
+    "table": "B24010",
+    "data_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/1YRData/acsdt1y2022-b24010.dat",
+    "metadata_url": "https://api.census.gov/data/2022/acs/acs1/groups/B24010.json",
+    "retained_rows": 53,
+    "retained_columns": [
+      "GEO_ID",
+      "B24010_E001",
+      "B24010_M001",
+      "B24010_E002",
+      "B24010_M002",
+      "B24010_E020",
+      "B24010_M020",
+      "B24010_E153",
+      "B24010_M153",
+      "B24010_E171",
+      "B24010_M171"
+    ],
+    "retrieved": "2026-10-19"
+  },
+  {
+    "year": 2022,
+    "table": "B24022",
+    "data_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/1YRData/acsdt1y2022-b24022.dat",
+    "metadata_url": "https://api.census.gov/data/2022/acs/acs1/groups/B24022.json",
+    "retained_rows": 53,
+    "retained_columns": [
+      "GEO_ID",
+      "B24022_E002",
+      "B24022_M002",
+      "B24022_E008",
+      "B24022_M008",
+      "B24022_E038",
+      "B24022_M038",
+      "B24022_E044",
+      "B24022_M044"
+    ],
+    "retrieved": "2026-10-19"
+  },
+  {
+    "year": 2023,
+    "table": "B20017",
+    "data_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/1YRData/acsdt1y2023-b20017.dat",
+    "metadata_url": "https://api.census.gov/data/2023/acs/acs1/groups/B20017.json",
+    "retained_rows": 53,
+    "retained_columns": [
+      "GEO_ID",
+      "B20017_E003",
+      "B20017_M003",
+      "B20017_E006",
+      "B20017_M006"
+    ],
+    "retrieved": "2026-10-19"
+  },
+  {
+    "year": 2023,
+    "table": "B24010",
+    "data_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/1YRData/acsdt1y2023-b24010.dat",
+    "metadata_url": "https://api.census.gov/data/2023/acs/acs1/groups/B24010.json",
+    "retained_rows": 53,
+    "retained_columns": [
+      "GEO_ID",
+      "B24010_E001",
+      "B24010_M001",
+      "B24010_E002",
+      "B24010_M002",
+      "B24010_E020",
+      "B24010_M020",
+      "B24010_E153",
+      "B24010_M153",
+      "B24010_E171",
+      "B24010_M171"
+    ],
+    "retrieved": "2026-10-19"
+  },
+  {
+    "year": 2023,
+    "table": "B24022",
+    "data_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/1YRData/acsdt1y2023-b24022.dat",
+    "metadata_url": "https://api.census.gov/data/2023/acs/acs1/groups/B24022.json",
+    "retained_rows": 53,
+    "retained_columns": [
+      "GEO_ID",
+      "B24022_E002",
+      "B24022_M002",
+      "B24022_E008",
+      "B24022_M008",
+      "B24022_E038",
+      "B24022_M038",
+      "B24022_E044",
+      "B24022_M044"
+    ],
+    "retrieved": "2026-10-19"
+  },
+  {
+    "year": 2024,
+    "table": "B20017",
+    "data_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/1YRData/acsdt1y2024-b20017.dat",
+    "metadata_url": "https://api.census.gov/data/2024/acs/acs1/groups/B20017.json",
+    "retained_rows": 53,
+    "retained_columns": [
+      "GEO_ID",
+      "B20017_E003",
+      "B20017_M003",
+      "B20017_E006",
+      "B20017_M006"
+    ],
+    "retrieved": "2026-10-19"
+  },
+  {
+    "year": 2024,
+    "table": "B24010",
+    "data_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/1YRData/acsdt1y2024-b24010.dat",
+    "metadata_url": "https://api.census.gov/data/2024/acs/acs1/groups/B24010.json",
+    "retained_rows": 53,
+    "retained_columns": [
+      "GEO_ID",
+      "B24010_E001",
+      "B24010_M001",
+      "B24010_E002",
+      "B24010_M002",
+      "B24010_E020",
+      "B24010_M020",
+      "B24010_E153",
+      "B24010_M153",
+      "B24010_E171",
+      "B24010_M171"
+    ],
+    "retrieved": "2026-10-19"
+  },
+  {
+    "year": 2024,
+    "table": "B24022",
+    "data_url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/1YRData/acsdt1y2024-b24022.dat",
+    "metadata_url": "https://api.census.gov/data/2024/acs/acs1/groups/B24022.json",
+    "retained_rows": 53,
+    "retained_columns": [
+      "GEO_ID",
+      "B24022_E002",
+      "B24022_M002",
+      "B24022_E008",
+      "B24022_M008",
+      "B24022_E038",
+      "B24022_M038",
+      "B24022_E044",
+      "B24022_M044"
+    ],
+    "retrieved": "2026-10-19"
+  }
+]

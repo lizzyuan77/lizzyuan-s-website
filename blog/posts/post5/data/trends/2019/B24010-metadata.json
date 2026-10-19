@@ -1,0 +1,85 @@
+{
+  "source_url": "https://api.census.gov/data/2019/acs/acs1/groups/B24010.json",
+  "variables": {
+    "B24010_001E": {
+      "label": "Estimate!!Total:",
+      "concept": "SEX BY OCCUPATION FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER",
+      "predicateType": "int",
+      "group": "B24010",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "B24010_001M": {
+      "label": "Margin of Error!!Total:",
+      "concept": "SEX BY OCCUPATION FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER",
+      "predicateType": "int",
+      "group": "B24010",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "B24010_002E": {
+      "label": "Estimate!!Total:!!Male:",
+      "concept": "SEX BY OCCUPATION FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER",
+      "predicateType": "int",
+      "group": "B24010",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "B24010_002M": {
+      "label": "Margin of Error!!Total:!!Male:",
+      "concept": "SEX BY OCCUPATION FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER",
+      "predicateType": "int",
+      "group": "B24010",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "B24010_020E": {
+      "label": "Estimate!!Total:!!Male:!!Management, business, science, and arts occupations:!!Computer, engineering, and science occupations:!!Computer and mathematical occupations:",
+      "concept": "SEX BY OCCUPATION FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER",
+      "predicateType": "int",
+      "group": "B24010",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "B24010_020M": {
+      "label": "Margin of Error!!Total:!!Male:!!Management, business, science, and arts occupations:!!Computer, engineering, and science occupations:!!Computer and mathematical occupations:",
+      "concept": "SEX BY OCCUPATION FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER",
+      "predicateType": "int",
+      "group": "B24010",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "B24010_153E": {
+      "label": "Estimate!!Total:!!Female:",
+      "concept": "SEX BY OCCUPATION FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER",
+      "predicateType": "int",
+      "group": "B24010",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "B24010_153M": {
+      "label": "Margin of Error!!Total:!!Female:",
+      "concept": "SEX BY OCCUPATION FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER",
+      "predicateType": "int",
+      "group": "B24010",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "B24010_171E": {
+      "label": "Estimate!!Total:!!Female:!!Management, business, science, and arts occupations:!!Computer, engineering, and science occupations:!!Computer and mathematical occupations:",
+      "concept": "SEX BY OCCUPATION FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER",
+      "predicateType": "int",
+      "group": "B24010",
+      "limit": 0,
+      "predicateOnly": true
+    },
+    "B24010_171M": {
+      "label": "Margin of Error!!Total:!!Female:!!Management, business, science, and arts occupations:!!Computer, engineering, and science occupations:!!Computer and mathematical occupations:",
+      "concept": "SEX BY OCCUPATION FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER",
+      "predicateType": "int",
+      "group": "B24010",
+      "limit": 0,
+      "predicateOnly": true
+    }
+  }
+}
