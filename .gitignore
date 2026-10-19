@@ -6,3 +6,7 @@
 /.quarto/
 
 **/*.quarto_ipynb
+
+**/.venv/
+**/__pycache__/
+**/.matplotlib/

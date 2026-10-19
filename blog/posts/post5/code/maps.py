@@ -1,4 +1,6 @@
-"""Run from post5 after analyze.R. Requires matplotlib, numpy, pyshp, pyproj."""
+"""Run from post5 after analyze.R and mechanisms.R.
+Requires matplotlib, numpy, pyshp, pyproj.
+"""
 import csv, os
 from pathlib import Path
 os.environ.setdefault('MPLCONFIGDIR', str(Path('results/.matplotlib').resolve()))
