@@ -18,7 +18,7 @@ A personal website and a collection of economics and data-analysis articles for 
 | `docs/` | Rendered website served by GitHub Pages |
 | `images/`, `files/`, `styles.css` | Shared website assets |
 
-Each coding post has its own README because its data, dependencies and reproduction steps differ. For Blog 5, see the [folder guide and exact commands](blog/posts/post5/README.md), [detailed methodology](blog/posts/post5/METHODOLOGY.md), and [rubric review](blog/posts/post5/RUBRIC_REVIEW.md).
+Each coding post has its own README because its data, dependencies and reproduction steps differ. For Blog 5, see the [folder guide and exact commands](blog/posts/post5/README.md) and [detailed methodology](blog/posts/post5/METHODOLOGY.md).
 
 ## Edit and build the website
 

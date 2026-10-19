@@ -2,7 +2,7 @@
 from pathlib import Path
 import zipfile
 root=Path('.')
-included_files={'README.md','METHODOLOGY.md','RUBRIC_REVIEW.md','index.qmd','post.css'}
+included_files={'README.md','METHODOLOGY.md','index.qmd','post.css'}
 included_directories={'code','data','results'}
 with zipfile.ZipFile('research.zip','w',compression=zipfile.ZIP_DEFLATED) as out:
     for p in sorted(root.rglob('*')):

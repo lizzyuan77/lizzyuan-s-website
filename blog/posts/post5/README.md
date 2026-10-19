@@ -2,7 +2,7 @@
 
 **Question:** Do states with more technology workers or higher household income have smaller gender earnings gaps? Did technology employment growth accompany a narrowing gap between 2019 and 2024?
 
-[Read the published article](https://lizzyuan77.github.io/lizzyuan-s-website/blog/posts/post5/) · [Detailed methodology](METHODOLOGY.md) · [Rubric review](RUBRIC_REVIEW.md)
+[Read the published article](https://lizzyuan77.github.io/lizzyuan-s-website/blog/posts/post5/) · [Detailed methodology](METHODOLOGY.md)
 
 The analysis uses Census American Community Survey (ACS) 1-year estimates for **2019 and 2021–2024**, covering **50 states**, plus separate U.S. estimates. It combines two central GIS maps with earnings, representation and trend charts. The article discusses Claudia Goldin's research while distinguishing possible mechanisms from the descriptive evidence.
 
@@ -88,7 +88,6 @@ When working inside the full website repository, Quarto writes the article to `d
 post5/
 ├── README.md             # Setup and replication instructions
 ├── METHODOLOGY.md        # Variables, sources, geography and limitations
-├── RUBRIC_REVIEW.md      # Evidence for the ten grading criteria
 ├── index.qmd             # Article source, including calculated numerical claims
 ├── post.css              # Article styling
 ├── code/                 # Acquisition, analysis, mapping and packaging scripts
