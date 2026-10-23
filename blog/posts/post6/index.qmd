@@ -21,7 +21,7 @@ Does a richer childhood relate differently to daughters' and sons' adult earning
 
 $$\log(\text{child income}) = \alpha + \beta\,\log(\text{parent income}) + \varepsilon$$
 
-An IGE of 0.4 means children whose parents earned 10% more earn about 4% more as adults. Higher means more persistence, less mobility. You'll see that the estimate depends on *how many years* and *at what age* you measure income.
+An IGE of 0.4 means 10% higher parental income is associated with roughly 4% higher adult-child income. It measures relative income persistence, not a causal effect or the probability of earning more than your parents. You'll see how the estimate changes with the income window and measurement age.
 
 **You need:** basic Python, pandas and SQL. `sqlite3` ships with Python.
 
@@ -30,7 +30,10 @@ An IGE of 0.4 means children whose parents earned 10% more earn about 4% more as
 You need two free PSID files: a Data Center extract of {{< meta v_people >}} people (IDs, sex, birth year, weights, family membership and income for 1981–83, 2001–05 and 2011–15) and the Parent Identification File, which lists each person's birth mother and father. The [README](https://github.com/lizzyuan77/lizzyuan-s-website/blob/main/blog/posts/post6/README.md) lists every variable to request. `code/01_import.py` turns them into five tables:
 
 ```python
-import sqlite3, pandas as pd
+import sqlite3
+import numpy as np
+import pandas as pd
+
 con = sqlite3.connect("data/working/blog6.sqlite")
 ```
 
@@ -62,7 +65,14 @@ WHERE c.birth_year BETWEEN 1970 AND 1974;
 
 `SELECT` picks the columns, with aliases to tell child from mother apart. `JOIN ... ON` matches on **both** parts of the ID. `WHERE` keeps children born 1970–74. This returns **{{< meta v_pairs >}} children**. A `LEFT JOIN` version of the same query (in `02_match.sql`) counts the children whose link fails.
 
-On a fictional example, the output looks like this:
+To execute that SQL inside Python, assign the query above to a string named `query`, then run:
+
+```python
+pairs = pd.read_sql_query(query, con)
+print(pairs.head())
+```
+
+`read_sql_query` sends the SQL to SQLite and returns a pandas DataFrame. The complete script saves the query's result as a database table for the next joins. On a fictional example, the output looks like this:
 
 {{< include results/_toy_pairs.md >}}
 
@@ -78,11 +88,16 @@ JOIN membership AS mc ON mc.id68 = pr.child_id68 AND mc.pn = pr.child_pn
                      AND mc.wave IN (1981, 1982, 1983) AND mc.current_member = 1
 JOIN membership AS mp ON mp.id68 = pr.parent_id68 AND mp.pn = pr.parent_pn
                      AND mp.wave = mc.wave AND mp.family_id = mc.family_id
+                     AND mp.current_member = 1
 JOIN family_income AS f ON f.wave = mc.wave AND f.family_id = mc.family_id
 JOIN cpi AS k ON k.year = f.income_year;
 ```
 
-Children's adult labor earnings (2000–04 and 2010–14) are built the same way. A `CASE` expression takes the reference-person or spouse earnings field according to each person's role that year.
+Children's adult earnings observations cover income years **2000, 2002, 2004 and 2010, 2012, 2014**. A `CASE` expression selects the reference-person or spouse earnings field according to each person's role that year.
+
+::: {.callout-note title="Check that your earnings measures match"}
+This extract combines reference-person **total labor income** with spouse labor income **excluding farm and business income**. Those definitions differ. The estimates below illustrate the matching and measurement workflow; they are **not a like-for-like test of daughters' versus sons' total earnings persistence**. A change in household role can also change the earnings coverage for the same person. Before drawing a substantive gender or age comparison, construct comparable earnings measures across roles and years and rerun the analysis. The README lists the fields used here.
+:::
 
 ## 4. Aggregate first with GROUP BY
 
@@ -107,7 +122,7 @@ After requiring positive incomes and a valid 2015 longitudinal weight, **{{< met
 
 ## 5. Estimate the IGE: one year vs. three
 
-Fit a weighted log–log regression on the **same children** with each income measure (full code with standard errors clustered by mother in `04_estimate.py`):
+Fit a weighted log–log regression on the **same children** with each income measure (full code with standard errors clustered by mother in `04_estimate.py`). The function below calculates its slope with an intercept:
 
 ```python
 def fit_ige(d, child_col, parent_col):
@@ -118,27 +133,29 @@ def fit_ige(d, child_col, parent_col):
 
 ![](results/ige-single-vs-average.png){fig-alt="Single-year and three-year-average IGE estimates with 95% intervals for daughters, sons and all children."}
 
-Averaging raises the IGE for daughters ({{< meta v_d_single >}} → {{< meta v_d_avg >}}) and slightly for all children ({{< meta v_a_single >}} → {{< meta v_a_avg >}}), but not for sons ({{< meta v_s_single >}} → {{< meta v_s_avg >}}). With about 200 children per group, the intervals are wide.
+Averaging raises the point estimate for daughters ({{< meta v_d_single >}} → {{< meta v_d_avg >}}) and slightly for all children ({{< meta v_a_single >}} → {{< meta v_a_avg >}}), but lowers it for sons ({{< meta v_s_single >}} → {{< meta v_s_avg >}}). All three bootstrap intervals for the change include zero, so these data do not establish a change from averaging. The estimates also retain the earnings-coverage limitation above.
 
-**Why averaging helps.** Any year's income is long-run status plus temporary luck. Here, a family's log income in 1980 and 1982 correlates at only {{< meta v_cor_parent >}}. Noise in the *parent's* income acts like measurement error in a regressor and pulls the slope toward zero. An average cancels part of that noise. The data contain an extreme case: one son's family income for 1980 and 1981 is PSID's $1 code, meaning "$1 or less, including zero and negative." Read it as a real $1 income, and that one family moves the sons' single-year IGE from {{< meta v_ok_single >}} to {{< meta v_bad_single >}}. The three-year averages are unchanged ({{< meta v_ok_avg >}} either way).
+**Why averaging can help.** Annual income includes persistent differences and temporary fluctuations. The unweighted correlation of log parental family income in 1980 and 1982 is {{< meta v_cor_parent >}} among retained children with positive values in both years. Under a classical measurement-error model, temporary noise in *parental* income attenuates the slope; averaging can reduce that noise. It does not remove all measurement error or guarantee a higher IGE. The data contain an extreme case: one son's family income for 1980 and 1981 is PSID's $1 code, meaning "$1 or less, including zero and negative." Read it as a real $1 income, and that one family moves the sons' single-year IGE from {{< meta v_ok_single >}} to {{< meta v_bad_single >}}. The averaged IGE rounds to {{< meta v_ok_avg >}} under both treatments in this particular sensitivity check. That is not a general guarantee that averaging removes an influential observation.
 
 ![](results/one-bad-year.png){fig-alt="For sons, the single-year IGE changes sharply with how one bottom-coded income is treated; the three-year-average IGE does not."}
 
 ## 6. Watch for life-cycle bias
 
-Averaging fixes noise, not **timing**. High earners often start low and grow fast, so earnings at 28 understate how tied children's incomes are to their parents'. Follow the same {{< meta v_fixed_n >}} children across six years, holding parental income fixed:
+Averaging can reduce temporary noise, but it does not resolve **timing**. If earnings trajectories differ by parental background, an early-career snapshot may misrepresent the relationship at mature ages. Follow the same {{< meta v_fixed_n >}} children with positive earnings in all six observed years, holding parental income and weights fixed:
 
 ![](results/ige-by-age.png){fig-alt="IGE by children's average age for the same children. Sons and all children rise from the late twenties to the early forties; daughters do not."}
 
-Sons' IGE rises from {{< meta v_s_2000 >}} at age {{< meta v_s_age_2000 >}} to {{< meta v_s_2014 >}} at age {{< meta v_s_age_2014 >}}. Measure at 28 and you would overstate their mobility. Daughters show no rise ({{< meta v_d_2000 >}} to {{< meta v_d_2014 >}}), likely because women's own earnings around 40 also reflect hours and participation choices. The daughters' averaged IGE is {{< meta v_gap >}} lower than the sons' (95% bootstrap interval {{< meta v_gap_lo >}} to {{< meta v_gap_hi >}}).
+Sons' point estimate is {{< meta v_s_2000 >}} at average age {{< meta v_s_age_2000 >}} and {{< meta v_s_2014 >}} at {{< meta v_s_age_2014 >}}; daughters' corresponding estimates are {{< meta v_d_2000 >}} and {{< meta v_d_2014 >}}. These are descriptive age-and-year comparisons, not identification of life-cycle bias alone: period conditions, earnings coverage, and selection into positive earnings may also matter. In the separate three-observation-window comparison, the sons' age-40-minus-age-30 change has a 95% bootstrap interval spanning zero.
+
+In the main sample, daughters' averaged point estimate is {{< meta v_gap >}} below sons', but the difference's 95% bootstrap interval is **{{< meta v_gap_lo >}} to {{< meta v_gap_hi >}}**, which includes zero. We cannot conclude a gender difference from these estimates, or attribute the pattern to caregiving, hours, or participation without examining those mechanisms. Final-wave weights do not fully correct the additional selection from requiring linked income histories, and the mother-clustered intervals do not implement the full survey design.
 
 ## Takeaways
 
 - **SQL makes the match explicit.** Join on the two-part person key, join family data on `wave` *and* `family_id`, and `GROUP BY` before joining generations.
-- **One year is a noisy snapshot.** Averaging cancels temporary shocks and makes the estimate robust to a single bad record.
-- **Age matters too.** Measured around 30, sons look far more mobile than they are by 40.
+- **One year can be a noisy snapshot.** Averaging can improve the measure of long-run resources, but a short average remains imperfect and need not increase the estimated slope.
+- **Check timing and comparability.** Estimates vary across observed ages and years. Wide intervals, selective samples, and inconsistent earnings coverage limit what these comparisons establish.
 
-**Try it:** change `'birth_mother'` to `'birth_father'` in `02_match.sql` and re-run.
+**Try it:** inspect how the single-year estimate changes when you average parental income alone (`Parent averaged only` in `results/ige_results.csv`). This holds children's earnings fixed and separates that change from averaging both generations.
 
 ## Data and code
 
