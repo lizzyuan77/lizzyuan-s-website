@@ -1,0 +1,4 @@
+| child | birth_year | parent | parent_id68 | parent_pn |
+|---|---|---|---|---|
+| Cleo (daughter) | 1972 | Ana (mother) | 101 | 1 |
+| Eli (son) | 1973 | Dee (mother) | 205 | 2 |

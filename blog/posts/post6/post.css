@@ -1,0 +1,30 @@
+/* Blog 6 - same editorial reading layout as Blog 5, plus code-friendly styling. */
+body{background:#fbf9f3;color:#293e3a}
+h1,h2,h3{font-family:Georgia,serif;color:#173f3b}
+a{color:#21665c}
+main p,main li{font-family:Georgia,'Times New Roman',serif;font-size:1.12rem;line-height:1.78}
+.quarto-title h1.title{font-size:clamp(2.1rem,5vw,3.3rem);line-height:1.08;letter-spacing:-.025em}
+.quarto-title .subtitle{font-family:Georgia,serif;font-size:1.25rem;line-height:1.5;max-width:48rem;color:#67746b}
+#title-block-header .description{display:none}
+main h2{font-size:1.75rem;line-height:1.25;margin-top:2.8rem}
+main h3{font-size:1.3rem;margin-top:2rem}
+main>p:first-of-type{font-size:1.25rem}
+figcaption,.quarto-title-meta,.quarto-categories,table{font-family:Arial,sans-serif}
+.quarto-figure{margin:2.2rem 0}
+figcaption{font-size:.87rem;line-height:1.5;color:#52665f}
+
+/* Code: readable blocks that wrap on narrow screens */
+pre,div.sourceCode{background:#f1f3ee;border:1px solid #e1e5dd;border-radius:6px}
+pre{font-size:.86rem;line-height:1.5;white-space:pre-wrap;padding:.9rem 1rem}
+div.sourceCode pre,div.sourceCode pre code,pre code{white-space:pre-wrap !important;overflow-x:visible;word-break:break-word}
+code{font-size:.9em;color:#1d4d47}
+main p code,main li code{background:#eef1ea;padding:.08em .32em;border-radius:4px}
+
+/* Tables */
+table{font-size:.92rem;margin:1.2rem 0}
+table th{background:#e9eee6;color:#173f3b}
+table td,table th{padding:.4rem .7rem}
+
+/* Callouts */
+.callout-note{background:#f3f7f2}
+#TOC,#TOC a{font-family:Arial,sans-serif;font-size:.9rem}

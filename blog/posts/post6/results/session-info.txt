@@ -1,0 +1,6 @@
+Python 3.10.12 on Linux aarch64
+pandas 2.3.3
+numpy 2.2.6
+matplotlib 3.10.9
+sqlite 3.37.2
+bootstrap draws 2000, seed 20261023

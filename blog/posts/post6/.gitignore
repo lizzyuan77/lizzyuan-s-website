@@ -1,0 +1,5 @@
+# PSID microdata and the working database stay local (PSID conditions of use)
+data/
+*.sqlite
+__pycache__/
+.venv/

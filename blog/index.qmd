@@ -23,12 +23,18 @@ listing:
   <span>BLOG 3</span>
   <span>BLOG 4</span>
   <span>BLOG 5</span>
+  <span>BLOG 6</span>
   <span>STATISTICS</span>
   <span>ECONOMICS</span>
   <span>DATA STORIES</span>
 </div>
 <div class="blog-start blog-featured">
-  <span class="blog-start-label">BLOG 5 · LATEST</span>
+  <span class="blog-start-label">BLOG 6 · LATEST</span>
+  <a href="posts/post6/index.html">Match Parents and Children with SQL in Python</a>
+  <span class="blog-start-note">A hands-on tutorial: link PSID children to their mothers with SQL inside Python, build three decades of income histories with JOIN and GROUP BY, and estimate how strongly income persists across generations. Daughters and sons tell different stories, and one year of income, or one measured too early, can badly mislead.</span>
+</div>
+<div class="blog-start" style="margin-top: 0.8rem">
+  <span class="blog-start-label">BLOG 5</span>
   <a href="posts/post5/index.html">Why a Tech-Rich State Can Still Have a Wide Gender Pay Gap</a>
   <span class="blog-start-note">Claudia Goldin’s research frames a deeper look at gender earnings across 50 states: who holds the technology jobs, what women and men earn inside tech, and why prosperity alone does not close the gap. Census maps and trends from 2019 to 2024 connect access, pay, and the cost of flexibility.</span>
 </div>
