@@ -1,0 +1,63 @@
+{
+  "source_url": "https://www2.census.gov/programs-surveys/acs/data/pums/2024/1-Year/csv_pus.zip",
+  "retrieved": "2026-10-25",
+  "sha256": "afdc6d90c6e2f0bab365ed32d95ba4c4d8ac651162f46ac7861295b2dc469894",
+  "source_bytes": 602847146,
+  "families": {
+    "Science, computing & engineering": [
+      "13",
+      "14",
+      "21",
+      "24",
+      "25",
+      "36",
+      "37",
+      "38",
+      "40",
+      "50",
+      "51"
+    ],
+    "Business": [
+      "62"
+    ],
+    "Education": [
+      "23"
+    ],
+    "Health": [
+      "61"
+    ],
+    "Social sciences & public service": [
+      "15",
+      "29",
+      "32",
+      "41",
+      "48",
+      "49",
+      "52",
+      "53",
+      "54",
+      "55"
+    ],
+    "Arts, humanities & other": [
+      "11",
+      "19",
+      "20",
+      "22",
+      "26",
+      "33",
+      "34",
+      "35",
+      "56",
+      "57",
+      "59",
+      "60",
+      "64"
+    ]
+  },
+  "python_libraries": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  },
+  "occupation_metadata_url": "https://api.census.gov/data/2024/acs/acs1/pums/variables/OCCP.json",
+  "occupation_context_retrieved": "2026-10-25"
+}

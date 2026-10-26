@@ -1,0 +1,79 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Explore earnings gaps and career destinations by major</title><script src="../vendor/plotly-basic-3.1.0.min.js"></script><style>
+:root{--ink:#233447;--plum:#923e71;--teal:#146c7e;--line:#d7e0e9}*{box-sizing:border-box}body{font:14px/1.5 system-ui,sans-serif;color:var(--ink);margin:0;padding:14px;background:#fbfcff}.intro{margin:0 0 10px;font-size:13px}.views,.examples,.controls,.pager{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.views{border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:12px}button,select{font:inherit;border:1px solid #b9c6d3;border-radius:6px;padding:8px 10px;background:#fff;color:var(--ink);cursor:pointer}button[aria-pressed=true]{background:var(--ink);color:white;border-color:var(--ink)}button:focus-visible,select:focus-visible{outline:3px solid #d795bf;outline-offset:2px}button:disabled{opacity:.45;cursor:default}.examples{margin:12px 0}.examples button{font-size:12px;padding:6px 9px;border-color:#d3b5c8;background:#fbf5f9}label{font-size:12px;font-weight:650;display:flex;flex-direction:column;gap:4px;flex:1;min-width:180px}select{width:100%;max-width:100%}.controls{align-items:end}#major-label{flex:2;min-width:240px}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin:8px 0 10px}.card{padding:9px;background:#eef3f8;border-radius:6px;min-width:0}.card span{display:block;font-size:11px}.card strong{font-size:18px}h2{font-size:18px;margin:13px 0 0}#interval{font-size:12px;margin:2px 0 0}#question{font-size:16px;margin:12px 0 3px}#explanation,.note{font-size:12px;color:#536477;margin:6px 0}#plot{height:500px;width:100%}.pager{justify-content:space-between;font-size:12px;margin:5px 0}.note{border-top:1px solid var(--line);padding-top:8px}table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:6px;border-bottom:1px solid #dce4ec}th.number,td.number{text-align:right;white-space:nowrap}.swatch{display:inline-block;width:10px;height:10px;margin-right:5px;border-radius:2px}details{margin:10px 0}#data-table{overflow-x:auto}#reset{font-size:12px;padding:6px 9px}.caption{font-size:12px;margin:4px 0;color:#536477}[hidden]{display:none!important}@media(max-width:550px){body{padding:8px}.views button{font-size:12px;padding:7px}.cards{grid-template-columns:repeat(2,1fr)}.controls label{min-width:100%;width:100%}.card strong{font-size:17px}}
+</style></head><body>
+<p class="intro">Start with the gaps, then inspect what the same graduates earn, how long they work, and which jobs they report.</p>
+<nav class="views" aria-label="Chart views"><button data-view="gap" aria-pressed="true">1. Compare gaps</button><button data-view="pay" aria-pressed="false">2. Pay & hours</button><button data-view="careers" aria-pressed="false">3. Career destinations</button></nav>
+<div class="controls"><label id="family-label">Major family<select id="family"><option>All major families</option></select></label><label id="sort-label">Order majors by<select id="sort"><option value="parity">Closest point estimates to parity</option><option value="earnings">Highest women’s earnings</option><option value="representation">Highest women’s representation</option><option value="name">Major name</option></select></label><label id="major-label">Inspect a major<select id="major"></select></label></div>
+<div class="examples"><span style="font-size:12px">Try a question:</span><button data-example="1902">Does journalism mean journalist?</button><button data-example="6207">Does full time mean equal hours?</button><button data-example="6107">Do nursing majors share one job?</button><button id="reset">Reset</button></div>
+<h2 id="selected-title"></h2><p id="interval" aria-live="polite"></p><div class="cards" id="cards"></div>
+<h3 id="question"></h3><p id="explanation" aria-live="polite"></p>
+<div id="plot" role="img" aria-label="Interactive Plotly figure. Select a view to compare earnings gaps, pay and hours, or occupational destinations."></div>
+<div class="pager" id="pager"><button id="previous">Previous 10</button><span id="page-status" aria-live="polite"></span><button id="next">Next 10</button></div>
+<div id="occupation-table" hidden></div>
+<p class="caption" id="caption"></p>
+<details><summary>Numerical data for the current comparison</summary><div id="data-table"></div></details>
+<p class="note">Same sample throughout: U.S. employees age 25–64, BA or higher, 35+ usual weekly hours and 50+ weeks, with positive wages/salaries. Amounts are in 2024 dollars. Each shown major has at least 100 sampled women and 100 sampled men. Occupations refer to the current or most recent job. These comparisons do not identify causes of an earnings gap.</p>
+<script>
+const rows=__DATA__,destinations=__OCCUPATIONS__;
+const family=document.getElementById('family'),major=document.getElementById('major'),sort=document.getElementById('sort'),plot=document.getElementById('plot');
+let view='gap',selected='1902',page=0,clickBound=false;
+const PAGE=10,plum='#923e71',teal='#146c7e',money=x=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(x),pct=x=>x.toFixed(1)+'%';
+const palette=['#146c7e','#923e71','#c27c30','#6372a6','#608974','#a46778','#707d4b','#b7c2cc'];
+for(const f of [...new Set(rows.map(d=>d.family))].sort())family.add(new Option(f,f));
+function filtered(){return rows.filter(d=>family.value==='All major families'||d.family===family.value)}
+function ordered(){return filtered().slice().sort((a,b)=>sort.value==='earnings'?b.female_earnings-a.female_earnings:sort.value==='representation'?b.female_share-a.female_share:sort.value==='name'?a.major.localeCompare(b.major):a.distance_from_parity-b.distance_from_parity||a.major.localeCompare(b.major))}
+function rebuildMajors(){major.replaceChildren();for(const d of filtered().slice().sort((a,b)=>a.major.localeCompare(b.major)))major.add(new Option(d.major,d.code));if(!filtered().some(d=>d.code===selected))selected=filtered()[0].code;major.value=selected}
+function alignPage(){const i=ordered().findIndex(d=>d.code===selected);page=Math.max(0,Math.floor(i/PAGE))}
+function wrap(t){if(t.length<=28)return t;const i=t.lastIndexOf(' ',28);return t.slice(0,i)+'<br>'+t.slice(i+1,i+30)+(t.length>i+30?'…':'')}
+function resizeFrame(){requestAnimationFrame(()=>{if(window.frameElement)window.frameElement.style.height=Math.ceil(document.body.getBoundingClientRect().height+28)+'px'})}
+function numericTable(data){return '<table><thead><tr><th>Major</th><th class="number">Women</th><th class="number">Men</th><th class="number">Cents/$</th><th class="number">Women’s share</th></tr></thead><tbody>'+data.map(d=>`<tr><td>${d.major}</td><td class="number">${money(d.female_earnings)}</td><td class="number">${money(d.male_earnings)}</td><td class="number">${d.ratio.toFixed(1)}</td><td class="number">${pct(d.female_share)}</td></tr>`).join('')+'</tbody></table>'}
+function render(){const d=rows.find(d=>d.code===selected);major.value=selected;
+ document.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.view===view)));
+ document.getElementById('sort-label').hidden=view!=='gap';document.getElementById('pager').hidden=view!=='gap';document.getElementById('occupation-table').hidden=view!=='careers';
+ document.getElementById('selected-title').textContent=d.major;
+ document.getElementById('interval').textContent=d.ratio_moe90===null?'90% ratio interval unavailable: the replicate medians are flat; this does not mean no uncertainty.':`90% ratio interval: ${(d.ratio-d.ratio_moe90).toFixed(1)}–${(d.ratio+d.ratio_moe90).toFixed(1)} cents per male dollar. Pointwise uncertainty does not establish a rank order.`;
+ document.getElementById('cards').innerHTML=`<div class="card"><span>Women’s median</span><strong>${money(d.female_earnings)}</strong></div><div class="card"><span>Men’s median</span><strong>${money(d.male_earnings)}</strong></div><div class="card"><span>Women per male dollar</span><strong>${d.ratio.toFixed(1)}¢</strong></div><div class="card"><span>Women’s share</span><strong>${pct(d.female_share)}</strong></div>`;
+ let traces=[],layout={paper_bgcolor:'#fbfcff',plot_bgcolor:'#fbfcff',font:{family:'system-ui,sans-serif',color:'#233447',size:12},margin:{l:85,r:35,t:24,b:55},showlegend:false,hovermode:'closest',dragmode:false};
+ let tableRows=[d];plot.style.height=view==='careers'?'285px':view==='pay'?'470px':'500px';
+ if(view==='gap'){
+  const all=ordered();page=Math.min(page,Math.floor((all.length-1)/PAGE));const data=all.slice(page*PAGE,(page+1)*PAGE);tableRows=data;
+  document.getElementById('question').textContent='Which estimates are closest to equal medians?';
+  document.getElementById('explanation').textContent='Dots show women’s cents per male dollar; lines show 90% intervals. Click a dot to select that major, then switch to Pay & hours or Career destinations. Equal medians sit at 100.';
+  document.getElementById('page-status').textContent=`${page*PAGE+1}–${Math.min((page+1)*PAGE,all.length)} of ${all.length} majors`;
+  document.getElementById('previous').disabled=page===0;document.getElementById('next').disabled=(page+1)*PAGE>=all.length;
+  traces=[{type:'scatter',mode:'markers',x:data.map(x=>x.ratio),y:data.map((x,i)=>i),customdata:data.map(x=>[x.code,x.major,x.ratio_moe90===null?'Unavailable':(x.ratio-x.ratio_moe90).toFixed(1)+'–'+(x.ratio+x.ratio_moe90).toFixed(1)]),marker:{size:data.map(x=>x.code===selected?14:10),color:data.map(x=>x.code===selected?teal:plum)},error_x:{type:'data',array:data.map(x=>x.ratio_moe90??0),visible:true,color:'#8c9baa',thickness:1.5,width:3},hovertemplate:'<b>%{customdata[1]}</b><br>%{x:.1f} cents per male dollar<br>90% interval: %{customdata[2]}<br>Click to select<extra></extra>'}];
+  layout.margin.l=window.innerWidth<550?155:238;layout.margin.r=20;
+  layout.xaxis={title:{text:'Women’s median earnings per male dollar (cents)',font:{size:12}},gridcolor:'#e3e9ef',zeroline:false};
+  layout.yaxis={tickmode:'array',tickvals:data.map((x,i)=>i),ticktext:data.map(x=>wrap(x.major)),range:[data.length-.4,-.7],showgrid:false,tickfont:{size:window.innerWidth<550?10:12},zeroline:false,fixedrange:true};
+  layout.shapes=[{type:'line',xref:'x',yref:'paper',x0:100,x1:100,y0:0,y1:1,line:{color:'#52667a',dash:'dot',width:1}}];
+  document.getElementById('caption').textContent=`Order: ${sort.options[sort.selectedIndex].text}. This is an ordering of point estimates, not a statistically established ranking.${data.some(x=>x.ratio_moe90===null)?' General Business has no displayed interval; zero-width replicate variation is not certainty.':''}`;
+ }else if(view==='pay'){
+  document.getElementById('question').textContent='Does full time mean equal hours and earnings?';
+  document.getElementById('explanation').textContent='The same women and men appear in both panels. Annual pay is a median; usual weekly hours is a weighted mean. These comparisons are not an estimate of hourly pay or a causal effect of hours.';
+  traces=[{type:'bar',orientation:'h',x:[d.female_earnings,d.male_earnings],y:['Women','Men'],marker:{color:[plum,teal]},text:[money(d.female_earnings),money(d.male_earnings)],textposition:'outside',cliponaxis:false,hovertemplate:'%{y}: %{text}<extra>Median annual wages</extra>',xaxis:'x',yaxis:'y'},
+   {type:'scatter',mode:'markers+text',x:[d.female_mean_hours,d.male_mean_hours],y:['Women','Men'],marker:{size:13,color:[plum,teal]},text:[d.female_mean_hours.toFixed(1)+' h',d.male_mean_hours.toFixed(1)+' h'],textposition:'middle right',hovertemplate:'%{y}: %{x:.1f} usual hours per week<extra>Weighted mean</extra>',xaxis:'x2',yaxis:'y2'}];
+  layout.xaxis={title:{text:'Median annual wages and salaries (2024 dollars)',font:{size:12}},domain:[0,1],anchor:'y',range:[0,Math.max(d.female_earnings,d.male_earnings)*1.25],tickprefix:'$',tickformat:',.0f',gridcolor:'#e3e9ef'};
+  layout.yaxis={domain:[.58,1],categoryorder:'array',categoryarray:['Men','Women'],showgrid:false};
+  layout.xaxis2={title:{text:'Weighted mean usual weekly hours',font:{size:12}},domain:[0,1],anchor:'y2',range:[0,65],gridcolor:'#e3e9ef'};
+  layout.yaxis2={domain:[0,.29],categoryorder:'array',categoryarray:['Men','Women'],showgrid:false};
+  document.getElementById('caption').textContent='Plum = women; teal = men. Both axes start at zero. Hours differ even within the 35+ hours and 50+ weeks screen. Pay differences may also reflect age, occupation, experience, and other factors.';
+ }else{
+  const cats=destinations[d.code];
+  document.getElementById('question').textContent='Does the major name describe the work graduates do?';
+  document.getElementById('explanation').textContent='Compare the women’s and men’s occupational mix. Each bar totals 100%. The category set includes each sex’s three most common jobs; journalism also includes journalists. Everything else is grouped together.';
+  const color=(c,i)=>c.code==='other'?'#d3dce5':c.code==='2810'?'#bb3b63':palette[i%7];
+  traces=cats.map((c,i)=>({type:'bar',orientation:'h',name:c.occupation,x:[c.women,c.men],y:['Women','Men'],marker:{color:color(c,i),line:{color:'#fff',width:1}},hovertemplate:`<b>${c.occupation}</b><br>%{y}: %{x:.1f}%<extra></extra>`}));
+  layout.barmode='stack';layout.bargap=.42;layout.xaxis={title:{text:'Share of included workers (%)',font:{size:12}},range:[0,100],ticksuffix:'%',gridcolor:'#e3e9ef'};layout.yaxis={categoryorder:'array',categoryarray:['Men','Women'],showgrid:false};
+  document.getElementById('occupation-table').innerHTML='<table><thead><tr><th>Recorded occupation</th><th class="number">Women</th><th class="number">Men</th></tr></thead><tbody>'+cats.map((c,i)=>`<tr><td><span class="swatch" style="background:${color(c,i)}"></span>${c.occupation}</td><td class="number">${pct(c.women)}</td><td class="number">${pct(c.men)}</td></tr>`).join('')+'</tbody></table>';
+  document.getElementById('caption').textContent='Occupations are current or most recent jobs, not every job contributing to annual earnings. A modal occupation need not employ a majority. This is a composition comparison, not a decomposition of the earnings gap.';
+ }
+ document.getElementById('data-table').innerHTML=numericTable(tableRows);
+ Plotly.react(plot,traces,layout,{responsive:true,displayModeBar:false,displaylogo:false,scrollZoom:false}).then(()=>{if(!clickBound){plot.on('plotly_click',e=>{if(view==='gap'&&e.points[0].customdata){selected=e.points[0].customdata[0];major.value=selected;render()}});clickBound=true}resizeFrame()});
+}
+family.addEventListener('change',()=>{rebuildMajors();alignPage();render()});sort.addEventListener('change',()=>{page=0;selected=ordered()[0].code;major.value=selected;render()});major.addEventListener('change',()=>{selected=major.value;alignPage();render()});
+document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>{view=b.dataset.view;alignPage();render()}));
+document.querySelectorAll('[data-example]').forEach(b=>b.addEventListener('click',()=>{selected=b.dataset.example;family.value=rows.find(d=>d.code===selected).family;view=selected==='6207'?'pay':'careers';rebuildMajors();alignPage();render()}));
+for(const [id,step] of [['previous',-1],['next',1]])document.getElementById(id).addEventListener('click',()=>{page+=step;selected=ordered()[page*PAGE].code;major.value=selected;render()});
+document.getElementById('reset').addEventListener('click',()=>{view='gap';family.selectedIndex=0;sort.value='parity';selected='1902';page=0;rebuildMajors();render()});
+document.querySelector('details').addEventListener('toggle',resizeFrame);window.addEventListener('resize',resizeFrame);rebuildMajors();render();
+</script></body></html>

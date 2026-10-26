@@ -1,0 +1,4298 @@
+{
+  "1100": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 3.1346845723649057,
+      "men": 5.590280490663333
+    },
+    {
+      "occupation": "Farmers, Ranchers, And Other Agricultural Managers",
+      "code": "0205",
+      "women": 0.9154703807929327,
+      "men": 5.459410891475897
+    },
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 4.377871976632352,
+      "men": 3.131103992499414
+    },
+    {
+      "occupation": "Driver/Sales Workers And Truck Drivers",
+      "code": "9130",
+      "women": 1.1719445730773341,
+      "men": 3.8401437612313463
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 4.759021123499448,
+      "men": 1.7169310102351747
+    },
+    {
+      "occupation": "Postsecondary Teachers",
+      "code": "2205",
+      "women": 3.248673102269084,
+      "men": 2.113446362997109
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 82.39233427136395,
+      "men": 78.14868349089772
+    }
+  ],
+  "1101": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 2.5488903537684027,
+      "men": 4.359807285203299
+    },
+    {
+      "occupation": "Sales Representatives, Wholesale And Manufacturing",
+      "code": "4850",
+      "women": 1.7432066212554018,
+      "men": 4.668223957953135
+    },
+    {
+      "occupation": "Farmers, Ranchers, And Other Agricultural Managers",
+      "code": "0205",
+      "women": 2.4500109865963524,
+      "men": 4.011241696474195
+    },
+    {
+      "occupation": "Financial Managers",
+      "code": "0120",
+      "women": 4.694938841280305,
+      "men": 1.5201839550332141
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 3.3399252911448034,
+      "men": 1.3139645229578802
+    },
+    {
+      "occupation": "Registered Nurses",
+      "code": "3255",
+      "women": 3.175126345858053,
+      "men": 0.15694576246441347
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 82.04790156009668,
+      "men": 83.96963281991387
+    }
+  ],
+  "1103": [
+    {
+      "occupation": "Veterinarians",
+      "code": "3250",
+      "women": 14.11145398438918,
+      "men": 6.54459753444525
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 4.354087251164761,
+      "men": 7.725577540660934
+    },
+    {
+      "occupation": "Veterinary Technologists And Technicians",
+      "code": "3424",
+      "women": 4.613057421189569,
+      "men": 1.5124831658551745
+    },
+    {
+      "occupation": "Physicians",
+      "code": "3090",
+      "women": 0.8700913656440975,
+      "men": 4.690251735211851
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 76.05130997761239,
+      "men": 79.52709002382679
+    }
+  ],
+  "1104": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 7.057272258212463,
+      "men": 10.755659474970773
+    },
+    {
+      "occupation": "Physical Scientists, All Other",
+      "code": "1760",
+      "women": 3.5085707733761393,
+      "men": 9.884153470081836
+    },
+    {
+      "occupation": "Industrial Production Managers",
+      "code": "0140",
+      "women": 2.4594393166313133,
+      "men": 7.673504091826974
+    },
+    {
+      "occupation": "Agricultural And Food Scientists",
+      "code": "1600",
+      "women": 4.798486498882073,
+      "men": 3.26283345732809
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 82.17623115289801,
+      "men": 68.42384950579233
+    }
+  ],
+  "1105": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 5.834385521885522,
+      "men": 5.543252921221259
+    },
+    {
+      "occupation": "Agricultural And Food Scientists",
+      "code": "1600",
+      "women": 4.866372053872054,
+      "men": 5.769411986430456
+    },
+    {
+      "occupation": "First-Line Supervisors Of Landscaping, Lawn Service, And Groundskeeping Workers",
+      "code": "4210",
+      "women": 1.6677188552188553,
+      "men": 5.036750848096495
+    },
+    {
+      "occupation": "Inspectors, Testers, Sorters, Samplers, And Weighers",
+      "code": "8740",
+      "women": 4.008838383838384,
+      "men": 0.11779117979645684
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 83.62268518518519,
+      "men": 83.53279306445533
+    }
+  ],
+  "1301": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 6.452472577258046,
+      "men": 6.197159283057153
+    },
+    {
+      "occupation": "Environmental Scientists And Specialists, Including Health",
+      "code": "1745",
+      "women": 5.199927512285601,
+      "men": 4.912073047007102
+    },
+    {
+      "occupation": "Project Management Specialists",
+      "code": "0705",
+      "women": 4.208551418307412,
+      "men": 2.843253297260737
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 84.13904849214894,
+      "men": 86.04751437267501
+    }
+  ],
+  "1302": [
+    {
+      "occupation": "Conservation Scientists And Foresters",
+      "code": "1640",
+      "women": 12.345438613572194,
+      "men": 18.407369367056106
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 13.455359750754551,
+      "men": 4.35550134805495
+    },
+    {
+      "occupation": "Retail Salespersons",
+      "code": "4760",
+      "women": 1.2656995424009347,
+      "men": 2.846963666709462
+    },
+    {
+      "occupation": "Other Office And Administrative Support Workers",
+      "code": "5940",
+      "women": 5.432771881997858,
+      "men": 0.9693157016305045
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 67.50073021127446,
+      "men": 73.42084991654897
+    }
+  ],
+  "1303": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 8.619837833125054,
+      "men": 6.286280843714518
+    },
+    {
+      "occupation": "Biological Scientists",
+      "code": "1610",
+      "women": 3.46420994507251,
+      "men": 6.351846225193098
+    },
+    {
+      "occupation": "General And Operations Managers",
+      "code": "0020",
+      "women": 1.5635444215176262,
+      "men": 3.0655813730350374
+    },
+    {
+      "occupation": "Conservation Scientists And Foresters",
+      "code": "1640",
+      "women": 3.5862710337411725,
+      "men": 1.91738761933699
+    },
+    {
+      "occupation": "Business Operations Specialists, All Other",
+      "code": "0750",
+      "women": 3.5775523845505535,
+      "men": 0.8283626245342459
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 79.18858438199308,
+      "men": 81.5505413141861
+    }
+  ],
+  "1401": [
+    {
+      "occupation": "Architects, Except Landscape And Naval",
+      "code": "1305",
+      "women": 22.23110755697721,
+      "men": 30.108829073692515
+    },
+    {
+      "occupation": "Other Designers",
+      "code": "2640",
+      "women": 6.565537050485928,
+      "men": 4.787712068738767
+    },
+    {
+      "occupation": "Project Management Specialists",
+      "code": "0705",
+      "women": 6.213840994214559,
+      "men": 4.079172329139451
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 4.194240671078507,
+      "men": 4.4808425759501995
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 60.795273727243796,
+      "men": 56.543443952479066
+    }
+  ],
+  "1501": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 5.7671985351817945,
+      "men": 5.912304887268199
+    },
+    {
+      "occupation": "Lawyers, And Judges, Magistrates, And Other Judicial Workers",
+      "code": "2100",
+      "women": 4.266806173162438,
+      "men": 9.007426513096457
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 5.573633272299241,
+      "men": 3.6265397785387115
+    },
+    {
+      "occupation": "Education And Childcare Administrators",
+      "code": "0230",
+      "women": 4.473973319382684,
+      "men": 2.6548672566371683
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 79.91838869997385,
+      "men": 78.79886156445946
+    }
+  ],
+  "1901": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 6.017021988636796,
+      "men": 5.898467746332952
+    },
+    {
+      "occupation": "Marketing Managers",
+      "code": "0051",
+      "women": 4.40396419145554,
+      "men": 3.062544304487704
+    },
+    {
+      "occupation": "Human Resources Workers",
+      "code": "0630",
+      "women": 3.6917483666344686,
+      "men": 1.3045422324008942
+    },
+    {
+      "occupation": "Sales Representatives, Wholesale And Manufacturing",
+      "code": "4850",
+      "women": 1.345786715547206,
+      "men": 2.7704891215442498
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 84.541478737726,
+      "men": 86.96395659523421
+    }
+  ],
+  "1902": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 5.62950115003205,
+      "men": 5.442679914996266
+    },
+    {
+      "occupation": "Marketing Managers",
+      "code": "0051",
+      "women": 6.83514950416651,
+      "men": 2.7626213313422547
+    },
+    {
+      "occupation": "News Analysts, Reporters, And Journalists",
+      "code": "2810",
+      "women": 4.2702009728139965,
+      "men": 4.803716041582907
+    },
+    {
+      "occupation": "Lawyers, And Judges, Magistrates, And Other Judicial Workers",
+      "code": "2100",
+      "women": 2.775159307718412,
+      "men": 3.8811670782838434
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 80.48998906526903,
+      "men": 83.10981563379472
+    }
+  ],
+  "1903": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 5.731441497018301,
+      "men": 4.995596607654274
+    },
+    {
+      "occupation": "Producers And Directors",
+      "code": "2710",
+      "women": 2.2800740283775447,
+      "men": 5.057313445255778
+    },
+    {
+      "occupation": "Marketing Managers",
+      "code": "0051",
+      "women": 4.183425868805264,
+      "men": 3.1031780704126706
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 4.3956405511001435,
+      "men": 0.9888562968510544
+    },
+    {
+      "occupation": "Television, Video, And Film Camera Operators And Editors",
+      "code": "2920",
+      "women": 0.6300637466584413,
+      "men": 3.9762286158092186
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 82.7793543080403,
+      "men": 81.87882696401701
+    }
+  ],
+  "1904": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 6.446747506122692,
+      "men": 7.379145955059446
+    },
+    {
+      "occupation": "Marketing Managers",
+      "code": "0051",
+      "women": 7.0978436174661015,
+      "men": 4.136507659661056
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 4.303058359715668,
+      "men": 1.1700241272056044
+    },
+    {
+      "occupation": "General And Operations Managers",
+      "code": "0020",
+      "women": 1.7472074547518068,
+      "men": 3.784773698438999
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 80.40514306194373,
+      "men": 83.52954855963489
+    }
+  ],
+  "2001": [
+    {
+      "occupation": "Artists And Related Workers",
+      "code": "2600",
+      "women": 4.108803408299537,
+      "men": 5.3961447904902275
+    },
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 1.4173937978780058,
+      "men": 5.468884592561398
+    },
+    {
+      "occupation": "Other Media And Communication Equipment Workers",
+      "code": "2905",
+      "women": 0.7783376346728934,
+      "men": 4.831454221779828
+    },
+    {
+      "occupation": "Graphic Designers",
+      "code": "2634",
+      "women": 6.656835033386588,
+      "men": 0.9724163013724852
+    },
+    {
+      "occupation": "Customer Service Representatives",
+      "code": "5240",
+      "women": 3.1911843021588626,
+      "men": 1.4107693191171684
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 83.84744582360412,
+      "men": 81.92033077467889
+    }
+  ],
+  "2100": [
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 13.078258558102057,
+      "men": 15.254034325937612
+    },
+    {
+      "occupation": "Computer Occupations, All Other",
+      "code": "1108",
+      "women": 9.115905069652692,
+      "men": 9.70789371610945
+    },
+    {
+      "occupation": "Computer And Information Systems Managers",
+      "code": "0110",
+      "women": 3.2255384896538546,
+      "men": 6.5593102532663785
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 4.112706943671449,
+      "men": 4.896639515178021
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 70.46759093891995,
+      "men": 63.58212218950854
+    }
+  ],
+  "2102": [
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 26.766809581092797,
+      "men": 36.659141238388315
+    },
+    {
+      "occupation": "Computer Occupations, All Other",
+      "code": "1108",
+      "women": 4.393333401877422,
+      "men": 4.715136176698973
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 4.443713307492212,
+      "men": 4.3825134451123064
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 64.39614370953757,
+      "men": 54.243209139800406
+    }
+  ],
+  "2105": [
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 11.477698984201735,
+      "men": 17.309759405294088
+    },
+    {
+      "occupation": "Computer And Information Systems Managers",
+      "code": "0110",
+      "women": 4.996851299181338,
+      "men": 6.2494349289266165
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 6.593105714207486,
+      "men": 4.845044954543171
+    },
+    {
+      "occupation": "Computer Occupations, All Other",
+      "code": "1108",
+      "women": 0.3477260904087835,
+      "men": 6.597016424732533
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 76.58461791200065,
+      "men": 64.9987442865036
+    }
+  ],
+  "2106": [
+    {
+      "occupation": "Information Security Analysts",
+      "code": "1007",
+      "women": 13.006889334612366,
+      "men": 16.32376387920911
+    },
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 5.075433853667045,
+      "men": 9.682747295762008
+    },
+    {
+      "occupation": "Computer Occupations, All Other",
+      "code": "1108",
+      "women": 5.0710735153047874,
+      "men": 6.8701488404953075
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 76.8466032964158,
+      "men": 67.12333998453357
+    }
+  ],
+  "2107": [
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 1.5900481691062993,
+      "men": 8.10565039474228
+    },
+    {
+      "occupation": "Computer Occupations, All Other",
+      "code": "1108",
+      "women": 2.7498480101014824,
+      "men": 6.9627578225106435
+    },
+    {
+      "occupation": "Other Mathematical Science Occupations",
+      "code": "1240",
+      "women": 7.641584436234392,
+      "men": 2.128714917538131
+    },
+    {
+      "occupation": "Computer Network Architects",
+      "code": "1106",
+      "women": 0.6079595940700556,
+      "men": 4.879510602240318
+    },
+    {
+      "occupation": "Sales Representatives Of Services, Except Advertising, Insurance, Financial Services, And Travel",
+      "code": "4840",
+      "women": 3.825468830379273,
+      "men": 1.3206299342785104
+    },
+    {
+      "occupation": "General And Operations Managers",
+      "code": "0020",
+      "women": 5.186362998643783,
+      "men": 0.18600421609556483
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 78.39872796146472,
+      "men": 76.41673211259456
+    }
+  ],
+  "2201": [
+    {
+      "occupation": "Chefs And Head Cooks",
+      "code": "4000",
+      "women": 7.014674043781573,
+      "men": 19.42062287144557
+    },
+    {
+      "occupation": "Food Service Managers",
+      "code": "0310",
+      "women": 6.576858311282175,
+      "men": 6.433876328423126
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 5.859995188838105,
+      "men": 3.6026424849206022
+    },
+    {
+      "occupation": "Cooks",
+      "code": "4020",
+      "women": 3.160933365407746,
+      "men": 4.993639981945755
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 77.38753909069041,
+      "men": 65.54921833326495
+    }
+  ],
+  "2300": [
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 38.15049906793459,
+      "men": 22.58996001776988
+    },
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 7.077208051157413,
+      "men": 11.784533152813918
+    },
+    {
+      "occupation": "Education And Childcare Administrators",
+      "code": "0230",
+      "women": 5.597465725949173,
+      "men": 7.136863334109003
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 49.17482715495883,
+      "men": 58.4886434953072
+    }
+  ],
+  "2301": [
+    {
+      "occupation": "Education And Childcare Administrators",
+      "code": "0230",
+      "women": 27.41505662891406,
+      "men": 26.999276934201013
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 21.65639573617588,
+      "men": 18.669558929862617
+    },
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 5.941872085276482,
+      "men": 10.44830079537238
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 44.98667554963358,
+      "men": 43.882863340563986
+    }
+  ],
+  "2304": [
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 47.53533353718897,
+      "men": 33.63993776805988
+    },
+    {
+      "occupation": "Preschool And Kindergarten Teachers",
+      "code": "2300",
+      "women": 6.291624124759649,
+      "men": 2.124505928853755
+    },
+    {
+      "occupation": "Education And Childcare Administrators",
+      "code": "0230",
+      "women": 5.074061788988686,
+      "men": 9.622823984526113
+    },
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 3.1898656107635777,
+      "men": 3.3176351862753344
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 37.90911493829912,
+      "men": 51.295097132284916
+    }
+  ],
+  "2305": [
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 31.934411426695124,
+      "men": 30.811101404475504
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 22.432687571827287,
+      "men": 14.498353605268463
+    },
+    {
+      "occupation": "Education And Childcare Administrators",
+      "code": "0230",
+      "women": 6.604005910359547,
+      "men": 8.709092130905182
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 39.028895091118045,
+      "men": 45.98145285935085
+    }
+  ],
+  "2306": [
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 19.404401238472552,
+      "men": 16.810751336057844
+    },
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 9.719679062489597,
+      "men": 15.723941258364396
+    },
+    {
+      "occupation": "Education And Childcare Administrators",
+      "code": "0230",
+      "women": 4.5327429503612215,
+      "men": 6.2334396191673775
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 66.34317674867663,
+      "men": 61.23186778641038
+    }
+  ],
+  "2308": [
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 27.515044117104146,
+      "men": 15.962810490772005
+    },
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 19.884077232620815,
+      "men": 23.44234238401406
+    },
+    {
+      "occupation": "Education And Childcare Administrators",
+      "code": "0230",
+      "women": 5.681692324731421,
+      "men": 6.748693279060086
+    },
+    {
+      "occupation": "Postsecondary Teachers",
+      "code": "2205",
+      "women": 6.279765201018939,
+      "men": 2.4099172024607984
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 40.63942112452468,
+      "men": 51.43623664369305
+    }
+  ],
+  "2309": [
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 25.75967196172887,
+      "men": 19.341283748149912
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 20.56739952994516,
+      "men": 16.500229666048554
+    },
+    {
+      "occupation": "Education And Childcare Administrators",
+      "code": "0230",
+      "women": 4.68387978597503,
+      "men": 11.1855871795308
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 48.989048722350944,
+      "men": 52.972899406270734
+    }
+  ],
+  "2310": [
+    {
+      "occupation": "Special Education Teachers",
+      "code": "2330",
+      "women": 31.884057971014492,
+      "men": 25.717587242893458
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 22.061669462004904,
+      "men": 12.909637162006009
+    },
+    {
+      "occupation": "Education And Childcare Administrators",
+      "code": "0230",
+      "women": 6.747516449490388,
+      "men": 11.536861566905477
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 39.30675611749022,
+      "men": 49.835914028195056
+    }
+  ],
+  "2311": [
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 16.65090583316743,
+      "men": 24.52018102890921
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 17.88273939876568,
+      "men": 13.68246051537822
+    },
+    {
+      "occupation": "Education And Childcare Administrators",
+      "code": "0230",
+      "women": 5.504678478996616,
+      "men": 11.312459591761337
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 59.961676289070276,
+      "men": 50.48489886395123
+    }
+  ],
+  "2312": [
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 48.3136706487942,
+      "men": 42.372033568610014
+    },
+    {
+      "occupation": "Preschool And Kindergarten Teachers",
+      "code": "2300",
+      "women": 9.386018417959741,
+      "men": 0.4112710498527205
+    },
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 5.7351562848684114,
+      "men": 12.660479075195909
+    },
+    {
+      "occupation": "Education And Childcare Administrators",
+      "code": "0230",
+      "women": 3.2238868143475607,
+      "men": 10.54854665703329
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 33.34126783403009,
+      "men": 34.00766964930807
+    }
+  ],
+  "2313": [
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 30.596788340867686,
+      "men": 20.916080387092943
+    },
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 16.64277039336077,
+      "men": 16.988749369192863
+    },
+    {
+      "occupation": "Education And Childcare Administrators",
+      "code": "0230",
+      "women": 5.114364752715741,
+      "men": 7.914032119215127
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 47.6460765130558,
+      "men": 54.181138124499064
+    }
+  ],
+  "2314": [
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 32.72344235529573,
+      "men": 21.65901429290541
+    },
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 19.94311897614157,
+      "men": 22.470521835959545
+    },
+    {
+      "occupation": "Education And Childcare Administrators",
+      "code": "0230",
+      "women": 3.7056933691473115,
+      "men": 3.8988971429443082
+    },
+    {
+      "occupation": "Postsecondary Teachers",
+      "code": "2205",
+      "women": 2.084584189182072,
+      "men": 4.963619445673231
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 41.543161110233314,
+      "men": 47.007947282517506
+    }
+  ],
+  "2399": [
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 14.478779893799656,
+      "men": 15.370266264629223
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 14.420888729189125,
+      "men": 9.137834108447898
+    },
+    {
+      "occupation": "Education And Childcare Administrators",
+      "code": "0230",
+      "women": 5.086437497504691,
+      "men": 4.563806408749425
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 3.1221303948576677,
+      "men": 4.568917054223949
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 62.89176348464886,
+      "men": 66.35917616394951
+    }
+  ],
+  "2400": [
+    {
+      "occupation": "Other Engineers",
+      "code": "1530",
+      "women": 6.493417522065288,
+      "men": 8.548159300609283
+    },
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 5.198616138203492,
+      "men": 7.968214474967989
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 5.601671595437367,
+      "men": 6.485830014760165
+    },
+    {
+      "occupation": "Civil Engineers",
+      "code": "1360",
+      "women": 4.196115595848415,
+      "men": 6.587718360598321
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 78.51017914844545,
+      "men": 70.41007784906424
+    }
+  ],
+  "2401": [
+    {
+      "occupation": "Aerospace Engineers",
+      "code": "1320",
+      "women": 26.14920874152223,
+      "men": 22.841566873908917
+    },
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 5.819308381478691,
+      "men": 9.794493277388135
+    },
+    {
+      "occupation": "Other Engineers",
+      "code": "1530",
+      "women": 3.3576153395294313,
+      "men": 8.377487162210448
+    },
+    {
+      "occupation": "Civil Engineers",
+      "code": "1360",
+      "women": 6.87431968517123,
+      "men": 3.7569038212203814
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 57.79954785229842,
+      "men": 55.22954886527212
+    }
+  ],
+  "2402": [
+    {
+      "occupation": "Other Engineers",
+      "code": "1530",
+      "women": 7.818663208515697,
+      "men": 6.2443200140717074
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 8.591343815853461,
+      "men": 4.889918208202633
+    },
+    {
+      "occupation": "Postsecondary Teachers",
+      "code": "2205",
+      "women": 6.7217809477495,
+      "men": 4.986661194336138
+    },
+    {
+      "occupation": "Civil Engineers",
+      "code": "1360",
+      "women": 2.977251850651105,
+      "men": 5.05701972970596
+    },
+    {
+      "occupation": "Industrial Engineers, Including Health And Safety",
+      "code": "1430",
+      "women": 7.370184254606365,
+      "men": 2.4361642871800884
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 66.52077592262387,
+      "men": 76.38591656650348
+    }
+  ],
+  "2404": [
+    {
+      "occupation": "Physicians",
+      "code": "3090",
+      "women": 7.902798156871831,
+      "men": 10.712049533880618
+    },
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 5.688984992406106,
+      "men": 7.130930847363294
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 6.196102659149998,
+      "men": 4.631626547933769
+    },
+    {
+      "occupation": "Industrial Engineers, Including Health And Safety",
+      "code": "1430",
+      "women": 3.377352176487245,
+      "men": 5.400375678308056
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 76.83476201508482,
+      "men": 72.12501739251427
+    }
+  ],
+  "2405": [
+    {
+      "occupation": "Chemical Engineers",
+      "code": "1350",
+      "women": 6.918285472972973,
+      "men": 8.713515276942369
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 7.984586148648648,
+      "men": 7.788335083444627
+    },
+    {
+      "occupation": "Other Engineers",
+      "code": "1530",
+      "women": 4.852195945945946,
+      "men": 7.298473834986594
+    },
+    {
+      "occupation": "Industrial Engineers, Including Health And Safety",
+      "code": "1430",
+      "women": 6.134923986486487,
+      "men": 3.9051269765213226
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 74.11000844594595,
+      "men": 72.29454882810509
+    }
+  ],
+  "2406": [
+    {
+      "occupation": "Civil Engineers",
+      "code": "1360",
+      "women": 33.30745176455572,
+      "men": 33.26071740786445
+    },
+    {
+      "occupation": "Other Engineers",
+      "code": "1530",
+      "women": 7.989959369482439,
+      "men": 7.145688160043626
+    },
+    {
+      "occupation": "Construction Managers",
+      "code": "0220",
+      "women": 4.041779233763747,
+      "men": 7.414695027167726
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 4.356612563551661,
+      "men": 5.611196532425588
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 50.30419706864643,
+      "men": 46.567702872498614
+    }
+  ],
+  "2407": [
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 35.43326857762096,
+      "men": 38.68619941706771
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 5.705110415097332,
+      "men": 5.1170383424840145
+    },
+    {
+      "occupation": "Other Engineers",
+      "code": "1530",
+      "women": 1.3334390569453805,
+      "men": 3.6484104927811294
+    },
+    {
+      "occupation": "Computer Occupations, All Other",
+      "code": "1108",
+      "women": 2.9774412242794277,
+      "men": 2.132899523260806
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 54.5507407260569,
+      "men": 50.41545222440634
+    }
+  ],
+  "2408": [
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 17.730836361555408,
+      "men": 15.724648319424212
+    },
+    {
+      "occupation": "Electrical And Electronics Engineers",
+      "code": "1410",
+      "women": 8.297805373544307,
+      "men": 12.995398759534682
+    },
+    {
+      "occupation": "Other Engineers",
+      "code": "1530",
+      "women": 7.262725685999599,
+      "men": 9.171739073151818
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 66.70863257890068,
+      "men": 62.10821384788929
+    }
+  ],
+  "2410": [
+    {
+      "occupation": "Environmental Engineers",
+      "code": "1420",
+      "women": 12.71252204585538,
+      "men": 12.770185131336628
+    },
+    {
+      "occupation": "Civil Engineers",
+      "code": "1360",
+      "women": 14.36331569664903,
+      "men": 10.366385577202676
+    },
+    {
+      "occupation": "Other Engineers",
+      "code": "1530",
+      "women": 8.0,
+      "men": 9.445575264127168
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 8.282186948853616,
+      "men": 5.8059513424445095
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 56.641975308641975,
+      "men": 61.61190268488902
+    }
+  ],
+  "2412": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 8.86490139242082,
+      "men": 8.564036590306554
+    },
+    {
+      "occupation": "Industrial Engineers, Including Health And Safety",
+      "code": "1430",
+      "women": 7.849483399427383,
+      "men": 8.193726766790103
+    },
+    {
+      "occupation": "Other Engineers",
+      "code": "1530",
+      "women": 3.679334198780076,
+      "men": 5.323647942683715
+    },
+    {
+      "occupation": "Project Management Specialists",
+      "code": "0705",
+      "women": 5.137552682588516,
+      "men": 2.638368646627764
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 74.46872832678321,
+      "men": 75.28022005359186
+    }
+  ],
+  "2414": [
+    {
+      "occupation": "Mechanical Engineers",
+      "code": "1460",
+      "women": 10.746160649674358,
+      "men": 15.783069438928198
+    },
+    {
+      "occupation": "Other Engineers",
+      "code": "1530",
+      "women": 9.270724451234221,
+      "men": 9.224583035034417
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 7.024402991075018,
+      "men": 6.521046200704786
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 72.9587119080164,
+      "men": 68.4713013253326
+    }
+  ],
+  "2499": [
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 6.35643330179754,
+      "men": 8.469930451384155
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 9.916035950804163,
+      "men": 6.271648711305059
+    },
+    {
+      "occupation": "Civil Engineers",
+      "code": "1360",
+      "women": 6.297303689687796,
+      "men": 4.738851765989363
+    },
+    {
+      "occupation": "Construction Managers",
+      "code": "0220",
+      "women": 1.7324976348155157,
+      "men": 5.383881085503886
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 75.69772942289498,
+      "men": 75.13568798581754
+    }
+  ],
+  "2502": [
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 24.88972565895643,
+      "men": 18.933132123789598
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 5.615922538999462,
+      "men": 6.0854454619245235
+    },
+    {
+      "occupation": "Other Engineers",
+      "code": "1530",
+      "women": 4.669176976869284,
+      "men": 6.268363228955883
+    },
+    {
+      "occupation": "Computer And Information Systems Managers",
+      "code": "0110",
+      "women": 5.20172135556751,
+      "men": 2.826079500634496
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 59.62345346960731,
+      "men": 65.88697968469549
+    }
+  ],
+  "2599": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 9.356576862123614,
+      "men": 9.571379290519175
+    },
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 4.297939778129953,
+      "men": 6.791525326280688
+    },
+    {
+      "occupation": "Construction Managers",
+      "code": "0220",
+      "women": 0.9889064976228209,
+      "men": 4.797907204047605
+    },
+    {
+      "occupation": "Other Engineers",
+      "code": "1530",
+      "women": 4.507131537242472,
+      "men": 1.5782211234404646
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 80.84944532488115,
+      "men": 77.26096705571207
+    }
+  ],
+  "2601": [
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 8.344815403638933,
+      "men": 1.7382591269495513
+    },
+    {
+      "occupation": "Postsecondary Teachers",
+      "code": "2205",
+      "women": 5.07154213036566,
+      "men": 5.41517818245186
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 3.9710298533827944,
+      "men": 4.108216432865731
+    },
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 1.7576399929341107,
+      "men": 4.434956870262264
+    },
+    {
+      "occupation": "Receptionists And Information Clerks",
+      "code": "5400",
+      "women": 1.197668256491786,
+      "men": 5.088437745055328
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 79.65730436318671,
+      "men": 79.21495164241526
+    }
+  ],
+  "2602": [
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 9.997302247653666,
+      "men": 4.443968025481609
+    },
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 7.034034275653495,
+      "men": 7.615386971302564
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 4.826136960627014,
+      "men": 5.606260145171664
+    },
+    {
+      "occupation": "Lawyers, And Judges, Magistrates, And Other Judicial Workers",
+      "code": "2100",
+      "women": 2.530207726930668,
+      "men": 5.2754892652598695
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 75.61231878913516,
+      "men": 77.0588955927843
+    }
+  ],
+  "2603": [
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 5.901116427432217,
+      "men": 6.830406581237146
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 2.9208493604778436,
+      "men": 7.45530770447714
+    },
+    {
+      "occupation": "Postsecondary Teachers",
+      "code": "2205",
+      "women": 3.189792663476874,
+      "men": 4.904287296313874
+    },
+    {
+      "occupation": "Lawyers, And Judges, Magistrates, And Other Judicial Workers",
+      "code": "2100",
+      "women": 4.287456609438034,
+      "men": 3.3459895586141433
+    },
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 5.835444225537104,
+      "men": 0.6288561936402468
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 77.86534071363792,
+      "men": 76.83515266571744
+    }
+  ],
+  "2901": [
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 9.799184717695017,
+      "men": 2.194282599066408
+    },
+    {
+      "occupation": "Education And Childcare Administrators",
+      "code": "0230",
+      "women": 4.186605636082021,
+      "men": 6.208047974377322
+    },
+    {
+      "occupation": "Preschool And Kindergarten Teachers",
+      "code": "2300",
+      "women": 4.2170438695856545,
+      "men": 1.7717809806126275
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 3.37594686023842,
+      "men": 5.826433609322294
+    },
+    {
+      "occupation": "Lawyers, And Judges, Magistrates, And Other Judicial Workers",
+      "code": "2100",
+      "women": 0.5763999660941196,
+      "men": 2.9166240757777095
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 77.84481895030477,
+      "men": 81.08283076084363
+    }
+  ],
+  "3202": [
+    {
+      "occupation": "Paralegals And Legal Assistants",
+      "code": "2145",
+      "women": 20.32927836599835,
+      "men": 2.198849129225258
+    },
+    {
+      "occupation": "Lawyers, And Judges, Magistrates, And Other Judicial Workers",
+      "code": "2100",
+      "women": 10.400240294360591,
+      "men": 17.86136199077779
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 7.002327851618232,
+      "men": 7.053847033268549
+    },
+    {
+      "occupation": "Police Officers",
+      "code": "3870",
+      "women": 0.5556807088683637,
+      "men": 7.58355245608018
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 61.71247277915447,
+      "men": 65.30238939064822
+    }
+  ],
+  "3301": [
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 7.006503361390634,
+      "men": 4.594569852053852
+    },
+    {
+      "occupation": "Lawyers, And Judges, Magistrates, And Other Judicial Workers",
+      "code": "2100",
+      "women": 4.2489745168191435,
+      "men": 6.955105709506227
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 4.819466200196259,
+      "men": 4.885024787152293
+    },
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 5.265315202750062,
+      "men": 3.943473641283994
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 78.65974071884389,
+      "men": 79.62182601000363
+    }
+  ],
+  "3302": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 4.789770715758346,
+      "men": 4.644204501105763
+    },
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 3.7047835231887376,
+      "men": 2.6473266553922206
+    },
+    {
+      "occupation": "Marketing Managers",
+      "code": "0051",
+      "women": 4.339948770278432,
+      "men": 1.4439963574866659
+    },
+    {
+      "occupation": "Postsecondary Teachers",
+      "code": "2205",
+      "women": 2.180386930173473,
+      "men": 3.583972941329517
+    },
+    {
+      "occupation": "Securities, Commodities, And Financial Services Sales Agents",
+      "code": "4820",
+      "women": 0.0,
+      "men": 4.465331078444127
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 84.98511006060102,
+      "men": 83.2151684662417
+    }
+  ],
+  "3401": [
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 14.066134567613572,
+      "men": 3.1493650558877597
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 3.7731378178673123,
+      "men": 5.253871996957339
+    },
+    {
+      "occupation": "Education And Childcare Administrators",
+      "code": "0230",
+      "women": 3.5077465039038587,
+      "men": 1.1716356413886364
+    },
+    {
+      "occupation": "Clergy",
+      "code": "2040",
+      "women": 0.09438768457926393,
+      "men": 2.08971622963636
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 78.558593426036,
+      "men": 88.3354110761299
+    }
+  ],
+  "3402": [
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 7.723731711951358,
+      "men": 1.7590722522639912
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 6.027930837925138,
+      "men": 3.4139031858753013
+    },
+    {
+      "occupation": "Lawyers, And Judges, Magistrates, And Other Judicial Workers",
+      "code": "2100",
+      "women": 1.1590347710431312,
+      "men": 8.137337937324908
+    },
+    {
+      "occupation": "Education And Childcare Administrators",
+      "code": "0230",
+      "women": 2.997339920197606,
+      "men": 4.71040458661802
+    },
+    {
+      "occupation": "Training And Development Specialists",
+      "code": "0650",
+      "women": 0.7220216606498195,
+      "men": 5.153430190891915
+    },
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 3.814364430932928,
+      "men": 0.8013551371424849
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 77.55557666730002,
+      "men": 76.02449670988338
+    }
+  ],
+  "3600": [
+    {
+      "occupation": "Physicians",
+      "code": "3090",
+      "women": 10.38063917168888,
+      "men": 18.006670514659067
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 3.907945526488114,
+      "men": 4.000226119140986
+    },
+    {
+      "occupation": "Physical Scientists, All Other",
+      "code": "1760",
+      "women": 3.9231967541514203,
+      "men": 3.536830642713906
+    },
+    {
+      "occupation": "Registered Nurses",
+      "code": "3255",
+      "women": 5.260947294904274,
+      "men": 1.8824418487024928
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 76.5272712527673,
+      "men": 72.57383087478355
+    }
+  ],
+  "3601": [
+    {
+      "occupation": "Physicians",
+      "code": "3090",
+      "women": 14.70669559298962,
+      "men": 20.091129613846455
+    },
+    {
+      "occupation": "Physical Scientists, All Other",
+      "code": "1760",
+      "women": 8.682150757189042,
+      "men": 9.104766275486789
+    },
+    {
+      "occupation": "Pharmacists",
+      "code": "3050",
+      "women": 4.730304577165221,
+      "men": 4.162295941781944
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 3.409477624638421,
+      "men": 4.504031993706156
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 68.47137144801769,
+      "men": 62.13777617517866
+    }
+  ],
+  "3603": [
+    {
+      "occupation": "Physicians",
+      "code": "3090",
+      "women": 19.963667450309895,
+      "men": 20.82230923907292
+    },
+    {
+      "occupation": "Physical Scientists, All Other",
+      "code": "1760",
+      "women": 9.816200042744176,
+      "men": 9.188803047941581
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 5.584526608249626,
+      "men": 4.397290718594561
+    },
+    {
+      "occupation": "Postsecondary Teachers",
+      "code": "2205",
+      "women": 4.428296644582176,
+      "men": 5.445020637104456
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 60.20730925411413,
+      "men": 60.146576357286484
+    }
+  ],
+  "3604": [
+    {
+      "occupation": "Biological Scientists",
+      "code": "1610",
+      "women": 5.405020372111577,
+      "men": 7.330279050395668
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 4.752542952389093,
+      "men": 5.8157585854378855
+    },
+    {
+      "occupation": "Postsecondary Teachers",
+      "code": "2205",
+      "women": 3.1769097073823973,
+      "men": 6.79641058649805
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 4.88645753198279,
+      "men": 1.8363560637613117
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 81.77906943613414,
+      "men": 78.2211957139071
+    }
+  ],
+  "3606": [
+    {
+      "occupation": "Physicians",
+      "code": "3090",
+      "women": 5.950679711260122,
+      "men": 17.656348704990524
+    },
+    {
+      "occupation": "Physical Scientists, All Other",
+      "code": "1760",
+      "women": 8.08141878274889,
+      "men": 6.477021478205938
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 8.187680920449965,
+      "men": 5.233338597599495
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 77.78022058554103,
+      "men": 70.63329121920404
+    }
+  ],
+  "3608": [
+    {
+      "occupation": "Physicians",
+      "code": "3090",
+      "women": 9.964586879536695,
+      "men": 20.475667033076846
+    },
+    {
+      "occupation": "Physical Therapists",
+      "code": "3160",
+      "women": 7.041537046819667,
+      "men": 3.7513740381732785
+    },
+    {
+      "occupation": "Physical Scientists, All Other",
+      "code": "1760",
+      "women": 3.1832677897125863,
+      "men": 3.5415209353452584
+    },
+    {
+      "occupation": "Registered Nurses",
+      "code": "3255",
+      "women": 4.511748938584649,
+      "men": 1.3590486659338463
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 75.2988593453464,
+      "men": 70.87238932747077
+    }
+  ],
+  "3609": [
+    {
+      "occupation": "Physicians",
+      "code": "3090",
+      "women": 12.185754189944134,
+      "men": 16.60597732737891
+    },
+    {
+      "occupation": "Postsecondary Teachers",
+      "code": "2205",
+      "women": 2.3901726764855256,
+      "men": 6.358639642734455
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 3.3424327069578466,
+      "men": 4.836825833047063
+    },
+    {
+      "occupation": "Animal Caretakers",
+      "code": "4350",
+      "women": 3.542407313357034,
+      "men": 1.5115080728272072
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 3.6249365159979687,
+      "men": 0.0
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 74.91429659725749,
+      "men": 70.68704912401236
+    }
+  ],
+  "3611": [
+    {
+      "occupation": "Physicians",
+      "code": "3090",
+      "women": 20.203427956673757,
+      "men": 21.65118865145914
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 4.239712462407394,
+      "men": 5.493944038710065
+    },
+    {
+      "occupation": "Physical Scientists, All Other",
+      "code": "1760",
+      "women": 4.679821022518888,
+      "men": 2.9513419288912934
+    },
+    {
+      "occupation": "Postsecondary Teachers",
+      "code": "2205",
+      "women": 2.8313650700506123,
+      "men": 4.541219607489556
+    },
+    {
+      "occupation": "Other Office And Administrative Support Workers",
+      "code": "5940",
+      "women": 4.251937700188269,
+      "men": 0.0
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 63.79373578816108,
+      "men": 65.36230577344995
+    }
+  ],
+  "3699": [
+    {
+      "occupation": "Physical Scientists, All Other",
+      "code": "1760",
+      "women": 12.121617702826295,
+      "men": 8.93210022923089
+    },
+    {
+      "occupation": "Biological Scientists",
+      "code": "1610",
+      "women": 3.8747239510138525,
+      "men": 8.094221800648171
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 6.513640723638716,
+      "men": 4.919242220641319
+    },
+    {
+      "occupation": "Other Life Scientists",
+      "code": "1650",
+      "women": 5.130607419304468,
+      "men": 4.51611203330435
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 72.35941020321667,
+      "men": 73.53832371617527
+    }
+  ],
+  "3700": [
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 5.220717789171257,
+      "men": 10.682418766966736
+    },
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 9.43348307115986,
+      "men": 4.388548602824274
+    },
+    {
+      "occupation": "Postsecondary Teachers",
+      "code": "2205",
+      "women": 5.670460377677952,
+      "men": 6.103518265490426
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 5.779985925702524,
+      "men": 4.6751579956810305
+    },
+    {
+      "occupation": "Other Mathematical Science Occupations",
+      "code": "1240",
+      "women": 4.8969031254464355,
+      "men": 4.997818884494612
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 7.099054482346281,
+      "men": 1.960840865091697
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 61.89939522849569,
+      "men": 67.19169661945122
+    }
+  ],
+  "3701": [
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 7.644068915439963,
+      "men": 14.925980862635605
+    },
+    {
+      "occupation": "Other Mathematical Science Occupations",
+      "code": "1240",
+      "women": 8.805861773054326,
+      "men": 9.559956955472181
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 2.845072281998812,
+      "men": 5.453276328418114
+    },
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 9.274539573569212,
+      "men": 0.26466567780589245
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 71.43045745593768,
+      "men": 69.79612017566821
+    }
+  ],
+  "3702": [
+    {
+      "occupation": "Other Mathematical Science Occupations",
+      "code": "1240",
+      "women": 20.883600279985178,
+      "men": 11.375795797590937
+    },
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 3.034545229958414,
+      "men": 9.161012643094121
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 4.582698563017252,
+      "men": 6.447081328272111
+    },
+    {
+      "occupation": "Management Analysts",
+      "code": "0710",
+      "women": 5.002676328900234,
+      "men": 3.4521923663209493
+    },
+    {
+      "occupation": "Postsecondary Teachers",
+      "code": "2205",
+      "women": 6.579651665500061,
+      "men": 2.1878829542397704
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 59.91682793263886,
+      "men": 67.3760349104821
+    }
+  ],
+  "4000": [
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 24.123358081096516,
+      "men": 6.909745097045558
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 2.881210736721873,
+      "men": 7.092180611158972
+    },
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 3.0254140491147914,
+      "men": 2.2956468859271273
+    },
+    {
+      "occupation": "Education And Childcare Administrators",
+      "code": "0230",
+      "women": 3.315248429468875,
+      "men": 1.7179344245679826
+    },
+    {
+      "occupation": "Computer Occupations, All Other",
+      "code": "1108",
+      "women": 0.6953169617361508,
+      "men": 3.172350884305478
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 65.95945174186178,
+      "men": 78.81214209699488
+    }
+  ],
+  "4001": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 5.916277960746911,
+      "men": 4.3464381307860425
+    },
+    {
+      "occupation": "Lawyers, And Judges, Magistrates, And Other Judicial Workers",
+      "code": "2100",
+      "women": 3.406703128027063,
+      "men": 4.496230631338555
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 3.8820917097596235,
+      "men": 3.091618986813349
+    },
+    {
+      "occupation": "Chief Executives And Legislators",
+      "code": "0010",
+      "women": 1.5021683084213822,
+      "men": 3.786557964786484
+    },
+    {
+      "occupation": "Accountants And Auditors",
+      "code": "0800",
+      "women": 3.4171348523911003,
+      "men": 0.559880165999558
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 81.87562404065392,
+      "men": 83.71927412027601
+    }
+  ],
+  "4002": [
+    {
+      "occupation": "Dietitians And Nutritionists",
+      "code": "3030",
+      "women": 20.445117165601523,
+      "men": 11.930972924724784
+    },
+    {
+      "occupation": "Physicians",
+      "code": "3090",
+      "women": 3.576634151810741,
+      "men": 8.97947039571556
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 3.592050678327167,
+      "men": 4.695031240702172
+    },
+    {
+      "occupation": "Registered Nurses",
+      "code": "3255",
+      "women": 3.880760174907501,
+      "men": 0.8330853912526034
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 68.50543782935307,
+      "men": 73.56144004760488
+    }
+  ],
+  "4006": [
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 9.55940550523261,
+      "men": 8.93355667225014
+    },
+    {
+      "occupation": "Physicians",
+      "code": "3090",
+      "women": 5.725090141588251,
+      "men": 6.197654941373535
+    },
+    {
+      "occupation": "Postsecondary Teachers",
+      "code": "2205",
+      "women": 4.757716999384399,
+      "men": 7.024008933556672
+    },
+    {
+      "occupation": "Other Designers",
+      "code": "2640",
+      "women": 6.270336821739513,
+      "men": 0.41317699609156894
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 73.68745053205522,
+      "men": 77.43160245672809
+    }
+  ],
+  "4007": [
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 7.047905693503887,
+      "men": 1.4526981863553317
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 4.337310544985488,
+      "men": 2.9187647609286573
+    },
+    {
+      "occupation": "Social Workers, All Other",
+      "code": "2014",
+      "women": 3.9019671073847144,
+      "men": 2.4419589144868765
+    },
+    {
+      "occupation": "Social And Human Service Assistants",
+      "code": "2016",
+      "women": 0.8706868752015479,
+      "men": 2.967782184394635
+    },
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 0.6091225052850335,
+      "men": 3.0925538077625774
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 83.23300727363933,
+      "men": 87.12624214607192
+    }
+  ],
+  "4101": [
+    {
+      "occupation": "Physical Therapists",
+      "code": "3160",
+      "women": 7.433306046255423,
+      "men": 4.210783537101135
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 5.353495168657093,
+      "men": 4.188764262179747
+    },
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 3.2652686502077133,
+      "men": 4.429902175343246
+    },
+    {
+      "occupation": "Registered Nurses",
+      "code": "3255",
+      "women": 4.741448561307943,
+      "men": 1.261543336349795
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 79.20648157357184,
+      "men": 85.90900668902607
+    }
+  ],
+  "4801": [
+    {
+      "occupation": "Lawyers, And Judges, Magistrates, And Other Judicial Workers",
+      "code": "2100",
+      "women": 9.782219783889511,
+      "men": 8.276158282851947
+    },
+    {
+      "occupation": "Clergy",
+      "code": "2040",
+      "women": 2.693032464279751,
+      "men": 10.922386960741658
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 4.677623261694058,
+      "men": 4.9923580664234635
+    },
+    {
+      "occupation": "Postsecondary Teachers",
+      "code": "2205",
+      "women": 4.922119123154355,
+      "men": 4.368173856777893
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 77.92500536698233,
+      "men": 71.44092283320504
+    }
+  ],
+  "4901": [
+    {
+      "occupation": "Clergy",
+      "code": "2040",
+      "women": 12.545584271444428,
+      "men": 32.60398962340102
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 2.2435389250039637,
+      "men": 3.3211080299370845
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 7.016013952750912,
+      "men": 1.2803768971583624
+    },
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 3.458458855240209,
+      "men": 2.0621999582550616
+    },
+    {
+      "occupation": "Education And Childcare Administrators",
+      "code": "0230",
+      "women": 3.9896147138100524,
+      "men": 1.6346125175179653
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 70.74678928175044,
+      "men": 59.09771297373051
+    }
+  ],
+  "5003": [
+    {
+      "occupation": "Physicians",
+      "code": "3090",
+      "women": 6.661476224795232,
+      "men": 8.619715587669024
+    },
+    {
+      "occupation": "Physical Scientists, All Other",
+      "code": "1760",
+      "women": 6.355836353784726,
+      "men": 7.997517153200568
+    },
+    {
+      "occupation": "Chemists And Materials Scientists",
+      "code": "1720",
+      "women": 5.413665942459743,
+      "men": 7.775622012592642
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 6.968168212401299,
+      "men": 6.028337161674955
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 74.600853266559,
+      "men": 69.57880808486281
+    }
+  ],
+  "5004": [
+    {
+      "occupation": "Geoscientists And Hydrologists, Except Geographers",
+      "code": "1750",
+      "women": 12.919922361021252,
+      "men": 18.884571205122565
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 7.092022097247797,
+      "men": 6.818681721533837
+    },
+    {
+      "occupation": "Project Management Specialists",
+      "code": "0705",
+      "women": 3.299656596824765,
+      "men": 3.4313366082557373
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 5.842830836609765,
+      "men": 2.045604516460151
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 70.84556810829642,
+      "men": 68.8198059486277
+    }
+  ],
+  "5007": [
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 6.251575497857323,
+      "men": 11.635635487552305
+    },
+    {
+      "occupation": "Postsecondary Teachers",
+      "code": "2205",
+      "women": 10.315875201178956,
+      "men": 9.02880510587937
+    },
+    {
+      "occupation": "Physical Scientists, All Other",
+      "code": "1760",
+      "women": 5.218048903453491,
+      "men": 6.671879622976457
+    },
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 6.811967966492796,
+      "men": 2.059998309311467
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 71.40253243101743,
+      "men": 70.6036814742804
+    }
+  ],
+  "5008": [
+    {
+      "occupation": "Other Engineers",
+      "code": "1530",
+      "women": 14.581851437862007,
+      "men": 12.177526856425938
+    },
+    {
+      "occupation": "Materials Engineers",
+      "code": "1450",
+      "women": 1.351488669850625,
+      "men": 8.927311220889203
+    },
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 1.7173051519154559,
+      "men": 8.531325962518624
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 8.3223249669749,
+      "men": 5.900572414333882
+    },
+    {
+      "occupation": "Postsecondary Teachers",
+      "code": "2205",
+      "women": 7.397622192866579,
+      "men": 3.614835724927468
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 66.62940758053043,
+      "men": 60.84842782090488
+    }
+  ],
+  "5098": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 3.955188955188955,
+      "men": 5.534037558685446
+    },
+    {
+      "occupation": "Physicians",
+      "code": "3090",
+      "women": 3.9054639054639053,
+      "men": 5.474178403755869
+    },
+    {
+      "occupation": "Registered Nurses",
+      "code": "3255",
+      "women": 7.6886626886626885,
+      "men": 1.5316901408450705
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 5.387855387855388,
+      "men": 0.9929577464788732
+    },
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 1.0916110916110917,
+      "men": 4.163732394366197
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 77.97121797121797,
+      "men": 82.30340375586854
+    }
+  ],
+  "5200": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 3.701809590573991,
+      "men": 4.5849120033436
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 4.717018345036722,
+      "men": 1.4551930293201043
+    },
+    {
+      "occupation": "Social Workers, All Other",
+      "code": "2014",
+      "women": 4.271489104325675,
+      "men": 1.6485403548941042
+    },
+    {
+      "occupation": "Lawyers, And Judges, Magistrates, And Other Judicial Workers",
+      "code": "2100",
+      "women": 2.045780586191362,
+      "men": 2.771372239031083
+    },
+    {
+      "occupation": "Postsecondary Teachers",
+      "code": "2205",
+      "women": 2.0136703706446193,
+      "men": 2.592198871534876
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 83.25023200322764,
+      "men": 86.94778350187623
+    }
+  ],
+  "5299": [
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 6.589069837146568,
+      "men": 3.492463979815417
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 4.338595264262164,
+      "men": 5.842905517561915
+    },
+    {
+      "occupation": "Social Workers, All Other",
+      "code": "2014",
+      "women": 3.88650214806674,
+      "men": 0.9029944890777505
+    },
+    {
+      "occupation": "Physicians",
+      "code": "3090",
+      "women": 1.9507443301029075,
+      "men": 4.8203970519885795
+    },
+    {
+      "occupation": "Postsecondary Teachers",
+      "code": "2205",
+      "women": 1.6135478069737237,
+      "men": 4.793838390545116
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 81.6215406134479,
+      "men": 80.14740057101122
+    }
+  ],
+  "5301": [
+    {
+      "occupation": "Police Officers",
+      "code": "3870",
+      "women": 4.849050384627883,
+      "men": 16.38305740188843
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 5.146632126757752,
+      "men": 3.9175684187765003
+    },
+    {
+      "occupation": "Detectives And Criminal Investigators",
+      "code": "3820",
+      "women": 2.3428178809023086,
+      "men": 3.008765249873864
+    },
+    {
+      "occupation": "Social Workers, All Other",
+      "code": "2014",
+      "women": 3.592800471674025,
+      "men": 0.8812256934324869
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 84.06869913603803,
+      "men": 75.80938323602872
+    }
+  ],
+  "5401": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 8.257291107532653,
+      "men": 9.601428733416487
+    },
+    {
+      "occupation": "Accountants And Auditors",
+      "code": "0800",
+      "women": 4.666905230512316,
+      "men": 0.9213062705522168
+    },
+    {
+      "occupation": "Financial Managers",
+      "code": "0120",
+      "women": 0.7514761137949544,
+      "men": 3.943190837963488
+    },
+    {
+      "occupation": "Management Analysts",
+      "code": "0710",
+      "women": 3.429355281207133,
+      "men": 1.3578637033677288
+    },
+    {
+      "occupation": "Police Officers",
+      "code": "3870",
+      "women": 1.0198604401502953,
+      "men": 3.407415806780814
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 81.87511182680265,
+      "men": 80.76879464791926
+    }
+  ],
+  "5402": [
+    {
+      "occupation": "Lawyers, And Judges, Magistrates, And Other Judicial Workers",
+      "code": "2100",
+      "women": 11.448933846772803,
+      "men": 11.372470846207515
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 8.385539398816023,
+      "men": 7.101564836041065
+    },
+    {
+      "occupation": "Management Analysts",
+      "code": "0710",
+      "women": 4.258865452037473,
+      "men": 3.4635702182796773
+    },
+    {
+      "occupation": "Chief Executives And Legislators",
+      "code": "0010",
+      "women": 3.097879188459107,
+      "men": 4.151300707664706
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 72.80878211391459,
+      "men": 73.91109339180704
+    }
+  ],
+  "5403": [
+    {
+      "occupation": "Social Workers, All Other",
+      "code": "2014",
+      "women": 8.620393039105405,
+      "men": 2.742574900890362
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 4.234764772050553,
+      "men": 1.676740105283681
+    },
+    {
+      "occupation": "Human Resources Workers",
+      "code": "0630",
+      "women": 4.244028319989413,
+      "men": 1.2218106193540001
+    },
+    {
+      "occupation": "Personal Care Aides",
+      "code": "3602",
+      "women": 0.666975451597962,
+      "men": 3.717423799311107
+    },
+    {
+      "occupation": "Counselors, All Other",
+      "code": "2006",
+      "women": 0.6113941639647985,
+      "men": 3.977383505556639
+    },
+    {
+      "occupation": "Retail Salespersons",
+      "code": "4760",
+      "women": 0.3692185535631575,
+      "men": 3.8863976083707024
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 81.25322569972872,
+      "men": 82.7776694612335
+    }
+  ],
+  "5404": [
+    {
+      "occupation": "Social Workers, All Other",
+      "code": "2014",
+      "women": 28.675953547837203,
+      "men": 21.067572598659716
+    },
+    {
+      "occupation": "Social And Community Service Managers",
+      "code": "0420",
+      "women": 3.577935222672065,
+      "men": 3.7664432861752295
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 3.4913701257191563,
+      "men": 3.4515388433854555
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 64.25474110377158,
+      "men": 71.7144452717796
+    }
+  ],
+  "5500": [
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 6.514137063414218,
+      "men": 5.891906748956798
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 4.418098852829545,
+      "men": 6.56905124809475
+    },
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 2.38602925497889,
+      "men": 7.93583368731416
+    },
+    {
+      "occupation": "Education And Childcare Administrators",
+      "code": "0230",
+      "women": 4.2965584886349095,
+      "men": 2.578646210739362
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 82.38517634014244,
+      "men": 77.02456210489493
+    }
+  ],
+  "5501": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 7.068567231229441,
+      "men": 8.273777991010892
+    },
+    {
+      "occupation": "Financial Managers",
+      "code": "0120",
+      "women": 4.429209647600697,
+      "men": 5.428781805884568
+    },
+    {
+      "occupation": "Lawyers, And Judges, Magistrates, And Other Judicial Workers",
+      "code": "2100",
+      "women": 4.548438492464808,
+      "men": 3.6796039194911723
+    },
+    {
+      "occupation": "Accountants And Auditors",
+      "code": "0800",
+      "women": 4.578245703680836,
+      "men": 3.1991630600284533
+    },
+    {
+      "occupation": "Chief Executives And Legislators",
+      "code": "0010",
+      "women": 2.030083992463034,
+      "men": 4.047764217484449
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 77.34545493256118,
+      "men": 75.37090900610046
+    }
+  ],
+  "5502": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 4.922889717747268,
+      "men": 5.209682087528752
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 4.932589124319939,
+      "men": 1.8690876963151402
+    },
+    {
+      "occupation": "Lawyers, And Judges, Magistrates, And Other Judicial Workers",
+      "code": "2100",
+      "women": 3.4653334391450414,
+      "men": 3.2933721266775327
+    },
+    {
+      "occupation": "Other Social Scientists",
+      "code": "1860",
+      "women": 2.100362405100124,
+      "men": 4.2302009231191064
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 84.57882531368763,
+      "men": 85.39765716635947
+    }
+  ],
+  "5503": [
+    {
+      "occupation": "Police Officers",
+      "code": "3870",
+      "women": 3.8777421562623826,
+      "men": 14.277907423271202
+    },
+    {
+      "occupation": "Lawyers, And Judges, Magistrates, And Other Judicial Workers",
+      "code": "2100",
+      "women": 5.741868088325348,
+      "men": 3.7913921956695122
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 4.0686574691113435,
+      "men": 3.806161935426698
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 86.31173228630092,
+      "men": 78.1245384456326
+    }
+  ],
+  "5504": [
+    {
+      "occupation": "Computer Occupations, All Other",
+      "code": "1108",
+      "women": 6.314185757815145,
+      "men": 9.662494092822367
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 8.393522175826655,
+      "men": 7.190821070215736
+    },
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 2.3417221532558403,
+      "men": 3.744326361947885
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 4.669337546552308,
+      "men": 1.2495741337055313
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 78.28123236655006,
+      "men": 78.15278434130848
+    }
+  ],
+  "5505": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 9.674940744406532,
+      "men": 11.25105220526341
+    },
+    {
+      "occupation": "Lawyers, And Judges, Magistrates, And Other Judicial Workers",
+      "code": "2100",
+      "women": 8.621363269345975,
+      "men": 9.044994679414895
+    },
+    {
+      "occupation": "Management Analysts",
+      "code": "0710",
+      "women": 3.159430104446123,
+      "men": 2.6793513650874323
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 78.54426588180137,
+      "men": 77.02460175023427
+    }
+  ],
+  "5506": [
+    {
+      "occupation": "Lawyers, And Judges, Magistrates, And Other Judicial Workers",
+      "code": "2100",
+      "women": 16.1297082611928,
+      "men": 15.054987448987182
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 6.970646495591735,
+      "men": 6.660946195858079
+    },
+    {
+      "occupation": "Chief Executives And Legislators",
+      "code": "0010",
+      "women": 2.5885769313288662,
+      "men": 3.902145349551329
+    },
+    {
+      "occupation": "Paralegals And Legal Assistants",
+      "code": "2145",
+      "women": 3.320543461448266,
+      "men": 0.6565278241508821
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 70.99052485043833,
+      "men": 73.72539318145253
+    }
+  ],
+  "5507": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 4.816258137908241,
+      "men": 5.066436654139198
+    },
+    {
+      "occupation": "Social Workers, All Other",
+      "code": "2014",
+      "women": 5.353276813142609,
+      "men": 2.2528905592179576
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 5.404775264345906,
+      "men": 1.959727270860288
+    },
+    {
+      "occupation": "Education And Childcare Administrators",
+      "code": "0230",
+      "women": 2.8439443201820125,
+      "men": 2.5244901731255007
+    },
+    {
+      "occupation": "Police Officers",
+      "code": "3870",
+      "women": 0.48090842243077814,
+      "men": 3.6216704659807366
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 81.10083704199045,
+      "men": 84.57478487667632
+    }
+  ],
+  "5901": [
+    {
+      "occupation": "Aircraft Pilots And Flight Engineers",
+      "code": "9030",
+      "women": 13.32546473886102,
+      "men": 23.602408658149564
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 9.554440838005311,
+      "men": 7.193425014240377
+    },
+    {
+      "occupation": "Air Traffic Controllers And Airfield Operations Specialists",
+      "code": "9040",
+      "women": 9.046916494541163,
+      "men": 3.891284888925055
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 68.07317792859251,
+      "men": 65.312881438685
+    }
+  ],
+  "6000": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 4.692842937605219,
+      "men": 4.325552068555379
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 6.148864227087814,
+      "men": 2.095782640471175
+    },
+    {
+      "occupation": "Graphic Designers",
+      "code": "2634",
+      "women": 3.862057124870637,
+      "men": 4.147858360918849
+    },
+    {
+      "occupation": "Artists And Related Workers",
+      "code": "2600",
+      "women": 2.2910993366113286,
+      "men": 5.616697476462749
+    },
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 4.226420133440798,
+      "men": 1.8371236547583223
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 78.7787162403842,
+      "men": 81.97698579883352
+    }
+  ],
+  "6001": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 4.398175689073964,
+      "men": 5.330595058188347
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 5.926036089629189,
+      "men": 2.0782475039072086
+    },
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 2.1217529248463216,
+      "men": 3.2433060797458055
+    },
+    {
+      "occupation": "Education And Childcare Administrators",
+      "code": "0230",
+      "women": 2.7434067023597066,
+      "men": 2.1867451983312023
+    },
+    {
+      "occupation": "Producers And Directors",
+      "code": "2710",
+      "women": 1.4733293674400159,
+      "men": 3.4370519626457936
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 83.3372992266508,
+      "men": 83.72405419718164
+    }
+  ],
+  "6002": [
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 8.775096865093342,
+      "men": 4.444636459711135
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 5.044029587883057,
+      "men": 4.794251949139587
+    },
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 4.292004226840437,
+      "men": 4.414061721091917
+    },
+    {
+      "occupation": "Postsecondary Teachers",
+      "code": "2205",
+      "women": 4.520958083832335,
+      "men": 4.238589308146839
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 77.36791123635084,
+      "men": 82.10846056191052
+    }
+  ],
+  "6003": [
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 8.127028934368385,
+      "men": 1.297223486572599
+    },
+    {
+      "occupation": "Other Teachers And Instructors",
+      "code": "2360",
+      "women": 6.382498235709245,
+      "men": 2.0634198148991048
+    },
+    {
+      "occupation": "Postsecondary Teachers",
+      "code": "2205",
+      "women": 2.21030345800988,
+      "men": 7.624032771961766
+    },
+    {
+      "occupation": "Lawyers, And Judges, Magistrates, And Other Judicial Workers",
+      "code": "2100",
+      "women": 0.41496118560338746,
+      "men": 9.19435593991807
+    },
+    {
+      "occupation": "Registered Nurses",
+      "code": "3255",
+      "women": 3.5765702187720536,
+      "men": 0.0
+    },
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 0.9258997882851094,
+      "men": 7.0095584888484295
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 78.36273817925195,
+      "men": 72.81140949780003
+    }
+  ],
+  "6004": [
+    {
+      "occupation": "Graphic Designers",
+      "code": "2634",
+      "women": 12.181023742257006,
+      "men": 13.686937966773357
+    },
+    {
+      "occupation": "Other Designers",
+      "code": "2640",
+      "women": 7.294295190131082,
+      "men": 6.990985694689399
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 4.40451331005317,
+      "men": 5.496766607877719
+    },
+    {
+      "occupation": "Interior Designers",
+      "code": "2635",
+      "women": 4.54735290504852,
+      "men": 0.5715592135345222
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 71.57281485251022,
+      "men": 73.253750517125
+    }
+  ],
+  "6005": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 3.765627068636166,
+      "men": 5.535904005999625
+    },
+    {
+      "occupation": "Producers And Directors",
+      "code": "2710",
+      "women": 3.9642161405632366,
+      "men": 4.415974001624899
+    },
+    {
+      "occupation": "Television, Video, And Film Camera Operators And Editors",
+      "code": "2920",
+      "women": 2.6762241597790934,
+      "men": 3.747265795887757
+    },
+    {
+      "occupation": "Other Office And Administrative Support Workers",
+      "code": "5940",
+      "women": 3.6653868704253587,
+      "men": 0.6349603149803137
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 85.92854576059615,
+      "men": 85.66589588150741
+    }
+  ],
+  "6006": [
+    {
+      "occupation": "Archivists, Curators, And Museum Technicians",
+      "code": "2400",
+      "women": 6.303006939090208,
+      "men": 6.818181818181818
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 5.445258288357748,
+      "men": 4.4832826747720365
+    },
+    {
+      "occupation": "Postsecondary Teachers",
+      "code": "2205",
+      "women": 3.720123361603701,
+      "men": 4.953025697706549
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 4.105628373168851,
+      "men": 0.4006631666206134
+    },
+    {
+      "occupation": "Project Management Specialists",
+      "code": "0705",
+      "women": 2.8747659433858352,
+      "men": 4.966841668969328
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 77.55121709439365,
+      "men": 78.37800497374965
+    }
+  ],
+  "6007": [
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 6.935212999976346,
+      "men": 1.2767327086760603
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 5.274735671878326,
+      "men": 3.154280809670267
+    },
+    {
+      "occupation": "Graphic Designers",
+      "code": "2634",
+      "women": 4.035291056602881,
+      "men": 2.4569058007295617
+    },
+    {
+      "occupation": "Postsecondary Teachers",
+      "code": "2205",
+      "women": 2.2352579416704117,
+      "men": 3.5762820971318217
+    },
+    {
+      "occupation": "Artists And Related Workers",
+      "code": "2600",
+      "women": 0.8728150057951132,
+      "men": 5.632644302982619
+    },
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 1.9679731295976535,
+      "men": 3.333094914526858
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 78.67871419447927,
+      "men": 80.5700593662828
+    }
+  ],
+  "6100": [
+    {
+      "occupation": "Registered Nurses",
+      "code": "3255",
+      "women": 7.105204449118781,
+      "men": 3.914858466213326
+    },
+    {
+      "occupation": "Physical Therapists",
+      "code": "3160",
+      "women": 4.8545112662141054,
+      "men": 6.036021418140516
+    },
+    {
+      "occupation": "Physician Assistants",
+      "code": "3110",
+      "women": 3.2303916881792394,
+      "men": 5.028542769902497
+    },
+    {
+      "occupation": "Occupational Therapists",
+      "code": "3150",
+      "women": 3.6861395289543295,
+      "men": 1.0620565545115277
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 81.12375306753354,
+      "men": 83.95852079123213
+    }
+  ],
+  "6102": [
+    {
+      "occupation": "Speech-Language Pathologists",
+      "code": "3230",
+      "women": 39.99345270816991,
+      "men": 19.391673403395313
+    },
+    {
+      "occupation": "Audiologists",
+      "code": "3140",
+      "women": 5.2007733216388,
+      "men": 8.447857720291026
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 3.9907596711530027,
+      "men": 0.6871463217461601
+    },
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 0.2205078474851605,
+      "men": 12.388843977364592
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 50.59450645155312,
+      "men": 59.08447857720291
+    }
+  ],
+  "6103": [
+    {
+      "occupation": "Medical And Health Services Managers",
+      "code": "0350",
+      "women": 11.564661284255,
+      "men": 12.231105537266378
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 5.239459443817461,
+      "men": 7.3505077424187
+    },
+    {
+      "occupation": "Registered Nurses",
+      "code": "3255",
+      "women": 4.34412709436583,
+      "men": 3.4418491229903676
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 78.8517521775617,
+      "men": 76.97653759732455
+    }
+  ],
+  "6105": [
+    {
+      "occupation": "Clinical Laboratory Technologists And Technicians",
+      "code": "3300",
+      "women": 18.930555037835017,
+      "men": 13.165150561212306
+    },
+    {
+      "occupation": "Other Life Scientists",
+      "code": "1650",
+      "women": 5.655682707719834,
+      "men": 6.526128394954517
+    },
+    {
+      "occupation": "Radiologic Technologists And Technicians",
+      "code": "3323",
+      "women": 6.919334998322586,
+      "men": 3.3433924578276635
+    },
+    {
+      "occupation": "Physical Scientists, All Other",
+      "code": "1760",
+      "women": 4.365937301971894,
+      "men": 5.468834806018107
+    },
+    {
+      "occupation": "Diagnostic Medical Sonographers",
+      "code": "3322",
+      "women": 6.069444962164983,
+      "men": 0.9074922385532229
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 58.05904499198569,
+      "men": 70.58900154143419
+    }
+  ],
+  "6106": [
+    {
+      "occupation": "Physicians",
+      "code": "3090",
+      "women": 19.902744008336228,
+      "men": 34.49138094336048
+    },
+    {
+      "occupation": "Pharmacists",
+      "code": "3050",
+      "women": 7.3762985885250565,
+      "men": 8.30460314453495
+    },
+    {
+      "occupation": "Medical And Health Services Managers",
+      "code": "0350",
+      "women": 3.7923521424737126,
+      "men": 2.9020647849971586
+    },
+    {
+      "occupation": "Computer Occupations, All Other",
+      "code": "1108",
+      "women": 0.0,
+      "men": 3.0422428490244364
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 68.928605260665,
+      "men": 51.259708278082975
+    }
+  ],
+  "6107": [
+    {
+      "occupation": "Registered Nurses",
+      "code": "3255",
+      "women": 61.08906143303265,
+      "men": 54.0613330859948
+    },
+    {
+      "occupation": "Nurse Practitioners, And Nurse Midwives",
+      "code": "3258",
+      "women": 8.554377669095174,
+      "men": 6.3909529060560155
+    },
+    {
+      "occupation": "Medical And Health Services Managers",
+      "code": "0350",
+      "women": 4.350190935087718,
+      "men": 3.8839020401993825
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 26.00636996278446,
+      "men": 35.66381196774981
+    }
+  ],
+  "6108": [
+    {
+      "occupation": "Pharmacists",
+      "code": "3050",
+      "women": 49.6398481622072,
+      "men": 42.03995036227533
+    },
+    {
+      "occupation": "Physical Scientists, All Other",
+      "code": "1760",
+      "women": 2.483103416350338,
+      "men": 5.189277183993168
+    },
+    {
+      "occupation": "Physicians",
+      "code": "3090",
+      "women": 3.1145264327377093,
+      "men": 4.1791761738921585
+    },
+    {
+      "occupation": "Registered Nurses",
+      "code": "3255",
+      "women": 2.9589852791408204,
+      "men": 0.7819275983080475
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 41.80353670956393,
+      "men": 47.8096686815313
+    }
+  ],
+  "6109": [
+    {
+      "occupation": "Physical Therapists",
+      "code": "3160",
+      "women": 15.207126418538211,
+      "men": 20.195842061578595
+    },
+    {
+      "occupation": "Occupational Therapists",
+      "code": "3150",
+      "women": 13.332275216252679,
+      "men": 5.10256511600332
+    },
+    {
+      "occupation": "Other Healthcare Practitioners And Technical Occupations",
+      "code": "3550",
+      "women": 4.058209665899532,
+      "men": 5.569937947116715
+    },
+    {
+      "occupation": "Physicians",
+      "code": "3090",
+      "women": 1.7106777239901596,
+      "men": 5.156910794039761
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 65.69171097531941,
+      "men": 63.974744081261605
+    }
+  ],
+  "6110": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 5.0815037291206995,
+      "men": 5.965153395992197
+    },
+    {
+      "occupation": "Registered Nurses",
+      "code": "3255",
+      "women": 6.391939394447847,
+      "men": 1.9640007093456286
+    },
+    {
+      "occupation": "Medical And Health Services Managers",
+      "code": "0350",
+      "women": 3.93466278513721,
+      "men": 3.2718567121830113
+    },
+    {
+      "occupation": "Other Community And Social Service Specialists",
+      "code": "2025",
+      "women": 2.8373197312012888,
+      "men": 4.107554530945203
+    },
+    {
+      "occupation": "Physicians",
+      "code": "3090",
+      "women": 2.7777544736864184,
+      "men": 3.415942543004079
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 78.97681988640653,
+      "men": 81.27549210852987
+    }
+  ],
+  "6199": [
+    {
+      "occupation": "Dietitians And Nutritionists",
+      "code": "3030",
+      "women": 15.351031928029634,
+      "men": 2.8110274603260574
+    },
+    {
+      "occupation": "Social Workers, All Other",
+      "code": "2014",
+      "women": 5.665314282354324,
+      "men": 5.779125819205979
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 4.065972834715117,
+      "men": 3.1251692574337864
+    },
+    {
+      "occupation": "Veterinarians",
+      "code": "3250",
+      "women": 1.5919915328982184,
+      "men": 3.3364025347993285
+    },
+    {
+      "occupation": "Driver/Sales Workers And Truck Drivers",
+      "code": "9130",
+      "women": 0.0,
+      "men": 3.569300763689541
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 73.32568942200271,
+      "men": 81.37897416454531
+    }
+  ],
+  "6200": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 5.8337686596697855,
+      "men": 7.8420008931275005
+    },
+    {
+      "occupation": "Accountants And Auditors",
+      "code": "0800",
+      "women": 4.907315065457251,
+      "men": 2.8626802989910534
+    },
+    {
+      "occupation": "Financial Managers",
+      "code": "0120",
+      "women": 4.149583405887722,
+      "men": 2.9502858636965237
+    },
+    {
+      "occupation": "Chief Executives And Legislators",
+      "code": "0010",
+      "women": 2.099724029486104,
+      "men": 3.3316171627837186
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 83.00960883949914,
+      "men": 83.0134157814012
+    }
+  ],
+  "6201": [
+    {
+      "occupation": "Accountants And Auditors",
+      "code": "0800",
+      "women": 36.343826799578835,
+      "men": 29.321688844304134
+    },
+    {
+      "occupation": "Financial Managers",
+      "code": "0120",
+      "women": 9.206284794298687,
+      "men": 8.252313226150328
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 4.131674772580202,
+      "men": 4.965627120644381
+    },
+    {
+      "occupation": "Chief Executives And Legislators",
+      "code": "0010",
+      "women": 2.731678854550977,
+      "men": 5.6705309163492785
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 47.5865347789913,
+      "men": 51.78983989255188
+    }
+  ],
+  "6203": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 6.376985063949859,
+      "men": 8.104952630500076
+    },
+    {
+      "occupation": "Financial Managers",
+      "code": "0120",
+      "women": 4.214776146269962,
+      "men": 3.5997940545947285
+    },
+    {
+      "occupation": "Accountants And Auditors",
+      "code": "0800",
+      "women": 4.805220409406899,
+      "men": 2.528521450475409
+    },
+    {
+      "occupation": "Human Resources Workers",
+      "code": "0630",
+      "women": 4.267531955448225,
+      "men": 1.3590751378511063
+    },
+    {
+      "occupation": "Chief Executives And Legislators",
+      "code": "0010",
+      "women": 1.8321149624670081,
+      "men": 3.352234514502903
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 78.50337146245805,
+      "men": 81.05542221207577
+    }
+  ],
+  "6204": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 8.527771145790377,
+      "men": 10.767902077024779
+    },
+    {
+      "occupation": "Purchasing Managers",
+      "code": "0150",
+      "women": 6.648145334577736,
+      "men": 4.711690194907664
+    },
+    {
+      "occupation": "Logisticians",
+      "code": "0700",
+      "women": 2.7282790354437525,
+      "men": 4.401415959397791
+    },
+    {
+      "occupation": "Purchasing Agents, Except Wholesale, Retail, And Farm Products",
+      "code": "0530",
+      "women": 3.919866299133983,
+      "men": 2.588817332707809
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 78.17593818505415,
+      "men": 77.53017443596195
+    }
+  ],
+  "6205": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 12.080861349154032,
+      "men": 6.616206952831728
+    },
+    {
+      "occupation": "Accountants And Auditors",
+      "code": "0800",
+      "women": 12.832344539661612,
+      "men": 4.763750612045047
+    },
+    {
+      "occupation": "Financial Managers",
+      "code": "0120",
+      "women": 3.291584267194023,
+      "men": 5.214623796311408
+    },
+    {
+      "occupation": "Personal Financial Advisors",
+      "code": "0850",
+      "women": 2.025928367391782,
+      "men": 4.8575975191774114
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 3.4805537244561635,
+      "men": 0.3651868777542027
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 66.28872775214239,
+      "men": 78.18263424188021
+    }
+  ],
+  "6206": [
+    {
+      "occupation": "Marketing Managers",
+      "code": "0051",
+      "women": 9.89367991098617,
+      "men": 4.073579699155454
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 6.000039291818551,
+      "men": 6.307458028613863
+    },
+    {
+      "occupation": "Sales Representatives, Wholesale And Manufacturing",
+      "code": "4850",
+      "women": 2.439128936102573,
+      "men": 6.051149003904169
+    },
+    {
+      "occupation": "Market Research Analysts And Marketing Specialists",
+      "code": "0735",
+      "women": 4.298703548587013,
+      "men": 2.7805455810193456
+    },
+    {
+      "occupation": "Chief Executives And Legislators",
+      "code": "0010",
+      "women": 2.375011832195359,
+      "men": 4.366235724924225
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 74.99343648031034,
+      "men": 76.42103196238294
+    }
+  ],
+  "6207": [
+    {
+      "occupation": "Financial Managers",
+      "code": "0120",
+      "women": 11.54480755265069,
+      "men": 10.528271538418663
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 6.0627450980392155,
+      "men": 6.828672061832958
+    },
+    {
+      "occupation": "Accountants And Auditors",
+      "code": "0800",
+      "women": 8.086274509803921,
+      "men": 4.945628083884308
+    },
+    {
+      "occupation": "Personal Financial Advisors",
+      "code": "0850",
+      "women": 3.218881626724764,
+      "men": 5.576406012363407
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 71.08729121278141,
+      "men": 72.12102230350067
+    }
+  ],
+  "6209": [
+    {
+      "occupation": "Human Resources Workers",
+      "code": "0630",
+      "women": 23.044329360457912,
+      "men": 10.829230813010444
+    },
+    {
+      "occupation": "Human Resources Managers",
+      "code": "0136",
+      "women": 9.957999851326907,
+      "men": 5.2744657237984125
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 5.1416111207473305,
+      "men": 7.462792749210324
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 61.856059667467854,
+      "men": 76.43351071398082
+    }
+  ],
+  "6210": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 7.766338079591091,
+      "men": 7.951088115032071
+    },
+    {
+      "occupation": "Financial Managers",
+      "code": "0120",
+      "women": 5.1055129609346475,
+      "men": 4.393155436699416
+    },
+    {
+      "occupation": "General And Operations Managers",
+      "code": "0020",
+      "women": 2.77035414384812,
+      "men": 5.172179912020619
+    },
+    {
+      "occupation": "Marketing Managers",
+      "code": "0051",
+      "women": 3.7677984665936473,
+      "men": 2.4862895568087127
+    },
+    {
+      "occupation": "Management Analysts",
+      "code": "0710",
+      "women": 1.7130339539978094,
+      "men": 4.945448908009224
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 78.87696239503468,
+      "men": 75.05183807142996
+    }
+  ],
+  "6211": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 5.85054226712227,
+      "men": 5.415697772385671
+    },
+    {
+      "occupation": "General And Operations Managers",
+      "code": "0020",
+      "women": 3.3783984549101174,
+      "men": 5.662836023770207
+    },
+    {
+      "occupation": "Human Resources Workers",
+      "code": "0630",
+      "women": 3.7884415391472293,
+      "men": 0.6032420045158898
+    },
+    {
+      "occupation": "Food Service Managers",
+      "code": "0310",
+      "women": 1.5904026147674937,
+      "men": 3.748637931228165
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 85.39221512405288,
+      "men": 84.56958626810007
+    }
+  ],
+  "6212": [
+    {
+      "occupation": "Software Developers",
+      "code": "1021",
+      "women": 5.58430325194616,
+      "men": 10.554852154527445
+    },
+    {
+      "occupation": "Computer And Information Systems Managers",
+      "code": "0110",
+      "women": 5.415863670161914,
+      "men": 8.83256295775757
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 7.035008118484347,
+      "men": 6.609883020033804
+    },
+    {
+      "occupation": "Management Analysts",
+      "code": "0710",
+      "women": 5.459870407745186,
+      "men": 3.699014363516305
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 76.5049545516624,
+      "men": 70.30368750416488
+    }
+  ],
+  "6299": [
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 7.344080768604462,
+      "men": 7.032233955683501
+    },
+    {
+      "occupation": "Real Estate Brokers And Sales Agents",
+      "code": "4920",
+      "women": 2.1784363748213282,
+      "men": 3.91402433116964
+    },
+    {
+      "occupation": "General And Operations Managers",
+      "code": "0020",
+      "women": 1.6627766017116286,
+      "men": 3.529265220821281
+    },
+    {
+      "occupation": "Project Management Specialists",
+      "code": "0705",
+      "women": 3.414210497747381,
+      "men": 1.3106722212226483
+    },
+    {
+      "occupation": "Human Resources Workers",
+      "code": "0630",
+      "women": 3.6675170529591634,
+      "men": 0.4165916986145904
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 81.73297870415604,
+      "men": 83.79721257248833
+    }
+  ],
+  "6402": [
+    {
+      "occupation": "Lawyers, And Judges, Magistrates, And Other Judicial Workers",
+      "code": "2100",
+      "women": 8.158154304215664,
+      "men": 8.644948637062202
+    },
+    {
+      "occupation": "Elementary And Middle School Teachers",
+      "code": "2310",
+      "women": 7.740144689994537,
+      "men": 4.822049664320958
+    },
+    {
+      "occupation": "Other Managers",
+      "code": "0440",
+      "women": 5.298088522702689,
+      "men": 4.541575669335922
+    },
+    {
+      "occupation": "Secondary School Teachers",
+      "code": "2320",
+      "women": 4.712141712592723,
+      "men": 4.737321038582868
+    },
+    {
+      "occupation": "All other occupations",
+      "code": "other",
+      "women": 74.09147077049438,
+      "men": 77.25410499069805
+    }
+  ]
+}

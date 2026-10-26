@@ -1,0 +1,22 @@
+{
+  "n_majors": "129",
+  "j_earnings": "$86,300",
+  "e_women": "$121,800",
+  "e_men": "$142,100",
+  "e_difference": "$35,500",
+  "j_share": "60",
+  "e_share": "15",
+  "e_ratio": "86",
+  "m_share": "19",
+  "n_share": "86",
+  "n_ratio": "90",
+  "j_low": "95",
+  "j_high": "105",
+  "m_low": "85",
+  "m_high": "115",
+  "journalist_share": "4.5",
+  "finance_ratio": "81",
+  "finance_male_hours": "45.2",
+  "finance_female_hours": "43.5",
+  "n_excluded": "45"
+}

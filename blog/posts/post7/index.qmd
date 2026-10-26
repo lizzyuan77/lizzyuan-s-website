@@ -1,0 +1,60 @@
+---
+title: "Which College Majors Come Closest to Earnings Parity?"
+subtitle: "A degree is not a job. Explore the career destinations and working hours behind the averages."
+author: "Jiaqi Yuan"
+date: 2026-10-25
+description: "Explore earnings, occupations, and hours across 129 majors, with research on occupational sorting and the price of flexibility."
+categories: [gender economics, education, Plotly]
+metadata-files:
+  - results/text_values.json
+format:
+  html:
+    toc: false
+resources:
+  - results/chart.html
+  - results/majors.csv
+  - vendor/plotly-basic-3.1.0.min.js
+  - research.zip
+---
+
+Journalism appears to offer an encouraging answer to the gender earnings gap: women and men have the same estimated median, about **{{< meta j_earnings >}}**, in this analysis of 2024 Census data. But here is the catch: only **{{< meta journalist_share >}}%** of the included journalism graduates report an occupation as a news analyst, reporter, or journalist.
+
+That changes what the finding means. We are comparing people who studied journalism, not equal pay inside newsrooms. Which majors come closest to parity remains an interesting question—but understanding the answer requires looking beyond the degree label.
+
+## A major is a starting point, not a job
+
+Economists [Carolyn Sloane, Erik Hurst, and Dan Black (2021)](https://www.aeaweb.org/articles?id=10.1257/jep.35.4.223) identify two stages of sorting: women and men enter different majors, then enter different occupations **within the same major**. Their evidence shows that accounting for undergraduate specialization and subsequent occupational destinations matters for understanding graduate earnings gaps.
+
+This offers a more useful lens than assuming a small gap identifies a uniquely fair profession. A major’s median combines many career destinations. Equal group medians could coexist with unequal outcomes in particular jobs; unequal medians need not mean unequal pay for identical work.
+
+## Explore the careers behind the estimates
+
+**Compare gaps** shows labeled majors and their 90% intervals, ten at a time. Filter by family, change the ordering, or click a dot to select a major. Then switch to **Pay & hours** or **Career destinations** without changing the selected workers. The question buttons open the examples below directly. All three views belong to one linked explorer.
+
+```{=html}
+<iframe src="results/chart.html" title="Interactive Plotly chart of earnings gaps and career destinations by college major" style="width:100%;height:1100px;border:0;" loading="lazy"></iframe>
+```
+
+[Open the interactive chart](results/chart.html) · [Download estimates](results/majors.csv)
+
+Across **{{< meta n_majors >}} sufficiently sampled majors**, journalism and miscellaneous engineering have equal estimated medians. Journalism’s ratio interval is approximately **{{< meta j_low >}}–{{< meta j_high >}} cents** per male dollar; miscellaneous engineering’s is **{{< meta m_low >}}–{{< meta m_high >}} cents**. Neither establishes a statistically definitive winner.
+
+Open **“Does journalism mean journalist?”**. Its most common recorded occupations are marketing managers for women and “other managers” for men, each accounting for only a small share. The graduates are dispersed across jobs. The parity finding describes that mixture; it does not show why the medians coincide.
+
+## Full time does not mean the same working life
+
+[Claudia Goldin (2014)](https://www.aeaweb.org/articles?id=10.1257/aer.104.4.1091) points to the organization of work: some jobs disproportionately reward long or particular hours. When continuous availability is valuable, workers who need flexibility can face a larger earnings penalty. This is a theory about compensation and job design, not simply a claim that women need different degrees.
+
+Open **“Does full time mean equal hours?”** to inspect Finance. Women’s median is about **{{< meta finance_ratio >}} cents per male dollar**. Even within this full-time, year-round sample, men report **{{< meta finance_male_hours >}} usual weekly hours**, versus **{{< meta finance_female_hours >}}** for women. “Full time” has not equalized hours. That descriptive difference does not measure how much of the earnings gap hours explain, or establish a flexibility penalty.
+
+A concrete example of the job-design mechanism comes from [Goldin and Lawrence Katz’s pharmacy research (2016)](https://www.journals.uchicago.edu/doi/abs/10.1086/685505). They link changes making pharmacists more substitutable—including organizational and technological changes—to smaller penalties for part-time work. Their evidence concerns pharmacists, not every person with a pharmacy degree. It illustrates why the jobs a major leads to can matter alongside the major itself.
+
+## What the chart can establish
+
+Earnings, representation, occupations, and hours all use the **same workers**: U.S. residents ages 25–64, BA or higher, classified as private/government employees, with positive wage/salary income, 35+ usual weekly hours, and 50+ weeks worked. Earnings are in 2024 dollars; the first bachelor’s major is used. Occupation describes the current or most recent job, not every job contributing to annual income.
+
+Census person weights produce medians, shares, and mean hours; 80 replicate weights produce earnings-ratio intervals. Each major needs 100 sampled women and 100 sampled men; {{< meta n_excluded >}} smaller categories are omitted. Intervals are pointwise, not adjusted for ranking many majors. The README documents the unavailable General Business interval.
+
+**The takeaway:** journalism graduates’ apparent parity is not evidence of equal pay in journalism. The economic question is how a degree maps into jobs and how those jobs reward time. Research identifies those mechanisms; this chart lets you inspect career composition and hours, but cannot identify their causal contributions. Age, experience, graduate education, discrimination, and other unmeasured differences remain possible influences.
+
+Sources: [2024 ACS PUMS](https://www2.census.gov/programs-surveys/acs/data/pums/2024/1-Year/); papers linked above. Sex is recorded male/female. [Code, definitions, and replication files](research.zip).

@@ -24,12 +24,18 @@ listing:
   <span>BLOG 4</span>
   <span>BLOG 5</span>
   <span>BLOG 6</span>
+  <span>BLOG 7</span>
   <span>STATISTICS</span>
   <span>ECONOMICS</span>
   <span>DATA STORIES</span>
 </div>
 <div class="blog-start blog-featured">
-  <span class="blog-start-label">BLOG 6 · LATEST</span>
+  <span class="blog-start-label">BLOG 7 · LATEST</span>
+  <a href="posts/post7/index.html">Which College Majors Come Closest to Earnings Parity?</a>
+  <span class="blog-start-note">A degree is not a job. Explore earnings gaps across 129 college majors, then compare working hours and career destinations in a linked interactive chart using Census data.</span>
+</div>
+<div class="blog-start" style="margin-top: 0.8rem">
+  <span class="blog-start-label">BLOG 6</span>
   <a href="posts/post6/index.html">Does One Year of Income Mislead Us About Mobility?</a>
   <span class="blog-start-note">A hands-on tutorial: link PSID children to their mothers with SQL inside Python, build three decades of income histories with JOIN and GROUP BY, and estimate how strongly income persists across generations. Daughters and sons tell different stories, and one year of income, or one measured too early, can badly mislead.</span>
 </div>

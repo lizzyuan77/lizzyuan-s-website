@@ -4,6 +4,8 @@ A personal website and a collection of economics and data-analysis articles for 
 
 - **Website:** [lizzyuan77.github.io/lizzyuan-s-website](https://lizzyuan77.github.io/lizzyuan-s-website/)
 - **Blog:** [All posts](https://lizzyuan77.github.io/lizzyuan-s-website/blog/)
+- **Blog 7:** [Which College Majors Come Closest to Earnings Parity?](https://lizzyuan77.github.io/lizzyuan-s-website/blog/posts/post7/)
+- **Reproduce Blog 7:** [Start with its README](blog/posts/post7/README.md). Public 2024 ACS PUMS data, Python analysis, and a linked Plotly explorer; the raw archive is downloaded separately.
 - **Blog 6:** [Does One Year of Income Mislead Us About Mobility?](https://lizzyuan77.github.io/lizzyuan-s-website/blog/posts/post6/)
 - **Blog 5:** [Why a Tech-Rich State Can Still Have a Wide Gender Pay Gap](https://lizzyuan77.github.io/lizzyuan-s-website/blog/posts/post5/)
 - **Reproduce Blog 6:** [Start with its README](blog/posts/post6/README.md). It needs your own free PSID extract (PSID data cannot be redistributed); the README lists every variable.
@@ -16,7 +18,7 @@ A personal website and a collection of economics and data-analysis articles for 
 | `_quarto.yml` | Website navigation, theme and publication settings |
 | `index.qmd`, `bio.qmd`, `resume.qmd` | Editable website pages |
 | `blog/index.qmd` | Blog landing page and post listing |
-| `blog/posts/post1/` through `post6/` | Article source and each post's replication materials |
+| `blog/posts/post1/` through `post7/` | Article source and each post's replication materials |
 | `docs/` | Rendered website served by GitHub Pages |
 | `images/`, `files/`, `styles.css` | Shared website assets |
 
