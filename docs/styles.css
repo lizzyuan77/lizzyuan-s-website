@@ -156,3 +156,93 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* October theme: site decoration only; post text, figures and code are untouched. */
+:root {
+  --october-ink: #291d38;
+  --october-plum: #352441;
+  --october-pumpkin: #f2a34c;
+  --october-paper: #fff8ec;
+}
+html { scroll-padding-top: 5rem; }
+body { background-color: #fbf6ed; }
+.navbar.navbar {
+  background: var(--october-ink) !important;
+  border-bottom: 3px solid var(--october-pumpkin);
+  box-shadow: 0 3px 18px #291d3812;
+}
+.navbar .navbar-brand, .navbar .nav-link, .navbar .navbar-toggler,
+.navbar #quarto-search .aa-SubmitIcon { color: #fff5e5 !important; }
+.navbar .nav-link:hover, .navbar .nav-link.active { color: #ffc27b !important; }
+.navbar .navbar-brand { font-family: Georgia, serif; letter-spacing: .015em; }
+.navbar-brand::before { content: "🎃"; margin-right: .55rem; font-family: sans-serif; }
+.navbar .navbar-toggler { border-color: #fff5e54d; }
+.navbar .navbar-toggler-icon { filter: brightness(0) invert(1); }
+.navbar a:focus-visible, .home-hero a:focus-visible { outline: 3px solid #ffc27b; outline-offset: 5px; }
+.home-hero {
+  position: relative;
+  isolation: isolate;
+  max-width: 960px;
+  margin: 2rem auto 3rem;
+  padding: 2.1rem;
+  background: radial-gradient(ellipse at 0 100%, #50314a 0, transparent 65%), #291d38;
+  color: #fff8ec;
+  border: 1px solid #754b5b;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px #291d3822;
+}
+.october-kicker { font-size: .68rem; font-weight: 700; letter-spacing: .15em; color: #ffc27b; margin-bottom: 1.7rem; }
+.october-kicker span { margin: 0 .35rem; }
+.home-hero .columns { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.45fr); gap: 2rem; align-items: start; }
+.home-hero .column { width: auto !important; min-width: 0; }
+.home-hero .profile-photo { width: 100%; max-width: none; border-radius: 16px; border: 5px solid #ffc27b; box-shadow: 0 10px 0 #17102066; }
+.home-hero .home-intro h1 { color: #fff8ec; font-family: Georgia, serif; font-size: clamp(1.9rem, 3.5vw, 2.65rem); letter-spacing: -.035em; }
+.home-hero .home-intro h1 + p { color: #ffd5a6; font-size: 1.06rem; }
+.home-hero .home-intro p { color: #f5e9e0; font-size: .96rem; line-height: 1.65; }
+.home-hero .home-intro h3 { color: #ffc27b; margin-top: 1.4rem; font-size: 1.1rem; }
+.home-hero .home-intro a { color: #ffc27b; }
+.home-hero .home-intro a:hover { color: white; }
+.home-hero .penn-logo { background: transparent; padding: 0; border-radius: 0; width: 220px; margin-bottom: 1.1rem; filter: grayscale(1) invert(1) brightness(1.4); mix-blend-mode: screen; }
+.profile-card, .fun-card { border-color: #e6c9ac; background: #fffaf3; box-shadow: 0 5px 20px #35244108; }
+.profile-card strong { color: #8b451d; }
+.insight { border-left-color: #b86b27; }
+body:has(.profile-card) h1, body:has(.profile-card) h2 { color: #352441; }
+.blog-landing.blog-landing { background: radial-gradient(ellipse at 100% 0, #603e5b 0, transparent 60%), #291d38; border: 1px solid #744e62; box-shadow: 0 14px 35px #291d3820; }
+.blog-landing .blog-landing-kicker, .blog-landing .blog-start-label { color: #ffc27b; }
+.blog-landing .blog-topic-row span { border-color: #bd875e; color: #ffddba; background: #ffffff08; }
+.blog-landing .blog-start { border-color: #ffffff26; }
+.blog-landing .blog-start a { color: #fff3df; }
+.blog-landing .blog-start a:hover { color: #ffc27b; }
+.blog-landing .blog-landing-lead, .blog-landing .blog-start-note { color: #eee0e8; }
+.nav-footer { border-top: 2px solid #dfad72; background: #f5eadb; color: #46324b; }
+.nav-footer img { border-radius: 4px; }
+@media (max-width: 600px) {
+  .home-hero { margin: 1rem .2rem 2rem; padding: 1.3rem; border-radius: 18px; }
+  .home-hero .columns { grid-template-columns: 1fr; gap: 1.7rem; }
+  .home-hero .profile-photo { max-width: 300px; margin: 0 auto; }
+  .october-kicker { line-height: 1.8; font-size: .62rem; letter-spacing: .11em; }
+  .home-hero .home-intro h1 { font-size: 2.1rem; }
+}
+@media print {
+  .home-hero { background: white; color: black; box-shadow: none; }
+  .home-hero .home-intro h1, .home-hero .home-intro p { color: black; }
+}
+
+/* Readable text on the original plum-and-orange Halloween palette. */
+.october-kicker { color: #ffd298; }
+.home-hero .home-intro h1 { color: #fff8ec; }
+.home-hero .home-intro h1 + p { color: #ffd5a6; }
+.home-hero .home-intro p { color: #f5e9e0; }
+.home-hero .home-intro h3, .home-hero .home-intro a { color: #ffc785; }
+.home-hero .home-intro a:hover { color: #ffffff; }
+.blog-landing.blog-landing h2, .blog-landing.blog-landing .blog-start a { color: #fff8ec; }
+.blog-landing.blog-landing .blog-landing-kicker,
+.blog-landing.blog-landing .blog-start-label { color: #ffd298; }
+.blog-landing.blog-landing .blog-landing-lead,
+.blog-landing.blog-landing .blog-start-note { color: #f5e9ef; }
+.blog-landing.blog-landing .blog-topic-row span { color: #ffddba; border-color: #bd875e; background: #ffffff08; }
+/* The featured card has a light background supplied by the blog stylesheet. */
+.blog-landing.blog-landing .blog-start { background: #ffffff08; }
+.blog-landing.blog-landing .blog-start.blog-featured { background: #ffffff0d; border-color: #d5a36d; }
+.blog-landing.blog-landing .blog-start a:hover { color: #ffd298; }

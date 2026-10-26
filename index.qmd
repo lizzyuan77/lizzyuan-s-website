@@ -3,9 +3,11 @@ title: ""
 ---
 
 ::::: {.home-hero}
+<div class="october-kicker">OCTOBER EDITION <span aria-hidden="true">✦</span> A LITTLE EVERYDAY MAGIC</div>
+
 :::: columns
 ::: {.column width="38%"}
-![](images/profile.jpg){.profile-photo}
+![](images/profile_halloween.png){.profile-photo fig-alt="Liz’s Halloween profile illustration"}
 :::
 
 ::: {.column width="62%"}
