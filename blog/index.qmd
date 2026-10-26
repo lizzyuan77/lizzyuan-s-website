@@ -30,7 +30,7 @@ listing:
 </div>
 <div class="blog-start blog-featured">
   <span class="blog-start-label">BLOG 6 · LATEST</span>
-  <a href="posts/post6/index.html">Match Parents and Children with SQL in Python</a>
+  <a href="posts/post6/index.html">Does One Year of Income Mislead Us About Mobility?</a>
   <span class="blog-start-note">A hands-on tutorial: link PSID children to their mothers with SQL inside Python, build three decades of income histories with JOIN and GROUP BY, and estimate how strongly income persists across generations. Daughters and sons tell different stories, and one year of income, or one measured too early, can badly mislead.</span>
 </div>
 <div class="blog-start" style="margin-top: 0.8rem">

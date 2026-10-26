@@ -1,6 +1,6 @@
-# Blog 6: Match parents and children with SQL in Python
+# Blog 6: Does one year of income mislead us about mobility?
 
-**Question:** How strongly is a mother's family income during childhood associated with her daughters' and sons' adult labor earnings, and how much does the answer depend on using one year versus several years of income, and on the age at which children's earnings are measured?
+**Question:** How much does the estimated parent–child income association change when income is averaged across three observations instead of measured in one year?
 
 [Read the published tutorial](https://lizzyuan77.github.io/lizzyuan-s-website/blog/posts/post6/)
 
@@ -18,7 +18,7 @@ The analysis links children born 1970–1974 in the Panel Study of Income Dynami
 | `code/03_summarize.sql` | `GROUP BY` summaries: one row per child |
 | `code/02_run_sql.py` | Runs both `.sql` files from Python, checks joins, writes sample-flow counts |
 | `code/04_estimate.py` | Weighted IGEs, mother-clustered SEs, cluster-bootstrap differences |
-| `code/05_figures.py` | The three article figures |
+| `code/05_figures.py` | Figures, including the two used in the article |
 | `code/06_text_values.py` | Writes every number quoted in the article to `results/text_values.yml`, plus two small Markdown tables |
 | `code/package.py` | Builds `research.zip` from an allowlist (never includes microdata) |
 | `results/` | Aggregate tables (`.csv`) and figures (`.png`). Nothing at the person level. |

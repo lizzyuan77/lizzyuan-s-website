@@ -60,7 +60,7 @@
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "JIAQI YUAN · NOTES & METHODS\n\n\n\nA growing collection of clear, curious essays about statistics, economics, and the small details that make data worth looking at twice.\n\n\nBLOG 1 BLOG 2 BLOG 3 BLOG 4 BLOG 5 BLOG 6 STATISTICS ECONOMICS DATA STORIES\n\n\nBLOG 6 · LATEST Match Parents and Children with SQL in Python A hands-on tutorial: link PSID children to their mothers with SQL inside Python, build three decades of income histories with JOIN and GROUP BY, and estimate how strongly income persists across generations. Daughters and sons tell different stories, and one year of income, or one measured too early, can badly mislead.\n\n\nBLOG 5 Why a Tech-Rich State Can Still Have a Wide Gender Pay Gap Claudia Goldin’s research frames a deeper look at gender earnings across 50 states: who holds the technology jobs, what women and men earn inside tech, and why prosperity alone does not close the gap. Census maps and trends from 2019 to 2024 connect access, pay, and the cost of flexibility.\n\n\nBLOG 4 More Tech, Better Jobs? Does a growing technology workforce mean a stronger job market? Census data across 50 states and six years reveal that rising tech employment shares did not consistently accompany lower unemployment or higher employment rates. Four charts and two U.S. maps compare states, track changes over time, and take a closer look at two Bay Area core counties.\n\n\nBLOG 3 How Much of the Participation Decline Reflects an Aging Population? A falling national average can hide a changing population. Using more than two million weighted CPS person-month observations, this post separates the 2019–2024 decline in labor-force participation into age composition and changes within age groups. Three charts show how an aging population outweighed participation gains—and why the headline rate cannot tell the whole story.\n\n\nBLOG 2 What Is Your Student ID Worth? Where does a student ID save the most—and where can you visit for less? Using R to collect official admission prices, this post compares 18 museums across eight U.S. cities. Philadelphia offers the largest average student discount in this sample, but museums that are free for everyone tell a different story about affordability. Explore the charts and filter the ticket table by city and age to plan your next visit.\n\n\nBLOG 1 · START HERE How Lisa Wins at Every Distance and Still Loses A friendly introduction to Simpson’s paradox."
+    "text": "JIAQI YUAN · NOTES & METHODS\n\n\n\nA growing collection of clear, curious essays about statistics, economics, and the small details that make data worth looking at twice.\n\n\nBLOG 1 BLOG 2 BLOG 3 BLOG 4 BLOG 5 BLOG 6 STATISTICS ECONOMICS DATA STORIES\n\n\nBLOG 6 · LATEST Does One Year of Income Mislead Us About Mobility? A hands-on tutorial: link PSID children to their mothers with SQL inside Python, build three decades of income histories with JOIN and GROUP BY, and estimate how strongly income persists across generations. Daughters and sons tell different stories, and one year of income, or one measured too early, can badly mislead.\n\n\nBLOG 5 Why a Tech-Rich State Can Still Have a Wide Gender Pay Gap Claudia Goldin’s research frames a deeper look at gender earnings across 50 states: who holds the technology jobs, what women and men earn inside tech, and why prosperity alone does not close the gap. Census maps and trends from 2019 to 2024 connect access, pay, and the cost of flexibility.\n\n\nBLOG 4 More Tech, Better Jobs? Does a growing technology workforce mean a stronger job market? Census data across 50 states and six years reveal that rising tech employment shares did not consistently accompany lower unemployment or higher employment rates. Four charts and two U.S. maps compare states, track changes over time, and take a closer look at two Bay Area core counties.\n\n\nBLOG 3 How Much of the Participation Decline Reflects an Aging Population? A falling national average can hide a changing population. Using more than two million weighted CPS person-month observations, this post separates the 2019–2024 decline in labor-force participation into age composition and changes within age groups. Three charts show how an aging population outweighed participation gains—and why the headline rate cannot tell the whole story.\n\n\nBLOG 2 What Is Your Student ID Worth? Where does a student ID save the most—and where can you visit for less? Using R to collect official admission prices, this post compares 18 museums across eight U.S. cities. Philadelphia offers the largest average student discount in this sample, but museums that are free for everyone tell a different story about affordability. Explore the charts and filter the ticket table by city and age to plan your next visit.\n\n\nBLOG 1 · START HERE How Lisa Wins at Every Distance and Still Loses A friendly introduction to Simpson’s paradox."
   },
   {
     "objectID": "blog/index.html#latest-notes",
@@ -457,9 +457,9 @@
   {
     "objectID": "blog/posts/post6/index.html",
     "href": "blog/posts/post6/index.html",
-    "title": "Match Parents and Children with SQL in Python",
+    "title": "Does One Year of Income Mislead Us About Mobility?",
     "section": "",
-    "text": "Does a richer childhood relate differently to daughters’ and sons’ adult earnings? To find out, you first have to connect the generations. In this tutorial you’ll use SQL inside Python to link children to their mothers in the Panel Study of Income Dynamics (PSID), build income histories for both, and estimate the intergenerational elasticity (IGE):\n\\[\\log(\\text{child income}) = \\alpha + \\beta\\,\\log(\\text{parent income}) + \\varepsilon\\]\nAn IGE of 0.4 means 10% higher parental income is associated with roughly 4% higher adult-child income. It measures relative income persistence, not a causal effect or the probability of earning more than your parents. You’ll see how the estimate changes with the income window and measurement age.\nYou need: basic Python, pandas and SQL. sqlite3 ships with Python."
+    "text": "Does averaging several income observations change how strongly parents’ income predicts their children’s earnings? In this tutorial, you’ll use SQL inside Python to link two generations and compare single-year and three-observation intergenerational elasticities (IGEs).\nThe IGE is the slope in:\n\\[\\log(\\text{child income})=\\alpha+\\beta\\log(\\text{parent income})+\\varepsilon\\]\nA slope of 0.4 means 10% higher parental income is associated with roughly 4% higher child income. It measures relative persistence, not a causal effect or the chance of out-earning your parents."
   },
   {
     "objectID": "blog/posts/post6/index.html#load-the-data-into-sqlite",
@@ -516,5 +516,54 @@
     "title": "Match Parents and Children with SQL in Python",
     "section": "Data and code",
     "text": "Data and code\nData: PSID public-use data (Survey Research Center, University of Michigan, 2026), Data Center extract and Parent Identification File (2023); BLS CPI-U annual averages. Code and results: code/ and results/; run 00–06 in order (see the README). research.zip has everything except PSID microdata, which cannot be redistributed."
+  },
+  {
+    "objectID": "blog/posts/post6/index.html#prepare-the-tables",
+    "href": "blog/posts/post6/index.html#prepare-the-tables",
+    "title": "Does One Year of Income Mislead Us About Mobility?",
+    "section": "1. Prepare the tables",
+    "text": "1. Prepare the tables\nYou need basic Python, pandas, NumPy, and SQL. Obtain a PSID Data Center extract and Parent Identification File; the README provides the variable list and download steps. Run 01_import.py to create SQLite tables for people, parent links, yearly family membership, family income, and CPI.\nimport sqlite3\nimport numpy as np\nimport pandas as pd\ncon = sqlite3.connect(\"data/working/blog6.sqlite\")\nKeep both permanent identifiers, id68 and pn. Yearly family_id must be paired with wave; it does not identify the same family across interviews."
+  },
+  {
+    "objectID": "blog/posts/post6/index.html#match-children-to-mothers",
+    "href": "blog/posts/post6/index.html#match-children-to-mothers",
+    "title": "Does One Year of Income Mislead Us About Mobility?",
+    "section": "2. Match children to mothers",
+    "text": "2. Match children to mothers\nquery = \"\"\"\nSELECT c.id68 AS child_id68, c.pn AS child_pn, c.sex, c.weight,\n       p.id68 AS parent_id68, p.pn AS parent_pn\nFROM people AS c\nJOIN parent_links AS l\n  ON c.id68 = l.child_id68 AND c.pn = l.child_pn\n AND l.parent_type = 'birth_mother'\nJOIN people AS p\n  ON p.id68 = l.parent_id68 AND p.pn = l.parent_pn\nWHERE c.birth_year BETWEEN 1970 AND 1974\n  AND c.sex IS NOT NULL\n\"\"\"\npairs = pd.read_sql_query(query, con)\nSELECT chooses columns; aliases distinguish child from mother. JOIN ... ON matches both identifier parts. WHERE selects the birth cohort. The complete script saves this result as pairs; a LEFT JOIN audit counts unmatched children. 1,771 children match to a mother."
+  },
+  {
+    "objectID": "blog/posts/post6/index.html#attach-income-by-year",
+    "href": "blog/posts/post6/index.html#attach-income-by-year",
+    "title": "Does One Year of Income Mislead Us About Mobility?",
+    "section": "3. Attach income by year",
+    "text": "3. Attach income by year\nJoin each child’s membership to the mother’s membership on the same wave and family_id. Require both to be current members. Then join family income on those same keys. The executable query is in 02_match.sql.\nParental resources are family income in 1980–1982, reported in interviews 1981–1983. Adult earnings are from 2010, 2012, and 2014, reported the following years. These adult observations span five calendar years, not three consecutive years.\nConvert each amount to 2020 dollars before averaging, using CPI for the income year:\nf.total_income * (SELECT cpi FROM cpi WHERE year = 2020) / k.cpi\nAdult earnings are selected by household role, not sex. However, this extract combines reference-person total labor income with spouse income excluding farm/business income. These are not harmonized earnings measures. The gender and age comparisons illustrate the workflow; substantive comparisons require consistent coverage and re-estimation."
+  },
+  {
+    "objectID": "blog/posts/post6/index.html#average-before-joining-generations",
+    "href": "blog/posts/post6/index.html#average-before-joining-generations",
+    "title": "Does One Year of Income Mislead Us About Mobility?",
+    "section": "4. Average before joining generations",
+    "text": "4. Average before joining generations\nSELECT child_id68, child_pn,\n       AVG(real_income) AS parent_mean,\n       MAX(CASE WHEN income_year = 1981\n                THEN real_income END) AS parent_single\nFROM parent_history\nWHERE income_year IN (1980, 1981, 1982)\nGROUP BY child_id68, child_pn\nHAVING COUNT(*) = 3 AND COUNT(real_income) = 3;\nGROUP BY collects each child’s observations; AVG calculates their mean. MAX(CASE ...) extracts 1981. HAVING requires three nonmissing observations, after checking year-key uniqueness.\nRepeat for adult earnings, selecting 2012 as the single year. Join the summaries afterward: joining three parent years directly to three child years produces nine rows per child."
+  },
+  {
+    "objectID": "blog/posts/post6/index.html#compare-weighted-slopes",
+    "href": "blog/posts/post6/index.html#compare-weighted-slopes",
+    "title": "Does One Year of Income Mislead Us About Mobility?",
+    "section": "5. Compare weighted slopes",
+    "text": "5. Compare weighted slopes\nKeep the same children in both models, with positive final income measures and positive 2015 individual longitudinal weights. Average real amounts, including genuine zeros, before taking logs; report exclusions. The retained sample has 237 daughters and 196 sons.\ndef fit_ige(d, child_col, parent_col):\n    x, y = np.log(d[parent_col]), np.log(d[child_col])\n    w = d[\"weight\"]\n    xm, ym = np.average(x, weights=w), np.average(y, weights=w)\n    return np.sum(w*(x-xm)*(y-ym)) / np.sum(w*(x-xm)**2)\n\n\n\nSingle-year and averaged IGE point estimates, with mother-clustered 95% intervals.\n\n\nThe pooled estimate changes from 0.35 to 0.37. Daughters’ estimate rises; sons’ falls. All three bootstrap intervals for these changes include zero. Averaging does not establish a difference here.\nWhy average? Under classical measurement error, temporary noise in parental income attenuates the slope. Averaging can reduce that noise, but does not guarantee a higher estimate or recover lifetime income."
+  },
+  {
+    "objectID": "blog/posts/post6/index.html#check-measurement-age",
+    "href": "blog/posts/post6/index.html#check-measurement-age",
+    "title": "Does One Year of Income Mislead Us About Mobility?",
+    "section": "6. Check measurement age",
+    "text": "6. Check measurement age\n\n\n\nYear-specific IGE estimates for the same children at different observed ages.\n\n\nHolding parental income and weights fixed, sons’ point estimate is 0.40 at average age 28 and 0.71 at 42. Daughters’ estimates are 0.42 and 0.39. This illustrates measurement-age sensitivity, not life-cycle bias alone: calendar conditions, earnings coverage, and sample selection also differ or matter. The separate averaged age-window change for sons has an interval including zero."
+  },
+  {
+    "objectID": "blog/posts/post6/index.html#takeaway",
+    "href": "blog/posts/post6/index.html#takeaway",
+    "title": "Does One Year of Income Mislead Us About Mobility?",
+    "section": "Takeaway",
+    "text": "Takeaway\nHere, averaging changes the pooled IGE only slightly. The practical lesson is to match identifiers carefully, aggregate before joining, and compare identical samples. Neither these estimates nor the gender difference establishes a broad mobility claim: the averaged daughter–son difference’s interval (-0.67 to 0.03) includes zero.\nCode and replication instructions · Download tutorial files. Sources: PSID public-use data, Survey Research Center, University of Michigan (2026); Parent Identification File (2023); BLS CPI-U annual averages. Mother-clustered uncertainty does not implement the full survey design; weights may not remove complete-case selection."
   }
 ]
