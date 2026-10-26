@@ -22,66 +22,94 @@ resources:
   - results/*.csv
 ---
 
+
 ```{r}
 r <- readRDS('results/analysis.rds')
 pct <- function(x) sprintf('%.2f%%',100*x)
 pp <- function(x) sprintf('%.2f',x)
+g0 <- subset(r$groups,YEAR==2019)
+g1 <- subset(r$groups,YEAR==2024)
+g1 <- g1[match(g0$age_group,g1$age_group),]
+rate <- function(age,year) pct(subset(r$groups,age_group==age & YEAR==year)$rate)
+older <- function(year) pct(sum(subset(r$groups,YEAR==year & age_group %in% c('65-74','75+'))$share))
+sens <- read.csv('results/sensitivity.csv')
+example <- subset(r$decomposition,age_group=='35-44')$within
 ```
 
 ::: {.callout-note}
 **BLOG 3 · THE PEOPLE BEHIND THE AVERAGE**
 
-Participation fell **0.54 percentage points**. A shift toward older ages pulled it down; changes within age groups partly offset that decline.
+Participation fell **`r pp(abs(r$delta))` percentage points**. A shift toward older ages pulled it down; changes within age groups partly offset the decline.
 :::
 
-## Participation and population aging
+## Can participation improve while the national rate falls?
 
-A decline in labor-force participation can reflect changes in participation within age groups, changes in the population's age distribution, or both. The distinction matters when interpreting the post-pandemic labor market: an older population can have a lower participation rate even if participation rises among younger adults. I use CPS data to measure how much each component contributes to the change between 2019 and 2024.
+Can population aging explain falling participation despite gains among younger adults? In IPUMS CPS data, weighted participation fell from **`r pct(r$annual$rate[1])` to `r pct(r$annual$rate[2])`** between 2019 and 2024. Participation includes working people and unemployed jobseekers, unlike an employment rate.
 
-Using IPUMS CPS microdata, I compare 2019, before the pandemic, with 2024. The weighted annual participation rate fell from **`r pct(r$annual$rate[1])` to `r pct(r$annual$rate[2])`**. But that average combines two things: how likely people of each age are to participate, and how common each age group is.
+## Compare like ages, then count their shares
 
-## Sample and weights
+Figure 1 shows participation rising in all five displayed age groups below 65. For ages 35–44, it increased from **`r rate('35-44',2019)` to `r rate('35-44',2024)`**. Among ages 65–74, it fell from **`r rate('65-74',2019)` to `r rate('65-74',2024)`**. These comparisons do not follow the same people as they age.
 
-I use all twelve Basic Monthly CPS samples in each year: **2,611,419 person-month records**, of which **2,115,648** meet the analysis criteria. The population is civilians age 16 or older with a valid labor-force status and positive weight. These are observations, not distinct people; the CPS interviews respondents in multiple months.
+![Weighted participation rose in the five age groups below 65 and fell in the two older groups.](results/figure1.png){fig-alt="2019 and 2024 labor-force participation by age. Rates rise below 65 and decline at ages 65–74 and 75+."}
 
-Every population statistic uses **WTFINL**, the final person weight. I calculate each month's weighted participation rate, then average the twelve rates equally. Age shares and within-age rates use the same monthly-normalized weights, keeping the decomposition consistent. The code imports the matching DDI metadata so that the weight's implied decimals are handled correctly.
+Figure 2 shows adults 65 and older growing from **`r older(2019)` to `r older(2024)`** of the weighted population. Moving population weight toward groups with lower participation can pull down the average, even without any change in their participation rates.
 
-Participation includes employed people **and unemployed people in the labor force**. It is not an employment rate. Someone outside the labor force is not automatically unemployed.
+![The population shares of both older age groups increased between 2019 and 2024.](results/figure2.png){fig-alt="Weighted population shares by age in 2019 and 2024; both groups aged 65 and older increase."}
 
-## Compare people of similar ages
+## How the decomposition separates the changes
 
-Figure 1 compares participation across age groups in each year. Adults aged 25–54 have substantially higher participation rates than those 65 and older. Between 2019 and 2024, participation rose in all five displayed groups below age 65: for ages 35–44, it increased from **83.33% to 84.77%**. Among ages 65–74, it fell from **28.47% to 27.67%**. These are comparisons of age groups in two years; they do not track the same people as they age.
+The idea is to separate **who makes up the population** from **how likely people of each age are to work or look for work**. The method is called a **symmetric Kitagawa decomposition**.
 
-![Weighted participation rose in the five age groups below 65 and fell in the two older groups.](results/figure1.png){fig-alt="2019 and 2024 participation by age. Rates rise below age 65 and decline for ages 65–74 and 75+."}
+Start with an **imaginary population of 100 adults**: 60 younger and 40 older. If 80% of the younger group and 20% of the older group participate, there are $60\times0.80+40\times0.20=56$ participants. The overall rate is 56%.
 
-## The changing age distribution
+The first formula expresses that same calculation:
 
-The national participation rate weights each age group's participation rate by its population share. If groups with lower participation account for more of the population, the national rate can fall even with unchanged participation within every age group.
+$$
+P_t=\sum_g s_{g,t}p_{g,t}.
+$$
 
-Figure 2 shows this compositional shift. Adults 65 and older increased from **20.40% to 22.23%** of the weighted population. Because their participation rates are relatively low, that shift puts downward pressure on the national average. These are population shares estimated with weights, not percentages of downloaded rows.
+Read it as **“multiply each group's share of the population by its participation rate, then add the answers.”** The symbols are shorthand:
 
-![The population shares of both older age groups increased between 2019 and 2024.](results/figure2.png){fig-alt="Weighted population shares by age: ages 65–74 increase from 12.08% to 13.05%, and ages 75+ from 8.32% to 9.18%."}
+- $P$: the overall participation rate; $s$: a group's population share; $p$: its participation rate.
+- $g$: the age group; $t$: the year. The subscripts are labels, not multiplication.
+- $\sum_g$: “add up all age groups.” Write 60% as 0.60 when calculating.
 
-## Separate the two changes
+Now imagine the population becomes 50 younger and 50 older adults, with both groups' participation rates unchanged. The total becomes $50\times0.80+50\times0.20=50$ participants. Participation falls from 56% to 50% **entirely because the age mix changed**. Nobody in either group became less likely to participate.
 
-A symmetric Kitagawa decomposition splits the observed change into an **age-composition component** and a **within-age participation component**. It averages the two possible orders of changing shares and rates, so neither year gets special treatment.
+In the real data, both shares and participation rates change. The next formulas separate their contributions. Here $0$ means 2019, $1$ means 2024, and $\Delta$ means “change”:
 
-Figure 3 gives the result: **`r pp(r$composition)` percentage points** from composition, offset by **+`r pp(r$within)` points** from within-age changes, producing the observed **`r pp(r$delta)` points**. The composition component is larger than the net decline because the two components move in opposite directions. A percentage point is a difference between rates, not a percent change.
+$$
+\begin{aligned}
+\Delta P &= P_1-P_0=C+W,\\[4pt]
+C &= \sum_g(s_{g,1}-s_{g,0})\frac{p_{g,1}+p_{g,0}}{2},\\[4pt]
+W &= \sum_g(p_{g,1}-p_{g,0})\frac{s_{g,1}+s_{g,0}}{2}.
+\end{aligned}
+$$
 
-![Age composition contributes −0.98 percentage points, within-age participation +0.44, and the total is −0.54.](results/figure3.png){fig-alt="Decomposition bars: age composition −0.98, within-age participation +0.44, observed total −0.54 percentage points."}
+**Read $C$ as “the age-mix contribution.”** For each group, subtract its old share from its new share, multiply by its average participation rate across the two years, then add across groups. In our imaginary example, $C$ is −6 percentage points.
 
-Using narrower, mostly five-year age groups gives **−1.09 points** for composition and **+0.55** for within-age changes. The magnitudes change, but the interpretation survives.
+**Read $W$ as “the participation-within-groups contribution.”** For each group, subtract its old participation rate from its new rate, multiply by its average population share, then add. In our example, $W$ is zero because neither group's participation rate changed.
 
-## What explains the aggregate decline?
+Each fraction adds the two years' values and divides by two: an ordinary average. Using both years is what makes the method **symmetric**, rather than favoring one reference year. The contributions add exactly to the overall change. Multiply the formula's results by 100 for percentage points: moving from 56% to 50% is a fall of six points.
 
-In this decomposition, the shift in age composition contributes **`r pp(r$composition)` percentage points**, exceeding the observed **`r pp(abs(r$delta))`-point decline**. Within-age participation changes offset **`r pp(r$within)` points** of that decline. The aggregate therefore understates the improvement within many age groups. These results help explain the national rate, but they do not tell us why participation changed within those groups.
+In the CPS results, ages 35–44 contribute **+`r pp(example)` points** to $W$: their participation increase is multiplied by their average population share. Figure 3 adds contributions from all seven age groups.
 
-This is descriptive accounting, not a causal estimate of aging or the pandemic. Within-age changes also reflect health, education, family circumstances, and other composition; even the oldest age bin contains aging. Estimates are not seasonally adjusted, population-control revisions can affect comparisons, and repeated respondents rule out treating all rows as independent. I make no significance claims or claims about individual retirement decisions.
+## What the components reveal
 
-## Data and reproducibility
+![Age composition lowers participation, while within-age changes partly offset the decline. Their sum equals the observed total.](results/figure3.png){fig-alt="Symmetric decomposition: age composition −0.98, within-age participation +0.44, total −0.54 percentage points."}
 
-Source: IPUMS CPS, **Version 13.0**, University of Minnesota, [doi:10.18128/D030.V13.0](https://doi.org/10.18128/D030.V13.0), based on Census Bureau and Bureau of Labor Statistics CPS data. Extract generated September 28, 2026; Basic Monthly samples for January–December 2019 and 2024. See [WTFINL documentation](https://cps.ipums.org/cps-action/variables/WTFINL) and [LABFORCE definitions](https://cps.ipums.org/cps-action/variables/LABFORCE).
+Figure 3 adds the components: **`r pp(r$composition)` + `r pp(r$within)` = `r pp(r$delta)` percentage points**. Changes in age composition outweigh the decline; within-age gains partly offset them. Narrower age bins give the same interpretation.
 
-[Download the R code, replication instructions, and aggregate results](research.zip). Raw microdata are excluded; obtain your own matching extract through IPUMS. The script checks month coverage, record uniqueness, codes, weights, and the decomposition identity.
+The economic intuition is that participation falls at retirement ages. [Aaronson and colleagues (2014)](https://www.federalreserve.gov/pubs/feds/2014/201464/201464pap.pdf) distinguish population aging from participation declines associated with weak demand for workers. [Montes, Smith, and Dajon (2022)](https://www.federalreserve.gov/econres/feds/the-great-retirement-boom.htm) distinguish aging from unusually early pandemic retirements. This age-only decomposition cannot identify those individual retirement decisions.
 
-[View the code and replication instructions on GitHub](https://github.com/lizzyuan77/lizzyuan-s-website/tree/main/blog/posts/post3).
+**Judge recovery using age-group participation alongside the headline rate.** Returning to 2019's overall rate is a different benchmark when the population is older. The headline decline alone does not establish widespread withdrawal from work or reveal why participation changed.
+
+## Data and reproduction
+
+I use twelve Basic Monthly CPS samples per year: **`r format(tail(r$audit$n,1),big.mark=',')` eligible person-month observations** of civilians age 16+. Respondents can appear repeatedly.
+
+All estimates use **WTFINL** person weights, normalized so each month contributes equally. Group shares and rates use consistent weights. Results are not seasonally adjusted; population-control revisions can affect comparisons. No significance claims are made.
+
+Source: [IPUMS CPS Version 13.0](https://doi.org/10.18128/D030.V13.0), University of Minnesota; Basic Monthly samples, 2019 and 2024. Method: [Kitagawa (1955)](https://doi.org/10.1080/01621459.1955.10501299).
+
+[Download code and aggregate results](research.zip). The [README](https://github.com/lizzyuan77/lizzyuan-s-website/tree/main/blog/posts/post3#readme) gives the run order. Obtain raw microdata separately through IPUMS.

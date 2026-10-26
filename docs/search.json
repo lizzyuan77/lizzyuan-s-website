@@ -277,7 +277,7 @@
     "href": "blog/posts/post3/index.html",
     "title": "How Much of the Participation Decline Reflects an Aging Population?",
     "section": "",
-    "text": "Note\n\n\n\nBLOG 3 · THE PEOPLE BEHIND THE AVERAGE\nParticipation fell 0.54 percentage points. A shift toward older ages pulled it down; changes within age groups partly offset that decline."
+    "text": "Note\n\n\n\nBLOG 3 · THE PEOPLE BEHIND THE AVERAGE\nParticipation fell 0.54 percentage points. A shift toward older ages pulled it down; changes within age groups partly offset the decline."
   },
   {
     "objectID": "blog/posts/post3/index.html#participation-and-population-aging",
@@ -642,5 +642,40 @@
     "title": "What Is Your Student ID Worth?",
     "section": "How to check and reproduce the results",
     "text": "How to check and reproduce the results\nI screened 30 institutions, retaining 18 with comparable, extractable prices. rvest parses cached official price text; reviewed patterns identify ticket categories. Required categories must be present, and missing prices never become zeros. Requests were spaced and cached; access failures and restrictive terms led to exclusions. This convenience sample, mostly art museums, cannot establish representative city rankings.\nFile guide and replication instructions explain the source list, exclusions, and limits of the short evidence extracts. One offline R command regenerates the CSVs, figures, and explorer from that evidence.\nDownload the data Download code and evidence\nAI assistance supported coding, drafting, and checking extraction rules. Source links and collection records accompany the data."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#can-participation-improve-while-the-national-rate-falls",
+    "href": "blog/posts/post3/index.html#can-participation-improve-while-the-national-rate-falls",
+    "title": "How Much of the Participation Decline Reflects an Aging Population?",
+    "section": "Can participation improve while the national rate falls?",
+    "text": "Can participation improve while the national rate falls?\nCan population aging explain falling participation despite gains among younger adults? In IPUMS CPS data, weighted participation fell from 63.40% to 62.86% between 2019 and 2024. Participation includes working people and unemployed jobseekers, unlike an employment rate."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#compare-like-ages-then-count-their-shares",
+    "href": "blog/posts/post3/index.html#compare-like-ages-then-count-their-shares",
+    "title": "How Much of the Participation Decline Reflects an Aging Population?",
+    "section": "Compare like ages, then count their shares",
+    "text": "Compare like ages, then count their shares\nFigure 1 shows participation rising in all five displayed age groups below 65. For ages 35–44, it increased from 83.33% to 84.77%. Among ages 65–74, it fell from 28.47% to 27.67%. These comparisons do not follow the same people as they age.\n\n\n\nWeighted participation rose in the five age groups below 65 and fell in the two older groups.\n\n\nFigure 2 shows adults 65 and older growing from 20.40% to 22.23% of the weighted population. Moving population weight toward groups with lower participation can pull down the average, even without any change in their participation rates.\n\n\n\nThe population shares of both older age groups increased between 2019 and 2024."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#how-the-decomposition-separates-the-changes",
+    "href": "blog/posts/post3/index.html#how-the-decomposition-separates-the-changes",
+    "title": "How Much of the Participation Decline Reflects an Aging Population?",
+    "section": "How the decomposition separates the changes",
+    "text": "How the decomposition separates the changes\nThe idea is to separate who makes up the population from how likely people of each age are to work or look for work. The method is called a symmetric Kitagawa decomposition.\nStart with an imaginary population of 100 adults: 60 younger and 40 older. If 80% of the younger group and 20% of the older group participate, there are \\(60\\times0.80+40\\times0.20=56\\) participants. The overall rate is 56%.\nThe first formula expresses that same calculation:\n\\[\nP_t=\\sum_g s_{g,t}p_{g,t}.\n\\]\nRead it as “multiply each group’s share of the population by its participation rate, then add the answers.” The symbols are shorthand:\n\n\\(P\\): the overall participation rate; \\(s\\): a group’s population share; \\(p\\): its participation rate.\n\\(g\\): the age group; \\(t\\): the year. The subscripts are labels, not multiplication.\n\\(\\sum_g\\): “add up all age groups.” Write 60% as 0.60 when calculating.\n\nNow imagine the population becomes 50 younger and 50 older adults, with both groups’ participation rates unchanged. The total becomes \\(50\\times0.80+50\\times0.20=50\\) participants. Participation falls from 56% to 50% entirely because the age mix changed. Nobody in either group became less likely to participate.\nIn the real data, both shares and participation rates change. The next formulas separate their contributions. Here \\(0\\) means 2019, \\(1\\) means 2024, and \\(\\Delta\\) means “change”:\n\\[\n\\begin{aligned}\n\\Delta P &= P_1-P_0=C+W,\\\\[4pt]\nC &= \\sum_g(s_{g,1}-s_{g,0})\\frac{p_{g,1}+p_{g,0}}{2},\\\\[4pt]\nW &= \\sum_g(p_{g,1}-p_{g,0})\\frac{s_{g,1}+s_{g,0}}{2}.\n\\end{aligned}\n\\]\nRead \\(C\\) as “the age-mix contribution.” For each group, subtract its old share from its new share, multiply by its average participation rate across the two years, then add across groups. In our imaginary example, \\(C\\) is −6 percentage points.\nRead \\(W\\) as “the participation-within-groups contribution.” For each group, subtract its old participation rate from its new rate, multiply by its average population share, then add. In our example, \\(W\\) is zero because neither group’s participation rate changed.\nEach fraction adds the two years’ values and divides by two: an ordinary average. Using both years is what makes the method symmetric, rather than favoring one reference year. The contributions add exactly to the overall change. Multiply the formula’s results by 100 for percentage points: moving from 56% to 50% is a fall of six points.\nIn the CPS results, ages 35–44 contribute +0.23 points to \\(W\\): their participation increase is multiplied by their average population share. Figure 3 adds contributions from all seven age groups."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#what-the-components-reveal",
+    "href": "blog/posts/post3/index.html#what-the-components-reveal",
+    "title": "How Much of the Participation Decline Reflects an Aging Population?",
+    "section": "What the components reveal",
+    "text": "What the components reveal\n\n\n\nAge composition lowers participation, while within-age changes partly offset the decline. Their sum equals the observed total.\n\n\nFigure 3 adds the components: -0.98 + 0.44 = -0.54 percentage points. Changes in age composition outweigh the decline; within-age gains partly offset them. Narrower age bins give the same interpretation.\nThe economic intuition is that participation falls at retirement ages. Aaronson and colleagues (2014) distinguish population aging from participation declines associated with weak demand for workers. Montes, Smith, and Dajon (2022) distinguish aging from unusually early pandemic retirements. This age-only decomposition cannot identify those individual retirement decisions.\nJudge recovery using age-group participation alongside the headline rate. Returning to 2019’s overall rate is a different benchmark when the population is older. The headline decline alone does not establish widespread withdrawal from work or reveal why participation changed."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#data-and-reproduction",
+    "href": "blog/posts/post3/index.html#data-and-reproduction",
+    "title": "How Much of the Participation Decline Reflects an Aging Population?",
+    "section": "Data and reproduction",
+    "text": "Data and reproduction\nI use twelve Basic Monthly CPS samples per year: 2,115,648 eligible person-month observations of civilians age 16+. Respondents can appear repeatedly.\nAll estimates use WTFINL person weights, normalized so each month contributes equally. Group shares and rates use consistent weights. Results are not seasonally adjusted; population-control revisions can affect comparisons. No significance claims are made.\nSource: IPUMS CPS Version 13.0, University of Minnesota; Basic Monthly samples, 2019 and 2024. Method: Kitagawa (1955).\nDownload code and aggregate results. The README gives the run order. Obtain raw microdata separately through IPUMS."
   }
 ]

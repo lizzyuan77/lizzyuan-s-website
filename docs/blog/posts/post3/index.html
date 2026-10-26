@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -15,10 +15,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -42,10 +45,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-6b423f165eeea3787de40cb4f8e821c3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-9d96f532d65220ca877c0304385df42f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,6 +77,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../styles.css">
 <link rel="stylesheet" href="draft.css">
@@ -128,13 +160,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">In this story</h2>
    
   <ul>
-  <li><a href="#participation-and-population-aging" id="toc-participation-and-population-aging" class="nav-link active" data-scroll-target="#participation-and-population-aging">Participation and population aging</a></li>
-  <li><a href="#sample-and-weights" id="toc-sample-and-weights" class="nav-link" data-scroll-target="#sample-and-weights">Sample and weights</a></li>
-  <li><a href="#compare-people-of-similar-ages" id="toc-compare-people-of-similar-ages" class="nav-link" data-scroll-target="#compare-people-of-similar-ages">Compare people of similar ages</a></li>
-  <li><a href="#the-changing-age-distribution" id="toc-the-changing-age-distribution" class="nav-link" data-scroll-target="#the-changing-age-distribution">The changing age distribution</a></li>
-  <li><a href="#separate-the-two-changes" id="toc-separate-the-two-changes" class="nav-link" data-scroll-target="#separate-the-two-changes">Separate the two changes</a></li>
-  <li><a href="#what-explains-the-aggregate-decline" id="toc-what-explains-the-aggregate-decline" class="nav-link" data-scroll-target="#what-explains-the-aggregate-decline">What explains the aggregate decline?</a></li>
-  <li><a href="#data-and-reproducibility" id="toc-data-and-reproducibility" class="nav-link" data-scroll-target="#data-and-reproducibility">Data and reproducibility</a></li>
+  <li><a href="#can-participation-improve-while-the-national-rate-falls" id="toc-can-participation-improve-while-the-national-rate-falls" class="nav-link active" data-scroll-target="#can-participation-improve-while-the-national-rate-falls">Can participation improve while the national rate falls?</a></li>
+  <li><a href="#compare-like-ages-then-count-their-shares" id="toc-compare-like-ages-then-count-their-shares" class="nav-link" data-scroll-target="#compare-like-ages-then-count-their-shares">Compare like ages, then count their shares</a></li>
+  <li><a href="#how-the-decomposition-separates-the-changes" id="toc-how-the-decomposition-separates-the-changes" class="nav-link" data-scroll-target="#how-the-decomposition-separates-the-changes">How the decomposition separates the changes</a></li>
+  <li><a href="#what-the-components-reveal" id="toc-what-the-components-reveal" class="nav-link" data-scroll-target="#what-the-components-reveal">What the components reveal</a></li>
+  <li><a href="#data-and-reproduction" id="toc-data-and-reproduction" class="nav-link" data-scroll-target="#data-and-reproduction">Data and reproduction</a></li>
   </ul>
 </nav>
     </div>
@@ -194,63 +224,76 @@ Note
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>BLOG 3 · THE PEOPLE BEHIND THE AVERAGE</strong></p>
-<p>Participation fell <strong>0.54 percentage points</strong>. A shift toward older ages pulled it down; changes within age groups partly offset that decline.</p>
+<p>Participation fell <strong>0.54 percentage points</strong>. A shift toward older ages pulled it down; changes within age groups partly offset the decline.</p>
 </div>
 </div>
-<section id="participation-and-population-aging" class="level2">
-<h2 class="anchored" data-anchor-id="participation-and-population-aging">Participation and population aging</h2>
-<p>A decline in labor-force participation can reflect changes in participation within age groups, changes in the population’s age distribution, or both. The distinction matters when interpreting the post-pandemic labor market: an older population can have a lower participation rate even if participation rises among younger adults. I use CPS data to measure how much each component contributes to the change between 2019 and 2024.</p>
-<p>Using IPUMS CPS microdata, I compare 2019, before the pandemic, with 2024. The weighted annual participation rate fell from <strong>63.40% to 62.86%</strong>. But that average combines two things: how likely people of each age are to participate, and how common each age group is.</p>
+<section id="can-participation-improve-while-the-national-rate-falls" class="level2">
+<h2 class="anchored" data-anchor-id="can-participation-improve-while-the-national-rate-falls">Can participation improve while the national rate falls?</h2>
+<p>Can population aging explain falling participation despite gains among younger adults? In IPUMS CPS data, weighted participation fell from <strong>63.40% to 62.86%</strong> between 2019 and 2024. Participation includes working people and unemployed jobseekers, unlike an employment rate.</p>
 </section>
-<section id="sample-and-weights" class="level2">
-<h2 class="anchored" data-anchor-id="sample-and-weights">Sample and weights</h2>
-<p>I use all twelve Basic Monthly CPS samples in each year: <strong>2,611,419 person-month records</strong>, of which <strong>2,115,648</strong> meet the analysis criteria. The population is civilians age 16 or older with a valid labor-force status and positive weight. These are observations, not distinct people; the CPS interviews respondents in multiple months.</p>
-<p>Every population statistic uses <strong>WTFINL</strong>, the final person weight. I calculate each month’s weighted participation rate, then average the twelve rates equally. Age shares and within-age rates use the same monthly-normalized weights, keeping the decomposition consistent. The code imports the matching DDI metadata so that the weight’s implied decimals are handled correctly.</p>
-<p>Participation includes employed people <strong>and unemployed people in the labor force</strong>. It is not an employment rate. Someone outside the labor force is not automatically unemployed.</p>
-</section>
-<section id="compare-people-of-similar-ages" class="level2">
-<h2 class="anchored" data-anchor-id="compare-people-of-similar-ages">Compare people of similar ages</h2>
-<p>Figure 1 compares participation across age groups in each year. Adults aged 25–54 have substantially higher participation rates than those 65 and older. Between 2019 and 2024, participation rose in all five displayed groups below age 65: for ages 35–44, it increased from <strong>83.33% to 84.77%</strong>. Among ages 65–74, it fell from <strong>28.47% to 27.67%</strong>. These are comparisons of age groups in two years; they do not track the same people as they age.</p>
+<section id="compare-like-ages-then-count-their-shares" class="level2">
+<h2 class="anchored" data-anchor-id="compare-like-ages-then-count-their-shares">Compare like ages, then count their shares</h2>
+<p>Figure 1 shows participation rising in all five displayed age groups below 65. For ages 35–44, it increased from <strong>83.33% to 84.77%</strong>. Among ages 65–74, it fell from <strong>28.47% to 27.67%</strong>. These comparisons do not follow the same people as they age.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="results/figure1.png" class="img-fluid figure-img" alt="2019 and 2024 participation by age. Rates rise below age 65 and decline for ages 65–74 and 75+."></p>
+<p><img src="results/figure1.png" class="img-fluid figure-img" alt="2019 and 2024 labor-force participation by age. Rates rise below 65 and decline at ages 65–74 and 75+."></p>
 <figcaption>Weighted participation rose in the five age groups below 65 and fell in the two older groups.</figcaption>
 </figure>
 </div>
-</section>
-<section id="the-changing-age-distribution" class="level2">
-<h2 class="anchored" data-anchor-id="the-changing-age-distribution">The changing age distribution</h2>
-<p>The national participation rate weights each age group’s participation rate by its population share. If groups with lower participation account for more of the population, the national rate can fall even with unchanged participation within every age group.</p>
-<p>Figure 2 shows this compositional shift. Adults 65 and older increased from <strong>20.40% to 22.23%</strong> of the weighted population. Because their participation rates are relatively low, that shift puts downward pressure on the national average. These are population shares estimated with weights, not percentages of downloaded rows.</p>
+<p>Figure 2 shows adults 65 and older growing from <strong>20.40% to 22.23%</strong> of the weighted population. Moving population weight toward groups with lower participation can pull down the average, even without any change in their participation rates.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="results/figure2.png" class="img-fluid figure-img" alt="Weighted population shares by age: ages 65–74 increase from 12.08% to 13.05%, and ages 75+ from 8.32% to 9.18%."></p>
+<p><img src="results/figure2.png" class="img-fluid figure-img" alt="Weighted population shares by age in 2019 and 2024; both groups aged 65 and older increase."></p>
 <figcaption>The population shares of both older age groups increased between 2019 and 2024.</figcaption>
 </figure>
 </div>
 </section>
-<section id="separate-the-two-changes" class="level2">
-<h2 class="anchored" data-anchor-id="separate-the-two-changes">Separate the two changes</h2>
-<p>A symmetric Kitagawa decomposition splits the observed change into an <strong>age-composition component</strong> and a <strong>within-age participation component</strong>. It averages the two possible orders of changing shares and rates, so neither year gets special treatment.</p>
-<p>Figure 3 gives the result: <strong>-0.98 percentage points</strong> from composition, offset by <strong>+0.44 points</strong> from within-age changes, producing the observed <strong>-0.54 points</strong>. The composition component is larger than the net decline because the two components move in opposite directions. A percentage point is a difference between rates, not a percent change.</p>
+<section id="how-the-decomposition-separates-the-changes" class="level2">
+<h2 class="anchored" data-anchor-id="how-the-decomposition-separates-the-changes">How the decomposition separates the changes</h2>
+<p>The idea is to separate <strong>who makes up the population</strong> from <strong>how likely people of each age are to work or look for work</strong>. The method is called a <strong>symmetric Kitagawa decomposition</strong>.</p>
+<p>Start with an <strong>imaginary population of 100 adults</strong>: 60 younger and 40 older. If 80% of the younger group and 20% of the older group participate, there are <span class="math inline">\(60\times0.80+40\times0.20=56\)</span> participants. The overall rate is 56%.</p>
+<p>The first formula expresses that same calculation:</p>
+<p><span class="math display">\[
+P_t=\sum_g s_{g,t}p_{g,t}.
+\]</span></p>
+<p>Read it as <strong>“multiply each group’s share of the population by its participation rate, then add the answers.”</strong> The symbols are shorthand:</p>
+<ul>
+<li><span class="math inline">\(P\)</span>: the overall participation rate; <span class="math inline">\(s\)</span>: a group’s population share; <span class="math inline">\(p\)</span>: its participation rate.</li>
+<li><span class="math inline">\(g\)</span>: the age group; <span class="math inline">\(t\)</span>: the year. The subscripts are labels, not multiplication.</li>
+<li><span class="math inline">\(\sum_g\)</span>: “add up all age groups.” Write 60% as 0.60 when calculating.</li>
+</ul>
+<p>Now imagine the population becomes 50 younger and 50 older adults, with both groups’ participation rates unchanged. The total becomes <span class="math inline">\(50\times0.80+50\times0.20=50\)</span> participants. Participation falls from 56% to 50% <strong>entirely because the age mix changed</strong>. Nobody in either group became less likely to participate.</p>
+<p>In the real data, both shares and participation rates change. The next formulas separate their contributions. Here <span class="math inline">\(0\)</span> means 2019, <span class="math inline">\(1\)</span> means 2024, and <span class="math inline">\(\Delta\)</span> means “change”:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\Delta P &amp;= P_1-P_0=C+W,\\[4pt]
+C &amp;= \sum_g(s_{g,1}-s_{g,0})\frac{p_{g,1}+p_{g,0}}{2},\\[4pt]
+W &amp;= \sum_g(p_{g,1}-p_{g,0})\frac{s_{g,1}+s_{g,0}}{2}.
+\end{aligned}
+\]</span></p>
+<p><strong>Read <span class="math inline">\(C\)</span> as “the age-mix contribution.”</strong> For each group, subtract its old share from its new share, multiply by its average participation rate across the two years, then add across groups. In our imaginary example, <span class="math inline">\(C\)</span> is −6 percentage points.</p>
+<p><strong>Read <span class="math inline">\(W\)</span> as “the participation-within-groups contribution.”</strong> For each group, subtract its old participation rate from its new rate, multiply by its average population share, then add. In our example, <span class="math inline">\(W\)</span> is zero because neither group’s participation rate changed.</p>
+<p>Each fraction adds the two years’ values and divides by two: an ordinary average. Using both years is what makes the method <strong>symmetric</strong>, rather than favoring one reference year. The contributions add exactly to the overall change. Multiply the formula’s results by 100 for percentage points: moving from 56% to 50% is a fall of six points.</p>
+<p>In the CPS results, ages 35–44 contribute <strong>+0.23 points</strong> to <span class="math inline">\(W\)</span>: their participation increase is multiplied by their average population share. Figure 3 adds contributions from all seven age groups.</p>
+</section>
+<section id="what-the-components-reveal" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-components-reveal">What the components reveal</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="results/figure3.png" class="img-fluid figure-img" alt="Decomposition bars: age composition −0.98, within-age participation +0.44, observed total −0.54 percentage points."></p>
-<figcaption>Age composition contributes −0.98 percentage points, within-age participation +0.44, and the total is −0.54.</figcaption>
+<p><img src="results/figure3.png" class="img-fluid figure-img" alt="Symmetric decomposition: age composition −0.98, within-age participation +0.44, total −0.54 percentage points."></p>
+<figcaption>Age composition lowers participation, while within-age changes partly offset the decline. Their sum equals the observed total.</figcaption>
 </figure>
 </div>
-<p>Using narrower, mostly five-year age groups gives <strong>−1.09 points</strong> for composition and <strong>+0.55</strong> for within-age changes. The magnitudes change, but the interpretation survives.</p>
+<p>Figure 3 adds the components: <strong>-0.98 + 0.44 = -0.54 percentage points</strong>. Changes in age composition outweigh the decline; within-age gains partly offset them. Narrower age bins give the same interpretation.</p>
+<p>The economic intuition is that participation falls at retirement ages. <a href="https://www.federalreserve.gov/pubs/feds/2014/201464/201464pap.pdf">Aaronson and colleagues (2014)</a> distinguish population aging from participation declines associated with weak demand for workers. <a href="https://www.federalreserve.gov/econres/feds/the-great-retirement-boom.htm">Montes, Smith, and Dajon (2022)</a> distinguish aging from unusually early pandemic retirements. This age-only decomposition cannot identify those individual retirement decisions.</p>
+<p><strong>Judge recovery using age-group participation alongside the headline rate.</strong> Returning to 2019’s overall rate is a different benchmark when the population is older. The headline decline alone does not establish widespread withdrawal from work or reveal why participation changed.</p>
 </section>
-<section id="what-explains-the-aggregate-decline" class="level2">
-<h2 class="anchored" data-anchor-id="what-explains-the-aggregate-decline">What explains the aggregate decline?</h2>
-<p>In this decomposition, the shift in age composition contributes <strong>-0.98 percentage points</strong>, exceeding the observed <strong>0.54-point decline</strong>. Within-age participation changes offset <strong>0.44 points</strong> of that decline. The aggregate therefore understates the improvement within many age groups. These results help explain the national rate, but they do not tell us why participation changed within those groups.</p>
-<p>This is descriptive accounting, not a causal estimate of aging or the pandemic. Within-age changes also reflect health, education, family circumstances, and other composition; even the oldest age bin contains aging. Estimates are not seasonally adjusted, population-control revisions can affect comparisons, and repeated respondents rule out treating all rows as independent. I make no significance claims or claims about individual retirement decisions.</p>
-</section>
-<section id="data-and-reproducibility" class="level2">
-<h2 class="anchored" data-anchor-id="data-and-reproducibility">Data and reproducibility</h2>
-<p>Source: IPUMS CPS, <strong>Version 13.0</strong>, University of Minnesota, <a href="https://doi.org/10.18128/D030.V13.0">doi:10.18128/D030.V13.0</a>, based on Census Bureau and Bureau of Labor Statistics CPS data. Extract generated September 28, 2026; Basic Monthly samples for January–December 2019 and 2024. See <a href="https://cps.ipums.org/cps-action/variables/WTFINL">WTFINL documentation</a> and <a href="https://cps.ipums.org/cps-action/variables/LABFORCE">LABFORCE definitions</a>.</p>
-<p><a href="research.zip">Download the R code, replication instructions, and aggregate results</a>. Raw microdata are excluded; obtain your own matching extract through IPUMS. The script checks month coverage, record uniqueness, codes, weights, and the decomposition identity.</p>
-<p><a href="https://github.com/lizzyuan77/lizzyuan-s-website/tree/main/blog/posts/post3">View the code and replication instructions on GitHub</a>.</p>
+<section id="data-and-reproduction" class="level2">
+<h2 class="anchored" data-anchor-id="data-and-reproduction">Data and reproduction</h2>
+<p>I use twelve Basic Monthly CPS samples per year: <strong>2,115,648 eligible person-month observations</strong> of civilians age 16+. Respondents can appear repeatedly.</p>
+<p>All estimates use <strong>WTFINL</strong> person weights, normalized so each month contributes equally. Group shares and rates use consistent weights. Results are not seasonally adjusted; population-control revisions can affect comparisons. No significance claims are made.</p>
+<p>Source: <a href="https://doi.org/10.18128/D030.V13.0">IPUMS CPS Version 13.0</a>, University of Minnesota; Basic Monthly samples, 2019 and 2024. Method: <a href="https://doi.org/10.1080/01621459.1955.10501299">Kitagawa (1955)</a>.</p>
+<p><a href="research.zip">Download code and aggregate results</a>. The <a href="https://github.com/lizzyuan77/lizzyuan-s-website/tree/main/blog/posts/post3#readme">README</a> gives the run order. Obtain raw microdata separately through IPUMS.</p>
 
 
 </section>
@@ -660,7 +703,7 @@ Note
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><img src="../../..\images/UniversityofPennsylvania_FullLogo_RGB.png" class="img-fluid" width="100"></p>
+<p><img src="../../../images/UniversityofPennsylvania_FullLogo_RGB.png" class="img-fluid" width="100"></p>
 </div>   
     <div class="nav-footer-center">
 <p>© 2026 Jiaqi Yuan</p>

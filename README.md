@@ -4,6 +4,8 @@ A personal website and a collection of economics and data-analysis articles for 
 
 - **Website:** [lizzyuan77.github.io/lizzyuan-s-website](https://lizzyuan77.github.io/lizzyuan-s-website/)
 - **Blog:** [All posts](https://lizzyuan77.github.io/lizzyuan-s-website/blog/)
+- **Blog 3:** [How Much of the Participation Decline Reflects an Aging Population?](https://lizzyuan77.github.io/lizzyuan-s-website/blog/posts/post3/)
+- **Reproduce Blog 3:** [File guide and run order](blog/posts/post3/README.md), beginning with the [IPUMS extract specification](blog/posts/post3/DATA_REQUEST.md). Raw CPS data are obtained separately.
 - **Blog 2:** [What Is Your Student ID Worth?](https://lizzyuan77.github.io/lizzyuan-s-website/blog/posts/post2/)
 - **Reproduce Blog 2:** [File guide and exact steps](blog/posts/post2/README.md). Start with `Rscript blog/posts/post2/run.R` for an offline rebuild from included admission-price evidence.
 - **Blog 7:** [Which College Majors Come Closest to Earnings Parity?](https://lizzyuan77.github.io/lizzyuan-s-website/blog/posts/post7/)
