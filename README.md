@@ -4,6 +4,8 @@ A personal website and a collection of economics and data-analysis articles for 
 
 - **Website:** [lizzyuan77.github.io/lizzyuan-s-website](https://lizzyuan77.github.io/lizzyuan-s-website/)
 - **Blog:** [All posts](https://lizzyuan77.github.io/lizzyuan-s-website/blog/)
+- **Blog 2:** [What Is Your Student ID Worth?](https://lizzyuan77.github.io/lizzyuan-s-website/blog/posts/post2/)
+- **Reproduce Blog 2:** [File guide and exact steps](blog/posts/post2/README.md). Start with `Rscript blog/posts/post2/run.R` for an offline rebuild from included admission-price evidence.
 - **Blog 7:** [Which College Majors Come Closest to Earnings Parity?](https://lizzyuan77.github.io/lizzyuan-s-website/blog/posts/post7/)
 - **Reproduce Blog 7:** [Start with its README](blog/posts/post7/README.md). Public 2024 ACS PUMS data, Python analysis, and a linked Plotly explorer; the raw archive is downloaded separately.
 - **Blog 6:** [Does One Year of Income Mislead Us About Mobility?](https://lizzyuan77.github.io/lizzyuan-s-website/blog/posts/post6/)

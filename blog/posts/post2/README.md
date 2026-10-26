@@ -1,18 +1,58 @@
-# Blog 2: What Is Your Student ID Worth?
+# Blog 2 — What Is Your Student ID Worth?
 
-Snapshot: September 21, 2026 America/New_York (acquisition log uses UTC, September 22). Eighteen institutions in eight cities, selected from 30 candidates. The two SAAM URLs are one institution. Barnes was a separate preliminary pilot exclusion.
+**Start here:** [read the article](https://lizzyuan77.github.io/lizzyuan-s-website/blog/posts/post2/) · [editable article](index.qmd) · [clean admission data](data/derived/museum_prices.csv) · [analysis script](analyze.R).
 
-## Reproduce without network access
+The question is how much a student ID saves on the **same museum visit**, comparing a student and nonstudent of the same age. The September 21, 2026 snapshot covers 18 institutions in eight cities. It is a selected sample, not a representative city ranking. Original collection timestamps are UTC (September 22). Two SAAM URLs represent one institution; Barnes was a separate preliminary pilot exclusion.
 
-Install R with rvest, xml2 and ggplot2. From this folder, run:
+## File guide
 
-```
-Rscript analyze.R
-```
+| File or folder | Purpose |
+| --- | --- |
+| `index.qmd`, `post.css` | Article source and styling |
+| `run.R` | One-command, offline rebuild of all analysis outputs and the download bundle |
+| `analyze.R` | rvest extraction, cleaning, price comparisons, CSV summaries, and two figures |
+| `build-explorer.R`, `explorer-template.html` | Generate every explorer row, price, source link, and condition from the same analysis data |
+| `explorer.html` | Generated table included in the article; do not edit prices here |
+| `package.R`, `research.zip` | Rebuildable download bundle with code, evidence, results, and documentation |
+| `acquire.R`, `sources.csv` | Optional collection script and candidate official URLs; never run by a render |
+| `rules.csv` | Reviewed label patterns, price types, and manually reviewed eligibility/schedule notes |
+| `data/evidence/` | 18 short factual HTML extracts supporting offline price extraction |
+| `data/derived/` | Generated museum-level data and city/region summaries |
+| `results/` | Two generated figures, session information, original collection log, screening decisions, and raw-page hashes |
 
-This re-extracts prices from `data/evidence/*.html`, recomputes museum/city/region CSVs and regenerates both charts. `rules.csv` contains reviewed label patterns, not assigned ticket prices. The code fails if a required label disappears. `results/session-info.txt` records the environment used. A Quarto render additionally needs knitr and rmarkdown. From the website root: `quarto render blog/posts/post2/index.qmd --no-clean`.
+Scripts live beside the article rather than in a separate code folder. This table is the map to their roles. The repository's `docs/blog/posts/post2/` contains rendered publication files, not the editable sources.
 
-The evidence files are exact short matched price text in a NEW minimal HTML wrapper, not full preserved DOM pages. This supports offline checking of extraction and arithmetic, not independent reconstruction of all original layout context. Original downloaded pages are retained privately and hashed in `results/raw-manifest.csv`; no museum artwork or complete website is republished. To parse original cached HTML instead, run `Rscript analyze.R --raw PATH_TO_RAW_FOLDER`. Both modes use the same reviewed patterns. An independent fresh scrape can change results and requires a new review.
+## Reproduce the published snapshot offline
+
+1. Install R. Install these packages once:
+
+   ```r
+   install.packages(c("rvest", "xml2", "ggplot2", "knitr", "rmarkdown"))
+   ```
+
+2. From the **website root**, run:
+
+   ```sh
+   Rscript blog/posts/post2/run.R
+   ```
+
+   This reads the supplied local evidence, re-extracts admission prices with rvest, checks required labels and valid prices, and regenerates all three CSVs, both PNG figures, `explorer.html`, `results/session-info.txt`, and `research.zip`. It makes **no network requests**. It requires the standard `zip` utility on your PATH to build the bundle; on Windows, Rtools supplies one. In an extracted bundle, run `Rscript run.R` from its post folder.
+
+3. Install [Quarto](https://quarto.org/docs/get-started/). From the **website root**, build the article:
+
+   ```sh
+   quarto render blog/posts/post2/index.qmd
+   ```
+
+   Quarto re-runs the offline analysis and writes `docs/blog/posts/post2/index.html`. Use `run.R` first when updating the downloadable bundle. The article's numerical claims use inline R expressions rather than copied results. The explorer uses the same generated data as the figures.
+
+The last successful environment is recorded in `results/session-info.txt`. The original analysis used R 4.6.1, rvest 1.0.5, and ggplot2 4.0.3. The revised replay is also checked locally; the generated session file records its actual versions. Package versions are documented, not locked: different graphics-library versions may change rendering without changing prices.
+
+### What offline reproduction does and does not establish
+
+The evidence files are exact short matched price text inside a **new minimal HTML wrapper**, not original preserved DOM pages. Offline replay checks the extraction logic, arithmetic, and presentation against those extracts. It cannot independently reconstruct omitted page context or verify that a price is still current. Original downloaded pages are not required for offline replay and are not included publicly; their recorded hashes are in `results/raw-manifest.csv`.
+
+If you possess an original raw cache, from this post folder use `Rscript analyze.R --raw /absolute/path/to/cache`, then `Rscript package.R`. Both raw and evidence modes use the same label patterns. A fresh scrape is a separate exercise and may produce different prices: do not silently relabel it as the September snapshot. Missing labels stop the parser; failed requests never become zero prices.
 
 ## Collection and exclusions
 

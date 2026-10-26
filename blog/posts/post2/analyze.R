@@ -1,13 +1,16 @@
 # Run from this directory. Default: offline replay of short factual evidence.
 # --raw PATH reads original cached pages and regenerates evidence; no network.
 if(.Platform$OS.type=='windows') Sys.setlocale('LC_CTYPE','English_United States.utf8')
+required <- c("rvest", "xml2", "ggplot2")
+missing <- required[!vapply(required, requireNamespace, logical(1), quietly=TRUE)]
+if(length(missing)) stop("Install missing R packages: ", paste(missing, collapse=", "))
 library(rvest)
 library(ggplot2)
 args <- commandArgs(trailingOnly=TRUE)
 raw_dir <- if(length(args)==2 && args[1]=='--raw') args[2] else NULL
 src <- read.csv('sources.csv',stringsAsFactors=FALSE)
 rules <- read.csv('rules.csv',stringsAsFactors=FALSE,encoding='UTF-8')
-stopifnot(nrow(rules)==18)
+stopifnot(nrow(rules)==18, !anyDuplicated(rules$id), !anyDuplicated(src$id), all(rules$id %in% src$id))
 dir.create('data/evidence',recursive=TRUE,showWarnings=FALSE)
 dir.create('data/derived',recursive=TRUE,showWarnings=FALSE)
 dir.create('results',showWarnings=FALSE)
@@ -49,5 +52,6 @@ g<-ggplot(city,aes(saving,reorder(label,saving)))+geom_col(fill='#21665c',width=
 ggsave('results/city-savings.png',g,width=9,height=5.5,dpi=180)
 g2<-ggplot(d,aes(student,reorder(museum,saving)))+geom_segment(aes(x=student,xend=adult,yend=reorder(museum,saving)),color='#cf9f45',linewidth=1.6)+geom_point(aes(color='Student'),size=2.6)+geom_point(aes(x=adult,color='Adult'),size=2.6)+scale_color_manual(values=c(Student='#21665c',Adult='#b36b38'))+labs(title='A discount is not the same as a cheap visit',subtitle='Posted admission: student vs. otherwise equivalent adult, age 30',x='USD',color=NULL,caption='Zero-price pairs overlap. General admission only; fees and special exhibitions excluded.')+theme(legend.position='top',axis.text.y=element_text(size=9))
 ggsave('results/museum-prices.png',g2,width=10,height=7.4,dpi=180)
+source('build-explorer.R', local=TRUE)
 writeLines(capture.output(sessionInfo()),'results/session-info.txt')
 print(city);print(region)
