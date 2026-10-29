@@ -1,0 +1,70 @@
+---
+title: "What Can a Campus Poll Really Tell Us?"
+subtitle: "Learn statistical inference by drawing, resampling, and testing fictional Penn polls"
+author: "Jiaqi Yuan"
+date: 2026-10-28
+description: "Four hands-on simulations use a fictional Penn funding poll to explain sampling uncertainty, bootstrap intervals, coverage, and hypothesis testing."
+categories: [simulation, statistics, public policy]
+metadata-files:
+  - results/text_values.json
+format:
+  html:
+    toc: false
+    css: post.css
+resources:
+  - results/chart.html
+  - results/summary.csv
+  - vendor/plotly-basic-3.1.0.min.js
+  - research.zip
+---
+
+
+[The Penn Fund](https://giving.upenn.edu/the-penn-fund/) supports undergraduate financial aid, academics, technology, and student organizations. [Penn First Plus](https://pennfirstplus.upenn.edu/) serves first-generation and lower-income students. These real priorities motivate a fictional question: **would most undergraduates put first-generation support first when choosing an additional alumni-funded gift’s use?**
+
+Our example poll records **{{< meta yes >}} of 500 choices—{{< meta observed >}}%—for first-generation support**, combining all other priorities into one category. These are **simulated responses, not official Penn votes**. In our invented population, true support is 55%. Knowing the truth lets us investigate how inference works: learning about a population from an imperfect sample.
+
+## Four experiments you can build yourself
+
+Use **Draw one**, **Add**, or **Play batches** to watch each distribution develop. **Complete** reveals the full run; **Start over** replays it. Draws follow fixed seeds for reproducibility. Each sample-size setting has its own independently drawn reference poll.
+
+```{=html}
+<iframe src="results/chart.html" title="Four step-by-step statistical inference simulation demonstrations" style="width:100%;height:1250px;border:1px solid #dfcddf;border-radius:14px;background:#fffaf2" loading="eager"></iframe>
+```
+
+[Open the demos separately](results/chart.html) · [Download the reference summary](results/summary.csv)
+
+## Demo 1: Estimate uncertainty when the truth is unknown
+
+A real researcher cannot repeatedly survey the entire population. The **bootstrap** instead uses one observed sample as a stand-in.
+
+Start with **Sample → bootstrap**, then click **Draw the reference sample**. Imagine putting the reference poll’s response cards in a bag. Draw a card, record it, **put it back**, and continue until the resample has 500 answers. The repeated-card display shows why one person can appear several times.
+
+Add 100 resamples, then complete 4,000. Their percentages form a bootstrap distribution. Its 2.5th and 97.5th percentiles bound our **95% interval: {{< meta ci_low >}}%–{{< meta ci_high >}}%**. Switch from 90% to 99% confidence: keeping more of the distribution generally makes the interval wider. More resamples improve calculation stability; they do not create new respondents.
+
+## Demo 2: Does a “95% interval” catch the truth?
+
+Now repeat the **whole procedure**: draw a new poll, bootstrap it 4,000 times, and check its interval against the known 55%. Reveal intervals individually or play batches. Purple intervals contain the truth; orange ones miss. The truth stays fixed while intervals move.
+
+With only ten polls, the running success rate can jump around. Complete 2,000: at sample size 500, **{{< meta covered >}} intervals contain 55%—{{< meta coverage >}}%**. Compare 90%, 95%, and 99% methods. Wider intervals generally catch the truth more often.
+
+This repeated-sample performance is what confidence describes. It is not a probability that the fixed truth moves inside a particular finished interval. Coverage is approximate; discrete responses and simulation variability help explain why our result is not exactly 95%.
+
+## Demo 3: Could a tied population produce this result?
+
+Switch to **Test a tie**. Change the assumed population to 50% choosing first-generation support. This is the **null hypothesis**, a reference claim—not something we already know is true.
+
+Simulate polls under that claim. Count those at least as far from 50% as the reference poll, **in either direction**. The running fraction—extreme polls divided by all null polls—is the **two-sided p-value**. After 100,000 draws it is approximately **{{< meta pvalue >}}**. A short run with no extreme draws does not establish zero probability.
+
+Our test statistic is the **absolute distance from 50%**, measured in percentage points. A result of 56.6% or 43.4% is equally extreme: both are 6.6 points away. The chart folds both directions into one right tail. Shading marks the prechosen rejection region with a false-rejection probability at most 5%; orange bars show the p-value tail beyond the observed statistic. Neither the p-value nor the rejection rule gives the probability that the null is true, a distinction emphasized by the [American Statistical Association](https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf).
+
+## Extra: Why doesn’t every poll get 55%?
+
+Click **Draw one poll** several times. Each draws different simulated people from the same population. The reported percentages change even though the population’s preference does not. Complete 2,000 polls to build a **sampling distribution**: the pattern of results across repeated samples.
+
+Change the sample size and repeat. Larger samples generally concentrate more tightly around the true 55%. This is sampling uncertainty, not evidence that campus opinion keeps changing. It also explains why one poll’s majority need not establish a population majority.
+
+## What should we learn?
+
+**Inference connects a sample to a population through assumptions and repeated-sampling logic.** Bootstrap uncertainty and a test against a tie help interpret preferences; they do not determine an official vote’s winner or establish that one funding choice improves outcomes. More simulations cannot repair biased participation. These demos assume independent responses and unbiased sampling.
+
+[Replication files](research.zip) include the code, seeds, simulated responses, intervals, and exact-binomial checks.

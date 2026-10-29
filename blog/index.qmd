@@ -25,12 +25,18 @@ listing:
   <span>BLOG 5</span>
   <span>BLOG 6</span>
   <span>BLOG 7</span>
+  <span>BLOG 8</span>
   <span>STATISTICS</span>
   <span>ECONOMICS</span>
   <span>DATA STORIES</span>
 </div>
 <div class="blog-start blog-featured">
-  <span class="blog-start-label">BLOG 7 · LATEST</span>
+  <span class="blog-start-label">BLOG 8 · LATEST</span>
+  <a href="posts/post8/index.html">What Can a Campus Poll Really Tell Us?</a>
+  <span class="blog-start-note">Draw a fictional campus poll, build a bootstrap confidence interval, check its coverage, and simulate a hypothesis test in a step-by-step interactive explorer.</span>
+</div>
+<div class="blog-start" style="margin-top: 0.8rem">
+  <span class="blog-start-label">BLOG 7</span>
   <a href="posts/post7/index.html">Which College Majors Come Closest to Earnings Parity?</a>
   <span class="blog-start-note">A degree is not a job. Explore earnings gaps across 129 college majors, then compare working hours and career destinations in a linked interactive chart using Census data.</span>
 </div>

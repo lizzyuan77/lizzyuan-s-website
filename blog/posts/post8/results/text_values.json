@@ -1,0 +1,10 @@
+{
+  "observed": "56.6",
+  "yes": "283",
+  "ci_low": "52.4",
+  "ci_high": "61.0",
+  "coverage": "96.2",
+  "covered": "1,923",
+  "pvalue": "0.0035",
+  "large_pvalue": "0.1953"
+}

@@ -60,7 +60,7 @@
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "JIAQI YUAN · NOTES & METHODS\n\n\n\nA growing collection of clear, curious essays about statistics, economics, and the small details that make data worth looking at twice.\n\n\nBLOG 1 BLOG 2 BLOG 3 BLOG 4 BLOG 5 BLOG 6 BLOG 7 STATISTICS ECONOMICS DATA STORIES\n\n\nBLOG 7 · LATEST Which College Majors Come Closest to Earnings Parity? A degree is not a job. Explore earnings gaps across 129 college majors, then compare working hours and career destinations in a linked interactive chart using Census data.\n\n\nBLOG 6 Does One Year of Income Mislead Us About Mobility? A hands-on tutorial: link PSID children to their mothers with SQL inside Python, build three decades of income histories with JOIN and GROUP BY, and estimate how strongly income persists across generations. Daughters and sons tell different stories, and one year of income, or one measured too early, can badly mislead.\n\n\nBLOG 5 Why a Tech-Rich State Can Still Have a Wide Gender Pay Gap Claudia Goldin’s research frames a deeper look at gender earnings across 50 states: who holds the technology jobs, what women and men earn inside tech, and why prosperity alone does not close the gap. Census maps and trends from 2019 to 2024 connect access, pay, and the cost of flexibility.\n\n\nBLOG 4 More Tech, Better Jobs? Does a growing technology workforce mean a stronger job market? Census data across 50 states and six years reveal that rising tech employment shares did not consistently accompany lower unemployment or higher employment rates. Four charts and two U.S. maps compare states, track changes over time, and take a closer look at two Bay Area core counties.\n\n\nBLOG 3 How Much of the Participation Decline Reflects an Aging Population? A falling national average can hide a changing population. Using more than two million weighted CPS person-month observations, this post separates the 2019–2024 decline in labor-force participation into age composition and changes within age groups. Three charts show how an aging population outweighed participation gains—and why the headline rate cannot tell the whole story.\n\n\nBLOG 2 What Is Your Student ID Worth? Where does a student ID save the most—and where can you visit for less? Using R to collect official admission prices, this post compares 18 museums across eight U.S. cities. Philadelphia offers the largest average student discount in this sample, but museums that are free for everyone tell a different story about affordability. Explore the charts and filter the ticket table by city and age to plan your next visit.\n\n\nBLOG 1 · START HERE How Lisa Wins at Every Distance and Still Loses A friendly introduction to Simpson’s paradox."
+    "text": "JIAQI YUAN · NOTES & METHODS\n\n\n\nA growing collection of clear, curious essays about statistics, economics, and the small details that make data worth looking at twice.\n\n\nBLOG 1 BLOG 2 BLOG 3 BLOG 4 BLOG 5 BLOG 6 BLOG 7 BLOG 8 STATISTICS ECONOMICS DATA STORIES\n\n\nBLOG 8 · LATEST What Can a Campus Poll Really Tell Us? Draw a fictional campus poll, build a bootstrap confidence interval, check its coverage, and simulate a hypothesis test in a step-by-step interactive explorer.\n\n\nBLOG 7 Which College Majors Come Closest to Earnings Parity? A degree is not a job. Explore earnings gaps across 129 college majors, then compare working hours and career destinations in a linked interactive chart using Census data.\n\n\nBLOG 6 Does One Year of Income Mislead Us About Mobility? A hands-on tutorial: link PSID children to their mothers with SQL inside Python, build three decades of income histories with JOIN and GROUP BY, and estimate how strongly income persists across generations. Daughters and sons tell different stories, and one year of income, or one measured too early, can badly mislead.\n\n\nBLOG 5 Why a Tech-Rich State Can Still Have a Wide Gender Pay Gap Claudia Goldin’s research frames a deeper look at gender earnings across 50 states: who holds the technology jobs, what women and men earn inside tech, and why prosperity alone does not close the gap. Census maps and trends from 2019 to 2024 connect access, pay, and the cost of flexibility.\n\n\nBLOG 4 More Tech, Better Jobs? Does a growing technology workforce mean a stronger job market? Census data across 50 states and six years reveal that rising tech employment shares did not consistently accompany lower unemployment or higher employment rates. Four charts and two U.S. maps compare states, track changes over time, and take a closer look at two Bay Area core counties.\n\n\nBLOG 3 How Much of the Participation Decline Reflects an Aging Population? A falling national average can hide a changing population. Using more than two million weighted CPS person-month observations, this post separates the 2019–2024 decline in labor-force participation into age composition and changes within age groups. Three charts show how an aging population outweighed participation gains—and why the headline rate cannot tell the whole story.\n\n\nBLOG 2 What Is Your Student ID Worth? Where does a student ID save the most—and where can you visit for less? Using R to collect official admission prices, this post compares 18 museums across eight U.S. cities. Philadelphia offers the largest average student discount in this sample, but museums that are free for everyone tell a different story about affordability. Explore the charts and filter the ticket table by city and age to plan your next visit.\n\n\nBLOG 1 · START HERE How Lisa Wins at Every Distance and Still Loses A friendly introduction to Simpson’s paradox."
   },
   {
     "objectID": "blog/index.html#latest-notes",
@@ -677,5 +677,124 @@
     "title": "How Much of the Participation Decline Reflects an Aging Population?",
     "section": "Data and reproduction",
     "text": "Data and reproduction\nI use twelve Basic Monthly CPS samples per year: 2,115,648 eligible person-month observations of civilians age 16+. Respondents can appear repeatedly.\nAll estimates use WTFINL person weights, normalized so each month contributes equally. Group shares and rates use consistent weights. Results are not seasonally adjusted; population-control revisions can affect comparisons. No significance claims are made.\nSource: IPUMS CPS Version 13.0, University of Minnesota; Basic Monthly samples, 2019 and 2024. Method: Kitagawa (1955).\nDownload code and aggregate results. The README gives the run order. Obtain raw microdata separately through IPUMS."
+  },
+  {
+    "objectID": "blog/posts/post8/index.html",
+    "href": "blog/posts/post8/index.html",
+    "title": "What Can a Campus Poll Really Tell Us?",
+    "section": "",
+    "text": "The Penn Fund supports undergraduate financial aid, academics, technology, and student organizations. Penn First Plus serves first-generation and lower-income students. These real priorities motivate a fictional question: would most undergraduates put first-generation support first when choosing an additional alumni-funded gift’s use?\nOur example poll records 283 of 500 choices—56.6%—for first-generation support, combining all other priorities into one category. These are simulated responses, not official Penn votes. In our invented population, true support is 55%. Knowing the truth lets us investigate how inference works: learning about a population from an imperfect sample."
+  },
+  {
+    "objectID": "blog/posts/post8/index.html#one-poll-many-possible-answers",
+    "href": "blog/posts/post8/index.html#one-poll-many-possible-answers",
+    "title": "Does a Campus Poll Speak for Penn?",
+    "section": "One poll, many possible answers",
+    "text": "One poll, many possible answers\nA survey estimates a population using a sample. Even with perfectly fair sampling, different people can produce different results. The bootstrap approximates this uncertainty using the responses already collected.\nImagine putting the 500 response cards in a bag. Draw one, record its answer, put it back, and repeat until you have 500 answers. Putting cards back means a person can appear repeatedly in a resample. Record that resample’s support percentage, then repeat the process 4,000 times.\nThe first chart plots those percentages. The middle 95%, bounded by the 2.5th and 97.5th percentiles, gives a percentile bootstrap interval: 52.4%–61.0%. It describes the uncertainty around the sample estimate; resampling has not interviewed anyone new."
+  },
+  {
+    "objectID": "blog/posts/post8/index.html#explore-three-different-experiments",
+    "href": "blog/posts/post8/index.html#explore-three-different-experiments",
+    "title": "Does a Campus Poll Speak for Penn?",
+    "section": "Explore three different experiments",
+    "text": "Explore three different experiments\nChoose a sample size, then switch views. Each size uses a separately drawn poll, so both the sample size and its observed support change. Hover for exact values. The repeated-poll experiment uses the same true support across sizes.\n\nOpen the explorer separately · Download the summary"
+  },
+  {
+    "objectID": "blog/posts/post8/index.html#what-does-95-confident-actually-promise",
+    "href": "blog/posts/post8/index.html#what-does-95-confident-actually-promise",
+    "title": "Does a Campus Poll Speak for Penn?",
+    "section": "What does “95% confident” actually promise?",
+    "text": "What does “95% confident” actually promise?\nResampling one poll does not show whether the interval method works. For that, we need new polls from the population.\nIn the second view, I draw 2,000 independent polls, bootstrap each, and check whether its interval contains the known 55% truth. For samples of 500, 1,923 intervals contain it: 96.2%. Purple lines contain the truth; orange lines miss it. The dotted truth line stays fixed while intervals move.\nThe 95% describes the method’s success across repeated samples. It does not mean the fixed population value has a 95% probability of being inside a particular completed interval. The observed coverage need not equal exactly 95%: simulation fluctuates, yes/no counts are discrete, and bootstrap coverage is approximate. Smaller or unusual populations can behave differently."
+  },
+  {
+    "objectID": "blog/posts/post8/index.html#could-an-evenly-divided-town-produce-this-poll",
+    "href": "blog/posts/post8/index.html#could-an-evenly-divided-town-produce-this-poll",
+    "title": "Does a Poll’s Majority Mean a Real Majority?",
+    "section": "Could an evenly divided town produce this poll?",
+    "text": "Could an evenly divided town produce this poll?\nA null hypothesis is a claim used as a reference. Here it says the town is evenly divided: true support is 50%.\nThe third view simulates 100,000 polls under that claim. The test statistic is the poll’s distance from 50%. Count simulated polls at least as far from a tie as our observed result, in either direction, and divide by 100,000. That fraction is the two-sided p-value: approximately 0.0035.\nThe shaded ends show a rejection rule chosen in advance: reject a tie when the result falls in sufficiently unusual tails, with a false-rejection probability no greater than 5% under the model. Orange bars instead show the tails used for this poll’s p-value; the two boundaries need not coincide.\nA small p-value indicates tension with a tie under the sampling assumptions. It is not the probability the tie is true, as the American Statistical Association explains. Failing to reject a tie would not prove equal support either."
+  },
+  {
+    "objectID": "blog/posts/post8/index.html#the-lesson-for-reading-a-poll",
+    "href": "blog/posts/post8/index.html#the-lesson-for-reading-a-poll",
+    "title": "Does a Campus Poll Speak for Penn?",
+    "section": "The lesson for reading a poll",
+    "text": "The lesson for reading a poll\nA sample majority is evidence about preferences, not a mandate from the entire campus. The interval shows uncertainty; the p-value tests compatibility with a 50–50 population. Neither establishes that first-generation aid produces better outcomes than other uses.\nAn actual ballot’s winner follows its voting rules. Our inference instead concerns a hypothetical random sample and the wider undergraduate population. More respondents improve precision, but bootstrapping cannot repair voluntary participation or nonresponse bias. A popular option can also win without exceeding 50%.\nCode and replication files include fixed seeds, every coverage interval, and exact-binomial checks. All response data are simulated; Penn’s websites supply background only."
+  },
+  {
+    "objectID": "blog/posts/post8/index.html#could-a-5050-campus-produce-this-poll",
+    "href": "blog/posts/post8/index.html#could-a-5050-campus-produce-this-poll",
+    "title": "Does a Campus Poll Speak for Penn?",
+    "section": "Could a 50–50 campus produce this poll?",
+    "text": "Could a 50–50 campus produce this poll?\nA null hypothesis is a claim used as a reference. Here it says 50% would choose first-generation support and 50% would choose another priority.\nThe third view simulates 100,000 polls under that claim. The test statistic is the poll’s distance from 50%. Count simulated polls at least as far from a tie as our observed result, in either direction, and divide by 100,000. That fraction is the two-sided p-value: approximately 0.0035.\nThe shaded ends show a rejection rule chosen in advance: reject a tie when the result falls in sufficiently unusual tails, with a false-rejection probability no greater than 5% under the model. Orange bars instead show the tails used for this poll’s p-value; the two boundaries need not coincide.\nA small p-value indicates tension with a tie under the sampling assumptions. It is not the probability the tie is true, as the American Statistical Association explains. Failing to reject a tie would not prove equal support either."
+  },
+  {
+    "objectID": "blog/posts/post8/index.html#four-experiments-you-can-build-yourself",
+    "href": "blog/posts/post8/index.html#four-experiments-you-can-build-yourself",
+    "title": "What Can a Campus Poll Really Tell Us?",
+    "section": "Four experiments you can build yourself",
+    "text": "Four experiments you can build yourself\nUse Draw one, Add, or Play batches to watch each distribution develop. Complete reveals the full run; Start over replays it. Draws follow fixed seeds for reproducibility. Each sample-size setting has its own independently drawn reference poll.\n\nOpen the demos separately · Download the reference summary"
+  },
+  {
+    "objectID": "blog/posts/post8/index.html#demo-1-why-doesnt-every-poll-get-55",
+    "href": "blog/posts/post8/index.html#demo-1-why-doesnt-every-poll-get-55",
+    "title": "What Can a Campus Poll Really Tell Us?",
+    "section": "Demo 1: Why doesn’t every poll get 55%?",
+    "text": "Demo 1: Why doesn’t every poll get 55%?\nClick Draw one poll several times. Each draws different simulated people from the same population. The reported percentages change even though the population’s preference does not. Complete 2,000 polls to build a sampling distribution: the pattern of results across repeated samples.\nChange the sample size and repeat. Larger samples generally concentrate more tightly around the true 55%. This is sampling uncertainty, not evidence that campus opinion keeps changing. It also explains why one poll’s majority need not establish a population majority."
+  },
+  {
+    "objectID": "blog/posts/post8/index.html#demo-2-estimate-uncertainty-when-the-truth-is-unknown",
+    "href": "blog/posts/post8/index.html#demo-2-estimate-uncertainty-when-the-truth-is-unknown",
+    "title": "What Can a Campus Poll Really Tell Us?",
+    "section": "Demo 2: Estimate uncertainty when the truth is unknown",
+    "text": "Demo 2: Estimate uncertainty when the truth is unknown\nA real researcher cannot repeatedly survey the entire population. The bootstrap instead uses one observed sample as a stand-in.\nSwitch to Build an interval. Imagine putting the reference poll’s response cards in a bag. Draw a card, record it, put it back, and continue until the resample has 500 answers. The repeated-card display shows why one person can appear several times.\nAdd 100 resamples, then complete 4,000. Their percentages form a bootstrap distribution. Its 2.5th and 97.5th percentiles bound our 95% interval: 52.4%–61.0%. Early endpoints can move as resamples accumulate. Switch from 90% to 99% confidence: keeping more of the distribution generally makes the interval wider. More resamples improve calculation stability; they do not create new respondents."
+  },
+  {
+    "objectID": "blog/posts/post8/index.html#demo-3-does-a-95-interval-catch-the-truth",
+    "href": "blog/posts/post8/index.html#demo-3-does-a-95-interval-catch-the-truth",
+    "title": "What Can a Campus Poll Really Tell Us?",
+    "section": "Demo 3: Does a “95% interval” catch the truth?",
+    "text": "Demo 3: Does a “95% interval” catch the truth?\nNow repeat the whole procedure: draw a new poll, bootstrap it 4,000 times, and check its interval against the known 55%. Reveal intervals individually or play batches. Purple intervals contain the truth; orange ones miss. The truth stays fixed while intervals move.\nWith only ten polls, the running success rate can jump around. Complete 2,000: at sample size 500, 1,923 intervals contain 55%—96.2%. Compare 90%, 95%, and 99% methods. Wider intervals generally catch the truth more often.\nThis repeated-sample performance is what confidence describes. It is not a probability that the fixed truth moves inside a particular finished interval. Coverage is approximate; discrete responses and simulation variability help explain why our result is not exactly 95%."
+  },
+  {
+    "objectID": "blog/posts/post8/index.html#demo-4-could-a-tied-population-produce-this-result",
+    "href": "blog/posts/post8/index.html#demo-4-could-a-tied-population-produce-this-result",
+    "title": "What Can a Campus Poll Really Tell Us?",
+    "section": "Demo 4: Could a tied population produce this result?",
+    "text": "Demo 4: Could a tied population produce this result?\nSwitch to Test a tie. Change the assumed population to 50% choosing first-generation support. This is the null hypothesis, a reference claim—not something we already know is true.\nSimulate polls under that claim. Count those at least as far from 50% as the reference poll, in either direction. The running fraction—extreme polls divided by all null polls—is the two-sided p-value. After 100,000 draws it is approximately 0.0035. With few draws, no tail hits need not mean the true probability is zero.\nThe shaded tails mark a prechosen rejection rule with a false-rejection probability at most 5%. The orange tails measure this poll’s extremeness. Neither the p-value nor the rejection rule gives the probability that the null is true, a distinction emphasized by the American Statistical Association."
+  },
+  {
+    "objectID": "blog/posts/post8/index.html#what-should-we-learn",
+    "href": "blog/posts/post8/index.html#what-should-we-learn",
+    "title": "What Can a Campus Poll Really Tell Us?",
+    "section": "What should we learn?",
+    "text": "What should we learn?\nInference connects a sample to a population through assumptions and repeated-sampling logic. Bootstrap uncertainty and a test against a tie help interpret preferences; they do not determine an official vote’s winner or establish that one funding choice improves outcomes. More simulations cannot repair biased participation. These demos assume independent responses and unbiased sampling.\nReplication files include the code, seeds, simulated responses, intervals, and exact-binomial checks."
+  },
+  {
+    "objectID": "blog/posts/post8/index.html#demo-1-estimate-uncertainty-when-the-truth-is-unknown",
+    "href": "blog/posts/post8/index.html#demo-1-estimate-uncertainty-when-the-truth-is-unknown",
+    "title": "What Can a Campus Poll Really Tell Us?",
+    "section": "Demo 1: Estimate uncertainty when the truth is unknown",
+    "text": "Demo 1: Estimate uncertainty when the truth is unknown\nA real researcher cannot repeatedly survey the entire population. The bootstrap instead uses one observed sample as a stand-in.\nStart with Sample → bootstrap, then click Draw the reference sample. Imagine putting the reference poll’s response cards in a bag. Draw a card, record it, put it back, and continue until the resample has 500 answers. The repeated-card display shows why one person can appear several times.\nAdd 100 resamples, then complete 4,000. Their percentages form a bootstrap distribution. Its 2.5th and 97.5th percentiles bound our 95% interval: 52.4%–61.0%. Switch from 90% to 99% confidence: keeping more of the distribution generally makes the interval wider. More resamples improve calculation stability; they do not create new respondents."
+  },
+  {
+    "objectID": "blog/posts/post8/index.html#demo-2-does-a-95-interval-catch-the-truth",
+    "href": "blog/posts/post8/index.html#demo-2-does-a-95-interval-catch-the-truth",
+    "title": "What Can a Campus Poll Really Tell Us?",
+    "section": "Demo 2: Does a “95% interval” catch the truth?",
+    "text": "Demo 2: Does a “95% interval” catch the truth?\nNow repeat the whole procedure: draw a new poll, bootstrap it 4,000 times, and check its interval against the known 55%. Reveal intervals individually or play batches. Purple intervals contain the truth; orange ones miss. The truth stays fixed while intervals move.\nWith only ten polls, the running success rate can jump around. Complete 2,000: at sample size 500, 1,923 intervals contain 55%—96.2%. Compare 90%, 95%, and 99% methods. Wider intervals generally catch the truth more often.\nThis repeated-sample performance is what confidence describes. It is not a probability that the fixed truth moves inside a particular finished interval. Coverage is approximate; discrete responses and simulation variability help explain why our result is not exactly 95%."
+  },
+  {
+    "objectID": "blog/posts/post8/index.html#demo-3-could-a-tied-population-produce-this-result",
+    "href": "blog/posts/post8/index.html#demo-3-could-a-tied-population-produce-this-result",
+    "title": "What Can a Campus Poll Really Tell Us?",
+    "section": "Demo 3: Could a tied population produce this result?",
+    "text": "Demo 3: Could a tied population produce this result?\nSwitch to Test a tie. Change the assumed population to 50% choosing first-generation support. This is the null hypothesis, a reference claim—not something we already know is true.\nSimulate polls under that claim. Count those at least as far from 50% as the reference poll, in either direction. The running fraction—extreme polls divided by all null polls—is the two-sided p-value. After 100,000 draws it is approximately 0.0035. A short run with no extreme draws does not establish zero probability.\nOur test statistic is the absolute distance from 50%, measured in percentage points. A result of 56.6% or 43.4% is equally extreme: both are 6.6 points away. The chart folds both directions into one right tail. Shading marks the prechosen rejection region with a false-rejection probability at most 5%; orange bars show the p-value tail beyond the observed statistic. Neither the p-value nor the rejection rule gives the probability that the null is true, a distinction emphasized by the American Statistical Association."
+  },
+  {
+    "objectID": "blog/posts/post8/index.html#extra-why-doesnt-every-poll-get-55",
+    "href": "blog/posts/post8/index.html#extra-why-doesnt-every-poll-get-55",
+    "title": "What Can a Campus Poll Really Tell Us?",
+    "section": "Extra: Why doesn’t every poll get 55%?",
+    "text": "Extra: Why doesn’t every poll get 55%?\nClick Draw one poll several times. Each draws different simulated people from the same population. The reported percentages change even though the population’s preference does not. Complete 2,000 polls to build a sampling distribution: the pattern of results across repeated samples.\nChange the sample size and repeat. Larger samples generally concentrate more tightly around the true 55%. This is sampling uncertainty, not evidence that campus opinion keeps changing. It also explains why one poll’s majority need not establish a population majority."
   }
 ]
