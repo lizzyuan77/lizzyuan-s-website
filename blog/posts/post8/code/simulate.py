@@ -76,11 +76,28 @@ for n in [100,200,500,1000]:
 with (OUT/'summary.csv').open('w') as f:
  w=csv.DictWriter(f,fieldnames=summary[0]);w.writeheader();w.writerows(summary)
 r=all_results['500']; large=all_results['1000']
-(OUT/'text_values.json').write_text(json.dumps(dict(observed=f'{100*r["observed"]:.1f}',yes=str(r['yes']),ci_low=f'{100*r["ci"][0]:.1f}',ci_high=f'{100*r["ci"][1]:.1f}',coverage=f'{100*r["coverage"]:.1f}',covered=f"{sum(x['covers'] for x in r['intervals']):,}",pvalue=f'{r["pvalue"]:.4f}',large_pvalue=f'{large["pvalue"]:.4f}'),indent=2))
+(OUT/'text_values.json').write_text(json.dumps(dict(observed=f'{100*r["observed"]:.1f}',yes=str(r['yes']),ci_low=f'{100*r["ci"][0]:.1f}',ci_high=f'{100*r["ci"][1]:.1f}',coverage=f'{100*r["coverage"]:.1f}',covered=f"{sum(x['covers'] for x in r['intervals']):,}",pvalue=f'{r["pvalue"]:.4f}',large_pvalue=f'{large["pvalue"]:.4f}',extreme_count=f'{r["null_extreme_count"]:,}',null_draws=f'{r["null_H"]:,}',observed_distance=f'{100*abs(r["observed"]-.5):.1f}',critical_distance=f'{100*(r["critical_high"]-.5):.1f}'),indent=2))
 (OUT/'environment.json').write_text(json.dumps(dict(python=platform.python_version(),numpy=np.__version__,seed=SEED,B=B,M=M,H=H),indent=2))
-# Self-contained explorer: all displayed numbers come from the saved simulation.
+# Each experiment has its own page; shared data keep downloads small.
 template=(ROOT/'code/chart_template.html').read_text()
-(OUT/'chart.html').write_text(template.replace('__DATA__',(OUT/'simulation.json').read_text()))
+(OUT/'simulation-data.js').write_text('window.SIM_DATA='+(OUT/'simulation.json').read_text()+';')
+pages=[
+ ('bootstrap','bootstrap.html','1. Build a bootstrap confidence interval','Start with one random sample. Reuse its observed responses to estimate how much its result could vary.','First draw the reference sample. Then add resamples, watch the histogram grow, and read the middle 95%. Try a different confidence level.'),
+ ('coverage','coverage.html','2. Does a 95% interval catch the truth?','A confidence interval is a method with repeated-sampling performance. We can check that performance because our fictional population has known support of 55%.','Reveal ten intervals, then add 100 or play batches. Complete 2,000 and count how many contain the fixed truth. Try 90% and 99% confidence.'),
+ ('null','hypothesis-test.html','3. Test a hypothesis with simulation','Suppose support is exactly 50%. How often would that population produce a poll at least as far from a tie as our observed result?','Build the null distribution in batches. Compare the observed statistic with the shaded rejection region; orange bars contribute to the p-value.'),
+ ('poll','sampling.html','Extra. Why do samples disagree?','Even unbiased polls give different answers when they draw different people. This extra experiment explores that sampling variation.','Draw one poll, then add 20 or play batches. Watch the distribution develop around 55%, then compare sample sizes.')
+]
+for idx,(view,filename,title,intro,instruction) in enumerate(pages):
+ nav='<nav class="page-nav" aria-label="Experiment pages">'+''.join('<a href="'+f+'"'+(' aria-current="page"' if v==view else '')+'>'+('Extra' if v=='poll' else str(i+1))+'</a>' for i,(v,f,*_) in enumerate(pages))+'</nav>'
+ footer='<nav class="page-nav" aria-label="Continue learning">'
+ if idx:footer+='<a href="'+pages[idx-1][1]+'">← Previous experiment</a>'
+ if idx<len(pages)-1:footer+='<a href="'+pages[idx+1][1]+'">Next: '+pages[idx+1][2]+' →</a>'
+ else:footer+='<a href="../index.html#what-should-we-learn">Return to the takeaway →</a>'
+ footer+='</nav>'
+ html=template
+ for key,value in {'PAGE_TITLE':title,'INTRO':intro,'INSTRUCTION':instruction,'INITIAL_VIEW':view,'NAV':nav,'FOOTER':footer}.items():html=html.replace('__'+key+'__',value)
+ (OUT/filename).write_text(html)
+ if idx==0:(OUT/'chart.html').write_text(html) # Preserve the original demo URL.
 # Explicit allowlist; no unrelated local data enter the downloadable bundle.
 with zipfile.ZipFile(ROOT/'research.zip','w',zipfile.ZIP_DEFLATED) as z:
  for name in ['index.qmd','README.md','post.css']:

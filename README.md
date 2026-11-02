@@ -16,7 +16,7 @@ A personal website and a collection of economics and data-analysis articles for 
 - **Reproduce Blog 5:** [Start with its README](blog/posts/post5/README.md). All data needed for that analysis are included; no Census API key or files from another computer are required.
 
 - **Blog 8:** [What Can a Campus Poll Really Tell Us?](https://lizzyuan77.github.io/lizzyuan-s-website/blog/posts/post8/)
-- **Reproduce Blog 8:** [File guide and run order](blog/posts/post8/README.md). All responses are simulated; run `python code/simulate.py` from that post folder to rebuild the seeded experiments and interactive explorer.
+- **Reproduce Blog 8:** [File guide and run order](blog/posts/post8/README.md). Four inline experiments explain confidence intervals and hypothesis testing. All responses are simulated; run `python code/simulate.py` from that post folder to rebuild the seeded experiments and interactive explorer.
 
 ## Repository guide
 

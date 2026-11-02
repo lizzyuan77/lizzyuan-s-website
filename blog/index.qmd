@@ -33,7 +33,7 @@ listing:
 <div class="blog-start blog-featured">
   <span class="blog-start-label">BLOG 8 · LATEST</span>
   <a href="posts/post8/index.html">What Can a Campus Poll Really Tell Us?</a>
-  <span class="blog-start-note">Draw a fictional campus poll, build a bootstrap confidence interval, check its coverage, and simulate a hypothesis test in a step-by-step interactive explorer.</span>
+  <span class="blog-start-note">Draw a fictional campus poll, build a bootstrap confidence interval, check its coverage, and simulate a hypothesis test in four interactive experiments embedded directly in the article.</span>
 </div>
 <div class="blog-start" style="margin-top: 0.8rem">
   <span class="blog-start-label">BLOG 7</span>

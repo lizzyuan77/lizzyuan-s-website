@@ -13,58 +13,79 @@ format:
     css: post.css
 resources:
   - results/chart.html
+  - results/bootstrap.html
+  - results/coverage.html
+  - results/hypothesis-test.html
+  - results/sampling.html
+  - results/simulation-data.js
   - results/summary.csv
   - vendor/plotly-basic-3.1.0.min.js
   - research.zip
 ---
 
 
-[The Penn Fund](https://giving.upenn.edu/the-penn-fund/) supports undergraduate financial aid, academics, technology, and student organizations. [Penn First Plus](https://pennfirstplus.upenn.edu/) serves first-generation and lower-income students. These real priorities motivate a fictional question: **would most undergraduates put first-generation support first when choosing an additional alumni-funded gift’s use?**
+[The Penn Fund](https://giving.upenn.edu/the-penn-fund/) helps support financial aid, teaching, and student life. [Penn First Plus](https://pennfirstplus.upenn.edu/) supports first-generation and lower-income students. Imagine asking students: **should first-generation support be the top priority for an additional alumni-funded gift?**
 
-Our example poll records **{{< meta yes >}} of 500 choices—{{< meta observed >}}%—for first-generation support**, combining all other priorities into one category. These are **simulated responses, not official Penn votes**. In our invented population, true support is 55%. Knowing the truth lets us investigate how inference works: learning about a population from an imperfect sample.
+Our fictional poll finds **{{< meta yes >}} out of 500 students—{{< meta observed >}}%—say yes**. Everyone choosing another priority counts as no. Does this sample give us good evidence that most students agree?
 
-## Four experiments you can build yourself
+These are **made-up responses, not real Penn votes**. We set support in the fictional population at 55%. Knowing that answer lets us check whether our statistical tools work.
 
-Use **Draw one**, **Add**, or **Play batches** to watch each distribution develop. **Complete** reveals the full run; **Start over** replays it. Draws follow fixed seeds for reproducibility. Each sample-size setting has its own independently drawn reference poll.
+## 1. How uncertain is one poll?
+
+A sample rarely matches the whole population exactly. We need a way to show how uncertain its answer is.
+
+The **bootstrap** starts with the responses we already have. Imagine writing each answer on a card and putting all 500 cards in a bag. Draw one, record its answer, **put it back**, and draw again. Stop after 500 draws. Some cards appear more than once; others never appear. This is one **resample**.
+
+Click **Step 1: Draw the reference sample**, then **Add 100**. Each bar shows how often a percentage appears across the resamples. Complete 4,000 to build the full bootstrap distribution.
+
+To make a **95% confidence interval**, remove the lowest 2.5% and highest 2.5% of results. The middle 95% runs from **{{< meta ci_low >}}% to {{< meta ci_high >}}%**. This range expresses uncertainty around our sample’s answer.
+
+Try 99% confidence: the range gets wider because we keep more results. More resamples make the endpoints steadier; they do not add new students.
 
 ```{=html}
-<iframe src="results/chart.html" title="Four step-by-step statistical inference simulation demonstrations" style="width:100%;height:1250px;border:1px solid #dfcddf;border-radius:14px;background:#fffaf2" loading="eager"></iframe>
+<iframe src="results/bootstrap.html?embedded=1&v=concise" title="Build a bootstrap confidence interval" style="width:100%;height:1250px;border:1px solid #dfcddf;border-radius:14px;background:#fffaf2" loading="lazy"></iframe>
 ```
 
-[Open the demos separately](results/chart.html) · [Download the reference summary](results/summary.csv)
+## 2. What does “95% confidence” mean?
 
-## Demo 1: Estimate uncertainty when the truth is unknown
+Now start over with **new students each time**. For every new poll, build a new bootstrap interval. Because we know the true answer is 55%, we can check whether each interval includes it.
 
-A real researcher cannot repeatedly survey the entire population. The **bootstrap** instead uses one observed sample as a stand-in.
+Each horizontal line below is one interval. **Purple lines include 55%; orange lines miss it.** The vertical line marks the fixed truth.
 
-Start with **Sample → bootstrap**, then click **Draw the reference sample**. Imagine putting the reference poll’s response cards in a bag. Draw a card, record it, **put it back**, and continue until the resample has 500 answers. The repeated-card display shows why one person can appear several times.
+Click **Complete 2,000**. At sample size 500, **{{< meta covered >}} of 2,000 intervals include 55%: {{< meta coverage >}}%**. That is close to 95%, though not exact. Our method is approximate, responses come in whole-person counts, and simulation results vary.
 
-Add 100 resamples, then complete 4,000. Their percentages form a bootstrap distribution. Its 2.5th and 97.5th percentiles bound our **95% interval: {{< meta ci_low >}}%–{{< meta ci_high >}}%**. Switch from 90% to 99% confidence: keeping more of the distribution generally makes the interval wider. More resamples improve calculation stability; they do not create new respondents.
+“95% confidence” describes what the **method does across many new samples**: about 95 out of 100 intervals should include the truth when the method works well. It does not mean that 95% of students fall inside the range. Compare 90% and 99%: wider ranges usually miss less often.
 
-## Demo 2: Does a “95% interval” catch the truth?
+```{=html}
+<iframe src="results/coverage.html?embedded=1&v=concise" title="Check confidence interval coverage" style="width:100%;height:1250px;border:1px solid #dfcddf;border-radius:14px;background:#fffaf2" loading="lazy"></iframe>
+```
 
-Now repeat the **whole procedure**: draw a new poll, bootstrap it 4,000 times, and check its interval against the known 55%. Reveal intervals individually or play batches. Purple intervals contain the truth; orange ones miss. The truth stays fixed while intervals move.
+## 3. Could a 50–50 population give us this poll?
 
-With only ten polls, the running success rate can jump around. Complete 2,000: at sample size 500, **{{< meta covered >}} intervals contain 55%—{{< meta coverage >}}%**. Compare 90%, 95%, and 99% methods. Wider intervals generally catch the truth more often.
+Suppose students are evenly divided. This starting claim is the **null hypothesis**. Simulate polls under that claim and see how often they look at least as unusual as ours.
 
-This repeated-sample performance is what confidence describes. It is not a probability that the fixed truth moves inside a particular finished interval. Coverage is approximate; discrete responses and simulation variability help explain why our result is not exactly 95%.
+Our poll’s {{< meta observed >}}% is **{{< meta observed_distance >}} percentage points from 50%**. A result the same distance below 50% is equally unusual. We use that distance as our **test statistic**. The graph combines departures in both directions into one right-hand tail.
 
-## Demo 3: Could a tied population produce this result?
+Click **Complete 100,000**. Of those simulated polls, {{< meta extreme_count >}} are at least as far from 50% as ours. The **p-value** is {{< meta extreme_count >}} ÷ {{< meta null_draws >}}, or about **0.0035**. In other words, a truly tied population rarely produces a poll this far from a tie.
 
-Switch to **Test a tie**. Change the assumed population to 50% choosing first-generation support. This is the **null hypothesis**, a reference claim—not something we already know is true.
+The shaded **rejection region** marks results we decided beforehand would count against a tie. Its rule wrongly rejects a true tie no more than 5% of the time. Our {{< meta observed_distance >}}-point distance exceeds its {{< meta critical_distance >}}-point threshold, so **we reject the tie at the 5% level**.
 
-Simulate polls under that claim. Count those at least as far from 50% as the reference poll, **in either direction**. The running fraction—extreme polls divided by all null polls—is the **two-sided p-value**. After 100,000 draws it is approximately **{{< meta pvalue >}}**. A short run with no extreme draws does not establish zero probability.
+A p-value is **not the probability that the tie is true**, as the [American Statistical Association explains](https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf).
 
-Our test statistic is the **absolute distance from 50%**, measured in percentage points. A result of 56.6% or 43.4% is equally extreme: both are 6.6 points away. The chart folds both directions into one right tail. Shading marks the prechosen rejection region with a false-rejection probability at most 5%; orange bars show the p-value tail beyond the observed statistic. Neither the p-value nor the rejection rule gives the probability that the null is true, a distinction emphasized by the [American Statistical Association](https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf).
+```{=html}
+<iframe src="results/hypothesis-test.html?embedded=1&v=concise" title="Simulate a hypothesis test" style="width:100%;height:1250px;border:1px solid #dfcddf;border-radius:14px;background:#fffaf2" loading="lazy"></iframe>
+```
 
-## Extra: Why doesn’t every poll get 55%?
+## Extra: Why do polls disagree?
 
-Click **Draw one poll** several times. Each draws different simulated people from the same population. The reported percentages change even though the population’s preference does not. Complete 2,000 polls to build a **sampling distribution**: the pattern of results across repeated samples.
+Draw several new polls below. Their answers change even though the population stays the same. Increase the sample size: results generally cluster more tightly around 55%. More people usually give a more precise poll.
 
-Change the sample size and repeat. Larger samples generally concentrate more tightly around the true 55%. This is sampling uncertainty, not evidence that campus opinion keeps changing. It also explains why one poll’s majority need not establish a population majority.
+```{=html}
+<iframe src="results/sampling.html?embedded=1&v=concise" title="Explore repeated sampling" style="width:100%;height:1250px;border:1px solid #dfcddf;border-radius:14px;background:#fffaf2" loading="lazy"></iframe>
+```
 
 ## What should we learn?
 
-**Inference connects a sample to a population through assumptions and repeated-sampling logic.** Bootstrap uncertainty and a test against a tie help interpret preferences; they do not determine an official vote’s winner or establish that one funding choice improves outcomes. More simulations cannot repair biased participation. These demos assume independent responses and unbiased sampling.
+One poll gives an estimate. **A confidence interval shows its uncertainty; a hypothesis test checks how surprising it would be under a stated claim.** Neither tells us which funding choice improves students’ lives. These examples assume fair, independent sampling. More simulations cannot fix a poll that leaves some students out.
 
-[Replication files](research.zip) include the code, seeds, simulated responses, intervals, and exact-binomial checks.
+[Download the code, simulated data, and replication instructions](research.zip).

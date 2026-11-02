@@ -6,5 +6,9 @@
   "coverage": "96.2",
   "covered": "1,923",
   "pvalue": "0.0035",
-  "large_pvalue": "0.1953"
+  "large_pvalue": "0.1953",
+  "extreme_count": "349",
+  "null_draws": "100,000",
+  "observed_distance": "6.6",
+  "critical_distance": "4.6"
 }

@@ -1,82 +1,83 @@
 # Blog 8 — What Can a Campus Poll Really Tell Us?
 
-A tutorial for general readers linking four demonstrations: drawing new samples, accumulating bootstrap resamples, testing interval coverage, and building a two-sided hypothesis test under a tie. All responses are simulated. Real Penn giving priorities motivate a hypothetical survey of undergraduates choosing first-generation support versus another campus priority. No official voting data are used.
+A beginner-friendly tutorial about bootstrap confidence intervals and hypothesis tests. Four interactive experiments appear directly in the article. All poll responses are simulated; the Penn Fund and Penn First Plus provide background, not survey data.
 
-## File guide
+## Start here
 
-| Location | Purpose |
+- **Read/edit the article:** `index.qmd`.
+- **Reproduce the analysis:** run `code/simulate.py` first, then render the article with Quarto. Exact steps are below.
+- **Inspect results:** `results/summary.csv` contains the main numerical findings.
+- **Download everything for this post:** `research.zip` contains the article, code, documentation, simulated data, and interactive assets. It does not include the whole website theme.
+
+## Where the files are
+
+| File or folder | Purpose |
 | --- | --- |
-| `index.qmd`, `post.css` | Article and page styling; article numbers are imported from generated metadata |
-| `code/simulate.py` | **Run first:** draws samples, bootstraps, simulates coverage/null distributions, validates results, generates the explorer and research bundle |
-| `code/chart_template.html` | Four step-by-step Plotly demonstrations, sample-size and confidence-level controls, incremental reveal, and Play/Pause |
-| `code/requirements.txt` | NumPy version used for replication |
-| `results/simulation.json` | Full reproducible simulation results for all four sizes, including every interval |
-| `results/poll_n*.csv` | Original independently simulated yes/no responses for each displayed poll |
-| `results/coverage_n*.csv` | All 2,000 coverage intervals per size, in original simulation order |
-| `results/summary.csv` | Coverage, simulated p-values, exact reference p-values, rejection probabilities |
-| `results/text_values.json` | Generated article numbers; no manually copied statistical findings |
-| `results/environment.json` | Python/NumPy versions, seed, simulation counts |
-| `results/chart.html` | Generated standalone interactive explorer |
-| `vendor/plotly-basic-3.1.0.min.js` | Bundled Plotly; the explorer makes no external library requests |
-| `research.zip` | Generated code, documentation, and aggregate/simulated results bundle |
+| `index.qmd`, `post.css` | Article source and post styling |
+| `code/simulate.py` | Draws samples, runs the simulations, validates results, and rebuilds the HTML demos and download bundle |
+| `code/chart_template.html` | Shared demo layout, chart code, instructions, and controls |
+| `code/requirements.txt` | Pinned NumPy dependency |
+| `results/bootstrap.html` | Experiment 1: construct a bootstrap interval |
+| `results/coverage.html` | Experiment 2: check interval coverage |
+| `results/hypothesis-test.html` | Experiment 3: simulate a test under a tie |
+| `results/sampling.html` | Extra: compare new polls and sample sizes |
+| `results/chart.html` | Compatible entry point for older links; opens experiment 1 |
+| `results/simulation-data.js` | Shared data loaded by all demos |
+| `results/simulation.json` | Full simulation results, intervals, bootstrap percentages, and validation quantities |
+| `results/poll_n*.csv` | Original yes/no sample responses for each sample size |
+| `results/coverage_n*.csv` | All 2,000 coverage intervals per sample size |
+| `results/summary.csv` | Coverage, simulated/exact p-values, and false-rejection rates |
+| `results/text_values.json` | Numbers imported into the article automatically |
+| `results/environment.json` | Python/NumPy versions, seed, and simulation counts |
+| `vendor/plotly-basic-3.1.0.min.js` | Bundled chart library; no external library requests |
 
-## Replicate in order
+Edit the source files, then regenerate outputs. Do not edit generated HTML or result files by hand.
 
-1. Install Python 3.12 and dependencies. From this post folder:
+## Reproduce in order
 
-   ```sh
-   python3 -m venv .venv
-   .venv/bin/python -m pip install -r code/requirements.txt
-   .venv/bin/python code/simulate.py
-   ```
+### 1. Run the simulation
 
-   On Windows use `.venv\Scripts\python` in place of `.venv/bin/python`.
-   The simulation uses only Python's standard library and NumPy; no data download, authentication, or access key is needed. It creates the results, explorer, and bundle. No R packages are required.
+Install Python 3.12. From the repository root:
 
-2. Install [Quarto](https://quarto.org/docs/get-started/). From the **website root**:
+```sh
+cd blog/posts/post8
+python3 -m venv .venv
+.venv/bin/python -m pip install -r code/requirements.txt
+.venv/bin/python code/simulate.py
+```
 
-   ```sh
-   quarto render blog/posts/post8/index.qmd
-   ```
+On Windows, use `.venv\Scripts\python` instead of `.venv/bin/python`. If you extracted `research.zip`, start in its extracted folder and omit the `cd` command.
 
-   Rendering reads precomputed results; it does not rerun simulations. The website output is `docs/blog/posts/post8/`. For an extracted standalone bundle, you may inspect `results/chart.html` directly; site styling/rendering additionally uses the website's Quarto project.
+No data downloads, login, API key, or R packages are required. This step rebuilds `results/` and `research.zip`. The virtual environment is excluded from version control and the bundle.
 
-## Statistical design
+### 2. Render the blog
 
-- Simulation seed: 20261028; independent generator streams are derived from this seed and each sample size. Sizes: 100, 200, 500, 1,000. All sample responses are actually drawn from independent Bernoulli(.55) trials; they are not set to equal a convenient poll percentage. The initial displayed example is n=500. Each size has its own realization, so changing size does not isolate size while holding the observed estimate fixed.
-- **Bootstrap:** sample n indices with replacement from the observed binary responses, 4,000 times. Use NumPy `quantile(method='linear')` at .025 and .975. This is a percentile interval, not a normal/Wald or bias-corrected interval.
-- **Coverage:** draw 2,000 NEW samples from Bernoulli(.55). Independently bootstrap each using 4,000 resamples. For binary responses, resampled yes counts have exactly the Binomial(n, sample proportion) law. The code uses this equivalent law in the inner loop for efficiency; it does not sample coverage intervals directly from the true probability. Endpoints containing .55 count as coverage, with a small numerical tolerance. The first 60 intervals are shown by default, unselected; all 2,000 determine the coverage card and can be displayed or downloaded.
-- **Null experiment:** simulate 100,000 Binomial(n,.5) polls. Statistic is `abs(sample proportion - .5)`. The p-value counts both tails at least as extreme as the observed distance, including equality. This is a Monte Carlo tail proportion, not the posterior probability of a hypothesis. A realized p-value may differ slightly from its exact counterpart; Monte Carlo standard errors are in the explorer.
-- **Rejection region:** predefine the smallest symmetric distance whose exact Binomial(n,.5) tail probability is at most .05. Discreteness usually makes this conservative. Exact calculations define this reference rule and check simulated p-values; the null distribution itself is generated by simulation and displayed. Rejection-region shading and observed-p-value coloring represent different tail boundaries.
-- Percentile intervals and this exact-calibrated two-sided test are different procedures, not necessarily exact mathematical inverses.
-- Interval coverage is approximate and design-dependent. These moderate samples with an interior probability do not demonstrate universal 95% coverage. Small samples, probabilities near 0 or 1, biased recruitment, correlated responses, and complex survey designs need additional care.
+Install [Quarto](https://quarto.org/docs/get-started/), return to the website repository root, and run:
 
-## Validation and interpretation
+```sh
+quarto render blog/posts/post8/index.qmd
+```
 
-The generator checks probability normalization, agreement of simulated and exact p-values within Monte Carlo error, interval/estimate consistency, and reasonable coverage. Coverage Monte Carlo standard errors describe variation from the finite outer simulation; they do not remove bootstrap approximation error. No significance claims about actual people or policy effectiveness are made.
+The published output goes to `docs/blog/posts/post8/`. Rendering uses the saved results; it does not rerun the simulations. The article lists its required HTML, JavaScript, and download files in its `resources` section so Quarto copies them into the published folder.
 
-Background: course supplementary material, *Simulation and Resampling: Monte Carlo, Bootstrap, and Jackknife* (STAT 5200, Fall 2026), distinguishing a known-population Monte Carlo experiment from resampling an empirical distribution. Public reference: [ASA statement on p-values (2016)](https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf). The tutorial uses the confidence-interval long-run coverage interpretation, not a probability claim about a fixed parameter after observing an interval.
+For a local website preview, run `quarto preview` from the repository root. With only the extracted bundle, open `results/bootstrap.html` to try the standalone demos; full website rendering also requires the repository's `_quarto.yml` and theme assets.
 
-## Real campus context versus simulated data
+## How the simulations work
 
-Official background sources, consulted October 28, 2026:
+- **Randomness:** seed `20261028`, with a separate stream for each sample size: 100, 200, 500, and 1,000. Original answers are independent yes/no draws with 55% probability of yes. Changing sample size loads a different independently drawn poll.
+- **Bootstrap:** draw sample-size-many response cards with replacement, 4,000 times. The 95% percentile interval uses the 2.5th and 97.5th percentiles with linear interpolation. The browser also offers 90% and 99% intervals. Endpoints appear after 100 resamples, a display threshold rather than a precision guarantee.
+- **Coverage:** draw 2,000 new polls from the 55% population. Bootstrap each poll 4,000 times and check whether its interval includes 55%. For binary answers, a bootstrap yes count follows `Binomial(n, observed_yes/n)`; the inner loop uses that equivalent resampling law for efficiency. It does not substitute the true 55%. The three confidence levels use the same underlying draws. Initially, ten intervals appear; the running fraction uses only intervals shown.
+- **Hypothesis test:** simulate 100,000 polls with true support set to 50%. The statistic is distance from 50%; the chart reports it in percentage points. The two-sided p-value counts results at least as far away as the observed poll, including equality. Both directions become one right-hand tail in the distance chart.
+- **Rejection rule:** exact binomial probabilities define a symmetric cutoff with false-rejection probability at most 5%. Orange bars show the observed p-value tail; shading shows the prechosen rejection region. These boundaries need not coincide. Exact p-values also validate the simulated ones.
 
-- [The Penn Fund](https://giving.upenn.edu/the-penn-fund/) describes undergraduate financial aid, academic programs, campus technology, and student organizations among the uses supported by alumni and parent giving.
-- [Penn First Plus](https://pennfirstplus.upenn.edu/) describes its role supporting first-generation and lower-income students. These identities are not interchangeable: not all first-generation students are lower-income, or vice versa.
+The buttons replay consecutive saved simulation results, not newly collected responses. Each experiment has independent controls. Reset returns that experiment to sample size 500 and confidence 95%. Embedded mode hides duplicate headings/navigation; standalone versions retain Previous/Next links.
 
-The post does not claim that Penn has an official ballot with these exact options, that respondents are actual students, or that the displayed percentages estimate real Penn preferences. A real vote may have different eligibility, allocation rules, and options. The binary outcome is whether first-generation support is a respondent's top priority; all other options are grouped together. More than 50% is a majority, whereas the largest share in a multi-option vote can be less than 50%.
+Coverage is approximate, not a guarantee for every population or sample size. More simulations improve numerical stability; they cannot fix biased sampling. The generator checks probability totals, simulated-versus-exact p-values, interval consistency, and coverage. Simulation standard errors are saved in `simulation.json`. The bootstrap interval and exact-calibrated test are different procedures and need not be exact inverses.
 
-The target in the hypothetical example is Penn undergraduates, matching the undergraduate focus of the giving background. It is not an inference about graduate students, donors, or alumni. An actual complete ballot determines a winner under its rules; a random-sample poll can instead support inference about a wider eligible population. A voluntary vote is not automatically a representative random sample. The tutorial does not evaluate whether a funding choice causes better student outcomes.
+## Sources and interpretation
 
-## How to use the four teaching demos
+- [The Penn Fund](https://giving.upenn.edu/the-penn-fund/) and [Penn First Plus](https://pennfirstplus.upenn.edu/), consulted October 28, 2026: context for the fictional undergraduate poll. First-generation and lower-income identities are not interchangeable.
+- [ASA statement on p-values (2016)](https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf): a p-value is not the probability that a hypothesis is true.
+- Course supplementary material, *Simulation and Resampling: Monte Carlo, Bootstrap, and Jackknife* (STAT 5200, Fall 2026): conceptual background.
 
-1. **Sample → bootstrap:** First click Draw the reference sample. Then the demo reveals the 4,000 bootstrap resample percentages for the reference poll. `resample_examples` records distinct IDs and repeated response cards from the first eight actual resamples. The display labels its card illustration explicitly as resample 1. Intervals are only shown after at least 100 resamples; that is a display threshold, not a guarantee of adequate numerical precision. Browser quantiles use linear interpolation, matching NumPy's definition.
-2. **Check 95% coverage:** reveals consecutive NEW polls and their bootstrap intervals at the selected 90%, 95%, or 99% confidence level. The running coverage denominator is the number of intervals revealed, not always 2,000. All three levels use the same outer samples and inner bootstrap draws, isolating the effect of confidence level on interval width and coverage. The reference summary remains labeled 95%.
-3. **Test a tie:** reveals prefixes of 100, 1,000, 10,000, and 100,000 null draws. Each histogram and p-value uses the selected prefix's denominator. No observed tail hits in a short run does not imply a zero population tail probability. Rejection-region shading stays at the prechosen 5% rule regardless of Monte Carlo prefix size.
-4. **Extra: new polls:** starts with the independently drawn reference poll, then reveals the next 1,999 independently simulated polls from the coverage experiment. The sampling histogram therefore contains 2,000 polls at completion. Each size has its own realization; changing size does not hold the observed estimate fixed.
-
-These are step-by-step replays of actual independently seeded simulation draws, computed by the reproducible Python analysis and bundled locally so the browser stays responsive. Buttons and Play reveal consecutive results; they do not query a server, gather responses, invent arbitrary curves, or selectively choose draws. Reset restores sample size 500 and confidence 95%. Increasing the number of bootstrap/null draws improves simulation stability, not the original survey's information content. Only increasing sample size changes how many simulated respondents are in a poll.
-
-Additional JSON fields document every bootstrap percentage (`bootstrap_rates`), actual original responses (`sample_answers`), selected actual resample IDs (`resample_examples`), confidence-specific coverage intervals (`coverage_levels`), and prefix histograms (`null_checkpoints`).
-
-The main teaching sequence is Sample → bootstrap, coverage, then the null test; repeated new polls are an extra demo. First draw the reference sample to unlock resampling. The null chart plots absolute distance from 50% in percentage points, folding the two support tails into one statistic tail.
+The post does not report actual Penn votes or verify an official ballot with these options. It groups every other funding priority into “no.” It assumes fair, independent sampling and does not estimate whether a funding choice improves student outcomes.
