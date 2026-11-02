@@ -3,11 +3,11 @@ title: ""
 ---
 
 ::::: {.home-hero}
-<div class="october-kicker">OCTOBER EDITION <span aria-hidden="true">✦</span> A LITTLE EVERYDAY MAGIC</div>
+<div class="harvest-kicker">THANKSGIVING SEASON <span aria-hidden="true">✦</span> CURIOSITY &amp; GRATITUDE</div>
 
 :::: columns
 ::: {.column width="38%"}
-![](images/profile_halloween.png){.profile-photo fig-alt="Liz’s Halloween profile illustration"}
+![](images/profile_thanksgiving_soft_smile.png){.profile-photo fig-alt="Doodle portrait of Liz holding a golden retriever"}
 :::
 
 ::: {.column width="62%"}
