@@ -8,7 +8,9 @@ format:
     toc: false
 
 listing:
-  contents: "posts/**/*.qmd"
+  contents:
+    - "posts/**/index.qmd"
+    - "posts/post1/Untitled.qmd"
   sort: "date desc"
   type: default
 ---
@@ -26,12 +28,18 @@ listing:
   <span>BLOG 6</span>
   <span>BLOG 7</span>
   <span>BLOG 8</span>
+  <span>BLOG 9</span>
   <span>STATISTICS</span>
   <span>ECONOMICS</span>
   <span>DATA STORIES</span>
 </div>
 <div class="blog-start blog-featured">
-  <span class="blog-start-label">BLOG 8 · LATEST</span>
+  <span class="blog-start-label">BLOG 9 · LATEST</span>
+  <a href="posts/post9/index.html">How Boosting Learns to Predict Stock Returns</a>
+  <span class="blog-start-note">Build a forecast one tree at a time, see when learning becomes overfitting, and compare revised stock predictions with simple benchmarks.</span>
+</div>
+<div class="blog-start" style="margin-top: 0.8rem">
+  <span class="blog-start-label">BLOG 8</span>
   <a href="posts/post8/index.html">What Can a Campus Poll Really Tell Us?</a>
   <span class="blog-start-note">Draw a fictional campus poll, build a bootstrap confidence interval, check its coverage, and simulate a hypothesis test in four interactive experiments embedded directly in the article.</span>
 </div>

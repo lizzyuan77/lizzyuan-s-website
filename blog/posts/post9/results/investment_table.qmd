@@ -1,0 +1,6 @@
+| Strategy | Ending $1,000 | Annualized volatility |
+|---|---:|---:|
+| Class model | \$1,741 | 15.6% |
+| Revised model | \$1,797 | 20.6% |
+| Equal-weight universe | \$1,461 | 9.3% |
+| SPY buy-and-hold | \$1,500 | 9.9% |

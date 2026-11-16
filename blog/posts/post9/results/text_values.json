@@ -1,0 +1,15 @@
+{
+  "class_rmse": "8.69",
+  "revised_rmse": "8.13",
+  "mean_rmse": "8.15",
+  "rmse_reduction": "6.4",
+  "mean_improvement": "0.24",
+  "revised_end": "1,797",
+  "class_end": "1,741",
+  "spy_end": "1,500",
+  "revised_vol": "20.6",
+  "spy_vol": "9.9",
+  "revised_high_cost_end": "1,712",
+  "group_loss": "8.2",
+  "group_drawdown": "20.4"
+}

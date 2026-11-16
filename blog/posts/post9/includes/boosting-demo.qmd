@@ -1,0 +1,42 @@
+```{=html}
+<section id="boost-demo" aria-label="Interactive example of boosting" style="border:1px solid #cbbda6;border-radius:14px;padding:18px;background:#fffcf5;color:#42392f">
+<h3 style="margin-top:0">Build a forecast, one tree at a time</h3>
+<p>Six made-up stocks have known returns. <strong style="color:#526f61">Green dots are actual returns</strong>; <strong style="color:#936044">brown marks are predictions</strong>. The dotted gaps are the errors we want to shrink.</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center"><button type="button" id="boost-next">Add one tree</button><button type="button" id="boost-reset">Start over</button><label>Learning rate <select id="boost-rate"><option value="0.1">0.1 — small steps</option><option value="0.5" selected>0.5 — half a correction</option><option value="1">1 — full correction</option></select></label></div>
+<svg id="boost-svg" viewBox="0 0 700 350" role="img" aria-label="Actual returns, predicted returns and remaining errors" style="width:100%;height:auto"></svg>
+<p id="boost-story" aria-live="polite" style="min-height:5em"></p>
+<p style="font-size:.9em;margin-bottom:0">Teaching example only. Each tree asks one question about recent growth, then predicts the average remaining error on each side. Real stock outcomes are unknown when forecasting.</p>
+</section>
+<script>
+(()=>{
+const root=document.getElementById('boost-demo'), svg=root.querySelector('#boost-svg'), story=root.querySelector('#boost-story');
+const actual=[-2,-1,0,2,3,4], growth=[-3,-2,-1,1,2,3];let pred=actual.map(()=>1),round=0,last='';
+const fmt=v=>(v>0?'+':'')+Number(v.toFixed(2));
+const X=i=>100+i*100,Y=v=>270-(v+2)*32;
+function draw(){
+ let s='';for(let y=-2;y<=4;y++){s+=`<line x1="65" x2="650" y1="${Y(y)}" y2="${Y(y)}" stroke="#e6dfd2"/><text x="52" y="${Y(y)+5}" text-anchor="end" font-size="14" fill="#42392f">${y}%</text>`;}
+ s+='<text x="65" y="25" font-size="17" font-weight="bold" fill="#42392f">'+(round===0?'Start: predict 1% for every stock':`After ${round} small ${round===1?'tree':'trees'}`)+'</text>';
+ for(let i=0;i<6;i++){
+ s+=`<line x1="${X(i)}" x2="${X(i)}" y1="${Y(actual[i])}" y2="${Y(pred[i])}" stroke="#7b756c" stroke-dasharray="4 4" stroke-width="2"/><circle cx="${X(i)}" cy="${Y(actual[i])}" r="7" fill="#526f61"/><line x1="${X(i)-13}" x2="${X(i)+13}" y1="${Y(pred[i])}" y2="${Y(pred[i])}" stroke="#936044" stroke-width="5"/><text x="${X(i)}" y="310" text-anchor="middle" font-size="14" fill="#42392f">${growth[i]}%</text>`;
+ }
+ s+='<text x="350" y="340" text-anchor="middle" font-size="15" fill="#42392f">Recent price growth (the tree’s input)</text>';svg.innerHTML=s;
+ const mse=actual.reduce((s,y,i)=>s+(y-pred[i])**2,0)/6;
+ story.innerHTML=(round===0?'The average actual return is <strong>1%</strong>, so we start with a flat prediction. Which stocks are we overpredicting? Which are we underpredicting? Click <strong>Add one tree</strong>.':last)+`<br><strong>Average squared error: ${mse.toFixed(2)}</strong> (smaller means a closer fit).`;
+ root.querySelector('#boost-next').disabled=round>=12;
+}
+function reset(){pred=actual.map(()=>1);round=0;draw();}
+root.querySelector('#boost-next').onclick=()=>{
+ const errors=actual.map((y,i)=>y-pred[i]);let best=null;
+ for(let k=1;k<6;k++){
+ const left=errors.slice(0,k).reduce((a,b)=>a+b,0)/k,right=errors.slice(k).reduce((a,b)=>a+b,0)/(6-k);
+ const loss=errors.reduce((s,e,i)=>s+(e-(i<k?left:right))**2,0);
+ if(!best||loss<best.loss)best={k,left,right,loss};
+ }
+ const rate=Number(root.querySelector('#boost-rate').value),cut=(growth[best.k-1]+growth[best.k])/2;
+ pred=pred.map((p,i)=>p+rate*(i<best.k?best.left:best.right));round++;
+ last=`Tree ${round} asks: <strong>is recent growth ≤ ${fmt(cut)}%?</strong> Its suggested corrections are <strong>${fmt(best.left)} points</strong> on the left and <strong>${fmt(best.right)} points</strong> on the right. We add ${rate*100}% of each correction to the old predictions. The next tree learns the gaps that remain.`;draw();
+};
+root.querySelector('#boost-reset').onclick=reset;root.querySelector('#boost-rate').onchange=reset;draw();
+})();
+</script>
+```

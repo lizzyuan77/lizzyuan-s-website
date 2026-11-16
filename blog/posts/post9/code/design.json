@@ -1,0 +1,19 @@
+{
+  "seed": 123,
+  "data_start": "2022-01-01",
+  "data_end_exclusive": "2026-02-01",
+  "validation_start": "2023-01-01",
+  "test_start": "2024-01-01",
+  "test_signal_end_exclusive": "2026-01-01",
+  "label": "adjusted close at t+20 divided by adjusted close at t+1 minus one (class target)",
+  "selection_metric": "validation RMSE, with label end strictly before test_start",
+  "original": {"n_estimators": 300, "max_depth": 5, "learning_rate": 0.05, "min_child_weight": 10},
+  "candidate_depths": [2, 3],
+  "candidate_trees": [200, 500],
+  "candidate_lambdas": [10, 30],
+  "improved_fixed": {"learning_rate": 0.03, "min_child_weight": 20, "reg_alpha": 1, "subsample": 1, "colsample_bytree": 1},
+  "portfolio": "Top 10 stocks, equal weighted, signaled at first trading-day close each month; execute at next trading-day close and hold until next monthly execution. Same rule for both models.",
+  "cost_bps_per_dollar_traded": [0, 10, 25],
+  "benchmarks": ["training mean return for forecasts", "equal-weight class universe for portfolios", "buy-and-hold SPY for portfolios"],
+  "rule": "Select model using 2023 only. Refit selected settings on available 2022-2023 labels. Do not retune using 2024-2025 results. Purge all labels crossing a split boundary."
+}

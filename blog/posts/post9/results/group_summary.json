@@ -1,0 +1,8 @@
+{
+  "observations": 54,
+  "start": "2026-08-27",
+  "end": "2026-11-10",
+  "change": -0.0821457756878039,
+  "maximum_observed_drawdown": -0.20363680574969711,
+  "model_link": "Separate from XGBoost; not pooled with the 2024-2025 backtest."
+}

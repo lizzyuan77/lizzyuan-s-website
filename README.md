@@ -18,6 +18,9 @@ A personal website and a collection of economics and data-analysis articles for 
 - **Blog 8:** [What Can a Campus Poll Really Tell Us?](https://lizzyuan77.github.io/lizzyuan-s-website/blog/posts/post8/)
 - **Reproduce Blog 8:** [File guide and run order](blog/posts/post8/README.md). Four inline experiments explain confidence intervals and hypothesis testing. All responses are simulated; run `python code/simulate.py` from that post folder to rebuild the seeded experiments and interactive explorer.
 
+- **Blog 9:** [How Boosting Learns to Predict Stock Returns](https://lizzyuan77.github.io/lizzyuan-s-website/blog/posts/post9/)
+- **Reproduce Blog 9:** [File guide and run order](blog/posts/post9/README.md). Start with `python code/run.py` from the post folder. Includes a cached price snapshot, model comparison, validation checks, and an interactive teaching example.
+
 ## Repository guide
 
 | Location | Contents |
@@ -25,7 +28,7 @@ A personal website and a collection of economics and data-analysis articles for 
 | `_quarto.yml` | Website navigation, theme and publication settings |
 | `index.qmd`, `bio.qmd`, `resume.qmd` | Editable website pages |
 | `blog/index.qmd` | Blog landing page and post listing |
-| `blog/posts/post1/` through `post8/` | Article source and each post's replication materials |
+| `blog/posts/post1/` through `post9/` | Article source and each post's replication materials |
 | `docs/` | Rendered website served by GitHub Pages |
 | `images/`, `files/`, `styles.css` | Shared website assets |
 

@@ -1,0 +1,8 @@
+{
+  "source": "User-provided group performance-history export, 2026-11-10",
+  "source_sha256": "860331848a4745338a15dfe9ac3468928f465f9850463ec9afe46a08583ff496",
+  "format": "HTML table supplied with .xls extension",
+  "normalization": "Account value divided by first observed value, times 100. Original balances are not required for replication.",
+  "user_confirmation": "Not based on XGBoost picks; no changes during the period. Analysis assumes no external deposits/withdrawals.",
+  "dates": "Preserved exactly as exported, including Saturday labels. No matched-market comparison or annualized return is inferred from this file."
+}
